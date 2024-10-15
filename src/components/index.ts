@@ -1,8 +1,11 @@
-export {default as Navigation} from './Navigation' 
-export {default as Hero} from './Hero' 
-export {default as Footer} from './Footer' 
-export {default as Error} from './Error' 
-export { default as HomeLayout } from "./HomeLayout"; 
-export { default as Landing } from "./Landing"; 
-export { default as Cursor } from "./Cursor"; 
-
+export { default as Navigation } from "./Navigation";
+export { default as Hero } from "./Hero";
+export { default as Footer } from "./Footer";
+export { default as Error } from "./Error";
+export { default as HomeLayout } from "./HomeLayout";
+export { default as Landing } from "./Landing";
+export { default as Section } from "./Section";
+export { default as About } from "./About";
+export { default as ForRecruiter } from "./ForRecruiter";
+export { default as Hobbies } from "./Hobbies";
+export { default as Purpose } from "./Purpose";

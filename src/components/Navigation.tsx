@@ -3,7 +3,7 @@ import { navLinks } from "../data";
 import { NavLink, useLocation } from "react-router-dom";
 import { useContext, useEffect } from "react";
 import { ContextBgValue } from "../types";
-import { AppContext } from "./HomeLayout";
+import { AppContext } from "../App";
 
 const Navigation = () => {
   const { pathname } = useLocation();
@@ -21,7 +21,9 @@ const Navigation = () => {
 
   return (
     <nav className="fixed z-50 w-full lg:absolute">
-      <div className="mx-auto flex w-full max-w-7xl justify-end p-2">
+      <div
+        className={`mx-auto flex w-full max-w-7xl cursor-none justify-end ${isBgDark ? "cursor-light" : "cursor-dark"} p-2`}
+      >
         <div className="lg:hidden">
           <div className="drawer drawer-end">
             <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
@@ -66,17 +68,17 @@ const Navigation = () => {
           {navLinks.map((navLink) => {
             const { id, to } = navLink;
             return (
-              <div key={id} className="group relative mx-2 py-4">
+              <div key={id} className="group relative mt-4">
                 <NavLink
                   to={to}
-                  className={`font-protest text-xl tracking-wider xl:text-2xl ${isBgDark ? "text-neutral" : "text-secondary"}`}
+                  className={`px-2 py-4 font-protest text-xl tracking-wider xl:text-2xl ${isBgDark ? "text-neutral" : "text-secondary"}`}
                 >
                   {id}
                 </NavLink>
                 <div
-                  className={`absolute -left-0.5 h-2 bg-accent text-accent duration-500 ${
+                  className={`absolute left-1 h-2 bg-accent text-accent duration-500 ${
                     to === pathname ? "w-[55%]" : "w-0"
-                  } group-hover:w-[55%]`}
+                  } group-hover:w-[55%] pointer-events-none` }
                 ></div>
               </div>
             );

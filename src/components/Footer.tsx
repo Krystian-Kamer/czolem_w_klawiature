@@ -3,17 +3,26 @@ import { RiGithubFill, RiLinkedinFill, RiMailFill } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-accent">
+    <footer className="cursor-dark w-full cursor-none bg-accent">
       <div className="relative mx-auto flex h-[16vh] max-w-7xl items-center bg-accent pl-8 md:justify-center">
         <div className="flex w-1/2 items-center justify-center gap-x-6 sm:w-3/5 md:w-2/3">
-          <a href="" className="duration-500 hover:scale-125">
-            <RiMailFill className="text-3xl" />
+          <a
+            href=""
+            className="cursor-none rounded-full p-1 duration-300 hover:scale-110 hover:bg-primary hover:text-accent"
+          >
+            <RiMailFill className="text-3xl lg:text-4xl" />
           </a>
-          <a href="" className="duration-500 hover:scale-125">
-            <RiGithubFill className="text-3xl" />
+          <a
+            href=""
+            className="cursor-none rounded-full p-1 duration-300 hover:scale-110 hover:bg-primary hover:text-accent"
+          >
+            <RiGithubFill className="text-3xl lg:text-4xl" />
           </a>
-          <a href="" className="duration-500 hover:scale-125">
-            <RiLinkedinFill className="text-3xl" />
+          <a
+            href=""
+            className="cursor-none rounded-full p-1 duration-300 hover:scale-110 hover:bg-primary hover:text-accent"
+          >
+            <RiLinkedinFill className="text-3xl lg:text-4xl" />
           </a>
         </div>
         <p className="absolute bottom-0 mb-5 w-1/2 text-center font-protest text-sm sm:w-3/5 md:mr-32 lg:mr-0">
@@ -28,6 +37,6 @@ const Footer = () => {
         />
       </div>
     </footer>
-  );
-};
+  )
+}
 export default Footer;

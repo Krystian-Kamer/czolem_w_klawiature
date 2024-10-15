@@ -1,10 +1,15 @@
+import { Section } from "../components/index";
+
 const Portfolio = () => {
   return (
-    <section className="h-[84vh] snap-start bg-neutral">
-      <div className="mx-auto max-w-7xl">
-        <p className="text-4xl">Section 1</p>
-      </div>
-    </section>
+    <Section
+      id="blog-1"
+      cursorStyle="cursor-dark"
+      bgColor="bg-neutral"
+      height="h-[84vh]"
+    >
+      <p>xd</p>
+    </Section>
   );
-}
-export default Portfolio
+};
+export default Portfolio;

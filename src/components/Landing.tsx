@@ -1,37 +1,54 @@
-import { useContext } from "react";
-import { AppContext } from "./HomeLayout";
-import { ContextBgValue } from "../types";
+import { About, Section, ForRecruiter, Hobbies, Purpose } from "./index";
+import { SectionType } from "../types";
 
 const Landing = () => {
-  const { sectionTwoRef, sectionFourRef } =
-    useContext<ContextBgValue>(AppContext);
+  const sections: SectionType[] = [
+    {
+      id: "landing-1",
+      children: <About />,
+      cursorStyle: "cursor-dark",
+      bgColor: "bg-neutral",
+      height: "h-screen",
+    },
+    {
+      id: "landing-2",
+      children: <Purpose />,
+      cursorStyle: "cursor-light",
+      bgColor: "bg-primary",
+      height: "h-screen",
+    },
+    {
+      id: "landing-3",
+      children: <Hobbies />,
+      cursorStyle: "cursor-dark",
+      bgColor: "bg-neutral",
+      height: "h-screen",
+    },
+    {
+      id: "landing-4",
+      children: <ForRecruiter />,
+      cursorStyle: "cursor-light",
+      bgColor: "bg-primary",
+      height: "h-[84vh]",
+    },
+  ];
 
   return (
     <>
-      <section className="h-screen w-full snap-start bg-neutral">
-        <div className="mx-auto max-w-7xl px-20 py-40">
-          <p className="text-4xl">Section 1</p>
-        </div>
-      </section>
-      <section className="h-screen w-full snap-start bg-primary">
-        <div className="mx-auto max-w-7xl px-20 py-40">
-          <p className="text-4xl" ref={sectionTwoRef}>
-            Section 2
-          </p>
-        </div>
-      </section>
-      <section className="h-screen w-full snap-start bg-neutral">
-        <div className="mx-auto max-w-7xl px-20 py-40">
-          <p className="text-4xl">Section 3</p>
-        </div>
-      </section>
-      <section className="h-[84vh] w-full snap-start bg-primary">
-        <div className="mx-auto max-w-7xl px-20 py-40">
-          <p className="text-4xl" ref={sectionFourRef}>
-            Section 4
-          </p>
-        </div>
-      </section>
+      {sections.map((section) => {
+        const { id, children, cursorStyle, bgColor, height } = section;
+        return (
+          <Section
+            key={id}
+            cursorStyle={cursorStyle}
+            bgColor={bgColor}
+            height={height}
+            id={id}
+          >
+            {children}
+          </Section>
+        );
+      })}
     </>
   );
 };

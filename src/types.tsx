@@ -11,3 +11,11 @@ export type ContextBgValue = {
   isSectionTwoInView: boolean;
   isSectionFourInView: boolean;
 };
+
+export type SectionType = {
+  id: string;
+  children: JSX.Element;
+  cursorStyle: "cursor-dark" | 'cursor-light'
+  bgColor: string;
+  height: string;
+}
