@@ -1,4 +1,4 @@
-export type NavLink = {
+export type NavLinkType = {
   id: string;
   to: string;
 };
@@ -10,12 +10,13 @@ export type ContextBgValue = {
   isHeroInView: boolean;
   isSectionTwoInView: boolean;
   isSectionFourInView: boolean;
+  isBgDark: boolean;
 };
 
 export type SectionType = {
   id: string;
   children: JSX.Element;
-  cursorStyle: "cursor-dark" | 'cursor-light'
+  cursorStyle: "cursor-dark" | "cursor-light";
   bgColor: string;
   height: string;
-}
+};

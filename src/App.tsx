@@ -12,6 +12,7 @@ export const AppContext = createContext<ContextBgValue>({
   isHeroInView: true,
   isSectionTwoInView: false,
   isSectionFourInView: false,
+  isBgDark: true,
 });
 
 const router = createBrowserRouter([
@@ -33,6 +34,9 @@ function App() {
   const { ref: sectionTwoRef, inView: isSectionTwoInView } = useInView();
   const { ref: sectionFourRef, inView: isSectionFourInView } = useInView();
 
+  const isBgDark: boolean =
+    isHeroInView || isSectionTwoInView || isSectionFourInView;
+
   return (
     <AppContext.Provider
       value={{
@@ -42,11 +46,12 @@ function App() {
         isHeroInView,
         isSectionTwoInView,
         isSectionFourInView,
+        isBgDark,
       }}
     >
       <RouterProvider router={router} />
     </AppContext.Provider>
-  )
+  );
 }
 
 export default App;

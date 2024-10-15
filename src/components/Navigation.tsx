@@ -1,18 +1,20 @@
 import { RxHamburgerMenu } from "react-icons/rx";
-import { navLinks } from "../data";
 import { NavLink, useLocation } from "react-router-dom";
 import { useContext, useEffect } from "react";
-import { ContextBgValue } from "../types";
+import { ContextBgValue, NavLinkType } from "../types";
 import { AppContext } from "../App";
+
+const navLinks: NavLinkType[] = [
+  { id: "Home", to: "/" },
+  { id: "Blog", to: "/blog" },
+  { id: "Portfolio", to: "/portfolio" },
+  { id: "Kontakt", to: "/kontakt" },
+]
+
 
 const Navigation = () => {
   const { pathname } = useLocation();
-
-  const { isHeroInView, isSectionTwoInView, isSectionFourInView } =
-    useContext<ContextBgValue>(AppContext);
-
-  const isBgDark: boolean =
-    isHeroInView || isSectionTwoInView || isSectionFourInView;
+  const { isBgDark } = useContext<ContextBgValue>(AppContext);
 
   useEffect(() => {
     const scrollableDiv = document.querySelector(".no-scrollbar");
@@ -78,7 +80,7 @@ const Navigation = () => {
                 <div
                   className={`absolute left-1 h-2 bg-accent text-accent duration-500 ${
                     to === pathname ? "w-[55%]" : "w-0"
-                  } group-hover:w-[55%] pointer-events-none` }
+                  } pointer-events-none group-hover:w-[55%]`}
                 ></div>
               </div>
             );
