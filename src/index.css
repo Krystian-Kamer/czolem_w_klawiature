@@ -12,14 +12,28 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-  .cursor-light {
+  .cursor-custom-pointer {
     cursor:
-      url("/src/assets/cursor-light.svg") 12 12,
+      url("/src/assets/custom-cursor-pointer.svg") 6 8,
       auto;
   }
-  .cursor-dark {
+  * {
     cursor:
-      url("/src/assets/cursor-dark.svg") 12 12,
+      url("/src/assets/custom-cursor.svg") 8 8,
       auto;
+  }
+
+  @keyframes scrollWidth {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-66.75%);
+    }
+  }
+  .animated-movement {
+    display: flex;
+    width: 300%;
+    animation: scrollWidth 30s linear infinite;
   }
 }

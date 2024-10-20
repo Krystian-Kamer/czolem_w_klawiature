@@ -9,8 +9,7 @@ const navLinks: NavLinkType[] = [
   { id: "Blog", to: "/blog" },
   { id: "Portfolio", to: "/portfolio" },
   { id: "Kontakt", to: "/kontakt" },
-]
-
+];
 
 const Navigation = () => {
   const { pathname } = useLocation();
@@ -20,21 +19,19 @@ const Navigation = () => {
     const scrollableDiv = document.querySelector(".no-scrollbar");
     scrollableDiv?.scrollTo({ top: 0, behavior: "smooth" });
   }, [pathname]);
-
+console.log(isBgDark);
   return (
     <nav className="fixed z-50 w-full lg:absolute">
-      <div
-        className={`mx-auto flex w-full max-w-7xl cursor-none justify-end ${isBgDark ? "cursor-light" : "cursor-dark"} p-2`}
-      >
+      <div className="mx-auto flex w-full max-w-7xl justify-end p-2">
         <div className="lg:hidden">
           <div className="drawer drawer-end">
             <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
               <label
                 htmlFor="my-drawer-4"
-                className={`btn btn-circle drawer-button m-1 opacity-90 ${isBgDark ? "btn-neutral" : "btn-secondary"}`}
+                className={`cursor-custom-pointer btn btn-circle drawer-button m-1 opacity-90 ${isBgDark ? "btn-neutral" : "btn-secondary"}`}
               >
-                <RxHamburgerMenu className="text-2xl" />
+                <RxHamburgerMenu className="pointer-events-none text-2xl" />
               </label>
             </div>
             <div className="drawer-side">
@@ -50,7 +47,7 @@ const Navigation = () => {
                     <NavLink
                       to={to}
                       key={id}
-                      className={`my-1 cursor-pointer py-2 pl-4 duration-300 hover:rounded-md hover:bg-secondary hover:text-base-100 ${to === pathname && "rounded-md bg-secondary text-base-100"}`}
+                      className={`cursor-custom-pointer my-1 border-none py-2 pl-4 duration-300 hover:rounded-md hover:bg-secondary hover:text-base-100 ${to === pathname && "rounded-md bg-secondary text-base-100"}`}
                       onClick={() => {
                         const drawer = document.getElementById(
                           "my-drawer-4",
@@ -73,14 +70,14 @@ const Navigation = () => {
               <div key={id} className="group relative mt-4">
                 <NavLink
                   to={to}
-                  className={`px-2 py-4 font-protest text-xl tracking-wider xl:text-2xl ${isBgDark ? "text-neutral" : "text-secondary"}`}
+                  className={`cursor-custom-pointer px-2 py-4 font-protest text-xl tracking-wider xl:text-2xl ${isBgDark ? "text-neutral" : "text-secondary"} `}
                 >
                   {id}
                 </NavLink>
                 <div
-                  className={`absolute left-1 h-2 bg-accent text-accent duration-500 ${
+                  className={`pointer-events-none absolute left-1 h-2 bg-accent text-accent duration-500 ${
                     to === pathname ? "w-[55%]" : "w-0"
-                  } pointer-events-none group-hover:w-[55%]`}
+                  } group-hover:w-[55%]`}
                 ></div>
               </div>
             );

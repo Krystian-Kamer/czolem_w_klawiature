@@ -1,11 +1,12 @@
 import { SectionType } from "../types";
-
-const Section = ({ cursorStyle, bgColor, height, children }: SectionType) => {
+import { Waves } from "./index";
+const Section = ({ bgColor, height, children }: SectionType) => {
   return (
     <section
-      className={`${cursorStyle} ${height} w-full snap-start ${bgColor}`}
+      className={`${height} relative w-full snap-start overflow-hidden ${bgColor}`}
     >
-      <div className="mx-auto max-w-7xl px-20 py-40">{children}</div>
+      <div className="mx-auto max-w-7xl pt-32">{children}</div>
+      <Waves bgColor={bgColor} />
     </section>
   );
 };

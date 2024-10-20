@@ -16,7 +16,6 @@ export type ContextBgValue = {
 export type SectionType = {
   id: string;
   children: JSX.Element;
-  cursorStyle: "cursor-dark" | "cursor-light";
   bgColor: string;
   height: string;
 };
