@@ -5,7 +5,8 @@ const Contact = () => {
     <Section
       id="blog-1"
       bgColor="bg-neutral"
-      height="h-[84vh]"
+      height="h-[90vh]"
+      lastChild={true}
     >
       <p>xd</p>
     </Section>

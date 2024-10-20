@@ -5,7 +5,8 @@ const Portfolio = () => {
     <Section
       id="blog-1"
       bgColor="bg-neutral"
-      height="h-[84vh]"
+      height="h-[90vh]"
+      lastChild={true}
     >
       <p>xddddd</p>
     </Section>

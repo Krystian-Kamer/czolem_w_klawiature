@@ -18,4 +18,5 @@ export type SectionType = {
   children: JSX.Element;
   bgColor: string;
   height: string;
+  lastChild?: boolean;
 };

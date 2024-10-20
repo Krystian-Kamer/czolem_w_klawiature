@@ -25,20 +25,22 @@ const Landing = () => {
       id: "landing-4",
       children: <ForRecruiter />,
       bgColor: "bg-primary",
-      height: "h-[84vh]",
+      height: "h-[90vh]",
+      lastChild: true,
     },
   ];
 
   return (
     <>
       {sections.map((section) => {
-        const { id, children, bgColor, height } = section;
+        const { id, children, bgColor, height, lastChild } = section;
         return (
           <Section
             key={id}
             bgColor={bgColor}
             height={height}
             id={id}
+            lastChild={lastChild}
           >
             {children}
           </Section>

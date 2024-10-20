@@ -19,7 +19,6 @@ const Navigation = () => {
     const scrollableDiv = document.querySelector(".no-scrollbar");
     scrollableDiv?.scrollTo({ top: 0, behavior: "smooth" });
   }, [pathname]);
-console.log(isBgDark);
   return (
     <nav className="fixed z-50 w-full lg:absolute">
       <div className="mx-auto flex w-full max-w-7xl justify-end p-2">
