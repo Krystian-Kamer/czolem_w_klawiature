@@ -6,7 +6,7 @@ const Blog = () => {
       id="blog-1"
       bgColor="bg-neutral"
       height="h-[90vh]"
-      lastChild={true}
+      isLastChild={true}
     >
       <p>xd</p>
     </Section>

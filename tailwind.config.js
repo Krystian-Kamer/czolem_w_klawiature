@@ -5,6 +5,9 @@ export default {
       fontFamily: {
         protest: ['"Protest Strike", sans-serif'],
       },
+      animation: {
+        "bounce-slow": "bounceSlow 2s linear infinite",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],

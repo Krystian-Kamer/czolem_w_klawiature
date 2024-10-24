@@ -48,7 +48,7 @@ const Footer = () => {
         <img
           src={footerImg}
           alt="Hero image"
-          className="absolute bottom-0 right-0 w-1/2 max-w-[320px] sm:w-2/5 md:w-1/3"
+          className="absolute bottom-0 right-0 w-1/2 max-w-[320px] sm:w-2/5 md:w-1/3 z-30"
         />
       </div>
     </footer>

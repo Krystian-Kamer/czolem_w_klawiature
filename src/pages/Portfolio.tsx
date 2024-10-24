@@ -6,7 +6,7 @@ const Portfolio = () => {
       id="blog-1"
       bgColor="bg-neutral"
       height="h-[90vh]"
-      lastChild={true}
+      isLastChild={true}
     >
       <p>xddddd</p>
     </Section>

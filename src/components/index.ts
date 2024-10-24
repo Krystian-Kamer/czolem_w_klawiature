@@ -11,3 +11,4 @@ export { default as Hobbies } from "./Hobbies";
 export { default as Purpose } from "./Purpose";
 export { default as SectionTitle } from "./SectionTitle";
 export { default as Waves } from "./Waves";
+export { default as PageDownBtn } from "./PageDownBtn";

@@ -19,6 +19,8 @@ const Navigation = () => {
     const scrollableDiv = document.querySelector(".no-scrollbar");
     scrollableDiv?.scrollTo({ top: 0, behavior: "smooth" });
   }, [pathname]);
+
+  
   return (
     <nav className="fixed z-50 w-full lg:absolute">
       <div className="mx-auto flex w-full max-w-7xl justify-end p-2">
@@ -28,7 +30,7 @@ const Navigation = () => {
             <div className="drawer-content">
               <label
                 htmlFor="my-drawer-4"
-                className={`cursor-custom-pointer btn btn-circle drawer-button m-1 opacity-90 ${isBgDark ? "btn-neutral" : "btn-secondary"}`}
+                className={`cursor-custom-pointer btn btn-circle drawer-button md:h-16 md:w-16 m-1 opacity-90 ${isBgDark ? "btn-neutral" : "btn-secondary"}`}
               >
                 <RxHamburgerMenu className="pointer-events-none text-2xl" />
               </label>
