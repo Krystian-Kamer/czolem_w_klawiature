@@ -71,7 +71,7 @@ const Navigation = () => {
               <div key={id} className="group relative mt-4">
                 <NavLink
                   to={to}
-                  className={`cursor-custom-pointer px-2 py-4 font-protest text-xl tracking-wider xl:text-2xl ${isBgDark ? "text-neutral" : "text-secondary"} `}
+                  className={`cursor-custom-pointer px-2 py-4 font-protest select-none text-xl tracking-wider xl:text-2xl ${isBgDark ? "text-neutral" : "text-secondary"} `}
                 >
                   {id}
                 </NavLink>

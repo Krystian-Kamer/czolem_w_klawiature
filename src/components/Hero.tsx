@@ -18,7 +18,7 @@ const Hero = () => {
           className="z-10 sm:w-3/4 sm:-translate-x-16 md:w-3/4 min-[850px]:w-1/2 min-[850px]:translate-x-0"
         />
 
-        <div className="flex w-full items-center justify-center bg-accent sm:absolute sm:right-4 sm:top-16 sm:w-1/2 sm:rounded-md sm:py-2 md:top-28 md:w-2/5 md:py-4 min-[850px]:relative min-[850px]:right-0 min-[850px]:top-0 min-[850px]:mx-16 min-[850px]:w-1/2 lg:mx-20 xl:mx-20 xl:px-10">
+        <div className="flex w-full items-center justify-center bg-accent sm:absolute sm:right-4 sm:top-16 sm:w-1/2 sm:rounded-md sm:py-2 md:top-28 md:w-2/5 md:py-4 min-[850px]:relative min-[850px]:right-0 min-[850px]:top-0 min-[850px]:mx-16 min-[850px]:w-1/2 lg:mx-20 xl:mx-20 xl:px-10 select-none">
           <div className="prose">
             <h1
               className="sm:text-md my-1 font-protest text-2xl uppercase min-[400px]:py-1 min-[400px]:text-3xl xl:text-4xl"

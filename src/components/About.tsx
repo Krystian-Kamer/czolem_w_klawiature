@@ -1,30 +1,42 @@
 import ownerImg from "../assets/owner-image.png";
 import pinImg from "../assets/pin.png";
 import { SectionTitle } from "./index";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ContextBgValue } from "../types";
 import { AppContext } from "../App";
 import { Link } from "react-router-dom";
 
 const About = () => {
-  const { isHeroInView } = useContext<ContextBgValue>(AppContext);
+  const { isHeroInView, isSectionTwoInView } =
+    useContext<ContextBgValue>(AppContext);
   const [isPinOnPage, setIsPinOnPage] = useState(true);
 
   const dropImage = () => {
     setIsPinOnPage(false);
   };
+  // popracować nad tym żeby pinezka nie skakała
+  useEffect(() => {
+    console.log("b");
+    const turnPinToTrue = setTimeout(() => {
+      setIsPinOnPage(true);
+    }, 1000);
+    return () => clearTimeout(turnPinToTrue);
+  }, [isSectionTwoInView]);
 
   return (
     <>
       <div className="selection:bg-accent selection:text-secondary md:flex md:flex-row md:justify-center md:gap-6 lg:justify-around">
-        <div className="prose relative px-8 md:top-14 md:w-1/2 md:px-0">
+        <div className="prose relative px-8 md:mt-14 md:w-1/2 md:px-0">
           <SectionTitle title={"Czołem!"} />
           <h2 className="lg:text-small text-xl min-[400px]:text-2xl sm:text-2xl md:text-3xl">
             Z tej strony Krystian Kamer.
           </h2>
           <h3 className="lg:text-small text-xl text-primary min-[400px]:text-2xl sm:text-2xl">
             Jestem{" "}
-            <div className="tooltip tooltip-accent" data-tip="na początku kariery">
+            <div
+              className="tooltip tooltip-accent"
+              data-tip="na początku kariery"
+            >
               <span className="underline"> Frontend Developerem.</span>
             </div>
           </h3>
@@ -33,7 +45,7 @@ const About = () => {
             nauczyć się czegoś nowego i wartościowego. Ta stronka to połączenie
             mojego{" "}
             <Link
-              className="cursor-custom-pointer text-primary mx-1 bg-accent tracking-wider no-underline"
+              className="cursor-custom-pointer mx-1 bg-accent tracking-wider text-primary no-underline"
               to="/portfolio"
             >
               {" "}
@@ -41,7 +53,7 @@ const About = () => {
             </Link>
             z humorystycznym{" "}
             <Link
-              className="cursor-custom-pointer text-primary ml-1 bg-accent tracking-wider no-underline"
+              className="cursor-custom-pointer ml-1 bg-accent tracking-wider text-primary no-underline"
               to="/blog"
             >
               {" "}

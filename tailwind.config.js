@@ -7,6 +7,7 @@ export default {
       },
       animation: {
         "bounce-slow": "bounceSlow 2s linear infinite",
+        "bounce-slower": "bounceSlow 4s linear infinite",
       },
     },
   },

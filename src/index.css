@@ -25,6 +25,10 @@
       url("/src/assets/custom-cursor.svg") 8 8,
       auto;
   }
+  
+  input[type="radio"] {
+    cursor: var(--tw-cursor-custom-pointer) !important;
+  }
 
   @keyframes bounceSlow {
     0% {
@@ -114,7 +118,7 @@
       @apply mt-10;
     }
     .page-down-small {
-      @apply bottom-24 w-20 h-20;
+      @apply bottom-24 h-20 w-20;
     }
     .image-small {
       @apply w-1/4;

@@ -1,10 +1,30 @@
 import { useContext } from "react";
 import { ContextBgValue } from "../types";
 import { AppContext } from "../App";
+import SectionTitle from "./SectionTitle";
 
 const ForRecruiter = () => {
   const { sectionFourRef } = useContext<ContextBgValue>(AppContext);
 
-  return <div ref={sectionFourRef}>For Recruiter</div>;
+  return (
+    <div className="flex flex-col bg-red-500">
+      <div className="prose" ref={sectionFourRef}>
+        <SectionTitle title="Skille" />
+      </div>
+      <div>
+        <p className="w-2/3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam amet,
+          minus, cupiditate maxime dolorem ipsam unde quis voluptate tempore,
+          repellendus et deserunt eaque labore perferendis atque. Incidunt unde,
+          delectus ipsa in suscipit aliquam quisquam fugiat aspernatur! Sint
+          assumenda, repellendus porro eveniet quisquam voluptatibus quis ea
+          aliquid velit, quia dicta a. Ipsam voluptatem reiciendis quidem
+          repellat facilis aspernatur nesciunt maxime rerum voluptatum id
+          consectetur, iure aliquid hic adipisci odio fugit veritatis dolore
+          tempora? Ad omnis fuga quidem iusto quisquam consequuntur nam.
+        </p>
+      </div>
+    </div>
+  );
 };
 export default ForRecruiter;
