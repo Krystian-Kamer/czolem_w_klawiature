@@ -20,3 +20,11 @@ export type SectionType = {
   height: string;
   isLastChild?: boolean;
 };
+
+export type Skill = {
+  name: string;
+  id: string;
+  icon: JSX.Element;
+  checked: boolean;
+  text: string
+};
