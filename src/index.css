@@ -25,7 +25,7 @@
       url("/src/assets/custom-cursor.svg") 8 8,
       auto;
   }
-  
+
   input[type="radio"] {
     cursor: var(--tw-cursor-custom-pointer) !important;
   }

@@ -25,8 +25,8 @@ const About = () => {
 
   return (
     <>
-      <div className="selection:bg-accent selection:text-secondary md:flex md:flex-row md:justify-center md:gap-6 lg:justify-around">
-        <div className="prose relative px-8 md:mt-14 md:w-1/2 md:px-0">
+      <div className="selection:bg-accent selection:text-secondary md:mt-36 md:flex md:flex-row md:justify-center md:gap-6 lg:mt-48 lg:justify-around">
+        <div className="prose relative px-8 md:w-1/2 md:px-0">
           <SectionTitle title={"Czołem!"} />
           <h2 className="lg:text-small text-xl min-[400px]:text-2xl sm:text-2xl md:text-3xl">
             Z tej strony Krystian Kamer.
@@ -68,13 +68,14 @@ const About = () => {
           alt="owner image"
           className="hide absolute bottom-0 left-0 w-[55%] sm:w-2/5 md:hidden"
         />
+        {/* desktop */}
         <div
           className={`${!isPinOnPage && "drop-img"} lg:image-small relative hidden h-fit rounded-sm border-8 border-b-[12px] border-white bg-accent drop-shadow-[25px_25px_10px_rgba(0,0,0,0.3)] md:mt-28 md:flex md:w-1/3 md:rotate-6 lg:w-[28%] lg:rotate-12`}
         >
           <img
             src={pinImg}
             alt="pin image"
-            className={`hide absolute -left-6 z-10 w-20 rounded-l-full drop-shadow-[3px_10px_3px_rgba(0,0,0,0.6)] ${!isHeroInView && "cursor-custom-pointer duration-300 hover:scale-110"} ${!isPinOnPage && "remove-pin"}`}
+            className={`hide absolute -left-6 z-10 md:w-16 lg:w-20 rounded-l-full drop-shadow-[3px_10px_3px_rgba(0,0,0,0.6)] ${!isHeroInView && "cursor-custom-pointer duration-300 hover:scale-110"} ${!isPinOnPage && "remove-pin"}`}
             onClick={!isHeroInView ? dropImage : undefined}
           />
           <div

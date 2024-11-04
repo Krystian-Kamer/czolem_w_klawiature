@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div className="bg-primary">
       <div className="relative mx-auto flex max-w-7xl flex-col items-center sm:flex-row min-[850px]:justify-between">
-        <div className="absolute left-0 top-0 z-20 max-w-7xl p-2 text-sm font-semibold italic tracking-wider text-base-100 min-[500px]:text-lg sm:bottom-0 sm:left-auto sm:right-0 sm:top-auto">
+        <div className="absolute left-0 bottom-10 min-[400px]:bottom-12 z-20 max-w-7xl p-2 text-sm font-semibold italic tracking-wider text-base-100 min-[500px]:text-lg sm:bottom-0 sm:left-auto sm:right-0 sm:top-auto">
           #czolem_w_klawiature
         </div>
         <img
