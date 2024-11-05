@@ -19,7 +19,7 @@ const Skills = () => {
   };
 
   return (
-    <div className="flex flex-col md:mt-14 min-[800px]:mt-28">
+    <div className="flex flex-col md:mt-14 min-[800px]:mt-28 lg:mt-20">
       <div className="prose px-8" ref={sectionTwoRef}>
         <SectionTitle title="Skille" />
       </div>
@@ -53,13 +53,13 @@ const Skills = () => {
         })}
       </div>
 
-      <div className="z-20 hidden gap-y-[2px] px-6 text-neutral md:flex md:h-[69vh] md:flex-col lg:h-full ">
+      <div className="z-20 hidden gap-y-[2px] px-6 text-neutral md:flex md:h-[69vh] md:flex-col lg:w-[45%]">
         {totalSkills.map((skill, index) => {
           const { name, id, checked, text } = skill;
           return (
             <div
               key={id}
-              className={`cursor-custom-pointer collapse collapse-arrow h-fit rounded-none bg-secondary bg-opacity-70 ${
+              className={`cursor-custom-pointer collapse collapse-arrow h-fit rounded-none bg-secondary md:bg-opacity-90 ${
                 index === 0 ? "rounded-t-xl" : "rounded-none"
               } ${index === skills.length - 1 ? "rounded-b-xl" : "rounded-none"}`}
             >
@@ -75,7 +75,7 @@ const Skills = () => {
                 {name}
               </div>
               <div className="collapse-content">
-                <p className="leading-relaxed tracking-wide min-[800px]:text-xl">
+                <p className="leading-relaxed tracking-wide min-[800px]:text-xl selection:bg-secondary-content selection:text-primary">
                   {text}
                 </p>
               </div>
@@ -84,18 +84,20 @@ const Skills = () => {
         })}
       </div>
 
-      <div className="absolute bottom-1 left-1/2 right-16 hidden items-end md:flex w-fit">
-        <div className="absolute left-[30%] -top-20 -translate-x-1/2 animate-bounce-slower select-none rounded-full bg-accent bg-gradient-to-tl p-8 text-center text-7xl font-bold text-primary drop-shadow-lg">
-          {totalSkills.map((skill) => {
-            const { checked, icon, id } = skill;
-            return <div key={id}>{checked && icon}</div>;
-          })}
+      <div className="absolute bottom-1 right-16 hidden items-end md:left-1/3 md:flex lg:left-1/2 lg:w-1/2">
+        <div className="relative">
+          <div className="absolute md:-top-10 left-1/3 animate-bounce-slower select-none rounded-full bg-accent p-8 text-primary shadow-[0px_0px_50px_10px_rgba(255,211,105,0.9)] lg:-top-20">
+            {totalSkills.map((skill) => {
+              const { checked, icon, id } = skill;
+              return <div key={id}>{checked && icon}</div>;
+            })}
+          </div>
+          <img
+            src={handImg}
+            className="md:w-[400px] min-[800px]:w-[550px] lg:w-[700px]"
+            alt="hand image"
+          />
         </div>
-        <img
-          src={handImg}
-          className="w-[700px]"
-          alt="hand image"
-        />
       </div>
     </div>
   );
