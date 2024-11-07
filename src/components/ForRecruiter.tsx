@@ -7,16 +7,13 @@ const ForRecruiter = () => {
   const { sectionFourRef } = useContext<ContextBgValue>(AppContext);
 
   return (
-    <div className="flex flex-col bg-red-500">
+    <div className="flex flex-col mt-20 bg-red-500">
       <div className="prose" ref={sectionFourRef}>
         <SectionTitle title="Skille" />
       </div>
       <div>
         <p className="w-2/3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam amet,
-          minus, cupiditate maxime dolorem ipsam unde quis voluptate tempore,
-          repellendus et deserunt eaque labore perferendis atque. Incidunt unde,
-          delectus ipsa in suscipit aliquam quisquam fugiat aspernatur! Sint
+          Lorem ipsum dolor sit amet consn suscipit aliquam quisquam fugiat aspernatur! Sint
           assumenda, repellendus porro eveniet quisquam voluptatibus quis ea
           aliquid velit, quia dicta a. Ipsam voluptatem reiciendis quidem
           repellat facilis aspernatur nesciunt maxime rerum voluptatum id

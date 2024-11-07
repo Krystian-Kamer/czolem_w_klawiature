@@ -9,6 +9,9 @@ export default {
         "bounce-slow": "bounceSlow 2s linear infinite",
         "bounce-slower": "bounceSlow 4s linear infinite",
       },
+      backgroundImage: {
+        "ball-shape": "radial-gradient(circle at 10px 40px, #FFD369, #393E46)",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],

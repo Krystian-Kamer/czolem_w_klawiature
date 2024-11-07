@@ -18,7 +18,7 @@ const SectionTitle = ({ title }: { title: string }) => {
       >
         {title}
       </h1>
-      <div className="absolute -bottom-2 w-[120%]">
+      <div className="absolute -bottom-4 w-[120%]">
         {isHeroInView ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"

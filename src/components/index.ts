@@ -7,7 +7,7 @@ export { default as Landing } from "./Landing";
 export { default as Section } from "./Section";
 export { default as About } from "./About";
 export { default as ForRecruiter } from "./ForRecruiter";
-export { default as Hobbies } from "./Hobbies";
+export { default as EmploymentHistory } from "./EmploymentHistory";
 export { default as Skills } from "./Skills";
 export { default as SectionTitle } from "./SectionTitle";
 export { default as Waves } from "./Waves";

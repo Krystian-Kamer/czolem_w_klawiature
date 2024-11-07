@@ -19,11 +19,11 @@ const Skills = () => {
   };
 
   return (
-    <div className="flex flex-col md:mt-14 min-[800px]:mt-28 lg:mt-20">
-      <div className="prose px-8" ref={sectionTwoRef}>
+    <div className="flex flex-col mx-8 md:mt-14 min-[800px]:mt-28 lg:mt-20">
+      <div className="prose" ref={sectionTwoRef}>
         <SectionTitle title="Skille" />
       </div>
-      <div className="px-8 md:hidden">
+      <div className="md:hidden">
         <div className="flex flex-wrap gap-1 min-[390px]:gap-2">
           {totalSkills.map((skill) => {
             const { name, id, checked } = skill;
@@ -39,7 +39,7 @@ const Skills = () => {
           })}
         </div>
       </div>
-      <div className="mt-4 px-8 md:hidden">
+      <div className="mt-4 md:hidden">
         {totalSkills.map((skill) => {
           const { checked, text, id } = skill;
           return (
@@ -53,7 +53,7 @@ const Skills = () => {
         })}
       </div>
 
-      <div className="z-20 hidden gap-y-[2px] px-6 text-neutral md:flex md:h-[69vh] md:flex-col lg:w-[45%]">
+      <div className="z-20 hidden gap-y-[2px] text-neutral md:flex md:h-[69vh] md:flex-col lg:w-[42%]">
         {totalSkills.map((skill, index) => {
           const { name, id, checked, text } = skill;
           return (
@@ -75,7 +75,7 @@ const Skills = () => {
                 {name}
               </div>
               <div className="collapse-content">
-                <p className="leading-relaxed tracking-wide min-[800px]:text-xl selection:bg-secondary-content selection:text-primary">
+                <p className="leading-relaxed tracking-wide selection:bg-secondary-content selection:text-primary min-[800px]:text-xl">
                   {text}
                 </p>
               </div>
@@ -86,7 +86,7 @@ const Skills = () => {
 
       <div className="absolute bottom-1 right-16 hidden items-end md:left-1/3 md:flex lg:left-1/2 lg:w-1/2">
         <div className="relative">
-          <div className="absolute md:-top-10 left-1/3 animate-bounce-slower select-none rounded-full bg-accent p-8 text-primary shadow-[0px_0px_50px_10px_rgba(255,211,105,0.9)] lg:-top-20">
+          <div className="bg-ball-shape absolute left-1/3 animate-bounce-slower select-none rounded-full p-8 text-primary shadow-[0px_0px_50px_10px_rgba(255,211,105,0.5)] md:-top-10 lg:-top-20">
             {totalSkills.map((skill) => {
               const { checked, icon, id } = skill;
               return <div key={id}>{checked && icon}</div>;
