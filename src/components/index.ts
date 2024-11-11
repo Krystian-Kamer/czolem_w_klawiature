@@ -6,6 +6,7 @@ export { default as HomeLayout } from "./HomeLayout";
 export { default as Landing } from "./Landing";
 export { default as Section } from "./Section";
 export { default as About } from "./About";
+export { default as Contact } from "./Contact";
 export { default as ForRecruiter } from "./ForRecruiter";
 export { default as EmploymentHistory } from "./EmploymentHistory";
 export { default as Skills } from "./Skills";

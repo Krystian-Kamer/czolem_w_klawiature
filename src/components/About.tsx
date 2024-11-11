@@ -19,19 +19,21 @@ const About = () => {
     if (isPinOnPage) return;
     const turnPinToTrue = setTimeout(() => {
       setIsPinOnPage(true);
-    }, 1000);
+    }, 500);
     return () => clearTimeout(turnPinToTrue);
-  }, [isSectionTwoInView, isPinOnPage]);
+  }, [isSectionTwoInView]);
 
   return (
     <>
-      <div className="selection:bg-accent selection:text-secondary md:mt-36 md:flex md:flex-row md:justify-around md:gap-6 md:mx-8 lg:mt-48">
-        <div className="prose relative px-8 md:w-1/2 md:px-0">
+      <div className="md:mx-8 md:mt-36 md:flex md:flex-row md:justify-around md:gap-6 lg:mt-48">
+        <div
+          className={`prose relative px-8 ${!isPinOnPage && "resize-width"} selection:bg-accent selection:text-secondary md:w-1/2 md:px-0`}
+        >
           <SectionTitle title={"Czołem!"} />
-          <h2 className="lg:text-small text-xl min-[400px]:text-2xl sm:text-2xl md:text-3xl">
+          <h2 className="text-xl sm:text-2xl md:text-3xl nh:bg-red-300">
             Z tej strony Krystian Kamer.
           </h2>
-          <h3 className="lg:text-small text-xl text-primary min-[400px]:text-2xl sm:text-2xl">
+          <h3 className="text-xl text-primary sm:text-2xl">
             Jestem{" "}
             <div
               className="tooltip tooltip-accent"
@@ -40,7 +42,7 @@ const About = () => {
               <span className="underline"> Frontend Developerem.</span>
             </div>
           </h3>
-          <p className="lg:text-small text-lg text-primary min-[400px]:text-xl min-[400px]:leading-loose sm:text-2xl md:pt-10 md:leading-loose">
+          <p className="text-lg text-primary ph:text-xl ph:leading-relaxed sm:text-2xl md:pt-10 md:leading-loose">
             Nie lubię nudy. Jeśli jesteś na tej stronie to oznacza, że chcesz
             nauczyć się czegoś nowego i wartościowego. Ta stronka to połączenie
             mojego{" "}
@@ -62,20 +64,19 @@ const About = () => {
             , na który będę wrzucał co każdy czwartek nowe posty.
           </p>
         </div>
-        <div className="hide absolute -bottom-10 -left-9 h-2/5 w-1/2 rotate-45 bg-accent sm:w-2/5 md:hidden"></div>
+        <div className="absolute -bottom-10 -left-9 h-2/5 w-1/2 rotate-45 bg-accent sm:w-2/5 md:hidden"></div>
         <img
           src={ownerImg}
           alt="owner image"
-          className="hide absolute bottom-0 left-0 w-[55%] sm:w-2/5 md:hidden"
+          className="absolute bottom-0 left-0 w-[55%] sm:w-2/5 md:hidden"
         />
-        {/* desktop */}
         <div
-          className={`${!isPinOnPage && "drop-img"} lg:image-small relative hidden h-fit rounded-sm border-8 border-b-[12px] border-white bg-accent drop-shadow-[25px_25px_10px_rgba(0,0,0,0.3)] md:mt-28 md:flex md:w-1/3 md:rotate-6 lg:w-[28%] lg:rotate-12`}
+          className={`${!isPinOnPage && "drop-img"} relative hidden h-fit rounded-sm border-8 border-b-[12px] border-white bg-accent drop-shadow-[25px_25px_10px_rgba(0,0,0,0.3)] md:mt-28 md:flex md:w-1/3 md:rotate-6 lg:w-[28%] lg:rotate-12`}
         >
           <img
             src={pinImg}
             alt="pin image"
-            className={`hide absolute -left-6 z-10 rounded-l-full drop-shadow-[3px_10px_3px_rgba(0,0,0,0.6)] md:w-16 lg:w-20 ${!isHeroInView && "cursor-custom-pointer duration-300 hover:scale-110"} ${!isPinOnPage && "remove-pin"}`}
+            className={`absolute -left-6 z-10 rounded-l-full drop-shadow-[3px_10px_3px_rgba(0,0,0,0.6)] md:w-16 lg:w-20 ${!isHeroInView && "cursor-custom-pointer duration-300 hover:scale-110"} ${!isPinOnPage && "remove-pin"}`}
             onClick={!isHeroInView ? dropImage : undefined}
           />
           <div

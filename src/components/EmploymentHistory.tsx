@@ -2,11 +2,11 @@ import SectionTitle from "./SectionTitle";
 
 const EmploymentHistory = () => {
   return (
-    <div className="mx-8 flex flex-col md:mt-14 min-[800px]:mt-28 lg:mt-20">
+    <div className="mx-8 flex flex-col md:mt-14 lg:mt-20">
       <div className="prose">
         <SectionTitle title="Zawodowo" />
       </div>
-      <ul className="timeline timeline-vertical timeline-snap-icon mt-6 max-md:timeline-compact">
+      <ul className="timeline timeline-vertical timeline-snap-icon bottom-3 max-md:timeline-compact selection:bg-accent selection:text-secondary ph:bottom-0 ph:top-4 md:top-0 tb:top-6 lg:-top-10">
         <li>
           <div className="timeline-middle">
             <svg
@@ -22,21 +22,27 @@ const EmploymentHistory = () => {
               />
             </svg>
           </div>
-          <div className="timeline-start mb-2 md:text-end">
-            <time className="font-mono italic">2016</time>
-            <div className="text-lg font-black md:text-lg lg:text-2xl">
+          <div className="timeline-start md:text-end">
+            <time className="font-mono text-sm italic md:text-base tb:text-lg">
+              2016
+            </time>
+            <div className="text-lg font-black md:text-lg tb:text-xl lg:text-2xl">
               Pracownik biurowy
             </div>
-            <p className="lg:text-xl">
-              Dużo parzenia kawy. Pracowałem w Urzędzie Pracy w Łodzi, na różnych stanowiskach.
-              Współpracowałem z przedsiębiorcami, rozliczałem dotacje,
-              obsługiwałem kancelarię oraz archiwum.
+            <p className="text-sm md:text-base md:leading-relaxed tb:text-xl lg:text-xl lg:leading-loose">
+              <span className="hidden ph:inline">
+                Dużo parzenia kawy. Pracowałem w Urzędzie Pracy w Łodzi, na
+                różnych stanowiskach.{" "}
+              </span>
+              Współpracowałem z prz md:text-baseedsiębiorcami, rozliczałem
+              dotacje, obsługiwałem kancelarię oraz archiwum.
             </p>
           </div>
-          <hr />
+          <hr className="bg-primary" />
         </li>
+
         <li>
-          <hr />
+          <hr className="bg-primary" />
           <div className="timeline-middle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -51,17 +57,27 @@ const EmploymentHistory = () => {
               />
             </svg>
           </div>
-          <div className="timeline-end mb-2">
-            <time className="font-mono italic">2020</time>
-            <div className="text-lg font-black md:text-lg lg:text-2xl">
+          <div className="timeline-end">
+            <time className="font-mono text-sm italic md:text-base tb:text-lg">
+              2020
+            </time>
+            <div className="text-lg font-black md:text-lg tb:text-xl lg:text-2xl">
               Sekretarz Sądowy
             </div>
-            <p className="lg:text-xl">Jeszcze więcej parzenia kawy. Tutaj wykonuję polecenia Sędziego oraz kierownika. Z pracy tej wyniosłem aktywne słuchanie i wyłapywanie tego co najważniejsze. Dodatkowo nauczyło mnie to pracy pod presją czasu.</p>
+            <p className="text-sm md:text-base md:leading-relaxed tb:text-xl lg:text-xl lg:leading-loose">
+              <span className="hidden ph:inline">
+                Jeszcze więcej parzenia kawy. Tutaj wykonuję polecenia Sędziego
+                oraz kierownika.{" "}
+              </span>
+              Wyniosłem stąd aktywne słuchanie i wyłapywanie tego co
+              najważniejsze. Dodatkowo nauczyło mnie to pracy pod presją czasu.
+            </p>
           </div>
-          <hr />
+          <hr className="bg-primary" />
         </li>
+
         <li>
-          <hr />
+          <hr className="bg-primary" />
           <div className="timeline-middle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -76,17 +92,29 @@ const EmploymentHistory = () => {
               />
             </svg>
           </div>
-          <div className="timeline-start mb-10 md:text-end">
-            <time className="font-mono italic">2022</time>
-            <div className="text-lg font-black md:text-lg lg:text-2xl">
-              Start nauki programowania
+          <div className="timeline-start md:text-end">
+            <time className="font-mono text-sm italic md:text-base tb:text-lg">
+              2022
+            </time>
+            <div className="text-lg font-black md:text-lg tb:text-xl z-20 lg:text-2xl">
+              Nauka programowania
             </div>
-            <p className="lg:text-xl">Kawa bez zmian. Więcej wkuwania oraz praktykowania tego co wkute. Jeśli widzisz tego bloga to znaczy, że jestem w trakcie spełniania mojego marzenia o pozostaniu programistą.</p>
+            <p className="text-sm md:text-base md:leading-relaxed tb:text-xl lg:text-xl lg:leading-loose">
+              <span className="hidden ph:inline">Kawa bez zmian. </span>
+              Wkuwanie podstaw, potem rzeczy zaawansowanych oraz odwzorowywanie
+              tego co wkute w... praktyce.
+              <span className="hidden ph:inline">
+                {" "}
+                Jeśli widzisz tego bloga to znaczy, że jestem w trakcie
+                spełniania mojego marzenia o pozostaniu programistą.
+              </span>
+            </p>
           </div>
-          <hr />
+          <hr className="bg-primary" />
         </li>
+
         <li>
-          <hr />
+          <hr className="bg-primary" />
           <div className="timeline-middle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -101,19 +129,23 @@ const EmploymentHistory = () => {
               />
             </svg>
           </div>
-          <div className="timeline-end mb-6">
-            <time className="font-mono italic">2025(życzeniowo)</time>
-            <div className="text-lg font-black md:text-lg lg:text-2xl">
+          <div className="timeline-end mb-4 md:mb-10">
+            <time className="font-mono text-sm italic md:text-base tb:text-lg">
+              2025(życzeniowo)
+            </time>
+            <div className="text-lg font-black md:text-lg tb:text-xl lg:text-2xl">
               Junior Frontend Developer
             </div>
-            <p className="lg:text-xl">
-              Pierwsza praca w IT u pracodawcy, który mnie doceni. Nie wiem
-              tylko co z kawą...
+            <p className="text-sm md:text-base md:leading-relaxed tb:text-xl lg:text-xl lg:leading-loose">
+              Pierwsza praca w IT u pracodawcy, który mnie doceni.
+              <span className="hidden ph:inline">
+                {" "}
+                Nie wiem tylko co z kawą...
+              </span>
             </p>
           </div>
           <hr />
         </li>
-        
       </ul>
     </div>
   );

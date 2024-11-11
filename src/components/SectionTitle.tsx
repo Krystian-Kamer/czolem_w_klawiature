@@ -8,17 +8,17 @@ const SectionTitle = ({ title }: { title: string }) => {
   return (
     <div className="relative w-fit">
       <h1
-        className={`text-4xl lg:title-small tracking-wide sm:text-5xl lg:text-6xl ${
+        className={`text-3xl tracking-wide sm:text-5xl lg:text-6xl ${
           isHeroInView
-            ? "text-primary"
+            ? "text-primary selection:bg-accent selection:text-secondary"
             : isBgDark
-              ? "text-neutral"
-              : "text-primary"
+              ? "text-neutral selection:bg-primary-content selection:text-secondary"
+              : "text-primary selection:bg-accent selection:text-secondary"
         }`}
       >
         {title}
       </h1>
-      <div className="absolute -bottom-4 w-[120%]">
+      <div className="absolute -bottom-2 md:-bottom-5 w-[120%]">
         {isHeroInView ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"

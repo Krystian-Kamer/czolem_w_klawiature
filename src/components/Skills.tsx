@@ -19,18 +19,18 @@ const Skills = () => {
   };
 
   return (
-    <div className="flex flex-col mx-8 md:mt-14 min-[800px]:mt-28 lg:mt-20">
+    <div className="mx-8 flex flex-col md:mt-14 lg:mt-20">
       <div className="prose" ref={sectionTwoRef}>
         <SectionTitle title="Skille" />
       </div>
       <div className="md:hidden">
-        <div className="flex flex-wrap gap-1 min-[390px]:gap-2">
+        <div className="flex flex-wrap gap-1 ph:gap-2">
           {totalSkills.map((skill) => {
             const { name, id, checked } = skill;
             return (
               <button
                 key={id}
-                className={`flex-auto rounded-2xl border-[2px] border-neutral px-2 py-1 text-lg font-semibold tracking-wider text-neutral max-[390px]:text-base ${checked && "bg-neutral text-primary"}`}
+                className={`flex-auto rounded-xl border-[1px] border-neutral px-2 py-1 text-lg font-semibold tracking-wider text-neutral ph:border-[2px] sm:text-base ${checked && "bg-neutral text-primary"}`}
                 onClick={() => changeSkill(id)}
               >
                 {name}
@@ -44,7 +44,7 @@ const Skills = () => {
           const { checked, text, id } = skill;
           return (
             <p
-              className="text-xl leading-relaxed text-neutral max-[400px]:text-lg"
+              className="text-lg leading-relaxed text-neutral ph:text-xl ph:leading-relaxed sm:text-lg"
               key={id}
             >
               {checked && text}
@@ -70,7 +70,7 @@ const Skills = () => {
                 onChange={() => changeSkill(id)}
               />
               <div
-                className={`collapse-title text-xl tracking-wider lg:text-2xl ${checked && "text-accent"}`}
+                className={`collapse-title text-xl tracking-wider ${checked && "text-accent"}`}
               >
                 {name}
               </div>
@@ -86,7 +86,7 @@ const Skills = () => {
 
       <div className="absolute bottom-1 right-16 hidden items-end md:left-1/3 md:flex lg:left-1/2 lg:w-1/2">
         <div className="relative">
-          <div className="bg-ball-shape absolute left-1/3 animate-bounce-slower select-none rounded-full p-8 text-primary shadow-[0px_0px_50px_10px_rgba(255,211,105,0.5)] md:-top-10 lg:-top-20">
+          <div className="absolute left-1/2 animate-bounce-slower select-none rounded-full bg-ball-shape p-8 text-primary shadow-[0px_0px_50px_10px_rgba(255,211,105,0.5)] md:-top-10 lg:-top-20">
             {totalSkills.map((skill) => {
               const { checked, icon, id } = skill;
               return <div key={id}>{checked && icon}</div>;
