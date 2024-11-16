@@ -9,9 +9,16 @@ export default {
       fontFamily: {
         protest: ['"Protest Strike", sans-serif'],
       },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+      },
       animation: {
         "bounce-slow": "bounceSlow 2s linear infinite",
         "bounce-slower": "bounceSlow 4s linear infinite",
+        fadeIn: "fadeIn 0.3s linear forwards",
       },
       backgroundImage: {
         "ball-shape": "radial-gradient(circle at 10px 40px, #FFD369, #393E46)",

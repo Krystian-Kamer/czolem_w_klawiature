@@ -26,8 +26,9 @@ const EmploymentHistory = () => {
             <time className="font-mono text-sm italic md:text-base tb:text-lg">
               2016
             </time>
-            <div className="text-lg font-black md:text-lg tb:text-xl lg:text-2xl">
+            <div className="text-lg font-black md:text-lg tb:text-xl lg:text-2xl ">
               Pracownik biurowy
+              <div className="h-1 w-1/4 rounded-sm bg-accent md:h-2 md:justify-self-end"></div>
             </div>
             <p className="text-sm md:text-base md:leading-relaxed tb:text-xl lg:text-xl lg:leading-loose">
               <span className="hidden ph:inline">
@@ -63,6 +64,7 @@ const EmploymentHistory = () => {
             </time>
             <div className="text-lg font-black md:text-lg tb:text-xl lg:text-2xl">
               Sekretarz Sądowy
+              <div className="h-1 w-1/4 rounded-sm bg-accent md:h-2"></div>
             </div>
             <p className="text-sm md:text-base md:leading-relaxed tb:text-xl lg:text-xl lg:leading-loose">
               <span className="hidden ph:inline">
@@ -96,8 +98,9 @@ const EmploymentHistory = () => {
             <time className="font-mono text-sm italic md:text-base tb:text-lg">
               2022
             </time>
-            <div className="text-lg font-black md:text-lg tb:text-xl z-20 lg:text-2xl">
+            <div className="z-20 text-lg font-black md:text-lg tb:text-xl lg:text-2xl">
               Nauka programowania
+              <div className="h-1 w-1/4 rounded-sm bg-accent md:h-2 md:justify-self-end"></div>
             </div>
             <p className="text-sm md:text-base md:leading-relaxed tb:text-xl lg:text-xl lg:leading-loose">
               <span className="hidden ph:inline">Kawa bez zmian. </span>
@@ -135,6 +138,7 @@ const EmploymentHistory = () => {
             </time>
             <div className="text-lg font-black md:text-lg tb:text-xl lg:text-2xl">
               Junior Frontend Developer
+              <div className="h-1 w-1/4 rounded-sm bg-accent md:h-2"></div>
             </div>
             <p className="text-sm md:text-base md:leading-relaxed tb:text-xl lg:text-xl lg:leading-loose">
               Pierwsza praca w IT u pracodawcy, który mnie doceni.

@@ -10,7 +10,7 @@ import {
   SiChessdotcom,
   SiReactquery,
 } from "react-icons/si";
-import { Skill } from "./types";
+import { Skill, Recruitment } from "./types";
 
 export const skills: Skill[] = [
   {
@@ -103,5 +103,52 @@ export const skills: Skill[] = [
     ),
     checked: false,
     text: "Gita uczyłem się z kursu na Youtube Hello Romana oraz z darmowego kursu na Udemy Samuraja. Git-a traktuję jak maszynę co cofania w czasie, która pozwala na zmianę przyszłości i przeniesienia się na inną gałąź multiversum. Liznąłem jeszcze bootstrapa, scss, styled components, BEM, firebase, daisyUI (z którego korzystam w tym projekcie), react toastify.",
+  },
+];
+
+export const recruitment: Recruitment[] = [
+  {
+    id: 1,
+    question: "Dlaczego programowanie?",
+    answer:
+      "Myślę, że jestem kreatywny. Lubię wiedzieć jak coś działa, lubię też tworzyć. Uważam, że programowanie to sposób na realizację moich nabytych talentów.",
+    isAsked: false,
+    order: null,
+  },
+  {
+    id: 2,
+    question: "JAKIM ZWIERZĘCIEM JESTEŚ?",
+    answer:
+      "A jednak mityczne pytanie padło! No dobra, myślę, że jestem niedźwiedziem. Przemawia za tym chociażby postura. A z charakteru to bardziej taki nieszkodliwy niedźwiadek z ZOO, chociaż jak mnie ktoś zdenerwuję to mogę być jak grizzly.",
+    isAsked: false,
+    order: null,
+  },
+  {
+    id: 3,
+    question: "Jakie są twoje słabe strony?",
+    answer: "To ten moment, w którym zamieniam zaletę na wadę, żeby ostatecznie zwiększyć swoje szansę na zatrudnienie? Np. jestem nazbyt perfekcyjny i dlatego dłużej wykonuję moje zadania? Zwiększę swoje szanse podwójnie, bo powiem o 2 wado-zaletach. Jestem szczery i mam poczucie humoru. ",
+    isAsked: false,
+    order: null,
+  },
+  {
+    id: 4,
+    question: "Jakie masz oczekiwania finansowe?",
+    answer: "Jestem realistą, dlatego uważam, że moje oczekiwania oscylują między 4 a 6 tys. zł.",
+    isAsked: false,
+    order: null,
+  },
+  {
+    id: 5,
+    question: "Co?",
+    answer: "Co co?",
+    isAsked: false,
+    order: null,
+  },
+  {
+    id: 6,
+    question: "Odezwiemy się jeszcze.",
+    answer: "Ale na pewno??? Na pewno na pewno?",
+    isAsked: false,
+    order: null,
   },
 ];

@@ -26,5 +26,13 @@ export type Skill = {
   id: string;
   icon: JSX.Element;
   checked: boolean;
-  text: string
+  text: string;
+};
+
+export type Recruitment = {
+  id: number;
+  question: string;
+  answer: string;
+  isAsked: boolean;
+  order: null | number;
 };

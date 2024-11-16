@@ -1,4 +1,4 @@
-import { About, Section, ForRecruiter, EmploymentHistory, Skills, Contact } from "./index";
+import { About, Section, ForRecruiter, EmploymentHistory, Skills } from "./index";
 import { SectionType } from "../types";
 
 const Landing = () => {
@@ -26,13 +26,6 @@ const Landing = () => {
       children: <ForRecruiter />,
       bgColor: "bg-primary",
       height: "h-[100vh]",
-    },
-    {
-      id: "landing-5",
-      children: <Contact />,
-      bgColor: "bg-neutral",
-      height: "h-[90vh]",
-      isLastChild: true,
     },
   ];
 

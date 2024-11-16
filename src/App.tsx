@@ -1,5 +1,5 @@
 import { HomeLayout, Error, Landing } from "./components/index";
-import { Portfolio, Blog } from "./pages";
+import { Portfolio, Blog, Contact } from "./pages";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { createContext } from "react";
 import { ContextBgValue } from "./types";
@@ -24,6 +24,7 @@ const router = createBrowserRouter([
       { index: true, element: <Landing /> },
       { path: "/portfolio", element: <Portfolio /> },
       { path: "/blog", element: <Blog /> },
+      { path: "/kontakt", element: <Contact /> },
     ],
   },
 ]);

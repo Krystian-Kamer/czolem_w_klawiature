@@ -70,7 +70,7 @@ const Skills = () => {
                 onChange={() => changeSkill(id)}
               />
               <div
-                className={`collapse-title text-xl tracking-wider ${checked && "text-accent"}`}
+                className={`collapse-title text-xl tracking-widest ${checked && "text-accent"}`}
               >
                 {name}
               </div>

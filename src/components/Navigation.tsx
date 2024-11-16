@@ -8,6 +8,7 @@ const navLinks: NavLinkType[] = [
   { id: "Home", to: "/" },
   { id: "Blog", to: "/blog" },
   { id: "Portfolio", to: "/portfolio" },
+  { id: "Kontakt", to: "/kontakt" },
 ];
 
 const Navigation = () => {
