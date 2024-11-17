@@ -40,7 +40,7 @@ const Navigation = () => {
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <ul className="menu min-h-full w-1/2 bg-accent p-6 pt-10 text-lg font-bold text-base-content">
+              <ul className="menu h-full w-1/2 bg-accent p-6 pt-10 text-lg font-bold text-base-content">
                 {navLinks.map((navLink) => {
                   const { id, to } = navLink;
                   return (

@@ -14,13 +14,13 @@ import { Skill, Recruitment } from "./types";
 
 export const skills: Skill[] = [
   {
-    name: "React",
-    id: "React",
+    name: "JavaScript",
+    id: "JavaScript",
     icon: (
-      <SiReact className="p-1 md:h-20 md:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-2" />
+      <SiJavascript className="p-2 md:h-20 md:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: true,
-    text: "Z Reacta korzystam codziennie. Już jako dziecko lubiłem się bawić klockami Lego i zostało mi to  do dziś, tylko, że zamiast Lego mam komponenty, a zamiast dziecięcej niewinności rachunki do opłacenia. Uważam, że biblioteka ta znacznie przyspiesza wytwarzanie kodu.",
+    text: "Idealny świat powstał w 7 dni a biorąc pod uwagę work-life balance, w 6 dni. JavaScript, mimo, że powstał (jeśli wierzyć plotkom) w 10 dni, już taki nie jest. Jest to niebezpieczne miejsce najeżone pułapkami. Im dłużej jesteś na tym froncie tym bardziej rozumiesz jak rozbroić jakąś kodową js-ową minę. I choć stringi kojarzyły mi się tylko z jednym, to i te tu, polubiłem.",
   },
   {
     name: "HTML",
@@ -41,13 +41,13 @@ export const skills: Skill[] = [
     text: "Stary dobry CSS. Podstawa do dalszego rozwoju. Ostylowaliśmy razem niejeden projekt, ale nasze drogi trochę się rozeszły. On wolał zostać na przedmieściach i karmić kaczki w jeziorze a ja wolałem wyruszyć w świat z przetartym plecakiem jak Włóczykij. Czasem mimochodem na siebie wpadniemy, pomachamy sobie z oddali i pójdziemy dalej, każdy w swoją stronę.",
   },
   {
-    name: "JavaScript",
-    id: "JavaScript",
+    name: "React",
+    id: "React",
     icon: (
-      <SiJavascript className="p-2 md:h-20 md:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
+      <SiReact className="p-1 md:h-20 md:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-2" />
     ),
     checked: false,
-    text: "Idealny świat powstał w 7 dni a biorąc pod uwagę work-life balance, w 6 dni. JavaScript, mimo, że powstał (jeśli wierzyć plotkom) w 10 dni, już taki nie jest. Jest to niebezpieczne miejsce najeżone pułapkami. Im dłużej jesteś na tym froncie tym bardziej rozumiesz jak rozbroić jakąś kodową js-ową minę. I choć stringi kojarzyły mi się tylko z jednym, to i te tu, polubiłem.",
+    text: "Z Reacta korzystam codziennie. Już jako dziecko lubiłem się bawić klockami Lego i zostało mi to  do dziś, tylko, że zamiast Lego mam komponenty, a zamiast dziecięcej niewinności rachunki do opłacenia. Uważam, że biblioteka ta znacznie przyspiesza wytwarzanie kodu.",
   },
   {
     name: "React Router",
@@ -111,7 +111,7 @@ export const recruitment: Recruitment[] = [
     id: 1,
     question: "Dlaczego programowanie?",
     answer:
-      "Myślę, że jestem kreatywny. Lubię wiedzieć jak coś działa, lubię też tworzyć. Uważam, że programowanie to sposób na realizację moich nabytych talentów.",
+      "Myślę, że jestem kreatywny. Lubię wiedzieć jak coś działa, lubię też tworzyć. Uważam, że programowanie to naturalny sposób na realizację moich nabytych talentów.",
     isAsked: false,
     order: null,
   },
@@ -119,35 +119,38 @@ export const recruitment: Recruitment[] = [
     id: 2,
     question: "JAKIM ZWIERZĘCIEM JESTEŚ?",
     answer:
-      "A jednak mityczne pytanie padło! No dobra, myślę, że jestem niedźwiedziem. Przemawia za tym chociażby postura. A z charakteru to bardziej taki nieszkodliwy niedźwiadek z ZOO, chociaż jak mnie ktoś zdenerwuję to mogę być jak grizzly.",
+      "A jednak mityczne pytanie padło! No dobrze, myślę, że jestem niedźwiedziem. Przemawia za tym postura. Z charakteru to jestem bardziej takim nieszkodliwym niedźwiadkiem z ZOO, chociaż jak mnie ktoś zdenerwuję to mogę być jak grizzly🐻. Może też jestem trochę pająkiem (ale takim sprytnym co to nie dostanie tak łatwo laćkiem), bo lubię siedzieć w webie...",
     isAsked: false,
     order: null,
   },
   {
     id: 3,
     question: "Jakie są twoje słabe strony?",
-    answer: "To ten moment, w którym zamieniam zaletę na wadę, żeby ostatecznie zwiększyć swoje szansę na zatrudnienie? Np. jestem nazbyt perfekcyjny i dlatego dłużej wykonuję moje zadania? Zwiększę swoje szanse podwójnie, bo powiem o 2 wado-zaletach. Jestem szczery i mam poczucie humoru. ",
+    answer:
+      "Czyli too ten moment, w którym zamieniam zaletę na wadę, żeby ostatecznie zwiększyć swoje szanse na zatrudnienie. Mam poczucie humoru. Jednym się to podoba, innym nie. W sytuacjach wymagających powagi jestem poważny. Po drugie jestem szczery. Jest to miecz obosieczny a nie każdy lubi rozmowy prosto z mostu.",
     isAsked: false,
     order: null,
   },
   {
     id: 4,
     question: "Jakie masz oczekiwania finansowe?",
-    answer: "Jestem realistą, dlatego uważam, że moje oczekiwania oscylują między 4 a 6 tys. zł.",
+    answer:
+      "Jestem realistą, dlatego uważam, że moje oczekiwania nie są wygórowane a więc oscylują w przedziale od 4 do 6 tys. zł netto miesięcznie. W początkowej fazie kariery ważniejsze jest dla mnie zdobycie doświadczenia aniżeli zarobki.",
     isAsked: false,
     order: null,
   },
   {
     id: 5,
-    question: "Co?",
-    answer: "Co co?",
+    question: "Dlaczego interesuje Cię nasza firma?",
+    answer:
+      "Jeżeli ktoś dotarł aż do tej strony, wyklikał co mógł wyklikać, a przy tym dobrze się bawił, to znaczy, że nie stawia na ilość a na jakość. A to tak jak ja! Szukam firmy, gdzie będę mógł się realizować. Mam nadzieję, że dobrze trafiłem😃.",
     isAsked: false,
     order: null,
   },
   {
     id: 6,
-    question: "Odezwiemy się jeszcze.",
-    answer: "Ale na pewno??? Na pewno na pewno?",
+    question: "Jake są twoje mocne strony?",
+    answer: "XXX",
     isAsked: false,
     order: null,
   },

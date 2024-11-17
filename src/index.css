@@ -19,6 +19,11 @@
       url("/src/assets/custom-cursor-pointer.svg") 6 8,
       auto;
   }
+  .cursor-custom {
+    cursor:
+      url("/src/assets/custom-cursor.svg") 8 8,
+      auto;
+  }
 
   * {
     cursor:

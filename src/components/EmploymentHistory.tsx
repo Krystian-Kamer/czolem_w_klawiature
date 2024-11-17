@@ -35,7 +35,7 @@ const EmploymentHistory = () => {
                 Dużo parzenia kawy. Pracowałem w Urzędzie Pracy w Łodzi, na
                 różnych stanowiskach.{" "}
               </span>
-              Współpracowałem z prz md:text-baseedsiębiorcami, rozliczałem
+              Współpracowałem z przedsiębiorcami, rozliczałem
               dotacje, obsługiwałem kancelarię oraz archiwum.
             </p>
           </div>

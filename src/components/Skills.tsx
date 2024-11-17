@@ -53,7 +53,7 @@ const Skills = () => {
         })}
       </div>
 
-      <div className="z-20 hidden gap-y-[2px] text-neutral md:flex md:h-[69vh] md:flex-col lg:w-[42%]">
+      <div className="z-20 hidden gap-y-[2px] text-neutral selection:bg-secondary-content selection:text-primary md:flex md:h-[69vh] md:flex-col lg:w-[42%]">
         {totalSkills.map((skill, index) => {
           const { name, id, checked, text } = skill;
           return (
@@ -75,7 +75,7 @@ const Skills = () => {
                 {name}
               </div>
               <div className="collapse-content">
-                <p className="leading-relaxed tracking-wide selection:bg-secondary-content selection:text-primary min-[800px]:text-xl">
+                <p className="leading-relaxed tracking-wide min-[800px]:text-xl">
                   {text}
                 </p>
               </div>

@@ -95,7 +95,7 @@ const PhoneContent = () => {
             {isInvitationAccepted && (
               <>
                 <div
-                  className="animate-fadeIn chat chat-start mt-6 px-2 opacity-0"
+                  className="chat chat-start mt-6 animate-fadeIn px-2 opacity-0"
                   style={{
                     animationDelay: "3s",
                   }}
@@ -120,7 +120,7 @@ const PhoneContent = () => {
                 </div>
 
                 <div
-                  className="animate-fadeIn chat chat-end px-2 opacity-0"
+                  className="chat chat-end animate-fadeIn px-2 opacity-0"
                   style={{
                     animationDelay: "5s",
                   }}
@@ -139,7 +139,7 @@ const PhoneContent = () => {
                 </div>
 
                 <div
-                  className="animate-fadeIn chat chat-start px-2 opacity-0"
+                  className="chat chat-start animate-fadeIn px-2 opacity-0"
                   style={{
                     animationDelay: "7s",
                   }}
@@ -166,7 +166,7 @@ const PhoneContent = () => {
                   return (
                     <div key={id} className="last:mb-96">
                       <div
-                        className="animate-fadeIn chat chat-end px-2 opacity-0"
+                        className="chat chat-end animate-fadeIn px-2 opacity-0"
                         style={{
                           animationDelay: "0.3s",
                         }}
@@ -187,7 +187,7 @@ const PhoneContent = () => {
                       </div>
 
                       <div
-                        className="animate-fadeIn chat chat-start px-2 opacity-0"
+                        className="chat chat-start animate-fadeIn px-2 opacity-0"
                         style={{
                           animationDelay: "2s",
                         }}
@@ -211,9 +211,9 @@ const PhoneContent = () => {
                 })}
                 {isEveryQuestionAsked && (
                   <div
-                    className="animate-fadeIn chat chat-start mb-20 px-2 pt-6 opacity-0"
+                    className="chat chat-end mb-20 animate-fadeIn px-2 opacity-0"
                     style={{
-                      animationDelay: "5s",
+                      animationDelay: "4s",
                     }}
                   >
                     <div className="avatar chat-image">
@@ -237,29 +237,36 @@ const PhoneContent = () => {
         </div>
       </div>
       <div
-        className={`absolute hidden rounded-lg font-protest tracking-widest opacity-0 md:-bottom-40 tb:-bottom-56 ${isInvitationAccepted && "animate-fadeIn"} flex-col px-8 py-2 selection:bg-secondary md:flex md:w-full`}
-        style={{
-          animationDelay: "11s",
-        }}
+        className={`absolute hidden rounded-lg font-protest tracking-widest opacity-0 md:-bottom-40 tb:-bottom-56 ${isInvitationAccepted ? "flex-col opacity-100 md:flex md:w-full" : "md:hidden"} px-8 py-2 selection:bg-secondary`}
       >
-        <div className="mb-4 h-[1px] bg-accent/40"></div>
-        <h3 className="mb-2 text-xl uppercase text-accent tb:self-start tb:text-2xl lg:mb-4 lg:text-3xl">
+        <div
+          className="mb-4 h-[1px] animate-fadeIn bg-accent/40 opacity-0"
+          style={{
+            animationDelay: `10s`,
+          }}
+        ></div>
+        <h3
+          className="mb-2 animate-fadeIn text-xl uppercase text-accent opacity-0 tb:self-start tb:text-2xl lg:mb-4 lg:text-3xl"
+          style={{
+            animationDelay: `10s`,
+          }}
+        >
           Zadaj mi pytanie:
         </h3>
-        <div className="grid gap-y-1 md:grid-cols-2 tb:gap-y-2 tb:text-xl lg:text-2xl">
+        <div className="grid gap-y-2 md:grid-cols-2 tb:gap-y-3 tb:text-xl lg:text-2xl">
           {recruitmentMessages.map((message) => {
             const { question, id, isAsked } = message;
             return (
               <button
                 key={id}
-                className={`cursor-custom-pointer animate-fadeIn text-neutral opacity-0 duration-300 hover:text-neutral/70 ${isAsked && "pointer-events-none line-through"} ${
+                className={`animate-fadeInPointerNone cursor-custom-pointer pointer-events-none text-neutral opacity-0 duration-300 ${isAsked ? "cursor-custom pointer-events-none line-through" : "hover:text-neutral/70"} ${
                   (id - 1) % 2 === 0
-                    ? "hover:pl-2 md:justify-self-start"
-                    : "hover:pr-2 md:justify-self-end"
-                }`}
-                onClick={() => askQuestion(id)}
+                    ? "md:justify-self-start"
+                    : "md:justify-self-end"
+                } ${!isAsked ? ((id - 1) % 2 === 0 ? "hover:pl-2" : "hover:pr-2") : ""} `}
+                onClick={!isAsked ? () => askQuestion(id) : undefined}
                 style={{
-                  animationDelay: `${id}0s`,
+                  animationDelay: `${id + 11}s`,
                 }}
               >
                 {question}

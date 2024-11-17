@@ -53,7 +53,7 @@ const Contact = () => {
             </p>
             <button
               type="submit"
-              className="cursor-custom-pointer rounded-sm border-4 border-primary bg-primary px-10 py-2 font-protest text-xl uppercase tracking-widest text-accent duration-700 hover:scale-105 hover:bg-accent hover:text-primary"
+              className="cursor-custom-pointer rounded-sm border-4 border-primary bg-primary px-10 py-2 font-protest text-xl uppercase tracking-widest text-accent duration-700 hover:bg-accent hover:text-primary"
             >
               Prześlij
             </button>

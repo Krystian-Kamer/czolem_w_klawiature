@@ -51,6 +51,9 @@ const ForRecruiter = () => {
                     href={pdfCvFile}
                     download="krystian-kamer-cv.pdf"
                     className="cursor-custom-pointer glass rounded-full px-4 py-1 tracking-widest duration-700 hover:bg-green-300"
+                    onClick={() => {
+                      setIsDownloadCvModalOpen(false);
+                    }}
                   >
                     tak
                   </a>
