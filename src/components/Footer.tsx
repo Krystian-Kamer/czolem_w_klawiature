@@ -1,3 +1,4 @@
+import { useLocation } from "react-router-dom";
 import footerImg from "../assets/footer-img.png";
 import { RiGithubFill, RiLinkedinFill, RiMailFill } from "react-icons/ri";
 
@@ -20,8 +21,13 @@ const Footer = () => {
     },
   ];
 
+  const { pathname } = useLocation();
+  console.log(pathname);
+
   return (
-    <footer className="w-full bg-accent">
+    <footer
+      className={`w-full bg-accent`}
+    >
       <div className="relative mx-auto flex h-[10vh] max-w-7xl items-baseline bg-accent pl-8 pt-1 ph:pt-3 md:justify-center">
         <div className="flex w-1/2 items-center justify-center gap-x-6 sm:w-3/5 md:w-2/3">
           {footerLinks.map((link) => {

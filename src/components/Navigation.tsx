@@ -21,7 +21,9 @@ const Navigation = () => {
   }, [pathname]);
 
   return (
-    <nav className="fixed z-50 w-full lg:absolute">
+    <nav
+      className={`fixed ${(pathname === "/blog" && !isBgDark) && "bg-neutral/90 pb-2 rounded-b-2xl"} z-50 w-full lg:absolute`}
+    >
       <div className="mx-auto flex w-full max-w-7xl justify-end p-2">
         <div className="lg:hidden">
           <div className="drawer drawer-end">
