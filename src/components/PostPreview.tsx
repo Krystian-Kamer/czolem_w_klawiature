@@ -1,10 +1,10 @@
-import background from "../assets/background.jpeg";
+import postImg from "../post-assets/post-1-czolem-o-klawiature.jpeg";
 
 const PostPreview = () => {
   return (
     <div className="mb-28 flex h-96 w-full drop-shadow-[0px_0px_5px_rgba(0,0,0,0.2)]">
       <img
-        src={background}
+        src={postImg}
         alt="post image"
         className="w-2/6 rounded-l-badge object-cover opacity-95"
       />
@@ -27,7 +27,7 @@ const PostPreview = () => {
           Czytaj...
         </button>
       </div>
-      <div className="flex w-1/6 flex-col items-center justify-center font-mono text-2xl italic text-secondary select-none opacity-20">
+      <div className="flex w-1/6 select-none flex-col items-center justify-center font-mono text-2xl italic text-secondary opacity-20">
         <p>12</p>
         <p>11</p>
         <p>24</p>

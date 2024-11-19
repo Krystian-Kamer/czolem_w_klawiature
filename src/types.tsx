@@ -36,3 +36,17 @@ export type Recruitment = {
   isAsked: boolean;
   order: null | number;
 };
+export type PostPreview = {
+  id: string;
+  title: string;
+  imageSmall: string;
+  imageBig: string;
+  text: string;
+  date: string;
+  category:
+    | "wszystko"
+    | "javascript"
+    | "typescript"
+    | "nauka programowania"
+    | "react";
+};
