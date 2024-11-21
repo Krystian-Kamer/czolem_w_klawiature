@@ -20,3 +20,4 @@ export { default as PhoneContent } from "./PhoneContent";
 // Blog Components
 export { default as PostPreview } from "./PostPreview";
 export { default as PostCategories } from "./PostCategories";
+export { default as PostWrapper } from "./PostWrapper";

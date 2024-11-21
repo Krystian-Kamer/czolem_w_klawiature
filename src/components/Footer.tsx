@@ -1,4 +1,3 @@
-import { useLocation } from "react-router-dom";
 import footerImg from "../assets/footer-img.png";
 import { RiGithubFill, RiLinkedinFill, RiMailFill } from "react-icons/ri";
 
@@ -20,9 +19,6 @@ const Footer = () => {
       icon: <RiLinkedinFill className="pointer-events-none" />,
     },
   ];
-
-  const { pathname } = useLocation();
-  console.log(pathname);
 
   return (
     <footer

@@ -30,7 +30,7 @@ const About = () => {
           className={`prose relative px-8 ${!isPinOnPage && "resize-width"} selection:bg-accent selection:text-secondary md:w-1/2 md:px-0`}
         >
           <SectionTitle title={"Czołem!"} />
-          <h2 className="text-xl sm:text-2xl md:text-3xl nh:bg-red-300">
+          <h2 className="text-xl sm:text-2xl md:text-3xl">
             Z tej strony Krystian Kamer.
           </h2>
           <h3 className="text-xl text-primary sm:text-2xl">

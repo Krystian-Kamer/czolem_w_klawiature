@@ -1,4 +1,4 @@
-import { HomeLayout, Error, Landing } from "./components/index";
+import { HomeLayout, Error, Landing, PostWrapper } from "./components/index";
 import { Portfolio, Blog, Contact } from "./pages";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { createContext } from "react";
@@ -24,6 +24,10 @@ const router = createBrowserRouter([
       { index: true, element: <Landing /> },
       { path: "/portfolio", element: <Portfolio /> },
       { path: "/blog", element: <Blog /> },
+      {
+        path: "/blog/:id",
+        element: <PostWrapper />,
+      },
       { path: "/kontakt", element: <Contact /> },
     ],
   },

@@ -36,13 +36,14 @@ export type Recruitment = {
   isAsked: boolean;
   order: null | number;
 };
-export type PostPreview = {
+export type PostType = {
   id: string;
   title: string;
   imageSmall: string;
   imageBig: string;
   text: string;
   date: string;
+  post: JSX.Element;
   category:
     | "wszystko"
     | "javascript"

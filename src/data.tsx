@@ -127,7 +127,7 @@ export const recruitment: Recruitment[] = [
     id: 3,
     question: "Jakie są twoje słabe strony?",
     answer:
-      "Czyli too ten moment, w którym zamieniam zaletę na wadę, żeby ostatecznie zwiększyć swoje szanse na zatrudnienie. Mam poczucie humoru. Jednym się to podoba, innym nie. W sytuacjach wymagających powagi jestem poważny. Po drugie jestem szczery. Jest to miecz obosieczny a nie każdy lubi rozmowy prosto z mostu.",
+      "Czyli to ten moment, w którym zamieniam zaletę na wadę, żeby ostatecznie zwiększyć swoje szanse na zatrudnienie. Mam poczucie humoru. Jednym się to podoba, innym nie. W sytuacjach wymagających powagi jestem poważny. Po drugie jestem szczery. Jest to miecz obosieczny a nie każdy lubi rozmowy prosto z mostu.",
     isAsked: false,
     order: null,
   },
