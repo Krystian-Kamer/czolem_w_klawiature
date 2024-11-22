@@ -6,11 +6,14 @@ import deskImg from "../assets/desk.png";
 import cvImg from "../assets/CV.jpg";
 import pdfCvFile from "../assets/Krystian Kamer CV.pdf";
 import { PhoneContent, SectionTitle } from "./index";
+import VanillaTilt from "vanilla-tilt";
 
 const ForRecruiter = () => {
   const { sectionFourRef } = useContext<ContextBgValue>(AppContext);
   const [isLightOn, setIsLightOn] = useState(false);
   const [isDownloadCvModalOpen, setIsDownloadCvModalOpen] = useState(false);
+
+  VanillaTilt.init(document.querySelector(".office") as HTMLElement);
 
   return (
     <div className="mx-8 flex flex-col md:mt-14 lg:mt-20">
@@ -26,7 +29,12 @@ const ForRecruiter = () => {
           <PhoneContent />
         </div>
 
-        <div className="relative flex h-[60vh] w-full md:h-full md:w-full md:py-1 lg:w-2/5">
+        <div
+          className="office relative flex h-[60vh] w-full md:h-full md:w-full md:py-1 lg:w-2/5"
+          data-tilt
+          data-tilt-max="3"
+          data-tilt-full-page-listening
+        >
           <div className="relative flex flex-col justify-end overflow-hidden rounded-lg bg-secondary drop-shadow-[20px_20px_10px_rgba(0,0,0,0.6)] ph:mt-4 md:mt-0 lg:rounded-3xl">
             <div
               className={`absolute top-[82px] h-[120%] w-full ${isLightOn ? "bg-orange-400 bg-gradient-to-b from-accent via-transparent" : "bg-secondary"} md:top-40`}

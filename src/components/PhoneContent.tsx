@@ -4,6 +4,7 @@ import ownerImg from "../assets/owner-image.png";
 import avatarImg from "../assets/avatar.png";
 import { FaRegHandshake, FaRegThumbsUp, FaRegThumbsDown } from "react-icons/fa";
 import { recruitment } from "../data";
+
 const PhoneContent = () => {
   const [isInvitationAccepted, setIsInvitationAccepted] = useState(false);
 
@@ -40,10 +41,12 @@ const PhoneContent = () => {
 
   return (
     <>
-      <div className="mockup-phone hidden self-center border-neutral/50 drop-shadow-[20px_20px_10px_rgba(0,0,0,0.6)] md:block">
+      <div
+        className="mockup-phone hidden self-center border-neutral/50 drop-shadow-[20px_20px_10px_rgba(0,0,0,0.6)] md:block"
+      >
         <div className="camera"></div>
         <div className="display">
-          <div className="no-scrollbar artboard artboard-demo phone-1 relative hidden touch-pan-y overflow-y-scroll bg-gradient-to-b from-lime-200 to-accent opacity-[95%] duration-500 selection:bg-secondary selection:text-neutral hover:opacity-100 md:block">
+          <div className="no-scrollbar artboard artboard-demo phone-1 relative hidden touch-pan-y overflow-y-scroll bg-gradient-to-b from-lime-200 to-accent duration-500 selection:bg-secondary selection:text-neutral md:block">
             <div
               className={`z-10 ${isInvitationAccepted ? "hide-invitation" : "flex"} flex h-full w-full flex-col items-center gap-y-3 bg-gradient-to-b from-secondary to-accent pt-16`}
             >
@@ -259,7 +262,7 @@ const PhoneContent = () => {
             return (
               <button
                 key={id}
-                className={`animate-fadeInPointerNone cursor-custom-pointer pointer-events-none text-neutral opacity-0 duration-300 ${isAsked ? "cursor-custom pointer-events-none line-through" : "hover:text-neutral/70"} ${
+                className={`cursor-custom-pointer pointer-events-none animate-fadeInPointerNone text-neutral opacity-0 duration-300 ${isAsked ? "cursor-custom pointer-events-none line-through" : "hover:text-neutral/70"} ${
                   (id - 1) % 2 === 0
                     ? "md:justify-self-start"
                     : "md:justify-self-end"

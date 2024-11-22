@@ -94,7 +94,7 @@ const Skills = () => {
           </div>
           <img
             src={handImg}
-            className="md:w-[400px] min-[800px]:w-[550px] lg:w-[700px]"
+            className="md:w-[400px] min-[800px]:w-[550px] lg:w-[700px] -z-50"
             alt="hand image"
           />
         </div>
