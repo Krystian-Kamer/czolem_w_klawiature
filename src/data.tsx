@@ -20,7 +20,7 @@ export const skills: Skill[] = [
       <SiJavascript className="p-2 md:h-20 md:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: true,
-    text: "Idealny świat powstał w 7 dni a biorąc pod uwagę work-life balance, w 6 dni. JavaScript, mimo, że powstał (jeśli wierzyć plotkom) w 10 dni, już taki nie jest. Jest to niebezpieczne miejsce najeżone pułapkami. Im dłużej jesteś na tym froncie tym bardziej rozumiesz jak rozbroić jakąś kodową js-ową minę. I choć stringi kojarzyły mi się tylko z jednym, to i te tu, polubiłem.",
+    text: "Idealny świat powstał w 7 dni a biorąc pod uwagę work-life balance, w 6. JavaScript, mimo, że powstał (jeśli wierzyć ploteczkom) w 10 dni, już taki nie jest. Jest to niebezpieczne miejsce najeżone pułapkami. Im dłużej jesteś na tym froncie tym bardziej rozumiesz jak rozbroić jakąś kodową js-ową minę. I choć stringi kojarzyły mi się tylko z jednym, to i te tu, polubiłem ;)",
   },
   {
     name: "HTML",
@@ -29,7 +29,7 @@ export const skills: Skill[] = [
       <SiHtml5 className="p-2 md:h-20 md:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
-    text: "Od tego zaczęła się moja przygoda, a było to w 2022 roku, kiedy postanowiłem, że chcę zmienić coś w swoim życiu. Kupiłem pierwszy kurs na Udemy i przerabiałem tutorial. Powoli nabierałem świadomości co się kryje pod maską strony internetowej.",
+    text: "Od tego zaczęła się moja przygoda, a było to w 2022 roku. Kupiłem pierwszy kurs na Udemy i przerabiałem tutorial. Potem następny i następny. Powoli stopniowo dowiadywałem się co kryje się pod maską strony internetowej.",
   },
   {
     name: "CSS",
@@ -84,7 +84,7 @@ export const skills: Skill[] = [
       <SiTailwindcss className="p-2 md:h-20 md:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
-    text: "Bardzo przydatna biblioteka CSS. Główną zaletą jest to, że nie trzeba przeskakiwać w projekcie między plikiem .css a plikiem .jsx/.tsx, bo wszystko jest w jednym miejscu. Drugą jest to, że można zapomnieć o wymyślaniu nazw klas, a tym bardziej o metodologi BEM. Dokumentacja jest napisana bardzo dobrze.",
+    text: "Bardzo przydatna biblioteka CSS. Główną zaletą jest to, że nie trzeba przeskakiwać w projekcie między plikiem .css a plikiem .jsx/.tsx, bo wszystko jest w jednym miejscu. Drugą jest to, że można zapomnieć o wymyślaniu nazw klas, a tym bardziej o metodologi BEM. Dokumentacja jest napisana w bardzo przystępny sposób.",
   },
   {
     name: "React Query",
@@ -135,7 +135,7 @@ export const recruitment: Recruitment[] = [
     id: 4,
     question: "Jakie masz oczekiwania finansowe?",
     answer:
-      "Jestem realistą, dlatego uważam, że moje oczekiwania nie są wygórowane a więc oscylują w przedziale od 4 do 6 tys. zł netto miesięcznie. W początkowej fazie kariery ważniejsze jest dla mnie zdobycie doświadczenia aniżeli zarobki.",
+      "Jestem realistą, dlatego uważam, że moje oczekiwania nie są wygórowane a więc oscylują w przedziale od 4 do 6.5 tys. zł netto miesięcznie. W początkowej fazie kariery ważniejsze jest dla mnie zdobycie doświadczenia aniżeli zarobki.",
     isAsked: false,
     order: null,
   },

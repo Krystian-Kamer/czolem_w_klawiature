@@ -11,7 +11,7 @@ const Contact = () => {
         <div className="prose">
           <SectionTitle title="Kontakt" />
         </div>
-        <form className="prose flex h-[60vh] w-full flex-col justify-around self-center border-4 border-dashed border-primary bg-accent p-8 md:mt-10 md:w-4/5 md:border-8 lg:w-1/2">
+        <form className="prose flex h-[60vh] w-full flex-col justify-around self-center border-4 border-dashed border-primary bg-accent p-8 md:mt- md:w-4/5 md:border-8 lg:w-1/2">
           <h1 className="text-lg uppercase text-primary lg:text-2xl">
             Pogadajmy
           </h1>
@@ -44,7 +44,7 @@ const Contact = () => {
             />
           </label>
           <textarea
-            className="textarea h-[30vh] resize-none w-full rounded-none bg-neutral font-protest text-lg tracking-wider"
+            className="textarea h-[30vh] w-full resize-none rounded-none bg-neutral font-protest text-lg tracking-wider"
             placeholder="O czym chciałbyś pogadać?"
           ></textarea>
           <div className="flex items-center justify-between">

@@ -1,16 +1,16 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import heroImg from "../assets/hero-img.png";
 import ownerImg from "../assets/owner-image.png";
 import avatarImg from "../assets/avatar.png";
 import { FaRegHandshake, FaRegThumbsUp, FaRegThumbsDown } from "react-icons/fa";
 import { recruitment } from "../data";
-
+import { ContextBgValue } from "../types";
+import { AppContext } from "../App";
 const PhoneContent = () => {
   const [isInvitationAccepted, setIsInvitationAccepted] = useState(false);
-
   const [recruitmentMessages, setRecruitmentMessages] = useState(recruitment);
-
   const [order, setOrder] = useState<number>(1);
+  const { isSectionFourInView } = useContext<ContextBgValue>(AppContext);
 
   const acceptInvitation = (delay: number) => {
     setTimeout(() => setIsInvitationAccepted(true), delay);
@@ -41,9 +41,7 @@ const PhoneContent = () => {
 
   return (
     <>
-      <div
-        className="mockup-phone hidden self-center border-neutral/50 drop-shadow-[20px_20px_10px_rgba(0,0,0,0.6)] md:block"
-      >
+      <div className={`mockup-phone hidden self-center border-neutral/50 drop-shadow-[20px_20px_10px_rgba(0,0,0,0.6)] md:block ${isSectionFourInView && 'animate-moveHeroFromLeft'}`}>
         <div className="camera"></div>
         <div className="display">
           <div className="no-scrollbar artboard artboard-demo phone-1 relative hidden touch-pan-y overflow-y-scroll bg-gradient-to-b from-lime-200 to-accent duration-500 selection:bg-secondary selection:text-neutral md:block">

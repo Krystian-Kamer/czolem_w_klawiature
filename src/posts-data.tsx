@@ -9,7 +9,7 @@ export const postsData: PostType[] = [
     imageSmall: "/post-assets/post-1.jpeg",
     imageBig: "/post-assets/post-1-big.jpeg",
     text: "To są Oblicza JavaScript, gdzie zapoznajemy się z ciekawymi danymi na temat funkcjonowania tego języka.",
-    date: "2023-12-01",
+    date: "21.11.24",
     category: "javascript",
   },
   {
@@ -19,7 +19,7 @@ export const postsData: PostType[] = [
     imageSmall: "/post-assets/post-1.jpeg",
     imageBig: "/post-assets/post-1-big.jpeg",
     text: "Zadaję sobie pytanie dlaczego programowaie zniszczyło mój związek i czy mogłem coś na to zaradzić.",
-    date: "2023-12-15",
+    date: "22.12.24",
     category: "typescript",
   },
   {
@@ -29,7 +29,7 @@ export const postsData: PostType[] = [
     imageSmall: "/post-assets/post-1.jpeg",
     imageBig: "/post-assets/post-1-big.jpeg",
     text: "Barwy, które kolorowy niesie wiatr, możesz zdobić świat lecz to będzie tylko świat, tylko świat, nie bary, które niesie wiatr",
-    date: "2024-01-01",
+    date: "23.12.24",
     category: "react",
   },
 ].reverse() as PostType[];

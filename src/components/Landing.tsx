@@ -26,6 +26,7 @@ const Landing = () => {
       children: <ForRecruiter />,
       bgColor: "bg-primary",
       height: "h-[100vh]",
+      isLastChild: true
     },
   ];
 

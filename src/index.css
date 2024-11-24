@@ -12,6 +12,8 @@
   .no-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
+    overflow-y: auto;
+    max-height: 100vh;
   }
 
   .cursor-custom-pointer {
@@ -109,7 +111,7 @@
       transform: translateX(0%);
     }
     100% {
-      transform: translateX(50%);
+      transform: translateX(50%);      
     }
   }
   .resize-width {

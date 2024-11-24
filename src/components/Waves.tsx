@@ -10,7 +10,7 @@ const Waves = ({
   lastChild: boolean;
 }) => {
   return (
-    <div className="animated-movement pointer-events-none absolute bottom-0 z-20 overflow-hidden">
+    <div className="animated-movement pointer-events-none absolute bottom-0 z-20 2xl:-bottom-8 overflow-hidden">
       {lastChild ? (
         <img src={wavesAccent} alt="accent waves" />
       ) : bgColor === "bg-neutral" ? (

@@ -4,25 +4,27 @@ import { ContextBgValue } from "../types";
 import { AppContext } from "../App";
 
 const Hero = () => {
-  const { heroRef } = useContext<ContextBgValue>(AppContext);
+  const { heroRef, isHeroInView } = useContext<ContextBgValue>(AppContext);
 
   return (
     <div className="bg-primary">
       <div className="relative mx-auto flex max-w-7xl flex-col items-center sm:flex-row md:justify-between">
-        <div className="absolute bottom-10 left-0 z-20 max-w-7xl p-2 text-sm font-semibold italic tracking-wider text-base-100 sm:bottom-0 sm:left-auto sm:right-0 sm:top-auto">
+        <div
+          ref={heroRef}
+          className="absolute mb-1 bottom-10 left-0 z-20 max-w-7xl p-2 text-sm font-semibold italic tracking-wider text-base-100 sm:bottom-0 sm:left-auto sm:right-0 sm:top-auto"
+        >
           #czolem_w_klawiature
         </div>
         <img
           src={heroImg}
           alt="Hero image"
-          className="z-10 sm:w-3/4 sm:-translate-x-16 md:w-3/4 lg:w-1/2 lg:translate-x-0"
+          className={`z-10 opacity-0 sm:w-3/4 sm:-translate-x-16 md:w-3/4 lg:w-1/2 lg:translate-x-0 ${isHeroInView && "animate-moveHeroFromLeft"}`}
         />
-        <div className="flex w-full select-none items-center justify-center bg-accent sm:absolute sm:right-4 sm:top-28 sm:w-[40%] sm:rounded-md sm:py-2 md:top-36 md:w-2/5 md:py-4 lg:mx-20 xl:mx-20 xl:px-10">
+        <div
+          className={`flex w-full items-center justify-center bg-accent sm:opacity-0 selection:bg-transparent selection:text-primary/90 sm:absolute sm:right-4 sm:top-28 sm:w-[40%] sm:rounded-md sm:py-2 md:top-36 md:w-2/5 md:py-4 lg:mx-20 xl:mx-20 xl:px-10 ${isHeroInView && "sm:animate-moveHumourToTop"}`}
+        >
           <div className="prose">
-            <h1
-              className="my-1 font-protest text-2xl uppercase sm:text-3xl lg:text-3xl xl:text-4xl"
-              ref={heroRef}
-            >
+            <h1 className="my-1 font-protest text-2xl uppercase sm:text-3xl lg:text-3xl xl:text-4xl">
               o <span className="sm:text-4xl xl:text-5xl">IT</span> z humorem.
             </h1>
           </div>

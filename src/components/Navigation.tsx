@@ -17,12 +17,13 @@ const Navigation = () => {
 
   useEffect(() => {
     const scrollableDiv = document.querySelector(".no-scrollbar");
-    scrollableDiv?.scrollTo({ top: 0, behavior: "smooth" });
+    const topScroll = pathname === "/" ? 0 : 300;
+    scrollableDiv?.scrollTo({ top: topScroll, behavior: "smooth" });
   }, [pathname]);
 
   return (
     <nav
-      className={`fixed ${(pathname.includes("blog") && !isBgDark) && "lg:bg-neutral/90 lg:pb-2"} z-50 w-full lg:absolute`}
+      className={`fixed ${pathname.includes("blog") && !isBgDark && "lg:bg-neutral/90 lg:pb-2"} z-50 w-full lg:absolute`}
     >
       <div className="mx-auto flex w-full max-w-7xl justify-end p-2">
         <div className="lg:hidden">

@@ -3,18 +3,26 @@ import { PostSubtitle, PostText } from "../components/index";
 const Post1 = () => {
   return (
     <div>
-      <PostSubtitle subtitle="Cześć" />
+      <PostSubtitle subtitle="Zastanówmy się chwilę jakie mamy metody w JavaScript" />
       <PostText
         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur unde
         at quasi cum distinctio rem similique debitis quod, autem obcaecati.
         Corrupti, laborum temporibus eos iste excepturi laudantium. Cum, ipsam1"
       />
-
-      <div className="mockup-code w-4/5 justify-self-center bg-primary text-neutral">
-        <code className="ml-4">
-          const x = [23+23] Lorem, ipsum dolor sit amet consecte
-        </code>
+      <PostSubtitle subtitle="Mamy metody destrukcyjne i niedestrukcyjne" />
+      <PostText text="W skróce te pierwsze rozpierdzielają nam tablicę, na której pracujemy a te drugie nie. Trzeba wiedzieć więc które to które." />
+      <div className="mockup-code w-full justify-self-center bg-primary text-neutral md:w-1/2">
+        <pre>
+          <code>
+            console.log('ninja') <span className="text-neutral/50">//ninja</span>
+          </code>
+        </pre>
       </div>
+      <PostText
+        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur unde
+        at quasi cum distinctio rem similique debitis quod, autem obcaecati.
+        Corrupti, laborum temporibus eos iste excepturi laudantium. Cum, ipsam1"
+      />
     </div>
   );
 };
