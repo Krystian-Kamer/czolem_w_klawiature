@@ -41,7 +41,9 @@ const PhoneContent = () => {
 
   return (
     <>
-      <div className={`mockup-phone hidden self-center border-neutral/50 drop-shadow-[20px_20px_10px_rgba(0,0,0,0.6)] md:block ${isSectionFourInView && 'animate-moveHeroFromLeft'}`}>
+      <div
+        className={`mockup-phone hidden self-center border-neutral/50 drop-shadow-[20px_20px_10px_rgba(0,0,0,0.6)] md:block ${isSectionFourInView && "animate-moveHeroFromLeft"}`}
+      >
         <div className="camera"></div>
         <div className="display">
           <div className="no-scrollbar artboard artboard-demo phone-1 relative hidden touch-pan-y overflow-y-scroll bg-gradient-to-b from-lime-200 to-accent duration-500 selection:bg-secondary selection:text-neutral md:block">
@@ -211,26 +213,88 @@ const PhoneContent = () => {
                   );
                 })}
                 {isEveryQuestionAsked && (
-                  <div
-                    className="chat chat-end mb-20 animate-fadeIn px-2 opacity-0"
-                    style={{
-                      animationDelay: "4s",
-                    }}
-                  >
-                    <div className="avatar chat-image">
-                      <div className="w-10 rounded-full">
-                        <img
-                          alt="avatar image"
-                          className="scale-150"
-                          src={avatarImg}
-                        />
+                  <>
+                    <div
+                      className="chat chat-end animate-fadeIn px-2 opacity-0"
+                      style={{
+                        animationDelay: "6s",
+                      }}
+                    >
+                      <div className="avatar chat-image">
+                        <div className="w-10 rounded-full">
+                          <img
+                            alt="avatar image"
+                            className="scale-150"
+                            src={avatarImg}
+                          />
+                        </div>
+                      </div>
+                      <div className="chat-header text-secondary">Rekruter</div>
+                      <div className="chat-bubble text-lg">
+                        Dziękuję za rozmowę, odezwiemy się wkrótce.
                       </div>
                     </div>
-                    <div className="chat-header text-secondary">Rekruter</div>
-                    <div className="chat-bubble text-lg">
-                      Dziękuję za rozmowę, odezwiemy się wkrótce.
+                    <div
+                      className="chat chat-start animate-fadeIn px-2 opacity-0"
+                      style={{
+                        animationDelay: "8s",
+                      }}
+                    >
+                      <div className="avatar chat-image">
+                        <div className="w-10 rounded-full">
+                          <img
+                            alt="owner image"
+                            className="translate-x-1/2 translate-y-2 scale-[500%] bg-accent"
+                            src={heroImg}
+                          />
+                        </div>
+                      </div>
+                      <div className="chat-header mt-3 text-primary">
+                        Krystian Kamer
+                      </div>
+                      <div className="chat-bubble text-lg">
+                        Bardzo miło mi to słyszeć.
+                      </div>
                     </div>
-                  </div>
+                    <div
+                      className="chat chat-start mb-96 animate-fadeIn px-2 opacity-0"
+                      style={{
+                        animationDelay: "10s",
+                      }}
+                    >
+                      <div className="avatar chat-image">
+                        <div className="w-10 rounded-full">
+                          <img
+                            alt="owner image"
+                            className="translate-x-1/2 translate-y-2 scale-[500%] bg-accent"
+                            src={heroImg}
+                          />
+                        </div>
+                      </div>
+                      <div className="chat-header mt-3 text-primary">
+                        Krystian Kamer
+                      </div>
+                      <div className="chat-bubble text-lg">
+                        W razie co mój numer telefonu to
+                        <a
+                          className="cursor-custom-pointer text-blue-700"
+                          href="tel:666660128"
+                        >
+                          {" "}
+                          666-660-128{" "}
+                        </a>
+                        a email
+                        <a
+                          className="cursor-custom-pointer text-blue-700"
+                          href="mailto:texen24@gmail.com"
+                        >
+                          {" "}
+                          texen24@gmail.com
+                        </a>
+                        .
+                      </div>
+                    </div>
+                  </>
                 )}
               </>
             )}
@@ -241,9 +305,9 @@ const PhoneContent = () => {
         className={`absolute hidden rounded-lg font-protest tracking-widest opacity-0 md:-bottom-40 tb:-bottom-56 ${isInvitationAccepted ? "flex-col opacity-100 md:flex md:w-full" : "md:hidden"} px-8 py-2 selection:bg-secondary`}
       >
         <div
-          className="mb-4 h-[1px] animate-fadeIn bg-accent/40 opacity-0"
+          className="mb-2 h-[1px] animate-fadeIn bg-accent/40 opacity-0"
           style={{
-            animationDelay: `10s`,
+            animationDelay: `9s`,
           }}
         ></div>
         <h3
@@ -267,7 +331,7 @@ const PhoneContent = () => {
                 } ${!isAsked ? ((id - 1) % 2 === 0 ? "hover:pl-2" : "hover:pr-2") : ""} `}
                 onClick={!isAsked ? () => askQuestion(id) : undefined}
                 style={{
-                  animationDelay: `${id + 11}s`,
+                  animationDelay: `${id + 10}s`,
                 }}
               >
                 {question}

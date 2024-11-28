@@ -7,7 +7,8 @@ import { skills } from "../data";
 import { useInView } from "react-intersection-observer";
 
 const Skills = () => {
-  const { sectionTwoRef, isSectionTwoInView } = useContext<ContextBgValue>(AppContext);
+  const { sectionTwoRef, isSectionTwoInView } =
+    useContext<ContextBgValue>(AppContext);
   const [totalSkills, setTotalSkill] = useState<Skill[]>(skills);
 
   const changeSkill = (id: string) => {
@@ -87,9 +88,7 @@ const Skills = () => {
 
       <div className="absolute bottom-0 right-16 hidden items-end md:left-1/3 md:flex lg:left-1/2 lg:w-1/2">
         <div className="relative">
-          <div
-            className="absolute left-1/2 animate-bounce-slower select-none rounded-full bg-ball-shape p-8 text-primary shadow-[0px_0px_50px_10px_rgba(255,211,105,0.5)] md:-top-10 lg:-top-20"
-          >
+          <div className="animate-levitate absolute left-1/2 select-none rounded-full bg-ball-shape p-8 text-primary shadow-[0px_0px_50px_10px_rgba(255,211,105,0.5)] md:-top-10 lg:-top-20">
             {totalSkills.map((skill) => {
               const { checked, icon, id } = skill;
               return <div key={id}>{checked && icon}</div>;
@@ -97,7 +96,8 @@ const Skills = () => {
           </div>
           <img
             src={handImg}
-            className={`lg:w-[700px]" alt="hand image -z-50 md:w-[400px] -mb-[600px] min-[800px]:w-[550px] ${isSectionTwoInView ? "animate-moveToTop" : 'animate-moveToBottom'}`}
+            alt="hand image"
+            className={`-z-50 -mb-[600px] md:w-[400px] min-[800px]:w-[550px] ${isSectionTwoInView ? "animate-moveToTop" : "animate-moveToBottom"}`}
           />
         </div>
       </div>

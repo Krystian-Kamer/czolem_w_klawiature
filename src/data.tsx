@@ -10,7 +10,7 @@ import {
   SiChessdotcom,
   SiReactquery,
 } from "react-icons/si";
-import { Skill, Recruitment } from "./types";
+import { Skill, Recruitment, ProjectType } from "./types";
 
 export const skills: Skill[] = [
   {
@@ -150,8 +150,53 @@ export const recruitment: Recruitment[] = [
   {
     id: 6,
     question: "Jake są twoje mocne strony?",
-    answer: "XXX",
+    answer:
+      "Uważam, że jest to zdolność do dogadania się z każdym. Ponadto, w sytuacji stresowej nie tracę pozytywnego myślenia. Słucham ze zrozumieniem i wyciągam wnioski.",
     isAsked: false,
     order: null,
+  },
+];
+
+export const projects: ProjectType[] = [
+  {
+    id: 1,
+    name: "Pickle Rick",
+    img: "img/pickle",
+    description:
+      "owego kursu na Udemy Samuraja. Git-a traktuję jak maszynę co cofania w czasie, która pozwala na zmianę przyszłości i przeniesienia ",
+    technology:
+      "React, TypeScript, React Router, Redux Toolkit, React Query, Tailwind, VITE, React Toastify",
+    github: "https://github.com/Krystian-Kamer/picklerick",
+    live: "https://picklerick-1sbq.vercel.app/",
+  },
+  {
+    id: 2,
+    name: "VID-X",
+    img: "img/pickle",
+    description:
+      "owego kursu na Udemy Samuraja. Git-a traktuję jak maszynę co cofania w czasie, która pozwala na zmianę przyszłości i przeniesienia ",
+    technology: "HTML, CSS, JavaScript",
+    github: "https://github.com/Krystian-Kamer/vid-x",
+    live: "https://vid-x.vercel.app/",
+  },
+  {
+    id: 3,
+    name: "Pentago",
+    img: "img/pickle",
+    description:
+      "owego kursu na Udemy Samuraja. Git-a traktuję jak maszynę co cofania w czasie, która pozwala na zmianę przyszłości i przeniesienia ",
+    technology: "React, CSS",
+    github: "https://github.com/Krystian-Kamer/pentago-game",
+    live: "https://pentago-eta.vercel.app/",
+  },
+  {
+    id: 4,
+    name: "Rachunki",
+    img: "img/pickle",
+    description:
+      "owego kursu na Udemy Samuraja. Git-a traktuję jak maszynę co cofania w czasie, która pozwala na zmianę przyszłości i przeniesienia ",
+    technology: "React, Tailwind",
+    github: "https://github.com/Krystian-Kamer/charges",
+    live: "https://charges.vercel.app/",
   },
 ];

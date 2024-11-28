@@ -9,15 +9,22 @@ const Waves = ({
   bgColor: string;
   lastChild: boolean;
 }) => {
+
+  let imgSrc;
+
+  if (!lastChild) {
+    if (bgColor === "bg-neutral") {
+      imgSrc = wavesDark;
+    } else if (bgColor === "bg-primary") {
+      imgSrc = wavesLight;
+    }
+  } else if (lastChild) {
+    imgSrc = wavesAccent;
+  }
+
   return (
-    <div className="animated-movement pointer-events-none absolute bottom-0 z-20 2xl:-bottom-8 overflow-hidden">
-      {lastChild ? (
-        <img src={wavesAccent} alt="accent waves" />
-      ) : bgColor === "bg-neutral" ? (
-        <img src={wavesDark} alt="dark waves" />
-      ) : (
-        <img src={wavesLight} alt="light waves" />
-      )}
+    <div className="animated-movement pointer-events-none absolute bottom-0 z-20 overflow-hidden 2xl:-bottom-8">
+      <img src={imgSrc} alt="waves" />
     </div>
   );
 };

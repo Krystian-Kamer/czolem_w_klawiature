@@ -36,6 +36,7 @@ export type Recruitment = {
   isAsked: boolean;
   order: null | number;
 };
+
 export type PostType = {
   id: string;
   title: string;
@@ -44,10 +45,15 @@ export type PostType = {
   text: string;
   date: string;
   post: JSX.Element;
-  category:
-    | "wszystko"
-    | "javascript"
-    | "typescript"
-    | "nauka programowania"
-    | "react";
+  category: string;
+};
+
+export type ProjectType = {
+  id: number;
+  name: string;
+  img: string;
+  description: string;
+  technology: string;
+  github: string;
+  live: string;
 };

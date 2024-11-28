@@ -25,7 +25,7 @@ const Landing = () => {
       id: "landing-4",
       children: <ForRecruiter />,
       bgColor: "bg-primary",
-      height: "h-[100vh]",
+      height: "h-screen",
       isLastChild: true
     },
   ];

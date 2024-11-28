@@ -47,9 +47,10 @@ const PostWrapper = () => {
                 {title}
               </p>
             </div>
-            <p className="text-lg leading-relaxed md:mt-4 lg:mb-10 lg:text-2xl">
+            <p className="text-lg text-secondary text-center leading-relaxed md:mt-4 lg:mb-10 lg:text-2xl">
               {text}
             </p>
+            <hr />
             {postComponent}
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { Hero, Navigation, Footer } from "./index";
+import { Hero, Navigation } from "./index";
 import { Outlet } from "react-router-dom";
 
 const HomeLayout = () => {
@@ -10,7 +10,6 @@ const HomeLayout = () => {
         <Hero />
       </div>
       <Outlet />
-      <Footer />
     </div>
   );
 };

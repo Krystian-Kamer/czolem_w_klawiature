@@ -4,10 +4,7 @@ import { useInView } from "react-intersection-observer";
 
 const PostPreview = ({ post }: { post: PostType }) => {
   const { id, title, imageSmall, imageBig, text, date, category } = post;
-  const { ref: postPreview, inView: isPostPreviewInView } = useInView({
-    triggerOnce: true,
-  });
-
+  const { ref: postPreview, inView: isPostPreviewInView } = useInView();
   const [day, month, year] = date.split(".");
 
   return (
