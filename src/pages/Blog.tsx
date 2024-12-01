@@ -1,10 +1,6 @@
 import { useState } from "react";
-import {
-  Section,
-  PostPreview,
-  PostCategories,
-  SectionTitle,
-} from "../components/index";
+import { Section, SectionTitle } from "../components/index";
+import { PostPreview, PostCategories } from "../components/blog/index";
 import { postsData } from "../posts-data";
 import { PostType } from "../types";
 
@@ -23,13 +19,13 @@ const Blog = () => {
           <div className="prose z-10">
             <SectionTitle title="Blog osobisty" />
           </div>
-          <div className="z-10 w-full text-primary/95 font-protest text-lg tracking-wide selection:bg-accent selection:text-secondary ph:text-xl md:w-4/5 md:text-2xl lg:text-3xl md:leading-relaxed md:tracking-wider lg:leading-relaxed lg:tracking-wider">
+          <div className="z-10 w-full font-protest text-lg tracking-wide text-primary/95 selection:bg-accent selection:text-secondary ph:text-xl md:w-4/5 md:text-2xl md:leading-relaxed md:tracking-wider lg:text-3xl lg:leading-relaxed lg:tracking-wider">
             <h3 className="mb-5 md:mb-8 lg:mb-10">
               "Czołem w klawiaturę" powstało w celach stricte humorystycznych.
               Bez spiny sprawdzam dane zagadnienie i wyciągam wnioski. Wyznaję
               zasadę, że im prościej tym lepiej.
             </h3>
-            <h3 className="mb-2 hidden ph:flex md:mb-2  lg:mb-3">
+            <h3 className="mb-2 hidden ph:flex md:mb-2 lg:mb-3">
               Wybierz kategorię:
             </h3>
           </div>

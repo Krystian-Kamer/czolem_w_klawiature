@@ -1,4 +1,6 @@
-import { HomeLayout, Error, Landing, PostWrapper } from "./components/index";
+import { HomeLayout, Error } from "./components/index";
+import { Landing } from "./components/home/index";
+import { PostWrapper } from "./components/blog/index";
 import { Portfolio, Blog, Contact } from "./pages";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { createContext } from "react";

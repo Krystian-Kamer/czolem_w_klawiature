@@ -1,0 +1,1 @@
+export { default as Post1 } from "./Post1";

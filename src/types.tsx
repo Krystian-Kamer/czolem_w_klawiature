@@ -56,4 +56,6 @@ export type ProjectType = {
   technology: string;
   github: string;
   live: string;
+  mobileVideo: string;
+  desktopVideo: string;
 };

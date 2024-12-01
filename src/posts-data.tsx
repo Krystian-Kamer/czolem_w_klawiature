@@ -1,4 +1,4 @@
-import { Post1 } from "./post-pages/index";
+import { Post1 } from "./posts/index";
 import { PostType } from "./types";
 
 export const postsData: PostType[] = [
