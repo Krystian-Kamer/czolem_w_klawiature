@@ -61,7 +61,7 @@ const About = () => {
               {" "}
               blogiem
             </Link>
-            , na który będę wrzucał co każdy czwartek nowe posty.
+            , na który będę wrzucał co każdy poniedziałek nowe posty.
           </p>
         </div>
         <div className="absolute -bottom-10 -left-9 h-2/5 w-1/2 rotate-45 bg-accent sm:w-2/5 md:hidden"></div>

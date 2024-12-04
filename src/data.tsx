@@ -10,7 +10,12 @@ import {
   SiChessdotcom,
   SiReactquery,
 } from "react-icons/si";
-import { Skill, Recruitment, ProjectType } from "./types";
+import { BiSolidMovie } from "react-icons/bi";
+import { GiPickle, GiNotebook } from "react-icons/gi";
+import { FaBowlingBall, FaKeyboard } from "react-icons/fa";
+import { FaMoneyBill1Wave, FaTrashCan, FaLinkedin } from "react-icons/fa6";
+import { PiGithubLogoFill } from "react-icons/pi";
+import { Skill, Recruitment, ProjectType, IconType } from "./types";
 
 export const skills: Skill[] = [
   {
@@ -38,7 +43,7 @@ export const skills: Skill[] = [
       <SiCss3 className="p-2 md:h-20 md:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
-    text: "Stary dobry CSS. Podstawa do dalszego rozwoju. Ostylowaliśmy razem niejeden projekt, ale nasze drogi trochę się rozeszły. On wolał zostać na przedmieściach i karmić kaczki w jeziorze a ja wolałem wyruszyć w świat z przetartym plecakiem jak Włóczykij. Czasem mimochodem na siebie wpadniemy, pomachamy sobie z oddali i pójdziemy dalej, każdy w swoją stronę.",
+    text: "Stary dobry CSS. Podstawa do dalszego rozwoju. Ostylowaliśmy razem niejeden projekt, ale nasze drogi trochę się rozeszły. On wolał zostać na przedmieściach i karmić kaczki przy jeziorze a ja wolałem wyruszyć w świat z przetartym plecakiem jak Włóczykij. Czasem mimochodem na siebie wpadniemy, pomachamy sobie z oddali i pójdziemy dalej, każdy w swoją stronę.",
   },
   {
     name: "React",
@@ -56,7 +61,7 @@ export const skills: Skill[] = [
       <SiReactrouter className="p-2 md:h-20 md:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
-    text: "Powiem szczerze, że czekałem na to. Pisząc swoją pierwszą stronę w JS (wyszukiwarkę filmów) zauważyłem, że po kliknięciu w button przeładowuje mi całą stronę, a fetchowanie danych nie angażuje paska u góry. Bardzo to spowalniało przeładowywanie strony. React w połączeniu z React Router rozwiazuje ten problem. Tool ten działa bardzo intuicyjnie.",
+    text: "Szczerze, czekałem na to. Pisząc swoją pierwszą stronę w JS (wyszukiwarkę filmów) zauważyłem, że po kliknięciu w button przeładowuje mi całą stronę, a fetchowanie danych nie angażuje paska u góry. Bardzo to spowalnia przeładowywanie strony. React w połączeniu z React Router rozwiazuje ten problem.",
   },
 
   {
@@ -66,7 +71,7 @@ export const skills: Skill[] = [
       <SiTypescript className="p-2 md:h-20 md:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
-    text: "TypeScript. Kiedyś w nielicznych ofertach o pracę potrzebny, dziś jest to must-have. W sumie to się nie dziwię. Pomaga dostrzec problemy w czasie rzeczywistym, co jest jego najlepszą zaletą. Jednak jest z nim czasem jak ze związkiem. Czasem mnie wnerwia, bo nie wiem o co mu chodzi, ale jakoś się dogadujemy. Ja robię to czego on chce a on przestaje narzekać. Synergia zachowana.",
+    text: "Kiedyś w nielicznych ofertach o pracę potrzebny, dziś jest to must-have. W sumie to się nie dziwię. Pomaga dostrzec problemy w czasie rzeczywistym, co jest jego najlepszą zaletą. Chociaż jest z nim jak ze związkiem. Czasem mnie wnerwia, bo nie wiem o co mu chodzi, ale jakoś się dogadujemy. Ja robię to czego on chce a on przestaje narzekać. Synergia zachowana.",
   },
   {
     name: "Redux Toolkit",
@@ -93,7 +98,7 @@ export const skills: Skill[] = [
       <SiReactquery className="p-2 md:h-20 md:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
-    text: "Ciężko samemu zdefiniować co to jest, ale jest to bardzo przydatne. W skrócie przyspiesza działanie strony i zapewnia prostą obsługę ściągniętych danych. Przez to, że zapamiętuje ściągnięte dane nie ma konieczności ponownego ich fetchowania. Przydatne też, gdy chcemy zrobić infinite scroll, jak w Instagramie, Facebooku, czy w mojej apce Pickle Rick (znajdź na blogu).",
+    text: "Przyspiesza działanie strony i zapewnia prostą obsługę ściągniętych danych. Przez to, że zapamiętuje ściągnięte dane nie ma konieczności ponownego ich fetchowania. Przydatne też, gdy chcemy zrobić infinite scroll, jak w Instagramie czy Facebooku.",
   },
   {
     name: "Pozostałe",
@@ -102,7 +107,7 @@ export const skills: Skill[] = [
       <SiChessdotcom className="p-2 md:h-20 md:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
-    text: "Gita uczyłem się z kursu na Youtube Hello Romana oraz z darmowego kursu na Udemy Samuraja. Git-a traktuję jak maszynę co cofania w czasie, która pozwala na zmianę przyszłości i przeniesienia się na inną gałąź multiversum. Liznąłem jeszcze bootstrapa, scss, styled components, BEM, firebase, daisyUI (z którego korzystam w tym projekcie), react toastify.",
+    text: "Gita uczyłem się z kursu na Youtube Hello Romana oraz z darmowego kursu na Udemy Samuraja. Liznąłem jeszcze bootstrapa, scss, styled components, BEM, firebase, daisyUI (z którego korzystam w tym projekcie), react toastify.",
   },
 ];
 
@@ -206,5 +211,60 @@ export const projects: ProjectType[] = [
     live: "https://charges.vercel.app/",
     mobileVideo: "/portfolio-assets/rachunki phone.mp4",
     desktopVideo: "/portfolio-assets/rachunki desktop.mp4",
+  },
+];
+
+export const desktopIcons: IconType[] = [
+  {
+    id: 1,
+    name: "pickle rick",
+    icon: <GiPickle />,
+    focus: "focus:text-lime-700",
+  },
+  {
+    id: 2,
+    name: "vid-X",
+    icon: <BiSolidMovie />,
+    focus: "focus:text-red-900",
+  },
+  {
+    id: 3,
+    name: "pentago",
+    icon: <FaBowlingBall />,
+    focus: "focus:text-violet-800",
+  },
+  {
+    id: 4,
+    name: "rachunki",
+    icon: <FaMoneyBill1Wave />,
+    focus: "focus:text-lime-900",
+  },
+  {
+    id: 5,
+    name: "notatnik",
+    icon: <GiNotebook />,
+    focus: "focus:text-amber-800",
+  },
+  { id: 6, name: "kosz", icon: <FaTrashCan />, focus: "focus:text-gray-500" },
+  {
+    id: 7,
+    name: "github",
+    icon: <PiGithubLogoFill />,
+    focus: "focus:text-emerald-700",
+    href: "https://github.com/Krystian-Kamer",
+  },
+  {
+    id: 8,
+    name: "linkedIn",
+    icon: <FaLinkedin />,
+    focus: "focus:text-blue-600",
+    href: "https://www.linkedin.com/in/krystian-kamer-0aa148279/",
+  },
+  {
+    id: 8,
+    name: "blog",
+    icon: <FaKeyboard />,
+    focus: "focus:text-gray-600",
+    to: "/blog",
   },
 ];

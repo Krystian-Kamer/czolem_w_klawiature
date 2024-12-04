@@ -12,11 +12,11 @@ const Contact = () => {
           <div className="prose">
             <SectionTitle title="Kontakt" />
           </div>
-          <form className="md:mt- prose flex h-[60vh] w-full flex-col justify-around self-center border-4 border-dashed border-primary bg-accent p-8 md:w-4/5 md:border-8 lg:w-1/2">
-            <h1 className="text-lg uppercase text-primary lg:text-2xl">
+          <form className="prose flex h-[60vh] w-full flex-col justify-around self-center border-[6px] lg:border-8 border-dashed border-primary bg-accent px-4 py-2 md:w-3/5 md:border-8 lg:w-1/2 lg:p-8">
+            <h1 className="mt-1 ph:mt-2 ph:text-xl text-lg uppercase text-primary lg:text-2xl">
               Pogadajmy
             </h1>
-            <label className="input flex items-center gap-2 rounded-none bg-neutral font-protest text-lg tracking-wider focus:outline-none focus:ring-fuchsia-400">
+            <label className="input my-1 flex items-center gap-2 rounded-none bg-neutral font-protest text-sm tracking-wider ph:text-base lg:text-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
@@ -28,7 +28,7 @@ const Contact = () => {
               <input type="text" className="grow" placeholder="Imię" />
             </label>
 
-            <label className="input flex items-center gap-2 rounded-none bg-neutral font-protest text-lg tracking-wider focus:outline-none">
+            <label className="input my-1 flex items-center gap-2 rounded-none bg-neutral font-protest text-sm tracking-wider ph:text-base lg:text-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
@@ -45,16 +45,16 @@ const Contact = () => {
               />
             </label>
             <textarea
-              className="textarea h-[30vh] w-full resize-none rounded-none bg-neutral font-protest text-lg tracking-wider"
+              className="textarea my-1 h-[30vh] w-full resize-none rounded-none bg-neutral font-protest text-sm tracking-wider ph:text-base lg:text-lg"
               placeholder="O czym chciałbyś pogadać?"
             ></textarea>
             <div className="flex items-center justify-between">
-              <p className="font-protest text-xl tracking-wider text-primary">
+              <p className="font-protest text-sm tracking-wider text-primary ph:text-base lg:text-xl">
                 Uzupełnij wszystkie pola!
               </p>
               <button
                 type="submit"
-                className="cursor-custom-pointer rounded-sm border-4 border-primary bg-primary px-10 py-2 font-protest text-xl uppercase tracking-widest text-accent duration-700 hover:bg-accent hover:text-primary"
+                className="cursor-custom-pointer rounded-sm border-4 border-primary bg-primary px-4 py-1 font-protest ph:px-6 uppercase tracking-widest text-accent duration-300 hover:bg-accent hover:text-primary lg:px-10 lg:py-2 lg:text-xl"
               >
                 Prześlij
               </button>

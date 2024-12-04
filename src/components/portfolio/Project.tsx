@@ -69,7 +69,6 @@ const Project = ({ project }: { project: ProjectType }) => {
         </div>
         <div className="relative w-full">
           <video src={mobileVideo} autoPlay loop muted></video>
-
           <button
             className="cursor-custom-pointer badge badge-accent absolute bottom-6 left-1/2 -translate-x-1/2 capitalize"
             onClick={() => setIsVideoVisible(false)}

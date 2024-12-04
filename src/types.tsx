@@ -59,3 +59,12 @@ export type ProjectType = {
   mobileVideo: string;
   desktopVideo: string;
 };
+
+export type IconType = {
+  id: number;
+  name: string;
+  icon: JSX.Element;
+  focus: string;
+  href?: string;
+  to?: string;
+};

@@ -8,7 +8,7 @@ export const postsData: PostType[] = [
     post: <Post1 />,
     imageSmall: "/post-assets/post-1-small.jpg",
     imageBig: "/post-assets/post-1-big.jpeg",
-    text: "Jest to pierwszy post prezentujący moją osobę. Kim jestem, dokąd zmierzam, czemu rozpocząłem prowadzenie bloga? Zapraszam.",
+    text: "Jest to pierwszy post prezentujący moją osobę. Kim jestem, dokąd zmierzam i dlaczego rozpocząłem prowadzenie bloga? Zapraszam.",
     date: "21.11.24",
     category: "rozkminy",
   },
