@@ -14,8 +14,9 @@ import { BiSolidMovie } from "react-icons/bi";
 import { GiPickle, GiNotebook } from "react-icons/gi";
 import { FaBowlingBall, FaKeyboard } from "react-icons/fa";
 import { FaMoneyBill1Wave, FaTrashCan, FaLinkedin } from "react-icons/fa6";
+import { LuListTodo } from "react-icons/lu";
 import { PiGithubLogoFill } from "react-icons/pi";
-import { Skill, Recruitment, ProjectType, IconType } from "./types";
+import { Skill, Recruitment, ProjectType, FileType } from "./types";
 
 export const skills: Skill[] = [
   {
@@ -214,7 +215,7 @@ export const projects: ProjectType[] = [
   },
 ];
 
-export const desktopIcons: IconType[] = [
+export const desktopFiles: FileType[] = [
   {
     id: 1,
     name: "pickle rick",
@@ -223,7 +224,7 @@ export const desktopIcons: IconType[] = [
   },
   {
     id: 2,
-    name: "vid-X",
+    name: "vid-x",
     icon: <BiSolidMovie />,
     focus: "focus:text-red-900",
   },
@@ -261,10 +262,17 @@ export const desktopIcons: IconType[] = [
     href: "https://www.linkedin.com/in/krystian-kamer-0aa148279/",
   },
   {
-    id: 8,
+    id: 9,
     name: "blog",
     icon: <FaKeyboard />,
     focus: "focus:text-gray-600",
+    to: "/blog",
+  },
+  {
+    id: 10,
+    name: "to-do",
+    icon: <LuListTodo />,
+    focus: "focus:text-red-600",
     to: "/blog",
   },
 ];

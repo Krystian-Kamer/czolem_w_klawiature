@@ -18,6 +18,7 @@ const Navigation = () => {
   useEffect(() => {
     const scrollableDiv = document.querySelector(".no-scrollbar");
     scrollableDiv?.scrollTo({ top: pathname==='/' ? 0 : 300, behavior: "smooth" });
+    
   }, [pathname]);
 
   return (

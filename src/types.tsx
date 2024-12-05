@@ -60,7 +60,7 @@ export type ProjectType = {
   desktopVideo: string;
 };
 
-export type IconType = {
+export type FileType = {
   id: number;
   name: string;
   icon: JSX.Element;
