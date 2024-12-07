@@ -6,4 +6,3 @@ export { default as WindowProjectContent } from "./WindowProjectContent";
 export { default as WindowNotebookContent } from "./WindowNotebookContent";
 export { default as WindowToDoContent } from "./WindowToDoContent";
 export { default as WindowTrashContent } from "./WindowTrashContent";
-export { default as WindowHelloContent } from "./WindowHelloContent";

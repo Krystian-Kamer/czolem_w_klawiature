@@ -125,7 +125,7 @@ export const recruitment: Recruitment[] = [
     id: 2,
     question: "JAKIM ZWIERZĘCIEM JESTEŚ?",
     answer:
-      "A jednak mityczne pytanie padło! No dobrze, myślę, że jestem niedźwiedziem. Niedźwiedź kojarzony jest różnie - może być przytulaskowym misiem, groźnym grizzly, chodzącym w swoje strony niedźwiadkiem. W zależności od kontekstu jestem jednym z nich 🐻.",
+      "A jednak mityczne pytanie padło! No dobrze, myślę, że jestem niedźwiedziem. Niedźwiedź kojarzony jest różnie - może być przyjacielskim misiem, groźnym grizzly, szukajacym miodu niedźwiadkiem. W zależności od kontekstu jestem jednym z nich 🐻.",
     isAsked: false,
     order: null,
   },

@@ -1,12 +1,20 @@
+import { useState } from "react";
+
 const WindowProjectContent = () => {
+  const [tabsState, setTabsState] = useState([true, false, false]);
+
   return (
     <div role="tablist" className="tabs rounded-none bg-neutral p-0">
       <input
         type="radio"
         name="my_tabs_2"
         role="tab"
-        className="tab my-1 text-base italic tracking-wider text-secondary"
+        className={`tab ${
+          tabsState[0] ? "rounded-box bg-base-100" : "my-1"
+        } text-base italic tracking-wider text-secondary`}
         aria-label="Opis"
+        checked={tabsState[0]}
+        onChange={() => setTabsState([true, false, false])}
       />
       <div
         role="tabpanel"
@@ -23,9 +31,12 @@ const WindowProjectContent = () => {
         type="radio"
         name="my_tabs_2"
         role="tab"
-        className="tab rounded-box bg-base-100 text-base italic tracking-wider text-secondary"
+        className={`tab ${
+          tabsState[1] ? "rounded-box bg-base-100" : "my-1"
+        } text-base italic tracking-wider text-secondary`}
         aria-label="Video"
-        defaultChecked
+        checked={tabsState[1]}
+        onChange={() => setTabsState([false, true, false])}
       />
       <div
         role="tabpanel"
@@ -38,8 +49,12 @@ const WindowProjectContent = () => {
         type="radio"
         name="my_tabs_2"
         role="tab"
-        className="tab my-1 text-base italic tracking-wider text-secondary"
+        className={`tab ${
+          tabsState[2] ? "rounded-box bg-base-100" : "my-1"
+        } text-base italic tracking-wider text-secondary`}
         aria-label="Technicznie"
+        checked={tabsState[2]}
+        onChange={() => setTabsState([false, false, true])}
       />
       <div
         role="tabpanel"
