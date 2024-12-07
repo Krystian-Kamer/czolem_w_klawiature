@@ -125,7 +125,7 @@ export const recruitment: Recruitment[] = [
     id: 2,
     question: "JAKIM ZWIERZĘCIEM JESTEŚ?",
     answer:
-      "A jednak mityczne pytanie padło! No dobrze, myślę, że jestem niedźwiedziem. Przemawia za tym postura. Z charakteru to jestem bardziej takim nieszkodliwym niedźwiadkiem z ZOO, chociaż jak mnie ktoś zdenerwuję to mogę być jak grizzly🐻. Może też jestem trochę pająkiem (ale takim sprytnym co to nie dostanie tak łatwo laćkiem), bo lubię siedzieć w webie...",
+      "A jednak mityczne pytanie padło! No dobrze, myślę, że jestem niedźwiedziem. Niedźwiedź kojarzony jest różnie - może być przytulaskowym misiem, groźnym grizzly, chodzącym w swoje strony niedźwiadkiem. W zależności od kontekstu jestem jednym z nich 🐻.",
     isAsked: false,
     order: null,
   },

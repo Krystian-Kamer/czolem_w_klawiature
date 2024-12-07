@@ -12,8 +12,13 @@ const Contact = () => {
           <div className="prose">
             <SectionTitle title="Kontakt" />
           </div>
-          <form className="prose flex h-[60vh] w-full flex-col justify-around self-center border-[6px] lg:border-8 border-dashed border-primary bg-accent px-4 py-2 md:w-3/5 md:border-8 lg:w-1/2 lg:p-8">
-            <h1 className="mt-1 ph:mt-2 ph:text-xl text-lg uppercase text-primary lg:text-2xl">
+          <form
+            className="prose flex h-[60vh] w-full flex-col justify-around self-center border-[6px] border-dashed border-primary bg-accent px-4 py-2 md:w-3/5 md:border-8 lg:w-1/2 lg:border-8 lg:p-8"
+            target="_blank"
+            action="https://formsubmit.co/6ee327a787b46a2edd4ee628298c9ecf"
+            method="POST"
+          >
+            <h1 className="mt-1 text-lg uppercase text-primary ph:mt-2 ph:text-xl lg:text-2xl">
               Pogadajmy
             </h1>
             <label className="input my-1 flex items-center gap-2 rounded-none bg-neutral font-protest text-sm tracking-wider ph:text-base lg:text-lg">
@@ -25,7 +30,12 @@ const Contact = () => {
               >
                 <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
               </svg>
-              <input type="text" className="grow" placeholder="Imię" />
+              <input
+                type="text"
+                className="grow"
+                placeholder="Imię"
+                name="name"
+              />
             </label>
 
             <label className="input my-1 flex items-center gap-2 rounded-none bg-neutral font-protest text-sm tracking-wider ph:text-base lg:text-lg">
@@ -42,19 +52,28 @@ const Contact = () => {
                 type="email"
                 className="grow border-none"
                 placeholder="Email"
+                name="email"
+                required
               />
             </label>
             <textarea
               className="textarea my-1 h-[30vh] w-full resize-none rounded-none bg-neutral font-protest text-sm tracking-wider ph:text-base lg:text-lg"
               placeholder="O czym chciałbyś pogadać?"
+              name="message"
             ></textarea>
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_autoresponse"
+              value="Dzięki za zostawienie wiadomości, na pewno się z nią zapoznam."
+            />
             <div className="flex items-center justify-between">
               <p className="font-protest text-sm tracking-wider text-primary ph:text-base lg:text-xl">
                 Uzupełnij wszystkie pola!
               </p>
               <button
                 type="submit"
-                className="cursor-custom-pointer rounded-sm border-4 border-primary bg-primary px-4 py-1 font-protest ph:px-6 uppercase tracking-widest text-accent duration-300 hover:bg-accent hover:text-primary lg:px-10 lg:py-2 lg:text-xl"
+                className="cursor-custom-pointer rounded-sm border-4 border-primary bg-primary px-4 py-1 font-protest uppercase tracking-widest text-accent duration-300 hover:bg-accent hover:text-primary ph:px-6 lg:px-10 lg:py-2 lg:text-xl"
               >
                 Prześlij
               </button>
