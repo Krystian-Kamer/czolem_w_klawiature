@@ -18,7 +18,7 @@ const Window = ({ windowContent, setIsWindowOpen }: WindowProps) => {
       case "vid-x":
       case "rachunki":
       case "pentago":
-        return <WindowProjectContent />;
+        return <WindowProjectContent project={windowContent} />;
       case "kosz":
         return <WindowTrashContent />;
       case "notatnik":

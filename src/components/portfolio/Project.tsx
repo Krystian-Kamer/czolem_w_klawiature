@@ -27,7 +27,7 @@ const Project = ({ project }: { project: ProjectType }) => {
             <img src={img} alt={name} className="h-full w-full opacity-[89%]" />
           </figure>
           <div className="card-body h-3/5 px-4 py-1 ph:py-4">
-            <h2 className="card-title font-bold tracking-wider">{name}</h2>
+            <h2 className="card-title capitalize font-bold tracking-wider">{name}</h2>
             <p
               className={`${description.length > 150 && "leading-5 ph:leading-normal"}`}
             >

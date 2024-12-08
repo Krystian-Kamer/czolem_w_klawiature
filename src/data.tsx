@@ -166,7 +166,7 @@ export const recruitment: Recruitment[] = [
 export const projects: ProjectType[] = [
   {
     id: 1,
-    name: "Pickle Rick",
+    name: "pickle rick",
     img: "/portfolio-assets/pickle_rick.png",
     description:
       "Aplikacja do przeglądania postaci, lokacji i odcinków z uniwersum Rick&Morty, postacie wyszukiwane po kryteriach, możliwość założenia konta i zalogowania. ",
@@ -176,10 +176,11 @@ export const projects: ProjectType[] = [
     live: "https://picklerick-1sbq.vercel.app/",
     mobileVideo: "/portfolio-assets/rick phone.mp4",
     desktopVideo: "/portfolio-assets/rick desktop.mp4",
+    thoughts: "/pomp4",
   },
   {
     id: 2,
-    name: "VID-X",
+    name: "vid-x",
     img: "/portfolio-assets/vid-x.png",
     description:
       "Wyszukiwarka filmów i seriali. Możliwość wyszukania filmu po nazwie, kategorii, z sortowaniem, możliwość dodania filmu do swojej biblioteki, z wykorzystaniem  localStorage. ",
@@ -188,10 +189,11 @@ export const projects: ProjectType[] = [
     live: "https://vid-x.vercel.app/",
     mobileVideo: "/portfolio-assets/vid-x phone.mp4",
     desktopVideo: "/portfolio-assets/vid-x desktop.mp4",
+    thoughts: "/portfo.mp4",
   },
   {
     id: 3,
-    name: "Pentago",
+    name: "pentago",
     img: "/portfolio-assets/pentago.png",
     description:
       "Jest to odwzorowanie gry Pentago, którą mam w domu (do grania z osobą towarzyszącą). Przypomina bardziej skomplikowane kółko i krzyżyk.",
@@ -200,10 +202,11 @@ export const projects: ProjectType[] = [
     live: "https://pentago-eta.vercel.app/",
     mobileVideo: "/portfolio-assets/pentago phone.mp4",
     desktopVideo: "/portfolio-assets/pentago desktop.mp4",
+    thoughts: "/portktop.mp4",
   },
   {
     id: 4,
-    name: "Rachunki",
+    name: "rachunki",
     img: "/portfolio-assets/charges.png",
     description:
       "Stworzyłem tę aplikację do zarządzania swoimi stałymi miesięcznymi wydatkami. Również korzysta z localStorage.",
@@ -212,6 +215,7 @@ export const projects: ProjectType[] = [
     live: "https://charges.vercel.app/",
     mobileVideo: "/portfolio-assets/rachunki phone.mp4",
     desktopVideo: "/portfolio-assets/rachunki desktop.mp4",
+    thoughts: "/portfolop.mp4",
   },
 ];
 

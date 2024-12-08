@@ -17,7 +17,7 @@ const Portfolio = () => {
     >
       <div>
         <div className="flex flex-col md:mt-14 lg:mx-8 lg:mt-20">
-          <div className="prose mx-8">
+          <div className="prose select-none mx-8">
             <SectionTitle title="Portfolio" />
           </div>
           <div className="slider-container lg:hidden">

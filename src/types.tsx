@@ -58,6 +58,7 @@ export type ProjectType = {
   live: string;
   mobileVideo: string;
   desktopVideo: string;
+  thoughts: string;
 };
 
 export type FileType = {
