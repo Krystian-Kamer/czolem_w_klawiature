@@ -17,6 +17,7 @@ import { FaMoneyBill1Wave, FaTrashCan, FaLinkedin } from "react-icons/fa6";
 import { LuListTodo } from "react-icons/lu";
 import { PiGithubLogoFill } from "react-icons/pi";
 import { Skill, Recruitment, ProjectType, FileType } from "./types";
+import { BsFillFileEarmarkPersonFill } from "react-icons/bs";
 
 export const skills: Skill[] = [
   {
@@ -278,5 +279,11 @@ export const desktopFiles: FileType[] = [
     icon: <LuListTodo />,
     focus: "focus:text-red-600",
     to: "/blog",
+  },
+  {
+    id: 11,
+    name: "CV",
+    icon: <BsFillFileEarmarkPersonFill />,
+    focus: "focus:text-emerald-600",
   },
 ];

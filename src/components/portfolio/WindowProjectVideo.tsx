@@ -1,3 +1,6 @@
+import { useEffect, useRef, useState } from "react";
+import { FaPause, FaPlay } from "react-icons/fa6";
+
 type ProjectProps = {
   desktopVideo: string;
   tabsState: boolean[];
@@ -9,6 +12,23 @@ const WindowProjectVideo = ({
   tabsState,
   setTabsState,
 }: ProjectProps) => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.play();
+      } else {
+        videoRef.current.pause();
+      }
+    }
+  }, [isPlaying]);
+
+  useEffect(() => {
+    setIsPlaying(false);
+  }, [desktopVideo]);
+
   return (
     <>
       <input
@@ -24,9 +44,26 @@ const WindowProjectVideo = ({
       />
       <div
         role="tabpanel"
-        className="tab-content min-h-[500px] border-base-200 bg-base-100 p-10 text-2xl"
+        className="group tab-content relative h-fit overflow-hidden border-base-200 bg-base-100"
       >
-        <video src={desktopVideo}></video>
+        <video
+          ref={videoRef}
+          src={desktopVideo}
+          className={`${!isPlaying && "scale-125 saturate-50"} w-full duration-500`}
+          muted
+          loop
+        ></video>
+
+        <button
+          onClick={() => setIsPlaying(!isPlaying)}
+          className="cursor-custom-pointer absolute left-1/2 top-1/2 mt-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent p-8 text-6xl text-secondary opacity-0 duration-200 group-hover:opacity-100"
+        >
+          {isPlaying ? (
+            <FaPause className="pointer-events-none" />
+          ) : (
+            <FaPlay className="pointer-events-none" />
+          )}
+        </button>
       </div>
     </>
   );

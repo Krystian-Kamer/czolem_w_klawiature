@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import { RiDragDropLine } from "react-icons/ri";
-
+import pdfCvFile from "../../assets/Krystian Kamer CV.pdf";
 type FileProps = {
   file: FileType;
   setIsWindowOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -86,6 +86,14 @@ const File = ({ file, setIsWindowOpen, setWindowContent }: FileProps) => {
               >
                 Otwórz
               </Link>
+            ) : name === "CV" ? (
+              <a
+                href={pdfCvFile}
+                download="krystian-kamer-cv.pdf"
+                className="cursor-custom rounded-md px-2 py-2 text-start text-base hover:bg-accent/80"
+              >
+                Pobierz
+              </a>
             ) : (
               <button
                 className="cursor-custom rounded-md px-2 py-2 text-start text-base hover:bg-accent/80"
@@ -98,7 +106,6 @@ const File = ({ file, setIsWindowOpen, setWindowContent }: FileProps) => {
                 Otwórz
               </button>
             )}
-
             <button
               className="cursor-custom rounded-md px-2 py-2 text-start text-base hover:bg-accent/80"
               onClick={() => {
@@ -127,4 +134,5 @@ const File = ({ file, setIsWindowOpen, setWindowContent }: FileProps) => {
     </div>
   );
 };
+
 export default File;

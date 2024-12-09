@@ -13,7 +13,6 @@ const WindowProjectDescription = ({
   tabsState,
   setTabsState,
 }: ProjectProps) => {
-
   return (
     <>
       <input
@@ -29,11 +28,19 @@ const WindowProjectDescription = ({
       />
       <div
         role="tabpanel"
-        className="tab-content min-h-[500px] border-base-200 bg-base-100 p-10 text-2xl"
+        className="tab-content min-h-[450px] border-base-200 bg-base-100 p-10 text-2xl"
       >
-        <p>{name}</p>
-        <p>{description}</p>
-        <img src={img} alt="" />
+        <div className="flex gap-x-6">
+          <div className="prose self-center w-1/2">
+            <h2 className="text-4xl uppercase tracking-widest">{name}</h2>
+            <p className="text-2xl">{description}</p>
+          </div>
+          <img
+            src={img}
+            alt="project image"
+            className="w-1/2 border-4 border-dotted border-primary"
+          />
+        </div>
       </div>
     </>
   );
