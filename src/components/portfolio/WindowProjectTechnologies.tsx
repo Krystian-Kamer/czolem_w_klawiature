@@ -1,5 +1,5 @@
 type ProjectProps = {
-  technology : string,
+  technology: string;
   tabsState: boolean[];
   setTabsState: React.Dispatch<React.SetStateAction<boolean[]>>;
 };
@@ -9,6 +9,8 @@ const WindowProjectTechnologies = ({
   tabsState,
   setTabsState,
 }: ProjectProps) => {
+  const technologies = technology.split(",");
+
   return (
     <>
       <input
@@ -20,13 +22,24 @@ const WindowProjectTechnologies = ({
         } text-base italic tracking-wider text-secondary`}
         aria-label="Technicznie"
         checked={tabsState[2]}
-        onChange={() => setTabsState([false, false, true, false, false])}
+        onChange={() => setTabsState([false, false, true, false])}
       />
       <div
         role="tabpanel"
-        className="tab-content min-h-[500px] border-base-200 bg-base-100 p-10 text-2xl"
+        className="tab-content min-h-[450px] border-base-200 bg-base-100 p-10 text-2xl"
       >
-        {technology}
+        <div className="flex flex-wrap gap-4">
+          {technologies.map((tech) => {
+            return (
+              <div
+                key={tech}
+                className="rounded-badge bg-primary px-7 py-3 text-neutral hover:bg-secondary duration-700 "
+              >
+                {tech}
+              </div>
+            );
+          })}
+        </div>
       </div>
     </>
   );

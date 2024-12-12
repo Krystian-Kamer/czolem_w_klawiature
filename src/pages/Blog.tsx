@@ -21,9 +21,8 @@ const Blog = () => {
           </div>
           <div className="z-10 w-full font-protest text-lg tracking-wide text-primary/95 selection:bg-accent selection:text-secondary ph:text-xl md:w-4/5 md:text-2xl md:leading-relaxed md:tracking-wider lg:text-3xl lg:leading-relaxed lg:tracking-wider">
             <h3 className="mb-5 md:mb-8 lg:mb-10">
-              "Czołem w klawiaturę" powstało w celach edukacyjnych i
-              humorystycznych. Bez spiny sprawdzam dane zagadnienie i wyciągam
-              wnioski. Wyznaję zasadę, że im prościej tym lepiej.
+              <span className="bg-accent/30 border-b-4 border-accent">"Czołem w klawiaturę"</span> powstało w celach edukacyjnych
+              i humorystycznych. Na spokojnie sprawdzam dane zagadnienie i wyciągam wnioski. Wyznaję zasadę, że im prościej tym lepiej.
             </h3>
             <h3 className="mb-2 hidden ph:flex md:mb-2 lg:mb-3">
               Wybierz kategorię:

@@ -177,7 +177,8 @@ export const projects: ProjectType[] = [
     live: "https://picklerick-1sbq.vercel.app/",
     mobileVideo: "/portfolio-assets/rick phone.mp4",
     desktopVideo: "/portfolio-assets/rick desktop.mp4",
-    thoughts: "/pomp4",
+    thoughts:
+      "Największy mój projekt jak do tej pory (nie licząc bloga). Stałem się bardziej świadomy React Query i React Router. Dodatkowo zrobiłem Infinite Scroll, tak jak w Facebooku i Instagramie, z czego jestem zadowolony. Jeśli chodzi o strukturę plików to aplikacja jest bardzo przyjazna, tzn. łatwo można się będzie w niej odnaleźć. Po czasie stwierdzam, że brak w projekcie animacji ożywiających stronę sprawia, że jest ona zdziebko nudna.",
   },
   {
     id: 2,
@@ -190,7 +191,7 @@ export const projects: ProjectType[] = [
     live: "https://vid-x.vercel.app/",
     mobileVideo: "/portfolio-assets/vid-x phone.mp4",
     desktopVideo: "/portfolio-assets/vid-x desktop.mp4",
-    thoughts: "/portfo.mp4",
+    thoughts: "Mój pierwszy samodzielny projekt. Gdy go ukończyłem, byłem z jego wyglądu bardzo zadowolony. Dodałem bardzo dużo funkcjonalności i wszystko działało! Rzecz w tym, że praktycznie wszystko jest zależne od czegoś, większość kodu znajduje się w jednym pliku. Patrząc z perspektywy utrzymania tego, byłaby to katorga. Projekt nauczył mnie tego, że im mniej wzajemnych zależności tym lepiej oraz że podział na mniejsze klocki, jak to jest w Reakcie, naprawdę robi robotę.",
   },
   {
     id: 3,
@@ -203,7 +204,7 @@ export const projects: ProjectType[] = [
     live: "https://pentago-eta.vercel.app/",
     mobileVideo: "/portfolio-assets/pentago phone.mp4",
     desktopVideo: "/portfolio-assets/pentago desktop.mp4",
-    thoughts: "/portktop.mp4",
+    thoughts: "Bardzo lubię gry planszowe. Zawsze myślałem, że jakąś stworzę (może jeszcze będzie okazja). Odkąd zacząłem uczyć się JavaScript-u chciałem odwzorować grę Pentago i udało mi się. To co był zmienił to zarządzaniem stanem, bo w Projekcie używam Reactowego Contextu a mógłbym użyć czegoś co bardziej odpowiada. Większą uważność przykułbym też do strony wizualnej. Niemniej jestem zadowolony, że spełniłem swoje marzenie o odwzorowaniu mechaniki gry.",
   },
   {
     id: 4,
@@ -216,7 +217,7 @@ export const projects: ProjectType[] = [
     live: "https://charges.vercel.app/",
     mobileVideo: "/portfolio-assets/rachunki phone.mp4",
     desktopVideo: "/portfolio-assets/rachunki desktop.mp4",
-    thoughts: "/portfolop.mp4",
+    thoughts: "Pierwszy projekt, który miał mi posłużyć na dłużej i tak było... przez jakiś czas, do czasu aż nie przerzuciłem się na kalendarz, w którym wszystko obecnie zapisuję. Pomyślałem, że skoro to będzie prosty projekt to wystarczy posłużyć się przekazywaniem propsów w dół. Zrobiła się z tego wielka Podróż do Wnętrza Ziemi. Nie polecam. Projekt nauczył mnie tego, by wpierw pomyśleć o architekturze, to znaczy o tym co tak na prawdę chcę osiągnąć.",
   },
 ];
 

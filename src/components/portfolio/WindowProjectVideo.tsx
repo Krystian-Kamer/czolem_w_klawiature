@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { FaPause, FaPlay } from "react-icons/fa6";
 
 type ProjectProps = {
@@ -15,19 +15,18 @@ const WindowProjectVideo = ({
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
-  useEffect(() => {
-    if (videoRef.current) {
-      if (isPlaying) {
-        videoRef.current.play();
-      } else {
-        videoRef.current.pause();
-      }
+const handlePlaying = () => {
+  if (videoRef.current) {
+    if (isPlaying) {
+      videoRef.current.pause();
+      setIsPlaying(false);
+    } else {
+      videoRef.current.play();
+      setIsPlaying(true);
     }
-  }, [isPlaying]);
+  }
+};
 
-  useEffect(() => {
-    setIsPlaying(false);
-  }, [desktopVideo]);
 
   return (
     <>
@@ -40,7 +39,7 @@ const WindowProjectVideo = ({
         } text-base italic tracking-wider text-secondary`}
         aria-label="Video"
         checked={tabsState[1]}
-        onChange={() => setTabsState([false, true, false, false, false])}
+        onChange={() => setTabsState([false, true, false, false])}
       />
       <div
         role="tabpanel"
@@ -55,8 +54,8 @@ const WindowProjectVideo = ({
         ></video>
 
         <button
-          onClick={() => setIsPlaying(!isPlaying)}
-          className="cursor-custom-pointer absolute left-1/2 top-1/2 mt-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent p-8 text-6xl text-secondary opacity-0 duration-200 group-hover:opacity-100"
+          onClick={handlePlaying}
+          className="cursor-custom-pointer absolute left-1/2 top-1/2 mt-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent p-8 text-6xl text-secondary opacity-0 duration-200 group-hover:opacity-50 group-hover:hover:opacity-100"
         >
           {isPlaying ? (
             <FaPause className="pointer-events-none" />

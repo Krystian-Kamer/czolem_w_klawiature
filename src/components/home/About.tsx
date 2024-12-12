@@ -5,6 +5,7 @@ import { useContext, useEffect, useState } from "react";
 import { ContextBgValue } from "../../types";
 import { AppContext } from "../../App";
 import { Link } from "react-router-dom";
+import { Typewriter } from "react-simple-typewriter";
 
 const About = () => {
   const { isHeroInView, isSectionTwoInView } =
@@ -34,15 +35,22 @@ const About = () => {
             Z tej strony Krystian Kamer.
           </h2>
           <h3 className="text-xl text-primary sm:text-2xl">
-            Jestem{" "}
-            <div
-              className="tooltip tooltip-accent"
-              data-tip="na początku kariery"
-            >
-              <span className="underline"> Frontend Developerem.</span>
+            <div className="w-fit rounded-md border-accent">
+              Jestem{" "}
+              <Typewriter
+                loop={2}
+                cursor
+                delaySpeed={700}
+                words={[
+                  "kreatywny.",
+                  "na etapie przebranżawiania.",
+                  "gotowy na nieznane!",
+                  "Frontend Developerem.",
+                ]}
+              />
             </div>
           </h3>
-          <p className="text-lg text-primary ph:text-xl ph:leading-relaxed sm:text-2xl md:pt-10 md:leading-loose">
+          <p className="text-lg text-primary ph:text-xl ph:leading-relaxed sm:text-2xl md:pt-6 md:leading-loose">
             Nie lubię nudy. Jeśli jesteś na tej stronie to oznacza, że chcesz
             nauczyć się czegoś nowego i wartościowego. Ta stronka to połączenie
             mojego{" "}

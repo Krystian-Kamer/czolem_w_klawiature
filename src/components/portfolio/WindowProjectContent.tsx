@@ -3,20 +3,15 @@ import {
   WindowProjectDescription,
   WindowProjectVideo,
   WindowProjectTechnologies,
-  WindowProjectLinks,
   WindowProjectThoughts,
 } from "./index";
 import { projects } from "../../data";
 import { ProjectType } from "../../types";
 
-const WindowProjectContent = ({
-  project: projectName,
-}: {
-  project: string;
-}) => {
+const WindowProjectContent = ({project: projectName}: {
+  project: string}) => {
   const [tabsState, setTabsState] = useState([
     true,
-    false,
     false,
     false,
     false,
@@ -43,6 +38,8 @@ const WindowProjectContent = ({
         name={name}
         img={img}
         description={description}
+        live={live}
+        github={github}
         tabsState={tabsState}
         setTabsState={setTabsState}
       />
@@ -53,12 +50,6 @@ const WindowProjectContent = ({
       />
       <WindowProjectTechnologies
         technology={technology}
-        tabsState={tabsState}
-        setTabsState={setTabsState}
-      />
-      <WindowProjectLinks
-        live={live}
-        github={github}
         tabsState={tabsState}
         setTabsState={setTabsState}
       />

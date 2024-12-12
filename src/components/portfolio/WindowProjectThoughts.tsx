@@ -1,3 +1,5 @@
+import { Typewriter } from "react-simple-typewriter";
+
 type ProjectProps = {
   thoughts: string;
   tabsState: boolean[];
@@ -9,6 +11,8 @@ const WindowProjectThoughts = ({
   tabsState,
   setTabsState,
 }: ProjectProps) => {
+
+
   return (
     <>
       <input
@@ -20,13 +24,20 @@ const WindowProjectThoughts = ({
         } text-base italic tracking-wider text-secondary`}
         aria-label="Przemyślenia"
         checked={tabsState[4]}
-        onChange={() => setTabsState([false, false, false, false, true])}
+        onChange={() => setTabsState([false, false, false, true])}
       />
       <div
         role="tabpanel"
-        className="tab-content min-h-[500px] border-base-200 bg-base-100 p-10 text-2xl"
+        className="tab-content h-[450px] border-base-200 bg-base-100 p-10"
       >
-        {thoughts}
+        <div className="flex h-full flex-col justify-between px-16 text-xl">
+          <p className="pt-5 text-2xl">
+            <Typewriter cursor words={[thoughts]} />
+          </p>
+          <p className="select-none self-center italic text-secondary/40">
+            Każdy projekt sprawia, że staję się lepszy i się rozwijam.
+          </p>
+        </div>
       </div>
     </>
   );

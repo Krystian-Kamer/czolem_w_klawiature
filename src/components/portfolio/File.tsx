@@ -20,6 +20,7 @@ const File = ({ file, setIsWindowOpen, setWindowContent }: FileProps) => {
 
   const { attributes, listeners, setNodeRef, transform, transition } =
     useSortable({ id });
+
   const style = { transform: CSS.Transform.toString(transform), transition };
 
   const handleRenameClick = () => {
@@ -98,9 +99,10 @@ const File = ({ file, setIsWindowOpen, setWindowContent }: FileProps) => {
               <button
                 className="cursor-custom rounded-md px-2 py-2 text-start text-base hover:bg-accent/80"
                 onClick={() => {
-                  setIsWindowOpen(true);
+                  setIsWindowOpen(false);
                   setIsDropdownOpen(false);
                   setWindowContent(name);
+                  setTimeout(() => setIsWindowOpen(true), 0);
                 }}
               >
                 Otwórz
