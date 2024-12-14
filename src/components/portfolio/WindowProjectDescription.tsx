@@ -36,11 +36,11 @@ const WindowProjectDescription = ({
       >
         <div className="flex gap-x-6">
           <div className="prose w-1/2 self-center">
-            <h2 className="text-4xl uppercase tracking-widest">{name}</h2>
-            <p className="text-2xl">{description}</p>
+            <h2 className="text-3xl lg:text-4xl capitalize font-protest tracking-widest">{name}</h2>
+            <p className="md:text-xl lg:text-2xl">{description}</p>
             <div className="flex w-full justify-center gap-x-8">
               <a
-                className="w-1/2 cursor-custom-pointer rounded-btn border-2 border-secondary bg-transparent py-2 text-center text-lg no-underline uppercase tracking-wider hover:bg-accent duration-300"
+                className="w-1/2 cursor-custom-pointer rounded-btn border-2 border-secondary bg-transparent py-2 text-center text-md lg:text-lg no-underline uppercase tracking-wider hover:bg-accent duration-300"
                 href={live}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -48,7 +48,7 @@ const WindowProjectDescription = ({
                 live
               </a>
               <a
-                className="w-1/2 cursor-custom-pointer rounded-btn border-2 border-secondary bg-transparent py-2 text-center text-lg no-underline uppercase tracking-wider hover:bg-accent duration-300"
+                className="w-1/2 cursor-custom-pointer rounded-btn border-2 border-secondary bg-transparent py-2 text-center text-md lg:text-lg no-underline uppercase tracking-wider hover:bg-accent duration-300"
                 href={github}
                 target="_blank"
                 rel="noopener noreferrer"

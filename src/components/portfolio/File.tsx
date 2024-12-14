@@ -85,7 +85,7 @@ const File = ({ file, setIsWindowOpen, setWindowContent }: FileProps) => {
                   setIsDropdownOpen(false);
                 }}
               >
-                Otwórz
+                Przejdź
               </Link>
             ) : name === "CV" ? (
               <a

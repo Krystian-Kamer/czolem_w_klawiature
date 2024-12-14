@@ -20,7 +20,7 @@ const Portfolio = () => {
           <div className="prose select-none mx-8">
             <SectionTitle title="Portfolio" />
           </div>
-          <div className="slider-container lg:hidden">
+          <div className="slider-container md:hidden">
             <Slider
               {...{
                 dots: visibleDots,

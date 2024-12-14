@@ -11,8 +11,7 @@ const WindowProjectThoughts = ({
   tabsState,
   setTabsState,
 }: ProjectProps) => {
-
-
+  console.log(tabsState);
   return (
     <>
       <input
@@ -31,8 +30,8 @@ const WindowProjectThoughts = ({
         className="tab-content h-[450px] border-base-200 bg-base-100 p-10"
       >
         <div className="flex h-full flex-col justify-between px-16 text-xl">
-          <p className="pt-5 text-2xl">
-            <Typewriter cursor words={[thoughts]} />
+          <p className="pt-5 md:text-xl text-2xl">
+            <Typewriter typeSpeed={40} words={[thoughts]} />
           </p>
           <p className="select-none self-center italic text-secondary/40">
             Każdy projekt sprawia, że staję się lepszy i się rozwijam.

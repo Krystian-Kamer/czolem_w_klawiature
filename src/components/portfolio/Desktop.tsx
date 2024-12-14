@@ -22,7 +22,7 @@ const Desktop = () => {
   };
 
   return (
-    <div className="relative hidden h-[70vh] grid-flow-col grid-cols-10 grid-rows-6 gap-4 selection:bg-accent selection:text-secondary lg:grid">
+    <div className="relative hidden h-[70vh] grid-flow-col grid-cols-7 lg:grid-cols-10 grid-rows-6 gap-4 selection:bg-accent selection:text-secondary md:grid md:mx-8 lg:mx-0">
       <DndContext onDragEnd={handleDragEnd} autoScroll={false}>
         <SortableContext items={files}>
           {files.map((file) => {

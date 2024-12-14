@@ -42,10 +42,10 @@ const About = () => {
                 cursor
                 delaySpeed={700}
                 words={[
-                  "kreatywny.",
-                  "na etapie przebranżawiania.",
-                  "gotowy na nieznane!",
                   "Frontend Developerem.",
+                  "kreatywny.",
+                  "pozytywnie nastawiony i zmotywowany.",
+                  "otwarty na nieznane!",
                 ]}
               />
             </div>

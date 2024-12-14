@@ -1,8 +1,12 @@
 import SectionTitle from "../SectionTitle";
+import { GiCoffeeCup } from "react-icons/gi";
+import { PiScalesFill } from "react-icons/pi";
+import { LiaGlassesSolid } from "react-icons/lia";
+import { MdLaptopMac } from "react-icons/md";
 
 const EmploymentHistory = () => {
   return (
-    <div className="mx-8 flex flex-col md:mt-14 lg:mt-20">
+    <div className="mx-8 flex flex-col md:mt-2 lg:mt-20">
       <div className="prose">
         <SectionTitle title="Zawodowo" />
       </div>
@@ -22,21 +26,24 @@ const EmploymentHistory = () => {
               />
             </svg>
           </div>
-          <div className="timeline-start md:text-end">
+          <div className="group/item timeline-start relative md:text-end">
+            <div className="absolute -right-44 top-1/2 hidden -translate-y-1/2 opacity-0 group-hover/item:flex group-hover/item:animate-fadeIn">
+              <GiCoffeeCup className="text-7xl" />
+              <div className="absolute top-1 -z-10 h-11 w-10 -rotate-12 bg-accent"></div>
+            </div>
             <time className="font-mono text-sm italic md:text-base tb:text-lg">
               2016
             </time>
-            <div className="text-lg font-black md:text-lg tb:text-xl lg:text-2xl ">
+            <div className="text-lg font-black md:text-lg tb:text-xl lg:text-2xl">
               Pracownik biurowy
               <div className="h-1 w-1/4 rounded-sm bg-accent md:h-2 md:justify-self-end"></div>
             </div>
             <p className="text-sm md:text-base md:leading-relaxed tb:text-xl lg:text-xl lg:leading-loose">
               <span className="hidden ph:inline">
-                Dużo parzenia kawy. Pracowałem w Urzędzie Pracy w Łodzi, na
-                różnych stanowiskach.{" "}
+                Pracowałem w Urzędzie Pracy w Łodzi, na różnych stanowiskach.{" "}
               </span>
-              Współpracowałem z przedsiębiorcami, rozliczałem
-              dotacje, obsługiwałem kancelarię oraz archiwum.
+              Współpracowałem z przedsiębiorcami, rozliczałem dotacje,
+              obsługiwałem kancelarię oraz archiwum.
             </p>
           </div>
           <hr className="bg-primary" />
@@ -58,7 +65,11 @@ const EmploymentHistory = () => {
               />
             </svg>
           </div>
-          <div className="timeline-end">
+          <div className="group/item timeline-end relative">
+            <div className="absolute -left-44 top-1/2 hidden -translate-y-1/2 opacity-0 group-hover/item:flex group-hover/item:animate-fadeIn">
+              <PiScalesFill className="text-7xl" />
+              <div className="absolute right-0 top-1 -z-10 h-11 w-10 rotate-12 bg-accent"></div>
+            </div>
             <time className="font-mono text-sm italic md:text-base tb:text-lg">
               2020
             </time>
@@ -68,8 +79,8 @@ const EmploymentHistory = () => {
             </div>
             <p className="text-sm md:text-base md:leading-relaxed tb:text-xl lg:text-xl lg:leading-loose">
               <span className="hidden ph:inline">
-                Jeszcze więcej parzenia kawy. Tutaj wykonuję polecenia Sędziego
-                oraz kierownika.{" "}
+                Jestem protokolantem, wykonuję polecenia Sędziego oraz
+                kierownictwa.{" "}
               </span>
               Wyniosłem stąd aktywne słuchanie i wyłapywanie tego co
               najważniejsze. Dodatkowo nauczyło mnie to pracy pod presją czasu.
@@ -94,7 +105,11 @@ const EmploymentHistory = () => {
               />
             </svg>
           </div>
-          <div className="timeline-start md:text-end">
+          <div className="group/item timeline-start relative md:text-end">
+            <div className="absolute -right-44 top-1/2 hidden -translate-y-1/2 opacity-0 group-hover/item:flex group-hover/item:animate-fadeIn">
+              <LiaGlassesSolid className="text-7xl" />
+              <div className="absolute top-1 -z-10 h-11 w-10 -rotate-12 bg-accent"></div>
+            </div>
             <time className="font-mono text-sm italic md:text-base tb:text-lg">
               2022
             </time>
@@ -103,9 +118,8 @@ const EmploymentHistory = () => {
               <div className="h-1 w-1/4 rounded-sm bg-accent md:h-2 md:justify-self-end"></div>
             </div>
             <p className="text-sm md:text-base md:leading-relaxed tb:text-xl lg:text-xl lg:leading-loose">
-              <span className="hidden ph:inline">Kawa bez zmian. </span>
-              Wkuwanie podstaw, potem rzeczy zaawansowanych oraz odwzorowywanie
-              tego co wkute w... praktyce.
+              Ekscytujący czas. Nowe technologie, kursy, projekty. Dużo
+              wyrzeczeń, ale warto.
               <span className="hidden ph:inline">
                 {" "}
                 Jeśli widzisz tego bloga to znaczy, że jestem w trakcie
@@ -132,7 +146,11 @@ const EmploymentHistory = () => {
               />
             </svg>
           </div>
-          <div className="timeline-end mb-4 md:mb-10">
+          <div className="group/item timeline-end relative md:mb-4">
+            <div className="absolute -left-44 top-1/2 -translate-y-1/2 hidden opacity-0 group-hover/item:flex group-hover/item:animate-fadeIn">
+              <MdLaptopMac className="text-7xl" />
+              <div className="absolute right-0 top-1 -z-10 h-11 w-10 rotate-12 bg-accent"></div>
+            </div>
             <time className="font-mono text-sm italic md:text-base tb:text-lg">
               2025(życzeniowo)
             </time>
@@ -144,7 +162,8 @@ const EmploymentHistory = () => {
               Pierwsza praca w IT u pracodawcy, który mnie doceni.
               <span className="hidden ph:inline">
                 {" "}
-                Nie wiem tylko co z kawą...
+                Tutaj kiedyś pojawi się oszałamiająca ścieżka kariery
+                programisty. Moja podróż od Juniora do Seniora.
               </span>
             </p>
           </div>

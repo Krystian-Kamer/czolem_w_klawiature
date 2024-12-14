@@ -48,7 +48,7 @@ const handlePlaying = () => {
         <video
           ref={videoRef}
           src={desktopVideo}
-          className={`${!isPlaying && "scale-125 saturate-50"} w-full duration-500`}
+          className={`${!isPlaying ? "scale-125 saturate-50" : desktopVideo.includes('rick') ? 'scale-105' : 'scale-100'} w-full duration-500`}
           muted
           loop
         ></video>
