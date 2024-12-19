@@ -27,7 +27,7 @@ export const skills: Skill[] = [
       <SiJavascript className="p-2 md:h-20 md:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: true,
-    text: "Idealny świat powstał w 7 dni a biorąc pod uwagę work-life balance, w 6. JavaScript, mimo, że powstał (jeśli wierzyć ploteczkom) w 10 dni, już taki nie jest. Jest to niebezpieczne miejsce najeżone pułapkami. Im dłużej jesteś na tym froncie tym bardziej rozumiesz jak rozbroić jakąś kodową js-ową minę. I choć stringi kojarzyły mi się tylko z jednym, to i te tu, polubiłem ;)",
+    text: "Idealny świat powstał w 7 dni a biorąc pod uwagę work-life balance, w 6. JavaScript, mimo, że powstał (jeśli wierzyć ploteczkom) w 10 dni, już taki nie jest. Jest to niebezpieczne miejsce najeżone pułapkami. I choć stringi kojarzyły mi się tylko z jednym, to i te tu, polubiłem ; )",
   },
   {
     name: "HTML",
@@ -36,7 +36,7 @@ export const skills: Skill[] = [
       <SiHtml5 className="p-2 md:h-20 md:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
-    text: "Od tego zaczęła się moja przygoda, a było to w 2022 roku. Kupiłem pierwszy kurs na Udemy i przerabiałem tutorial. Potem następny i następny. Powoli stopniowo dowiadywałem się co kryje się pod maską strony internetowej.",
+    text: "Od tego zaczęła się moja przygoda, która trwa do dziś. ",
   },
   {
     name: "CSS",
@@ -54,7 +54,7 @@ export const skills: Skill[] = [
       <SiReact className="p-1 md:h-20 md:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-2" />
     ),
     checked: false,
-    text: "Z Reacta korzystam codziennie. Już jako dziecko lubiłem się bawić klockami Lego i zostało mi to  do dziś, tylko, że zamiast Lego mam komponenty, a zamiast dziecięcej niewinności rachunki do opłacenia. Uważam, że biblioteka ta znacznie przyspiesza wytwarzanie kodu.",
+    text: "Z Reacta korzystam codziennie. Miłość do klocków Lego została mi do dziś, tylko, że zamiast Lego mam komponenty, a zamiast dziecięcej niewinności rachunki do opłacenia i żeby kot miał co jeść. Uważam, że biblioteka ta znacznie przyspiesza wytwarzanie kodu.",
   },
   {
     name: "React Router",
@@ -63,9 +63,8 @@ export const skills: Skill[] = [
       <SiReactrouter className="p-2 md:h-20 md:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
-    text: "Szczerze, czekałem na to. Pisząc swoją pierwszą stronę w JS (wyszukiwarkę filmów) zauważyłem, że po kliknięciu w button przeładowuje mi całą stronę, a fetchowanie danych nie angażuje paska u góry. Bardzo to spowalnia przeładowywanie strony. React w połączeniu z React Router rozwiazuje ten problem.",
+    text: "React bez React Routera jest jak Hanka bez kartonów.",
   },
-
   {
     name: "TypeScript",
     id: "TypeScript",
@@ -73,7 +72,7 @@ export const skills: Skill[] = [
       <SiTypescript className="p-2 md:h-20 md:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
-    text: "Kiedyś w nielicznych ofertach o pracę potrzebny, dziś jest to must-have. W sumie to się nie dziwię. Pomaga dostrzec problemy w czasie rzeczywistym, co jest jego najlepszą zaletą. Chociaż jest z nim jak ze związkiem. Czasem mnie wnerwia, bo nie wiem o co mu chodzi, ale jakoś się dogadujemy. Ja robię to czego on chce a on przestaje narzekać. Synergia zachowana.",
+    text: "Kiedyś w nielicznych ofertach o pracę potrzebny, dziś jest to must-have. TS pomaga dostrzec problemy w czasie rzeczywistym, co jest jego najlepszą zaletą. Chociaż jest z nim jak ze związkiem. Czasem mnie wnerwia, bo nie wiem o co mu chodzi, ale jakoś się dogadujemy. Ja robię to czego on chce a on przestaje narzekać. Synergia zachowana.",
   },
   {
     name: "Redux Toolkit",
@@ -82,7 +81,7 @@ export const skills: Skill[] = [
       <SiRedux className="p-2 md:h-20 md:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
-    text: "Narzędzie do zarządzania stanem aplikacji. Przydatne w większych projektach. Jeśli wiele komponentów będzie korzystało z jakiejś logiki a są porozrzucane po całym projekcie to już wiesz, w które drzwiczki zapukać.",
+    text: "Jeśli wiele komponentów będzie korzystało z jakiejś logiki a są porozrzucane po całym projekcie to już wiesz, w które drzwiczki zapukać.",
   },
   {
     name: "Tailwind",
@@ -91,7 +90,7 @@ export const skills: Skill[] = [
       <SiTailwindcss className="p-2 md:h-20 md:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
-    text: "Bardzo przydatna biblioteka CSS. Główną zaletą jest to, że nie trzeba przeskakiwać w projekcie między plikiem .css a plikiem .jsx/.tsx, bo wszystko jest w jednym miejscu. Drugą jest to, że można zapomnieć o wymyślaniu nazw klas, a tym bardziej o metodologi BEM. Dokumentacja jest napisana w bardzo przystępny sposób.",
+    text: "Uwielbiam, bo nie trzeba przeskakiwać w projekcie między plikiem .css a plikiem .jsx/.tsx, wszystko jest w jednym miejscu. Do tego można zapomnieć o wymyślaniu nazw klas, a tym bardziej o metodologi BEM. Dokumentacja też na plus.",
   },
   {
     name: "React Query",
@@ -109,7 +108,7 @@ export const skills: Skill[] = [
       <SiChessdotcom className="p-2 md:h-20 md:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
-    text: "Gita uczyłem się z kursu na Youtube Hello Romana oraz z darmowego kursu na Udemy Samuraja. Liznąłem jeszcze bootstrapa, scss, styled components, BEM, firebase, daisyUI (z którego korzystam w tym projekcie), react toastify.",
+    text: "Gita uczyłem się z kursu na Youtube Hello Romana oraz z darmowego kursu na Udemy Samuraja. Liznąłem jeszcze bootstrapa, scss, styled components, BEM, firebase, daisyUI (z którego korzystam w tym projekcie), react toastify, dnd kit.",
   },
 ];
 

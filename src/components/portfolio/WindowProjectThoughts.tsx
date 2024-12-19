@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 
 type ProjectProps = {

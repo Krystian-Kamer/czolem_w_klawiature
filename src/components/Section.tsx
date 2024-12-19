@@ -1,6 +1,6 @@
 import { SectionType } from "../types";
 import { Waves, PageDownBtn } from "./index";
-
+import {Footer} from "./index";
 const Section = ({ bgColor, height, children, isLastChild }: SectionType) => {
   return (
     <section
@@ -11,6 +11,7 @@ const Section = ({ bgColor, height, children, isLastChild }: SectionType) => {
       </div>
       <Waves bgColor={bgColor} lastChild={isLastChild!} />
       {!isLastChild && <PageDownBtn bgColor={bgColor} />}
+      {isLastChild && <Footer/>}
     </section>
   );
 };

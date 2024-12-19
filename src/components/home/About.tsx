@@ -44,7 +44,7 @@ const About = () => {
                 words={[
                   "Frontend Developerem.",
                   "kreatywny.",
-                  "pozytywnie nastawiony i zmotywowany.",
+                  "nastawiony na rozwój.",
                   "otwarty na nieznane!",
                 ]}
               />

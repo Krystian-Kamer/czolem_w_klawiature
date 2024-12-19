@@ -10,7 +10,7 @@ const EmploymentHistory = () => {
       <div className="prose">
         <SectionTitle title="Zawodowo" />
       </div>
-      <ul className="timeline timeline-vertical timeline-snap-icon bottom-3 max-md:timeline-compact selection:bg-accent selection:text-secondary ph:bottom-0 ph:top-4 md:top-0 tb:top-6 lg:-top-10">
+      <ul className="timeline timeline-vertical timeline-snap-icon bottom-3  max-md:timeline-compact selection:bg-accent selection:text-secondary ph:bottom-0 -top-2 md:top-0 tb:top-6 lg:-top-10">
         <li>
           <div className="timeline-middle">
             <svg
@@ -147,7 +147,7 @@ const EmploymentHistory = () => {
             </svg>
           </div>
           <div className="group/item timeline-end relative md:mb-4">
-            <div className="absolute -left-44 top-1/2 -translate-y-1/2 hidden opacity-0 group-hover/item:flex group-hover/item:animate-fadeIn">
+            <div className="absolute -left-44 top-1/2 hidden -translate-y-1/2 opacity-0 group-hover/item:flex group-hover/item:animate-fadeIn">
               <MdLaptopMac className="text-7xl" />
               <div className="absolute right-0 top-1 -z-10 h-11 w-10 rotate-12 bg-accent"></div>
             </div>
@@ -159,7 +159,7 @@ const EmploymentHistory = () => {
               <div className="h-1 w-1/4 rounded-sm bg-accent md:h-2"></div>
             </div>
             <p className="text-sm md:text-base md:leading-relaxed tb:text-xl lg:text-xl lg:leading-loose">
-              Pierwsza praca w IT u pracodawcy, który mnie doceni.
+              Pierwsza pełnoprawna praca w sektorze IT.
               <span className="hidden ph:inline">
                 {" "}
                 Tutaj kiedyś pojawi się oszałamiająca ścieżka kariery

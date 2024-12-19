@@ -9,7 +9,6 @@ const Waves = ({
   bgColor: string;
   lastChild: boolean;
 }) => {
-
   let imgSrc;
 
   if (!lastChild) {
@@ -23,7 +22,9 @@ const Waves = ({
   }
 
   return (
-    <div className="animated-movement pointer-events-none absolute bottom-0 z-20 overflow-hidden 2xl:-bottom-8">
+    <div
+      className={`animated-movement pointer-events-none absolute ${lastChild ? "bottom-[calc(5vh)] 2xl:-bottom-3" : "bottom-0 2xl:-bottom-8"} z-20 overflow-hidden`}
+    >
       <img src={imgSrc} alt="waves" />
     </div>
   );

@@ -1,11 +1,11 @@
-import { Section, SectionTitle, Footer } from "../components/index";
+import { Section, SectionTitle } from "../components/index";
 const Contact = () => {
   return (
     <>
       <Section
         id="blog-1"
         bgColor="bg-neutral"
-        height="h-[90vh]"
+        height="h-[100vh]"
         isLastChild={true}
       >
         <div className="mx-8 flex flex-col md:mt-14 lg:mt-20">
@@ -81,7 +81,6 @@ const Contact = () => {
           </form>
         </div>
       </Section>
-      <Footer />
     </>
   );
 };

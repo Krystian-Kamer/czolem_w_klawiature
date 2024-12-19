@@ -14,7 +14,9 @@ const ForRecruiter = () => {
   const [isLightOn, setIsLightOn] = useState(false);
   const [isDownloadCvModalOpen, setIsDownloadCvModalOpen] = useState(false);
 
-  VanillaTilt.init(document.querySelector(".office") as HTMLElement);
+  if (window.innerWidth >= 1024) {
+    VanillaTilt.init(document.querySelector(".desk") as HTMLElement);
+  }
 
   return (
     <div className="mx-8 flex flex-col md:mt-14 lg:mt-20">
@@ -31,22 +33,22 @@ const ForRecruiter = () => {
         </div>
 
         <div
-          className="office relative flex h-[60vh] w-full md:h-full md:w-full md:py-1 lg:w-2/5"
+          className="desk relative flex h-[60vh] w-full md:h-full md:w-full md:py-1 lg:w-2/5"
           data-tilt
-          data-tilt-max="3"
+          data-tilt-max
           data-tilt-full-page-listening
         >
           <div className="relative flex flex-col justify-end overflow-hidden rounded-lg bg-secondary drop-shadow-[20px_20px_10px_rgba(0,0,0,0.6)] ph:mt-4 md:mt-0 lg:rounded-3xl">
             <div
-              className={`absolute top-[82px] h-[120%] w-full ${isLightOn ? "bg-orange-400 bg-gradient-to-b from-accent via-transparent" : "bg-secondary"} md:top-40`}
+              className={`absolute top-[82px] h-[120%] w-full ${isLightOn ? "bg-orange-400 bg-gradient-to-b from-accent via-transparent" : "bg-secondary"} md:top-24 lg:top-24`}
               style={{
-                clipPath: "polygon(40% 0, 60% 0, 150% 100%, -50% 100%)",
+                clipPath: "polygon(43% 0, 57% 0, 150% 100%, -50% 100%)",
               }}
             ></div>
             <img
               src={lampImg}
               alt="lamp image"
-              className={`cursor-custom-pointer absolute left-1/2 top-0 h-24 -translate-x-1/2 ${isLightOn ? "brightness-100" : "brightness-[20%]"} md:h-44`}
+              className={`cursor-custom-pointer absolute left-1/2 top-0 h-24 -translate-x-1/2 ${isLightOn ? "brightness-100" : "brightness-[20%]"} md:w-20 md:h-fit lg:h-28 `}
               onClick={() => {
                 setIsLightOn(!isLightOn);
                 setIsDownloadCvModalOpen(false);

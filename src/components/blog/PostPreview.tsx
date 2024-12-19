@@ -9,19 +9,19 @@ const PostPreview = ({ post }: { post: PostType }) => {
   return (
     <div
       ref={postPreview}
-      className={`relative mb-16 mt-0 flex h-fit w-full flex-col justify-center overflow-hidden opacity-0 drop-shadow-[0px_0px_5px_rgba(0,0,0,0.2)] duration-500 hover:drop-shadow-[0px_0px_10px_rgba(0,0,0,0.1)] md:mb-28 md:h-96 md:flex-row ${isPostPreviewInView ? "animate-fadeIn" : "ml-16 sm:ml-28 md:ml-52 lg:ml-96"}`}
+      className={`relative mb-16 mt-0 flex h-fit flex-col justify-center overflow-hidden  opacity-0 drop-shadow-[0px_0px_5px_rgba(0,0,0,0.2)] duration-500 hover:drop-shadow-[0px_0px_10px_rgba(0,0,0,0.1)] md:mb-28 md:h-96 md:flex-row ${isPostPreviewInView ? "animate-fadeIn" : "translate-x-1/2"}`}
     >
       <img
         src={imageSmall}
         alt="post image"
-        className="rounded-t-lg object-cover opacity-95 md:hidden md:w-2/6 md:rounded-l-badge md:rounded-tr-none"
+        className="rounded-t-lg sm:prose sm:self-center object-cover opacity-95 md:hidden sm:w-5/6 md:w-2/6 md:rounded-l-badge md:rounded-tr-none"
       />
       <img
         src={imageBig}
         alt="post image"
         className="hidden rounded-t-lg object-cover opacity-95 md:flex md:w-2/5 md:rounded-l-badge md:rounded-tr-none lg:w-2/6"
       />
-      <div className="prose flex flex-col rounded-b-lg bg-white/80 px-4 py-3 md:w-3/5 md:rounded-r-badge md:rounded-bl-none md:p-8 lg:w-3/6">
+      <div className="prose self-center flex flex-col rounded-b-lg bg-white/80 px-4 py-3 sm:w-5/6 md:w-3/5 md:rounded-r-badge md:rounded-bl-none md:p-8 lg:w-3/6">
         <div className="prose">
           <h3 className="font-protest text-2xl uppercase tracking-wide selection:bg-accent md:text-2xl lg:text-3xl">
             {title}
