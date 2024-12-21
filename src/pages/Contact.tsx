@@ -1,27 +1,34 @@
 import { Section, SectionTitle } from "../components/index";
 const Contact = () => {
+  const windowHeight = window.innerHeight;
   return (
     <>
       <Section
         id="blog-1"
         bgColor="bg-neutral"
-        height="h-[100vh]"
+        height={`${
+          windowHeight <= 320
+            ? "h-[185vh]"
+            : windowHeight < 640
+              ? "h-[120vh]"
+              : "h-screen"
+        }`}
         isLastChild={true}
       >
-        <div className="mx-8 flex flex-col md:mt-14 lg:mt-20">
+        <div className="mx-8 flex flex-col selection:bg-secondary selection:text-accent md:mt-14 lg:mt-20">
           <div className="prose">
             <SectionTitle title="Kontakt" />
           </div>
           <form
-            className="prose flex h-[60vh] w-full flex-col justify-around self-center border-[6px] border-dashed border-primary bg-accent px-4 py-2 md:w-3/5 md:border-8 lg:w-1/2 lg:border-8 lg:p-8"
+            className="prose flex h-fit w-full flex-col justify-around self-center border-[6px] border-dashed border-primary bg-accent px-4 py-2 ph:mt-5 sm:mt-8 md:mt-16 md:w-3/5 lg:w-1/2 lg:p-8"
             target="_blank"
             action="https://formsubmit.co/6ee327a787b46a2edd4ee628298c9ecf"
             method="POST"
           >
-            <h1 className="mt-1 text-lg uppercase text-primary ph:mt-2 ph:text-xl lg:text-2xl">
+            <h1 className="mt-1 text-lg uppercase text-primary ph:mt-2 ph:text-xl tb:text-2xl">
               Pogadajmy
             </h1>
-            <label className="input my-1 flex items-center gap-2 rounded-none bg-neutral font-protest text-sm tracking-wider ph:text-base lg:text-lg">
+            <label className="input mb-1 flex h-8 items-center gap-2 rounded-none bg-neutral font-protest text-sm tracking-wider ph:text-base md:h-12 tb:text-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
@@ -38,7 +45,7 @@ const Contact = () => {
               />
             </label>
 
-            <label className="input my-1 flex items-center gap-2 rounded-none bg-neutral font-protest text-sm tracking-wider ph:text-base lg:text-lg">
+            <label className="input my-1 flex h-8 items-center gap-2 rounded-none bg-neutral font-protest text-sm tracking-wider ph:text-base md:h-12 tb:text-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
@@ -57,7 +64,7 @@ const Contact = () => {
               />
             </label>
             <textarea
-              className="textarea my-1 h-[30vh] w-full resize-none rounded-none bg-neutral font-protest text-sm tracking-wider ph:text-base lg:text-lg"
+              className="textarea my-1 min-h-[30vh] w-full resize-none rounded-none bg-neutral font-protest text-sm tracking-wider ph:text-base tb:text-lg"
               placeholder="O czym chciałbyś pogadać?"
               name="message"
             ></textarea>
@@ -67,13 +74,13 @@ const Contact = () => {
               name="_autoresponse"
               value="Dzięki za zostawienie wiadomości, na pewno się z nią zapoznam."
             />
-            <div className="flex items-center justify-between">
+            <div className={`flex ${windowHeight <=320 ? 'flex-col' : 'flex-row'} items-center justify-between gap-x-1`}>
               <p className="font-protest text-sm tracking-wider text-primary ph:text-base lg:text-xl">
                 Uzupełnij wszystkie pola!
               </p>
               <button
                 type="submit"
-                className="cursor-custom-pointer rounded-sm border-4 border-primary bg-primary px-4 py-1 font-protest uppercase tracking-widest text-accent duration-300 hover:bg-accent hover:text-primary ph:px-6 lg:px-10 lg:py-2 lg:text-xl"
+                className="cursor-custom-pointer rounded-sm border-4 border-primary bg-primary px-4 py-1 font-protest text-sm uppercase md:text-base tracking-widest text-accent duration-300 hover:bg-accent hover:text-primary ph:px-6 lg:px-10 lg:py-2 lg:text-xl"
               >
                 Prześlij
               </button>

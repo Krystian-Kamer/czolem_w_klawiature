@@ -20,11 +20,11 @@ const Footer = () => {
       icon: <RiLinkedinFill className="pointer-events-none" />,
     },
   ];
-  console.log(pathname);
+
   return (
-    <footer className="absolute bottom-0 z-20 w-full">
-      <div className="relative flex mx-auto h-[10vh] max-w-7xl items-baseline pt-1 ph:pt-3 justify-center ">
-        <div className="flex w-full items-center justify-center gap-x-6 sm:w-3/5 md:w-2/3">
+    <footer className="absolute bottom-0 z-20 w-full selection:bg-secondary selection:text-accent">
+      <div className="relative mx-auto flex h-[10vh] max-w-7xl flex-col items-baseline justify-center gap-y-2">
+        <div className="flex w-full items-center justify-center gap-x-6">
           {footerLinks.map((link) => {
             const { id, href, icon } = link;
             return (
@@ -42,17 +42,17 @@ const Footer = () => {
             );
           })}
         </div>
-        <p className="absolute bottom-0 z-10 mb-1 md:-translate-x-1/2  font-protest text-xs leading-3 text-center ph:bottom-2 md:bottom-1 md:left-1/2 md:w-1/3 md:text-sm tb:bottom-7 tb:text-lg tb:leading-none lg:bottom-4">
+        <p className="z-10 self-center text-center font-protest text-xs leading-3 md:text-sm tb:text-lg tb:leading-none">
           Polityka Prywatności © {new Date().getFullYear()} Krystian Kamer. All
           right reserved.
         </p>
         <img
           src={footerImg}
           alt="Hero image"
-          className={`md:absolute hidden md:flex bottom-0 right-0 z-30 w-1/2 max-w-[320px] sm:w-2/5 md:w-1/3 ${pathname === "/" ? "opacity-0 pointer-events-none" : "opacity-100"}`}
+          className={`z-30 hidden w-1/2 max-w-[320px] sm:w-2/5 md:absolute md:bottom-0 md:right-0 md:flex md:w-1/3 ${pathname === "/" ? "pointer-events-none opacity-0" : "opacity-100"}`}
         />
       </div>
-      <div className="-z-10 absolute bottom-0 h-[5vh] w-full bg-accent 2xl:bg-transparent"></div>
+      <div className="absolute bottom-0 -z-10 h-[5vh] w-full bg-accent 2xl:bg-transparent"></div>
     </footer>
   );
 };

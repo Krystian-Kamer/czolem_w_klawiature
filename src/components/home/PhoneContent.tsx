@@ -42,7 +42,7 @@ const PhoneContent = () => {
   return (
     <>
       <div
-        className={`mockup-phone hidden self-center border-neutral/50 drop-shadow-[20px_20px_10px_rgba(0,0,0,0.6)] md:block ${isSectionFourInView && "animate-moveHeroFromLeft"}`}
+        className={`mockup-phone hidden self-center border-neutral/50 drop-shadow-[20px_20px_10px_rgba(0,0,0,0.6)] md:block ${isSectionFourInView ? "translate-x-0 opacity-100 duration-1000" : "-translate-x-[200px] opacity-0"} `}
       >
         <div className="camera"></div>
         <div className="display">

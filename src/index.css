@@ -77,7 +77,7 @@
     animation-delay: 0.8s;
   }
 
-  @keyframes scrollWidth {
+  @keyframes moveWaves {
     0% {
       transform: translateX(0%);
     }
@@ -85,23 +85,10 @@
       transform: translateX(-66.75%);
     }
   }
-  .animated-movement {
+  .animated-waves {
     display: flex;
     width: 300%;
-    animation: scrollWidth 30s linear infinite;
-  }
-
-  @keyframes resizeWidth {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(50%);
-    }
-  }
-  .resize-width {
-    animation: resizeWidth 0.6s linear forwards;
-    animation-delay: 2s;
+    animation: moveWaves 30s linear infinite;
   }
 
   @keyframes hideInvitation {

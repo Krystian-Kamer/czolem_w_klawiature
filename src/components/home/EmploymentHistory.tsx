@@ -3,14 +3,21 @@ import { GiCoffeeCup } from "react-icons/gi";
 import { PiScalesFill } from "react-icons/pi";
 import { LiaGlassesSolid } from "react-icons/lia";
 import { MdLaptopMac } from "react-icons/md";
+import { useInView } from "react-intersection-observer";
 
 const EmploymentHistory = () => {
+  const { ref: employmentHistoryRef, inView: isEmploymentHistoryInView } =
+    useInView();
+
   return (
-    <div className="mx-8 flex flex-col md:mt-2 lg:mt-20">
+    <div
+      ref={employmentHistoryRef}
+      className="mx-8 flex flex-col md:mt-2 lg:mt-20"
+    >
       <div className="prose">
         <SectionTitle title="Zawodowo" />
       </div>
-      <ul className="timeline timeline-vertical timeline-snap-icon bottom-3  max-md:timeline-compact selection:bg-accent selection:text-secondary ph:bottom-0 -top-2 md:top-0 tb:top-6 lg:-top-10">
+      <ul className="timeline timeline-vertical timeline-snap-icon -top-2 bottom-3 max-md:timeline-compact selection:bg-accent selection:text-secondary ph:bottom-0 md:top-0 tb:top-6 lg:-top-10">
         <li>
           <div className="timeline-middle">
             <svg
@@ -26,7 +33,9 @@ const EmploymentHistory = () => {
               />
             </svg>
           </div>
-          <div className="group/item timeline-start relative md:text-end">
+          <div
+            className={`${isEmploymentHistoryInView ? "md:translate-x-0 md:opacity-100 md:duration-1000" : "md:-translate-x-1/3 md:opacity-0"} group/item timeline-start relative delay-300 md:text-end`}
+          >
             <div className="absolute -right-44 top-1/2 hidden -translate-y-1/2 opacity-0 group-hover/item:flex group-hover/item:animate-fadeIn">
               <GiCoffeeCup className="text-7xl" />
               <div className="absolute top-1 -z-10 h-11 w-10 -rotate-12 bg-accent"></div>
@@ -65,7 +74,9 @@ const EmploymentHistory = () => {
               />
             </svg>
           </div>
-          <div className="group/item timeline-end relative">
+          <div
+            className={`group/item timeline-end relative ${isEmploymentHistoryInView ? "md:translate-x-0 md:opacity-100 md:delay-500 md:duration-1000" : "md:translate-x-1/3 md:opacity-0"}`}
+          >
             <div className="absolute -left-44 top-1/2 hidden -translate-y-1/2 opacity-0 group-hover/item:flex group-hover/item:animate-fadeIn">
               <PiScalesFill className="text-7xl" />
               <div className="absolute right-0 top-1 -z-10 h-11 w-10 rotate-12 bg-accent"></div>
@@ -105,7 +116,9 @@ const EmploymentHistory = () => {
               />
             </svg>
           </div>
-          <div className="group/item timeline-start relative md:text-end">
+          <div
+            className={`group/item timeline-start relative md:text-end ${isEmploymentHistoryInView ? "md:translate-x-0 md:opacity-100 md:delay-[1000ms] md:duration-1000" : "md:-translate-x-1/3 md:opacity-0"}`}
+          >
             <div className="absolute -right-44 top-1/2 hidden -translate-y-1/2 opacity-0 group-hover/item:flex group-hover/item:animate-fadeIn">
               <LiaGlassesSolid className="text-7xl" />
               <div className="absolute top-1 -z-10 h-11 w-10 -rotate-12 bg-accent"></div>
@@ -146,7 +159,9 @@ const EmploymentHistory = () => {
               />
             </svg>
           </div>
-          <div className="group/item timeline-end relative md:mb-4">
+          <div
+            className={`group/item timeline-end relative md:mb-4 ${isEmploymentHistoryInView ? "md:translate-x-0 md:opacity-100 md:delay-[1500ms] md:duration-1000" : "md:translate-x-1/3 md:opacity-0"}`}
+          >
             <div className="absolute -left-44 top-1/2 hidden -translate-y-1/2 opacity-0 group-hover/item:flex group-hover/item:animate-fadeIn">
               <MdLaptopMac className="text-7xl" />
               <div className="absolute right-0 top-1 -z-10 h-11 w-10 rotate-12 bg-accent"></div>

@@ -28,7 +28,11 @@ const About = () => {
     <>
       <div className="md:mx-8 md:mt-36 md:flex md:flex-row md:justify-around md:gap-6 lg:mt-48">
         <div
-          className={`prose relative px-8 ${!isPinOnPage && "resize-width"} selection:bg-accent selection:text-secondary md:w-1/2 md:px-0`}
+          className={`prose ${
+            !isHeroInView
+              ? "translate-y-2 duration-1000 ph:translate-y-4 sm:translate-y-10 md:translate-y-14 tb:translate-y-16 lg:translate-y-20"
+              : "-translate-y-2 delay-[500ms] duration-1000 ph:-translate-y-4 sm:-translate-y-10 md:-translate-y-14 tb:-translate-y-16 lg:-translate-y-20"
+          } relative px-8 ${!isPinOnPage && "translate-x-1/2 delay-[1500ms] duration-[1000ms]"} selection:bg-accent selection:text-secondary md:w-1/2 md:px-0`}
         >
           <SectionTitle title={"Czołem!"} />
           <h2 className="text-xl sm:text-2xl md:text-3xl">
@@ -79,12 +83,16 @@ const About = () => {
           className="absolute bottom-0 left-0 w-[55%] sm:w-2/5 md:hidden"
         />
         <div
-          className={`${!isPinOnPage && "drop-img"} relative hidden h-fit rounded-sm border-8 border-b-[12px] border-white bg-accent drop-shadow-[25px_25px_10px_rgba(0,0,0,0.3)] md:mt-28 md:flex md:w-1/3 md:rotate-6 lg:w-[28%] lg:rotate-12`}
+          className={`${!isPinOnPage && "drop-img"} relative hidden h-fit rounded-sm border-8 border-b-[12px] border-white bg-accent drop-shadow-[25px_25px_10px_rgba(0,0,0,0.3)] md:mt-28 md:flex md:w-1/3 lg:w-[28%] ${
+            !isHeroInView
+              ? "translate-y-0 rotate-12 delay-300 duration-[1500ms]"
+              : "-translate-y-40 rotate-6 delay-[800ms] duration-[1500ms]"
+          }`}
         >
           <img
             src={pinImg}
             alt="pin image"
-            className={`absolute -left-6 z-10 rounded-l-full drop-shadow-[3px_10px_3px_rgba(0,0,0,0.6)] md:w-16 lg:w-20 ${!isHeroInView && "cursor-custom-pointer duration-300 hover:scale-110"} ${!isPinOnPage && "remove-pin"}`}
+            className={`absolute -left-6 z-10 rounded-l-full drop-shadow-[3px_10px_3px_rgba(0,0,0,0.6)] md:w-16 lg:w-20 ${!isHeroInView && "cursor-custom-pointer duration-300 hover:scale-110"} ${!isPinOnPage && "remove-pin"} `}
             onClick={!isHeroInView ? dropImage : undefined}
           />
           <div

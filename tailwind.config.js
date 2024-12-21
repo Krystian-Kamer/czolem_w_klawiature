@@ -26,12 +26,6 @@ export default {
           "0%": { marginBottom: "0px" },
           "100%": { marginBottom: "-600px" },
         },
-        moveHeroFromLeft: {
-          "0%": { translate: "-200px", opacity: "0" },
-          "10%": { opacity: "0.5" },
-          "30%": { opacity: "1" },
-          "100%": { translate: "0px", opacity: "1" },
-        },
         moveHumourToTop: {
           "0%": { transform: "translateY(-120px)", opacity: "0" },
           "10%": { opacity: "0.5" },
@@ -65,7 +59,6 @@ export default {
         fadeInPointerNone: "fadeInPointerNone 0.3s linear forwards",
         moveToTop: "moveToTopHand 2s ease-out forwards",
         moveToBottom: "moveToBottomHand 0.5s ease-out forwards",
-        moveHeroFromLeft: "moveHeroFromLeft 1s ease-out forwards",
         moveHumourToTop: "moveHumourToTop 1s ease-out forwards",
       },
       backgroundImage: {

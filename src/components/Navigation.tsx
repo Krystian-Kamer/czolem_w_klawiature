@@ -1,6 +1,6 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 import { NavLink, useLocation } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ContextBgValue, NavLinkType } from "../types";
 import { AppContext } from "../App";
 
@@ -15,6 +15,15 @@ const Navigation = () => {
   const { pathname } = useLocation();
   const { isBgDark } = useContext<ContextBgValue>(AppContext);
  
+    useEffect(() => {
+      const scrollableDiv = document.querySelector(".no-scrollbar");
+      scrollableDiv?.scrollTo({
+        top: pathname === "/" ? 0 : 250,
+        behavior: "smooth",
+      });
+    }, [pathname]);
+
+
   return (
     <nav
       className={`fixed ${pathname.includes("blog") && !isBgDark && "lg:bg-neutral/90 lg:pb-2"} z-50 w-full lg:absolute`}
