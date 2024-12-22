@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
 import { ProjectType } from "../../types";
 import { useInView } from "react-intersection-observer";
-
+import { ContextBgValue } from "../../types";
+import { AppContext } from "../../App";
+import { useContext } from "react";
 const Project = ({ project }: { project: ProjectType }) => {
   const { name, img, description, technology, github, live, mobileVideo } =
     project;
   const [isVideoVisible, setIsVideoVisible] = useState(false);
   const { ref: projectRef, inView: isProjectInView } = useInView();
+  const { windowWidth } = useContext<ContextBgValue>(AppContext);
 
   useEffect(() => {
     setIsVideoVisible(false);
@@ -15,7 +18,7 @@ const Project = ({ project }: { project: ProjectType }) => {
   return (
     <div
       ref={projectRef}
-      className="mockup-window mb-2 ml-12 h-[500px] w-fit min-w-[300px] overflow-hidden bg-accent shadow-md ph:mb-10 ph:ml-14 ph:mt-6 ph:h-[585px] sm:my-16 tb:my-24 tb:ml-16"
+      className={`mockup-window ml-9 mb-2 h-[500px] w-fit overflow-hidden bg-accent shadow-md ph:mb-10 ph:mt-6 ph:h-[585px] sm:my-16 sm:w-[320px] tb:my-24 tb:ml-16 ${windowWidth >= 600 && windowWidth < 768 && "w-[275px]"}`}
     >
       <div
         className={`card w-[200%] ${
@@ -27,7 +30,9 @@ const Project = ({ project }: { project: ProjectType }) => {
             <img src={img} alt={name} className="h-full w-full opacity-[89%]" />
           </figure>
           <div className="card-body h-3/5 px-4 py-1 ph:py-4">
-            <h2 className="card-title capitalize font-bold tracking-wider">{name}</h2>
+            <h2 className="card-title font-bold capitalize tracking-wider">
+              {name}
+            </h2>
             <p
               className={`${description.length > 150 && "leading-5 ph:leading-normal"}`}
             >

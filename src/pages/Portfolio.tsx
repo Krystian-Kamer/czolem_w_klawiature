@@ -4,15 +4,36 @@ import Slider from "react-slick";
 import { projects } from "../data";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { ContextBgValue } from "../types";
+import { AppContext } from "../App";
+import { useContext } from "react";
 const Portfolio = () => {
-  const slidesToShow = window.innerWidth >= 640 ? 2.1 : 1.1;
-  const visibleDots = window.innerWidth >= 390 ? true : false;
-
+  const { windowWidth, windowHeight } = useContext<ContextBgValue>(AppContext);
+  const slidesToShow = windowWidth >= 600 ? 2.1 : 1.1;
+  const visibleDots = windowWidth >= 390 ? true : false;
+  
+  const sectionHeight = () => {
+    if (
+      windowHeight <= 360 ||
+      (windowWidth > windowHeight && windowHeight <= 600)
+    ) {
+      return "h-[200vh]";
+    } else if (windowWidth > windowHeight && windowHeight <= 800) {
+      return "h-[150vh]";
+    } else if (
+      windowHeight <= 658 ||
+      (windowWidth > windowHeight && windowHeight <= 1065)
+    ) {
+      return "h-[120vh]";
+    } else {
+      return "h-screen";
+    }
+  };
   return (
     <Section
       id="blog-1"
       bgColor="bg-neutral"
-      height="h-screen"
+      height={sectionHeight()}
       isLastChild={true}
     >
       <div>

@@ -2,9 +2,12 @@ import { useState } from "react";
 import { Section, SectionTitle } from "../components/index";
 import { PostPreview, PostCategories } from "../components/blog/index";
 import { postsData } from "../posts-data";
-import { PostType } from "../types";
+import { PostType,ContextBgValue } from "../types";
+import { AppContext } from "../App";
+import { useContext } from "react";
 const Blog = () => {
   const [posts, setPosts] = useState<PostType[]>(postsData);
+  const { windowHeight } = useContext<ContextBgValue>(AppContext);
 
   return (
     <>
@@ -14,7 +17,7 @@ const Blog = () => {
         height="h-fit"
         isLastChild={true}
       >
-        <div className="relative lg:mx-32 mx-8 flex flex-col md:mt-14 lg:mt-20">
+        <div className={`relative lg:mx-32 ${windowHeight <=320 && 'mx-1'} mx-6 flex flex-col md:mt-14 lg:mt-20`}>
           <div className="prose z-10">
             <SectionTitle title="Blog osobisty" />
           </div>
