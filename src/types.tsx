@@ -11,6 +11,8 @@ export type ContextBgValue = {
   isSectionTwoInView: boolean;
   isSectionFourInView: boolean;
   isBgDark: boolean;
+  windowHeight: number;
+  windowWidth: number;
 };
 
 export type SectionType = {

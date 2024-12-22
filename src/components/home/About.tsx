@@ -30,7 +30,7 @@ const About = () => {
         <div
           className={`prose ${
             !isHeroInView
-              ? "translate-y-2 duration-1000 ph:translate-y-4 sm:translate-y-10 md:translate-y-14 tb:translate-y-16 lg:translate-y-20"
+              ? "translate-y-2 duration-1000 ph:translate-y-4 sm:translate-y-10 md:translate-y-14 tb:translate-y-16 lg:translate-y-20 "
               : "-translate-y-2 delay-[500ms] duration-1000 ph:-translate-y-4 sm:-translate-y-10 md:-translate-y-14 tb:-translate-y-16 lg:-translate-y-20"
           } relative px-8 ${!isPinOnPage && "translate-x-1/2 delay-[1500ms] duration-[1000ms]"} selection:bg-accent selection:text-secondary md:w-1/2 md:px-0`}
         >

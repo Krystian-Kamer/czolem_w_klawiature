@@ -14,11 +14,11 @@ const Blog = () => {
         height="h-fit"
         isLastChild={true}
       >
-        <div className="relative mx-8 flex flex-col md:mt-14 lg:mt-20">
+        <div className="relative lg:mx-32 mx-8 flex flex-col md:mt-14 lg:mt-20">
           <div className="prose z-10">
             <SectionTitle title="Blog osobisty" />
           </div>
-          <div className="z-10 w-full font-protest text-base tracking-wide text-primary/95 selection:bg-accent selection:text-secondary ph:text-xl md:w-11/12 md:text-2xl leading-loose ph:leading-loose sm:leading-loose md:tracking-wider md:leading-loose lg:text-3xl lg:leading-relaxed lg:tracking-wider">
+          <div className="z-10 w-full font-protest text-base tracking-wide text-primary/95 selection:bg-accent selection:text-secondary ph:text-xl md:w-11/12 lg:w-full md:text-2xl leading-loose ph:leading-loose sm:leading-loose md:tracking-wider md:leading-loose lg:leading-relaxed lg:tracking-wider">
             <h3 className="mb-5 md:mb-8 lg:mb-10">
               <span className="border-b-4 border-accent bg-accent/30">
                 "Czołem w klawiaturę"
@@ -26,9 +26,6 @@ const Blog = () => {
               powstało w celach edukacyjnych i humorystycznych. Na spokojnie
               sprawdzam dane zagadnienie i wyciągam wnioski. Wyznaję zasadę, że
               im prościej tym lepiej.
-            </h3>
-            <h3 className="mb-2 hidden lg:ml-24 ph:flex md:mb-2 lg:mb-3">
-              Wybierz kategorię:
             </h3>
           </div>
           <PostCategories setPosts={setPosts} />

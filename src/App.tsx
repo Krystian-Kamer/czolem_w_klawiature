@@ -3,7 +3,7 @@ import { Landing } from "./components/home/index";
 import { PostWrapper } from "./components/blog/index";
 import { Portfolio, Blog, Contact } from "./pages";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { createContext } from "react";
+import { createContext, useState, useEffect } from "react";
 import { ContextBgValue } from "./types";
 import { useInView } from "react-intersection-observer";
 
@@ -15,6 +15,8 @@ export const AppContext = createContext<ContextBgValue>({
   isSectionTwoInView: false,
   isSectionFourInView: false,
   isBgDark: true,
+  windowWidth: window.innerWidth,
+  windowHeight: window.innerHeight,
 });
 
 const router = createBrowserRouter([
@@ -43,6 +45,18 @@ function App() {
   const isBgDark: boolean =
     isHeroInView || isSectionTwoInView || isSectionFourInView;
 
+  const [windowHeight, setWindowHeight] = useState<number>(window.innerHeight);
+  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowHeight(window.innerHeight);
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <AppContext.Provider
       value={{
@@ -53,6 +67,8 @@ function App() {
         isSectionTwoInView,
         isSectionFourInView,
         isBgDark,
+        windowHeight,
+        windowWidth,
       }}
     >
       <RouterProvider router={router} />

@@ -128,7 +128,7 @@ const File = ({ file, setIsWindowOpen, setWindowContent }: FileProps) => {
       <button
         {...attributes}
         {...listeners}
-        title="Drag this file"
+        title="Przenieś folder"
         className="absolute right-1 top-0 cursor-move text-xl opacity-0 duration-200 group-hover:opacity-100 group-active:text-sm"
       >
         <RiDragDropLine className="pointer-events-none" />

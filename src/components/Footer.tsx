@@ -1,8 +1,13 @@
 import { useLocation } from "react-router-dom";
 import footerImg from "../assets/footer-img.png";
 import { RiGithubFill, RiLinkedinFill, RiMailFill } from "react-icons/ri";
+import { ContextBgValue } from "../types";
+import { AppContext } from "../App";
+import { useContext } from "react";
+
 const Footer = () => {
   const { pathname } = useLocation();
+  const { windowHeight } = useContext<ContextBgValue>(AppContext);
   const footerLinks = [
     {
       id: "footer-1",
@@ -23,7 +28,9 @@ const Footer = () => {
 
   return (
     <footer className="absolute bottom-0 z-20 w-full selection:bg-secondary selection:text-accent">
-      <div className="relative mx-auto flex h-[10vh] max-w-7xl flex-col items-baseline justify-center gap-y-2">
+      <div
+        className={`relative mx-auto flex ${windowHeight <= 360 ? "h-[20vh]" : windowHeight > 600 ? "h-[10vh]" : "h-[14vh]"} max-w-7xl flex-col items-baseline justify-center gap-y-2`}
+      >
         <div className="flex w-full items-center justify-center gap-x-6">
           {footerLinks.map((link) => {
             const { id, href, icon } = link;
@@ -42,7 +49,9 @@ const Footer = () => {
             );
           })}
         </div>
-        <p className="z-10 self-center text-center font-protest text-xs leading-3 md:text-sm tb:text-lg tb:leading-none">
+        <p
+          className={`z-10 self-center text-center font-protest text-xs leading-3 md:-translate-x-8 md:text-sm tb:-translate-x-20 tb:text-lg tb:leading-none ${windowHeight <= 600 ? "lg:-translate-x-16 xl:translate-x-0" : "lg:translate-x-0"}`}
+        >
           Polityka Prywatności © {new Date().getFullYear()} Krystian Kamer. All
           right reserved.
         </p>
