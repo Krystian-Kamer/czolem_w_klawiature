@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { ContextBgValue, Skill } from "../../types";
+import { ContextValue, Skill } from "../../types";
 import { AppContext } from "../../App";
 import {SectionTitle} from "./../index";
 import handImg from "../../assets/hand.png";
@@ -7,7 +7,7 @@ import { skills } from "../../data";
 
 const Skills = () => {
   const { sectionTwoRef, isSectionTwoInView } =
-    useContext<ContextBgValue>(AppContext);
+    useContext<ContextValue>(AppContext);
   const [totalSkills, setTotalSkill] = useState<Skill[]>(skills);
 
   const changeSkill = (id: string) => {
@@ -31,7 +31,7 @@ const Skills = () => {
             return (
               <button
                 key={id}
-                className={`flex-auto rounded-xl cursor-custom-pointer border-[1px] border-neutral px-2 py-1 text-lg font-semibold tracking-wider text-neutral ph:border-[2px] sm:text-base ${checked && "bg-neutral text-primary"}`}
+                className={`cursor-custom-pointer flex-auto rounded-xl border-[1px] border-neutral px-2 py-1 text-lg font-semibold tracking-wider text-neutral ph:border-[2px] sm:text-base ${checked && "bg-neutral text-primary"}`}
                 onClick={() => changeSkill(id)}
               >
                 {name}
@@ -96,7 +96,7 @@ const Skills = () => {
           <img
             src={handImg}
             alt="hand image"
-            className={`-z-50 -mb-[600px] md:w-[400px] min-[800px]:w-[550px] ${isSectionTwoInView ? "animate-moveToTop" : "animate-moveToBottom"}`}
+            className={`-z-50 -mb-[600px] md:w-[400px] min-[800px]:w-[550px] ${isSectionTwoInView ? "mb-0 duration-[2000ms] ease-out" : "mb-[-600px]"}`}
           />
         </div>
       </div>

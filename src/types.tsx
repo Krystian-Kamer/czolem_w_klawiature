@@ -3,7 +3,7 @@ export type NavLinkType = {
   to: string;
 };
 
-export type ContextBgValue = {
+export type ContextValue = {
   heroRef: (node?: Element | null) => void;
   sectionTwoRef: (node?: Element | null) => void;
   sectionFourRef: (node?: Element | null) => void;

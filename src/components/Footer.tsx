@@ -1,13 +1,13 @@
 import { useLocation } from "react-router-dom";
 import footerImg from "../assets/footer-img.png";
 import { RiGithubFill, RiLinkedinFill, RiMailFill } from "react-icons/ri";
-import { ContextBgValue } from "../types";
+import { ContextValue } from "../types";
 import { AppContext } from "../App";
 import { useContext } from "react";
 
 const Footer = () => {
   const { pathname } = useLocation();
-  const { windowHeight } = useContext<ContextBgValue>(AppContext);
+  const { windowHeight } = useContext<ContextValue>(AppContext);
   const footerLinks = [
     {
       id: "footer-1",

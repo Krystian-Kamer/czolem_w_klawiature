@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { PostType, ContextBgValue } from "../../types";
+import { PostType, ContextValue } from "../../types";
 import { useInView } from "react-intersection-observer";
 import { AppContext } from "../../App";
 import { useContext } from "react";
 const PostPreview = ({ post }: { post: PostType }) => {
-  const { windowHeight, windowWidth } = useContext<ContextBgValue>(AppContext);
+  const { windowHeight, windowWidth } = useContext<ContextValue>(AppContext);
   const { id, title, imageSmall, imageBig, text, date, category } = post;
   const { ref: postPreview, inView: isPostPreviewInView } = useInView();
 

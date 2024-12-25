@@ -2,12 +2,14 @@ import { useState } from "react";
 import { Section, SectionTitle } from "../components/index";
 import { PostPreview, PostCategories } from "../components/blog/index";
 import { postsData } from "../posts-data";
-import { PostType,ContextBgValue } from "../types";
+import { PostType, ContextValue } from "../types";
 import { AppContext } from "../App";
 import { useContext } from "react";
+import { Typewriter } from "react-simple-typewriter";
+
 const Blog = () => {
   const [posts, setPosts] = useState<PostType[]>(postsData);
-  const { windowHeight } = useContext<ContextBgValue>(AppContext);
+  const { windowHeight } = useContext<ContextValue>(AppContext);
 
   return (
     <>
@@ -17,11 +19,13 @@ const Blog = () => {
         height="h-fit"
         isLastChild={true}
       >
-        <div className={`relative lg:mx-32 ${windowHeight <=320 && 'mx-1'} mx-6 flex flex-col md:mt-14 lg:mt-20`}>
+        <div
+          className={`relative lg:mx-32 ${windowHeight <= 320 && "mx-1"} mx-6 flex flex-col md:mt-14 lg:mt-20`}
+        >
           <div className="prose z-10">
             <SectionTitle title="Blog osobisty" />
           </div>
-          <div className="z-10 w-full font-protest text-base tracking-wide text-primary/95 selection:bg-accent selection:text-secondary ph:text-xl md:w-11/12 lg:w-full md:text-2xl leading-loose ph:leading-loose sm:leading-loose md:tracking-wider md:leading-loose lg:leading-relaxed lg:tracking-wider">
+          <div className="z-10 w-full font-protest text-base leading-loose tracking-wide text-primary/95 selection:bg-accent selection:text-secondary ph:text-xl ph:leading-loose sm:leading-loose md:w-11/12 md:text-2xl md:leading-loose md:tracking-wider lg:w-full lg:leading-relaxed lg:tracking-wider">
             <h3 className="mb-5 md:mb-8 lg:mb-10">
               <span className="border-b-4 border-accent bg-accent/30">
                 "Czołem w klawiaturę"
@@ -34,9 +38,13 @@ const Blog = () => {
           <PostCategories setPosts={setPosts} />
           <div className="last:mb-[100px] last:sm:mb-[400px] last:md:mb-[300px] last:lg:mb-[500px]">
             {posts.length === 0 ? (
-              <div className="my-40 w-full text-center font-protest text-2xl tracking-wide selection:bg-accent selection:text-secondary md:text-3xl md:leading-relaxed md:tracking-wider lg:px-20 lg:text-4xl lg:leading-relaxed lg:tracking-wider">
-                Obecnie nie ma postu o tej kategorii, ale szare komórki już
-                pracują, by się pojawił, cierpliwości...{" "}
+              <div className="my-40 w-full text-center font-protest text-lg tracking-wide selection:bg-accent selection:text-secondary md:text-2xl md:leading-relaxed md:tracking-wider lg:px-20 lg:leading-relaxed lg:tracking-wider">
+                <Typewriter
+                  typeSpeed={20}
+                  words={[
+                    "Obecnie nie ma postu w tej kategorii, ale szare komórki już pracują, by się pojawił, cierpliwości...",
+                  ]}
+              />	
               </div>
             ) : (
               posts.map((post) => <PostPreview key={post.id} post={post} />)

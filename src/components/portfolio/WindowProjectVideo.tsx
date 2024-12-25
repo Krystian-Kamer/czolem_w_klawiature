@@ -27,7 +27,6 @@ const handlePlaying = () => {
   }
 };
 
-
   return (
     <>
       <input

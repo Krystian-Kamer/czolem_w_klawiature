@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import { ContextBgValue } from "../types";
+import { ContextValue } from "../types";
 import { AppContext } from "../App";
 
 const SectionTitle = ({ title }: { title: string }) => {
-  const { isHeroInView, isBgDark } = useContext<ContextBgValue>(AppContext);
+  const { isHeroInView, isBgDark } = useContext<ContextValue>(AppContext);
 
   return (
     <div className="relative w-fit">

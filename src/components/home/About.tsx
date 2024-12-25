@@ -2,14 +2,14 @@ import ownerImg from "../../assets/owner-image.png";
 import pinImg from "../../assets/pin.png";
 import { SectionTitle } from "../index";
 import { useContext, useEffect, useState } from "react";
-import { ContextBgValue } from "../../types";
+import { ContextValue } from "../../types";
 import { AppContext } from "../../App";
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 
 const About = () => {
   const { isHeroInView, isSectionTwoInView } =
-    useContext<ContextBgValue>(AppContext);
+    useContext<ContextValue>(AppContext);
   const [isPinOnPage, setIsPinOnPage] = useState(true);
 
   const dropImage = () => {
@@ -30,7 +30,7 @@ const About = () => {
         <div
           className={`prose ${
             !isHeroInView
-              ? "translate-y-2 duration-1000 ph:translate-y-4 sm:translate-y-10 md:translate-y-14 tb:translate-y-16 lg:translate-y-20 "
+              ? "translate-y-2 duration-1000 ph:translate-y-4 sm:translate-y-10 md:translate-y-14 tb:translate-y-16 lg:translate-y-20"
               : "-translate-y-2 delay-[500ms] duration-1000 ph:-translate-y-4 sm:-translate-y-10 md:-translate-y-14 tb:-translate-y-16 lg:-translate-y-20"
           } relative px-8 ${!isPinOnPage && "translate-x-1/2 delay-[1500ms] duration-[1000ms]"} selection:bg-accent selection:text-secondary md:w-1/2 md:px-0`}
         >
@@ -59,7 +59,7 @@ const About = () => {
             nauczyć się czegoś nowego i wartościowego. Ta stronka to połączenie
             mojego{" "}
             <Link
-              className="cursor-custom-pointer mx-1 bg-accent tracking-wider text-primary no-underline"
+              className="cursor-custom-pointer mx-1 bg-accent tracking-wider text-primary no-underline hover:bg-accent/70"
               to="/portfolio"
             >
               {" "}
@@ -67,7 +67,7 @@ const About = () => {
             </Link>
             z humorystycznym{" "}
             <Link
-              className="cursor-custom-pointer ml-1 bg-accent tracking-wider text-primary no-underline"
+              className="cursor-custom-pointer ml-1 bg-accent tracking-wider text-primary hover:bg-accent/70 no-underline"
               to="/blog"
             >
               {" "}

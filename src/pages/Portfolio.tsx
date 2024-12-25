@@ -4,11 +4,11 @@ import Slider from "react-slick";
 import { projects } from "../data";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { ContextBgValue } from "../types";
+import { ContextValue } from "../types";
 import { AppContext } from "../App";
 import { useContext } from "react";
 const Portfolio = () => {
-  const { windowWidth, windowHeight } = useContext<ContextBgValue>(AppContext);
+  const { windowWidth, windowHeight } = useContext<ContextValue>(AppContext);
   const slidesToShow = windowWidth >= 600 ? 2.1 : 1.1;
   const visibleDots = windowWidth >= 390 ? true : false;
   
@@ -37,8 +37,8 @@ const Portfolio = () => {
       isLastChild={true}
     >
       <div>
-        <div className="flex flex-col md:mt-14 lg:mx-8 lg:mt-20">
-          <div className="prose select-none mx-8">
+        <div className="flex flex-col md:mt-14 lg:mx-10 lg:mt-20">
+          <div className="prose">
             <SectionTitle title="Portfolio" />
           </div>
           <div className="slider-container md:hidden">

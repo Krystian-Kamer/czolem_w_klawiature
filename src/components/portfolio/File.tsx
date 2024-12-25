@@ -5,6 +5,8 @@ import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import { RiDragDropLine } from "react-icons/ri";
 import pdfCvFile from "../../assets/Krystian Kamer CV.pdf";
+import { useFilesStore } from "../../store/filesSlice";
+
 type FileProps = {
   file: FileType;
   setIsWindowOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -12,15 +14,12 @@ type FileProps = {
 };
 
 const File = ({ file, setIsWindowOpen, setWindowContent }: FileProps) => {
+  const moveFileToTrash = useFilesStore((state) => state.moveFileToTrash);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
   const inputRef = useRef<HTMLInputElement | null>(null);
-
   const { icon, name, focus, href, to, id } = file;
-
   const { attributes, listeners, setNodeRef, transform, transition } =
     useSortable({ id });
-
   const style = { transform: CSS.Transform.toString(transform), transition };
 
   const handleRenameClick = () => {
@@ -32,10 +31,16 @@ const File = ({ file, setIsWindowOpen, setWindowContent }: FileProps) => {
     }
   };
 
-  const saveNameOnEnter = (e: React.KeyboardEvent<HTMLInputElement>) => {
+  const saveNameOnEnter = (
+    e: React.KeyboardEvent<HTMLInputElement>,
+    name: string,
+  ) => {
     if (e.key === "Enter" && inputRef.current) {
       inputRef.current.blur();
       inputRef.current.disabled = true;
+      if (inputRef.current.value === "") {
+        inputRef.current.value = name;
+      }
     }
   };
 
@@ -54,10 +59,10 @@ const File = ({ file, setIsWindowOpen, setWindowContent }: FileProps) => {
           <input
             ref={inputRef}
             type="text"
-            className="pointer-events-none my-1 w-full bg-neutral text-center font-protest text-sm tracking-widest text-secondary/95 placeholder:text-secondary/95 focus-visible:ring-red-600"
+            className="pointer-events-none my-1 w-full bg-neutral text-center font-protest text-sm tracking-widest text-secondary/95 placeholder:text-secondary/95"
             placeholder={name}
             disabled={true}
-            onKeyDown={(e) => saveNameOnEnter(e)}
+            onKeyDown={(e) => saveNameOnEnter(e, name)}
           />
         </div>
         {isDropdownOpen && (
@@ -118,7 +123,10 @@ const File = ({ file, setIsWindowOpen, setWindowContent }: FileProps) => {
               Zmień nazwę
             </button>
             {name !== "kosz" && (
-              <button className="cursor-custom rounded-md px-2 py-2 text-start text-base hover:bg-accent/80">
+              <button
+                className="cursor-custom rounded-md px-2 py-2 text-start text-base hover:bg-accent/80"
+                onClick={() => moveFileToTrash(id)}
+              >
                 Przenieś do kosza
               </button>
             )}

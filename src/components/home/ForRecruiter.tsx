@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { ContextBgValue } from "../../types";
+import { ContextValue } from "../../types";
 import { AppContext } from "../../App";
 import lampImg from "../../assets/lamp.png";
 import deskImg from "../../assets/desk.png";
@@ -10,7 +10,7 @@ import { SectionTitle } from "../index";
 import VanillaTilt from "vanilla-tilt";
 
 const ForRecruiter = () => {
-  const { sectionFourRef } = useContext<ContextBgValue>(AppContext);
+  const { sectionFourRef } = useContext<ContextValue>(AppContext);
   const [isLightOn, setIsLightOn] = useState(false);
   const [isDownloadCvModalOpen, setIsDownloadCvModalOpen] = useState(false);
 

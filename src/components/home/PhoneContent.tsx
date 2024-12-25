@@ -4,13 +4,13 @@ import ownerImg from "../../assets/owner-image.png";
 import avatarImg from "../../assets/avatar.png";
 import { FaRegHandshake, FaRegThumbsUp, FaRegThumbsDown } from "react-icons/fa";
 import { recruitment } from "../../data";
-import { ContextBgValue } from "../../types";
+import { ContextValue } from "../../types";
 import { AppContext } from "../../App";
 const PhoneContent = () => {
   const [isInvitationAccepted, setIsInvitationAccepted] = useState(false);
   const [recruitmentMessages, setRecruitmentMessages] = useState(recruitment);
   const [order, setOrder] = useState<number>(1);
-  const { isSectionFourInView } = useContext<ContextBgValue>(AppContext);
+  const { isSectionFourInView } = useContext<ContextValue>(AppContext);
 
   const acceptInvitation = (delay: number) => {
     setTimeout(() => setIsInvitationAccepted(true), delay);
@@ -48,7 +48,7 @@ const PhoneContent = () => {
         <div className="display">
           <div className="no-scrollbar artboard artboard-demo phone-1 relative hidden touch-pan-y overflow-y-scroll bg-gradient-to-b from-lime-200 to-accent duration-500 selection:bg-secondary selection:text-neutral md:block">
             <div
-              className={`z-10 ${isInvitationAccepted ? "hide-invitation" : "flex"} flex h-full w-full flex-col items-center gap-y-3 bg-gradient-to-b from-secondary to-accent pt-16`}
+              className={`z-10 ${isInvitationAccepted ? "animate-hideInvitation" : "flex"} flex h-full w-full flex-col items-center gap-y-3 bg-gradient-to-b from-secondary to-accent pt-16`}
             >
               <img
                 src={ownerImg}

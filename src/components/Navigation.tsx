@@ -1,7 +1,7 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 import { NavLink, useLocation } from "react-router-dom";
 import { useContext, useEffect } from "react";
-import { ContextBgValue, NavLinkType } from "../types";
+import { ContextValue, NavLinkType } from "../types";
 import { AppContext } from "../App";
 
 const navLinks: NavLinkType[] = [
@@ -13,7 +13,7 @@ const navLinks: NavLinkType[] = [
 
 const Navigation = () => {
   const { pathname } = useLocation();
-  const { isBgDark } = useContext<ContextBgValue>(AppContext);
+  const { isBgDark } = useContext<ContextValue>(AppContext);
  
     useEffect(() => {
       const scrollableDiv = document.querySelector(".no-scrollbar");

@@ -1,10 +1,10 @@
 import { Section, SectionTitle } from "../components/index";
-import { ContextBgValue } from "../types";
+import { ContextValue } from "../types";
 import { AppContext } from "../App";
 import { useContext } from "react";
 
 const Contact = () => {
-  const { windowWidth, windowHeight } = useContext<ContextBgValue>(AppContext);
+  const { windowWidth, windowHeight } = useContext<ContextValue>(AppContext);
 
   const sectionHeight = () => {
     if (
@@ -45,7 +45,7 @@ const Contact = () => {
             <h1 className="mt-1 text-lg uppercase text-primary ph:mt-2 ph:text-xl tb:text-2xl">
               Pogadajmy
             </h1>
-            <label className="input mb-1 flex h-8 items-center gap-2 rounded-none bg-neutral font-protest text-sm tracking-wider ph:text-base md:h-12 tb:text-lg">
+            <label className="input mb-1 flex h-8 items-center gap-2 rounded-none bg-neutral font-protest text-sm tracking-wider ph:text-base md:h-12 tb:text-lg lg:text-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
@@ -62,7 +62,7 @@ const Contact = () => {
               />
             </label>
 
-            <label className="input my-1 flex h-8 items-center gap-2 rounded-none bg-neutral font-protest text-sm tracking-wider ph:text-base md:h-12 tb:text-lg">
+            <label className="input my-1 flex h-8 items-center gap-2 rounded-none bg-neutral font-protest text-sm tracking-wider ph:text-base md:h-12 tb:text-lg lg:text-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
@@ -81,7 +81,7 @@ const Contact = () => {
               />
             </label>
             <textarea
-              className="textarea my-1 min-h-[30vh] w-full resize-none rounded-none bg-neutral font-protest text-sm tracking-wider ph:text-base tb:text-lg"
+              className="textarea my-1 min-h-[30vh] w-full resize-none rounded-none bg-neutral font-protest text-sm tracking-wider ph:text-base tb:text-lg lg:text-xl"
               placeholder="O czym chciałbyś pogadać?"
               name="message"
             ></textarea>

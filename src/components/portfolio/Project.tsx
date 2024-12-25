@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { ProjectType } from "../../types";
 import { useInView } from "react-intersection-observer";
-import { ContextBgValue } from "../../types";
+import { ContextValue } from "../../types";
 import { AppContext } from "../../App";
 import { useContext } from "react";
 const Project = ({ project }: { project: ProjectType }) => {
@@ -9,7 +9,7 @@ const Project = ({ project }: { project: ProjectType }) => {
     project;
   const [isVideoVisible, setIsVideoVisible] = useState(false);
   const { ref: projectRef, inView: isProjectInView } = useInView();
-  const { windowWidth } = useContext<ContextBgValue>(AppContext);
+  const { windowWidth } = useContext<ContextValue>(AppContext);
 
   useEffect(() => {
     setIsVideoVisible(false);

@@ -4,10 +4,10 @@ import { PostWrapper } from "./components/blog/index";
 import { Portfolio, Blog, Contact } from "./pages";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { createContext, useState, useEffect } from "react";
-import { ContextBgValue } from "./types";
+import { ContextValue } from "./types";
 import { useInView } from "react-intersection-observer";
 
-export const AppContext = createContext<ContextBgValue>({
+export const AppContext = createContext<ContextValue>({
   heroRef: () => {},
   sectionTwoRef: () => {},
   sectionFourRef: () => {},

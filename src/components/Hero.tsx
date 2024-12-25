@@ -1,11 +1,11 @@
 import { useContext } from "react";
 import heroImg from "../assets/hero-img.png";
-import { ContextBgValue } from "../types";
+import { ContextValue } from "../types";
 import { AppContext } from "../App";
 import { useLocation } from "react-router-dom";
 
 const Hero = () => {
-  const { heroRef, isHeroInView } = useContext<ContextBgValue>(AppContext);
+  const { heroRef, isHeroInView } = useContext<ContextValue>(AppContext);
   const { pathname } = useLocation();
   return (
     <div className="border-b-[1px] bg-primary">
@@ -19,14 +19,14 @@ const Hero = () => {
         <img
           src={heroImg}
           alt="Hero image"
-          className={`z-10 sm:w-3/4 md:w-3/4 lg:w-1/2 ${pathname === "/" && "sm:-translate-x-16 lg:translate-x-0 opacity-100"} ${
+          className={`z-10 sm:w-3/4 md:w-3/4 lg:w-1/2 ${pathname === "/" && "opacity-100 sm:-translate-x-16 lg:translate-x-0"} ${
             isHeroInView
               ? "opacity-100 duration-1000 sm:-translate-x-16 lg:translate-x-0"
               : "-translate-x-[200px] opacity-0"
           }`}
         />
         <div
-          className={`flex w-full items-center justify-center bg-accent selection:bg-transparent selection:text-primary/90 sm:absolute sm:right-4 sm:top-28 sm:w-[40%] sm:rounded-md sm:py-2 sm:opacity-0 md:top-36 md:w-2/5 md:py-4 lg:mx-20 xl:mx-20 xl:px-10 ${isHeroInView && "sm:animate-moveHumourToTop"}`}
+          className={`flex w-full items-center justify-center bg-accent duration-1000 selection:bg-transparent selection:text-primary/90 sm:absolute sm:right-4 sm:top-28 sm:w-[40%] sm:rounded-md sm:py-2 md:top-36 md:w-2/5 md:py-4 lg:mx-20 xl:mx-20 xl:px-10 ${isHeroInView ? "sm:translate-y-0 sm:opacity-100" : "sm:opacity-20 sm:-translate-y-[300px]"}`}
         >
           <div className="prose">
             <h1 className="my-1 font-protest text-2xl uppercase sm:text-3xl lg:text-3xl xl:text-4xl">

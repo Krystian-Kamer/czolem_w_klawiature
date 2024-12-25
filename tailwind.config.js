@@ -18,24 +18,14 @@ export default {
           "0%": { opacity: "0", pointerEvents: "none" },
           "100%": { opacity: "1", pointerEvents: "auto" },
         },
-        moveToTopHand: {
-          "0%": { marginBottom: "-600px" },
-          "100%": { marginBottom: "0px" },
-        },
-        moveToBottomHand: {
-          "0%": { marginBottom: "0px" },
-          "100%": { marginBottom: "-600px" },
-        },
-        moveHumourToTop: {
-          "0%": { transform: "translateY(-120px)", opacity: "0" },
-          "10%": { opacity: "0.5" },
-          "30%": { opacity: "1" },
-          "100%": { transform: "translateY(0px)", opacity: "1" },
-        },
         levitateBall: {
           "0%": { transform: "translateY(-30%) translateX(-50%)" },
           "50%": { transform: "translateY(20%) translateX(-50%)" },
           "100%": { transform: "translateY(-30%) translateX(-50%)" },
+        },
+        hideInvitation: {
+          "0%": { transform: "translateY(0%)" },
+          "100%": { transform: "translateY(-100%)", display: "none" },
         },
         bounceSlow: {
           "0%": {
@@ -53,13 +43,11 @@ export default {
         },
       },
       animation: {
-        "bounce-slow": "bounceSlow 2s linear infinite",
+        bounceSlow: "bounceSlow 2s linear infinite",
         levitate: "levitateBall 4s ease-in-out infinite",
         fadeIn: "fadeIn 0.3s linear forwards",
         fadeInPointerNone: "fadeInPointerNone 0.3s linear forwards",
-        moveToTop: "moveToTopHand 2s ease-out forwards",
-        moveToBottom: "moveToBottomHand 0.5s ease-out forwards",
-        moveHumourToTop: "moveHumourToTop 1s ease-out forwards",
+        hideInvitation: "hideInvitation 1s linear forwards 1s",
       },
       backgroundImage: {
         "ball-shape": "radial-gradient(circle at 10px 40px, #FFD369, #393E46)",
