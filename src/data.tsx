@@ -27,7 +27,7 @@ export const skills: Skill[] = [
       <SiJavascript className="p-2 md:h-20 md:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: true,
-    text: "Idealny świat powstał w 7 dni a biorąc pod uwagę work-life balance, w 6. JavaScript, mimo, że powstał (jeśli wierzyć ploteczkom) w 10 dni, już taki nie jest. Jest to niebezpieczne miejsce najeżone pułapkami. I choć stringi kojarzyły mi się tylko z jednym, to i te tu, polubiłem ; )",
+    text: "Idealny świat powstał w 7 dni a biorąc pod uwagę work-life balance, w 6. JavaScript, mimo, że powstał (jeśli wierzyć plotkom) w 10 dni, już taki nie jest. Jest to niebezpieczne miejsce najeżone pułapkami. I choć stringi kojarzyły mi się tylko z jednym, to i te tu, polubiłem.",
   },
   {
     name: "HTML",
@@ -36,7 +36,7 @@ export const skills: Skill[] = [
       <SiHtml5 className="p-2 md:h-20 md:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
-    text: "Od tego zaczęła się moja przygoda, która trwa do dziś. ",
+    text: "Kiedy zaczynasz to nie wiesz ile nie wiesz. Na etapie HTML-a myślisz, że wiele wiesz, a wiesz niewiele. Potem idąc dalej, wiesz już, że niewiele wiesz, ale wiesz czego masz się dowiedzieć. Idąc jeszcze dalej coraz więcej wiesz i coraz więcej nie wiesz.",
   },
   {
     name: "CSS",
@@ -45,7 +45,7 @@ export const skills: Skill[] = [
       <SiCss3 className="p-2 md:h-20 md:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
-    text: "Stary dobry CSS. Podstawa do dalszego rozwoju. Ostylowaliśmy razem niejeden projekt, ale nasze drogi trochę się rozeszły. On wolał zostać na przedmieściach i karmić kaczki przy jeziorze a ja wolałem wyruszyć w świat z przetartym plecakiem jak Włóczykij. Czasem mimochodem na siebie wpadniemy, pomachamy sobie z oddali i pójdziemy dalej, każdy w swoją stronę.",
+    text: "Stary dobry CSS. Podstawa do dalszego rozwoju. Ostylowaliśmy razem niejeden projekt, ale nasze drogi trochę się rozeszły. On wolał zostać na przedmieściach i karmić kaczki przy jeziorze a ja wolałem wyruszyć w świat z przetartym plecakiem. Czasem na siebie wpadniemy, pomachamy sobie z oddali i pójdziemy dalej, każdy w swoją stronę.",
   },
   {
     name: "React",
@@ -63,7 +63,7 @@ export const skills: Skill[] = [
       <SiReactrouter className="p-2 md:h-20 md:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
-    text: "React bez React Routera jest jak Hanka bez kartonów.",
+    text: "React bez React Routera jest jak Hanka bez kartonów. Daleko nie pojedziesz.",
   },
   {
     name: "TypeScript",
