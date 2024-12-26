@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 
 const About = () => {
-  const { isHeroInView, isSectionTwoInView } =
+  const { isHeroInView, isSectionTwoInView, windowHeight, windowWidth } =
     useContext<ContextValue>(AppContext);
   const [isPinOnPage, setIsPinOnPage] = useState(true);
 
@@ -35,7 +35,7 @@ const About = () => {
           } relative px-8 ${!isPinOnPage && "translate-x-1/2 delay-[1500ms] duration-[1000ms]"} selection:bg-accent selection:text-secondary md:w-1/2 md:px-0`}
         >
           <SectionTitle title={"Czołem!"} />
-          <h2 className="text-xl sm:text-2xl md:text-3xl">
+          <h2 className="mt-0 text-xl sm:text-2xl md:text-3xl">
             Z tej strony Krystian Kamer.
           </h2>
           <h3 className="text-xl text-primary sm:text-2xl">
@@ -54,10 +54,10 @@ const About = () => {
               />
             </div>
           </h3>
-          <p className="text-lg text-primary ph:text-xl ph:leading-relaxed sm:text-2xl md:pt-6 md:leading-loose">
+          <p className="text-lg text-primary ph:text-xl leading-relaxed ph:leading-relaxed sm:text-2xl md:pt-6 sm:leading-loose">
             Nie lubię nudy. Jeśli jesteś na tej stronie to oznacza, że chcesz
             nauczyć się czegoś nowego i wartościowego. Ta stronka to połączenie
-            mojego{" "}
+            mojego
             <Link
               className="cursor-custom-pointer mx-1 bg-accent tracking-wider text-primary no-underline hover:bg-accent/70"
               to="/portfolio"
@@ -65,7 +65,7 @@ const About = () => {
               {" "}
               portfolio
             </Link>
-            z humorystycznym{" "}
+            z humorystycznym
             <Link
               className="cursor-custom-pointer ml-1 bg-accent tracking-wider text-primary hover:bg-accent/70 no-underline"
               to="/blog"
@@ -76,11 +76,11 @@ const About = () => {
             , na który będę wrzucał co każdy poniedziałek nowe posty.
           </p>
         </div>
-        <div className="absolute -bottom-10 -left-9 h-2/5 w-1/2 rotate-45 bg-accent sm:w-2/5 md:hidden"></div>
+        <div className={`absolute ${windowWidth > windowHeight && windowHeight <= 600 && 'hidden'} -bottom-10 -left-9 h-2/5 w-1/2 rotate-45 bg-accent sm:w-2/5 md:hidden`}></div>
         <img
           src={ownerImg}
           alt="owner image"
-          className="absolute bottom-0 left-0 w-[55%] sm:w-2/5 md:hidden"
+          className={`absolute ${windowWidth > windowHeight && windowHeight <= 600 && 'hidden'} bottom-0 left-0 w-[55%] sm:w-2/5 md:hidden`}
         />
         <div
           className={`${!isPinOnPage && "drop-img"} relative hidden h-fit rounded-sm border-8 border-b-[12px] border-white bg-accent drop-shadow-[25px_25px_10px_rgba(0,0,0,0.3)] md:mt-28 md:flex md:w-1/3 lg:w-[28%] ${

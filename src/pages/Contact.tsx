@@ -2,42 +2,36 @@ import { Section, SectionTitle } from "../components/index";
 import { ContextValue } from "../types";
 import { AppContext } from "../App";
 import { useContext } from "react";
-
 const Contact = () => {
-  const { windowWidth, windowHeight } = useContext<ContextValue>(AppContext);
+  const { windowHeight } = useContext<ContextValue>(AppContext);
 
   const sectionHeight = () => {
-    if (
-      windowHeight <= 360 ||
-      (windowWidth > windowHeight && windowHeight <= 600)
-    ) {
+    if (windowHeight <= 360) {
       return "h-[200vh]";
-
-    } else if (windowWidth > windowHeight && windowHeight <= 800) {
-      return 'h-[150vh]'
-    } else if (
-      windowHeight < 640 ||
-      (windowWidth > windowHeight && windowHeight <= 1065)
-    ) {
-      return "h-[120vh]";
+    } else if (windowHeight <= 480) {
+      return "h-[130vh]";
+    } else if (windowHeight <= 600) {
+      return "h-[113vh] vsm:h-screen md:h-[190vh] lg:h-[180vh]";
+    } else if (windowHeight <= 800) {
+      return "h-[113vh] vsm:h-screen md:h-[150vh] lg:h-[140vh]";
     } else {
-      return "h-screen";
+      return "h-[113vh] vsm:h-screen";
     }
   };
   return (
     <>
       <Section
-        id="blog-1"
+        id="contact"
         bgColor="bg-neutral"
         height={sectionHeight()}
         isLastChild={true}
       >
-        <div className="mx-8 flex flex-col selection:bg-secondary selection:text-accent md:mt-14 lg:mt-20">
+        <div className="mx-3 flex flex-col selection:bg-secondary selection:text-accent vsm:mx-8 vmd:mt-14 lg:mt-20">
           <div className="prose">
             <SectionTitle title="Kontakt" />
           </div>
           <form
-            className="prose flex h-fit w-full flex-col justify-around self-center border-[6px] border-dashed border-primary bg-accent px-4 py-2 ph:mt-7 sm:mt-8 md:mt-16 md:w-3/5 lg:w-1/2 lg:p-8"
+            className="prose flex h-fit w-full flex-col justify-around self-center border-[6px] border-dashed border-primary bg-accent px-4 py-2 ph:mt-8 vmd:mt-14 sm:mt-8 md:mt-16 md:w-3/5 lg:w-1/2 lg:p-8"
             target="_blank"
             action="https://formsubmit.co/6ee327a787b46a2edd4ee628298c9ecf"
             method="POST"
@@ -91,15 +85,13 @@ const Contact = () => {
               name="_autoresponse"
               value="Dzięki za zostawienie wiadomości, na pewno się z nią zapoznam."
             />
-            <div
-              className={`flex ${windowHeight <= 320 ? "flex-col" : "flex-row"} items-center justify-between gap-x-1`}
-            >
+            <div className="flex flex-col items-center justify-between gap-x-1 vsm:flex-row">
               <p className="font-protest text-sm tracking-wider text-primary ph:text-base lg:text-xl">
                 Uzupełnij wszystkie pola!
               </p>
               <button
                 type="submit"
-                className="cursor-custom-pointer rounded-sm border-4 border-primary bg-primary px-4 py-1 font-protest text-sm uppercase tracking-widest text-accent duration-300 hover:bg-accent hover:text-primary ph:px-6 md:text-base lg:px-10 lg:py-2 lg:text-xl"
+                className="cursor-custom-pointer w-full rounded-sm border-4 border-primary bg-primary px-4 py-1 font-protest text-sm uppercase tracking-widest text-accent duration-300 hover:bg-accent hover:text-primary vsm:w-fit ph:px-6 vmd:px-8 md:text-base lg:px-10 lg:py-2 lg:text-xl"
               >
                 Prześlij
               </button>

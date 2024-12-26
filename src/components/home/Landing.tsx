@@ -3,30 +3,31 @@ import { About, ForRecruiter, EmploymentHistory, Skills } from "./index";
 import { SectionType } from "../../types";
 
 const Landing = () => {
+
   const sections: SectionType[] = [
     {
       id: "landing-1",
       children: <About />,
       bgColor: "bg-neutral",
-      height: "h-screen",
+      height: `h-screen`,
     },
     {
       id: "landing-2",
       children: <Skills />,
       bgColor: "bg-primary",
-      height: "h-screen",
+      height: `h-screen`,
     },
     {
       id: "landing-3",
       children: <EmploymentHistory />,
       bgColor: "bg-neutral",
-      height: "h-screen",
+      height: `h-screen`,
     },
     {
       id: "landing-4",
       children: <ForRecruiter />,
       bgColor: "bg-primary",
-      height: "h-screen",
+      height: `h-screen`,
       isLastChild: true,
     },
   ];

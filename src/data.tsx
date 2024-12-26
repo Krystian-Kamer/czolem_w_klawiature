@@ -117,7 +117,7 @@ export const recruitment: Recruitment[] = [
     id: 1,
     question: "Dlaczego programowanie?",
     answer:
-      "Myślę, że jestem kreatywny. Lubię wiedzieć jak coś działa, lubię też tworzyć. Uważam, że programowanie to naturalny sposób na realizację moich nabytych talentów.",
+      "Jestem kreatywny. Lubię wiedzieć jak coś działa, lubię też tworzyć. Uważam, że programowanie to naturalny sposób na realizację moich nabytych talentów.",
     isAsked: false,
     order: null,
   },
@@ -125,7 +125,7 @@ export const recruitment: Recruitment[] = [
     id: 2,
     question: "JAKIM ZWIERZĘCIEM JESTEŚ?",
     answer:
-      "A jednak mityczne pytanie padło! No dobrze, myślę, że jestem niedźwiedziem. Niedźwiedź kojarzony jest różnie - może być przyjacielskim misiem, groźnym grizzly, szukajacym miodu niedźwiadkiem. W zależności od kontekstu jestem jednym z nich 🐻.",
+      "A jednak mityczne pytanie padło! No dobrze, myślę, że jestem niedźwiedziem. Niedźwiedź kojarzony jest różnie. Dla bliskich jestem przyjacielskim misiem, dla ludzi nieuprzejmych groźnym grizzly a na osobności leżakującym na słońcu niedźwiadkiem. Wszystko zależy od kontekstu 🐻.",
     isAsked: false,
     order: null,
   },
@@ -133,7 +133,7 @@ export const recruitment: Recruitment[] = [
     id: 3,
     question: "Jakie są twoje słabe strony?",
     answer:
-      "Czyli to ten moment, w którym zamieniam zaletę na wadę, żeby ostatecznie zwiększyć swoje szanse na zatrudnienie. Mam poczucie humoru. Jednym się to podoba, innym nie. W sytuacjach wymagających powagi jestem poważny. Po drugie jestem szczery. Jest to miecz obosieczny a nie każdy lubi rozmowy prosto z mostu.",
+      "Czyli to ten moment, w którym zamieniam zaletę na wadę, żeby ostatecznie zwiększyć swoje szanse na zatrudnienie? Mam poczucie humoru. Jednym się to podoba, innym nie. W sytuacjach wymagających powagi można jednak na mnie liczyć.",
     isAsked: false,
     order: null,
   },
@@ -141,7 +141,7 @@ export const recruitment: Recruitment[] = [
     id: 4,
     question: "Jakie masz oczekiwania finansowe?",
     answer:
-      "Jestem realistą, dlatego uważam, że moje oczekiwania nie są wygórowane a więc oscylują w przedziale od 4 do 6.5 tys. zł netto miesięcznie. W początkowej fazie kariery ważniejsze jest dla mnie zdobycie doświadczenia aniżeli zarobki.",
+      "W początkowej fazie kariery ważniejsze jest dla mnie zdobycie doświadczenia aniżeli zarobki. Jestem gotów do negocjacji, na pewno się jakoś dogadamy.",
     isAsked: false,
     order: null,
   },
@@ -149,7 +149,7 @@ export const recruitment: Recruitment[] = [
     id: 5,
     question: "Dlaczego interesuje Cię nasza firma?",
     answer:
-      "Jeżeli ktoś dotarł aż do tej strony, wyklikał co mógł wyklikać, a przy tym dobrze się bawił, to znaczy, że nie stawia na ilość a na jakość. A to tak jak ja! Szukam firmy, gdzie będę mógł się realizować. Mam nadzieję, że dobrze trafiłem😃.",
+      "Jeżeli ktoś dotarł aż do tej strony, wyklikał co mógł wyklikać, a przy tym dobrze się bawił, to znaczy, że nie stawia na ilość a na jakość. A to tak jak ja! Szukam firmy, gdzie będę mógł się realizować. Mam nadzieję, że dobrze trafiłem.",
     isAsked: false,
     order: null,
   },
@@ -157,7 +157,7 @@ export const recruitment: Recruitment[] = [
     id: 6,
     question: "Jake są twoje mocne strony?",
     answer:
-      "Uważam, że jest to zdolność do dogadania się z każdym. Ponadto, w sytuacji stresowej nie tracę pozytywnego myślenia. Słucham ze zrozumieniem i wyciągam wnioski.",
+      "Uważam, że jest to zdolność do dogadania się z każdym. Ponadto, w sytuacji stresowej nie tracę pozytywnego myślenia. Potrafię słuchać ze zrozumieniem i wyciągam wnioski.",
     isAsked: false,
     order: null,
   },

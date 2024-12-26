@@ -10,17 +10,17 @@ import { SectionTitle } from "../index";
 import VanillaTilt from "vanilla-tilt";
 
 const ForRecruiter = () => {
-  const { sectionFourRef } = useContext<ContextValue>(AppContext);
+  const { sectionFourRef, windowWidth } = useContext<ContextValue>(AppContext);
   const [isLightOn, setIsLightOn] = useState(false);
   const [isDownloadCvModalOpen, setIsDownloadCvModalOpen] = useState(false);
 
-  if (window.innerWidth >= 1024) {
+  if (windowWidth >= 1024) {
     VanillaTilt.init(document.querySelector(".desk") as HTMLElement);
   }
 
   return (
-    <div className="mx-8 flex flex-col md:mt-14 lg:mt-20">
-      <div className="prose z-50" ref={sectionFourRef}>
+    <div ref={sectionFourRef} className="mx-8 flex flex-col md:mt-14 lg:mt-20">
+      <div className="prose z-50">
         <SectionTitle title="Dla rekrutera" />
       </div>
       <div className="relative flex flex-col md:h-[596px] md:flex-row md:justify-center tb:mt-20 lg:mt-6">
@@ -48,7 +48,7 @@ const ForRecruiter = () => {
             <img
               src={lampImg}
               alt="lamp image"
-              className={`cursor-custom-pointer absolute left-1/2 top-0 h-24 -translate-x-1/2 ${isLightOn ? "brightness-100" : "brightness-[20%]"} md:w-20 md:h-fit lg:h-28 `}
+              className={`cursor-custom-pointer absolute left-1/2 top-0 h-24 -translate-x-1/2 ${isLightOn ? "brightness-100" : "brightness-[20%]"} md:h-fit md:w-20 lg:h-28`}
               onClick={() => {
                 setIsLightOn(!isLightOn);
                 setIsDownloadCvModalOpen(false);

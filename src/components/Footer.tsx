@@ -27,7 +27,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="absolute bottom-0 z-20 w-full selection:bg-secondary selection:text-accent">
+    <footer className="absolute text-primary bottom-0 z-20 w-full selection:bg-secondary selection:text-accent">
       <div
         className={`relative mx-auto flex ${windowHeight <= 360 ? "h-[20vh]" : windowHeight > 600 ? "h-[10vh]" : "h-[14vh]"} max-w-7xl flex-col items-baseline justify-center gap-y-2`}
       >

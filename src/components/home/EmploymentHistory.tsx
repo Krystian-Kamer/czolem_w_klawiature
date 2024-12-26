@@ -4,10 +4,13 @@ import { PiScalesFill } from "react-icons/pi";
 import { LiaGlassesSolid } from "react-icons/lia";
 import { MdLaptopMac } from "react-icons/md";
 import { useInView } from "react-intersection-observer";
-
+import {  ContextValue } from "../../types";
+import { AppContext } from "../../App";
+import { useContext } from "react";
 const EmploymentHistory = () => {
   const { ref: employmentHistoryRef, inView: isEmploymentHistoryInView } =
     useInView();
+  const { windowWidth } = useContext<ContextValue>(AppContext);
 
   return (
     <div
@@ -48,7 +51,7 @@ const EmploymentHistory = () => {
               <div className="h-1 w-1/4 rounded-sm bg-accent md:h-2 md:justify-self-end"></div>
             </div>
             <p className="text-sm md:text-base md:leading-relaxed tb:text-xl lg:text-xl lg:leading-loose">
-              <span className="hidden ph:inline">
+              <span className={`hidden ${windowWidth > 415 &&'inline'}`}>
                 Pracowałem w Urzędzie Pracy w Łodzi, na różnych stanowiskach.{" "}
               </span>
               Współpracowałem z przedsiębiorcami, rozliczałem dotacje,
@@ -89,7 +92,7 @@ const EmploymentHistory = () => {
               <div className="h-1 w-1/4 rounded-sm bg-accent md:h-2"></div>
             </div>
             <p className="text-sm md:text-base md:leading-relaxed tb:text-xl lg:text-xl lg:leading-loose">
-              <span className="hidden ph:inline">
+              <span className={`hidden ${windowWidth > 415 &&'inline'}`}>
                 Jestem protokolantem, wykonuję polecenia Sędziego oraz
                 kierownictwa.{" "}
               </span>
@@ -133,7 +136,7 @@ const EmploymentHistory = () => {
             <p className="text-sm md:text-base md:leading-relaxed tb:text-xl lg:text-xl lg:leading-loose">
               Ekscytujący czas. Nowe technologie, kursy, projekty. Dużo
               wyrzeczeń, ale warto.
-              <span className="hidden ph:inline">
+              <span className={`hidden ${windowWidth > 415 &&'inline'}`}>
                 {" "}
                 Jeśli widzisz tego bloga to znaczy, że jestem w trakcie
                 spełniania mojego marzenia o pozostaniu programistą.
@@ -175,7 +178,7 @@ const EmploymentHistory = () => {
             </div>
             <p className="text-sm md:text-base md:leading-relaxed tb:text-xl lg:text-xl lg:leading-loose">
               Pierwsza pełnoprawna praca w sektorze IT.
-              <span className="hidden ph:inline">
+              <span className={`${windowWidth > 415 ? 'inline' : 'hidden'}`}>
                 {" "}
                 Tutaj kiedyś pojawi się oszałamiająca ścieżka kariery
                 programisty. Moja podróż od Juniora do Seniora.

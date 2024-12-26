@@ -3,7 +3,9 @@ export default {
   theme: {
     extend: {
       screens: {
+        vsm: "321px",
         ph: "390px",
+        vmd: "550px",
         tb: "850px",
       },
       fontFamily: {

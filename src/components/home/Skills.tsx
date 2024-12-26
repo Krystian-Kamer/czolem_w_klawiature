@@ -20,8 +20,8 @@ const Skills = () => {
   };
 
   return (
-    <div className="mx-8 flex flex-col md:mt-14 lg:mt-20">
-      <div className="prose" ref={sectionTwoRef}>
+    <div ref={sectionTwoRef} className="mx-8 flex flex-col md:mt-14 lg:mt-20">
+      <div className="prose" >
         <SectionTitle title="Skille" />
       </div>
       <div className="md:hidden">
@@ -31,7 +31,7 @@ const Skills = () => {
             return (
               <button
                 key={id}
-                className={`cursor-custom-pointer flex-auto rounded-xl border-[1px] border-neutral px-2 py-1 text-lg font-semibold tracking-wider text-neutral ph:border-[2px] sm:text-base ${checked && "bg-neutral text-primary"}`}
+                className={`cursor-custom-pointer  flex-auto rounded-xl border-[1px] border-neutral px-2 py-1 text-lg font-semibold tracking-wider text-neutral ph:border-[2px] sm:text-base ${checked && "bg-neutral text-primary"}`}
                 onClick={() => changeSkill(id)}
               >
                 {name}
@@ -54,7 +54,7 @@ const Skills = () => {
         })}
       </div>
 
-      <div className="z-20 hidden gap-y-[2px] text-neutral selection:bg-secondary-content selection:text-primary md:flex md:h-[69vh] md:flex-col lg:w-[42%]">
+      <div className="z-20 hidden gap-y-[2px] text-neutral selection:bg-secondary-content selection:text-primary md:flex md:h-[69vh] lg:h-fit md:flex-col lg:w-[42%]">
         {totalSkills.map((skill, index) => {
           const { name, id, checked, text } = skill;
           return (
