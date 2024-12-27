@@ -17,6 +17,7 @@ export const AppContext = createContext<ContextValue>({
   isBgDark: true,
   windowWidth: window.innerWidth,
   windowHeight: window.innerHeight,
+  sectionHeight: () => "h-auto",
 });
 
 const router = createBrowserRouter([
@@ -47,6 +48,41 @@ function App() {
   const [windowHeight, setWindowHeight] = useState<number>(window.innerHeight);
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
 
+const sectionHeight = (
+  pathname: string,
+): string => {
+  if (pathname === "/") {
+    if (windowHeight <= 360) {
+      return "h-[290vh]";
+    } else if (windowHeight <= 480) {
+      return "h-[150vh]";
+    } else if (windowHeight <= 600) {
+      return "h-[133vh] vsm:h-[115vh] ph:h-screen md:h-[190vh] lg:h-[230vh]";
+    } else if (windowHeight <= 800) {
+      return "h-[120vh] vsm:h-[105vh] ph:h-screen md:h-[150vh] lg:h-[180vh]";
+    } else {
+      return "h-[120vh] vsm:h-[105vh] ph:h-screen";
+    }
+  } else if (pathname === "/contact" || pathname === "/error") {
+    if (windowWidth > windowHeight && windowHeight <= 360) {
+      return "h-[200vh]";
+    } else if (windowWidth > windowHeight && windowHeight <= 800) {
+      return "h-[180vh]";
+    } else {
+      return "h-fit vmd:h-screen";
+    }
+  } else if (pathname === "/portfolio") {
+    if (windowWidth > windowHeight && windowHeight <= 360) {
+      return "h-[280vh]";
+    } else if (windowWidth > windowHeight && windowHeight <= 800) {
+      return "h-[180vh]";
+    } else {
+      return "h-fit vmd:h-screen";
+    }
+  }
+
+  return "h-screen";
+};
   useEffect(() => {
     const handleResize = () => {
       setWindowHeight(window.innerHeight);
@@ -68,6 +104,7 @@ function App() {
         isBgDark,
         windowHeight,
         windowWidth,
+        sectionHeight,
       }}
     >
       <RouterProvider router={router} />

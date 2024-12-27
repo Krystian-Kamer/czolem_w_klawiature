@@ -28,8 +28,8 @@ const WindowProjectThoughts = ({
         role="tabpanel"
         className="tab-content h-[450px] border-base-200 bg-base-100 p-10"
       >
-        <div className="flex h-full flex-col justify-between px-16 text-xl">
-          <p className="pt-5 text-2xl md:text-xl">
+        <div className="flex h-full flex-col justify-between px-10 md:px-16 text-xl">
+          <p className="pt-5 text-lg md:text-xl">
             {tabsState[3] && <Typewriter typeSpeed={30} words={[thoughts]} />}
           </p>
           <p className="select-none self-center italic text-secondary/40">

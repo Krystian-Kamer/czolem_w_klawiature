@@ -9,7 +9,7 @@ const Project = ({ project }: { project: ProjectType }) => {
     project;
   const [isVideoVisible, setIsVideoVisible] = useState(false);
   const { ref: projectRef, inView: isProjectInView } = useInView();
-  const { windowWidth } = useContext<ContextValue>(AppContext);
+  const { windowHeight } = useContext<ContextValue>(AppContext);
 
   useEffect(() => {
     setIsVideoVisible(false);
@@ -18,7 +18,7 @@ const Project = ({ project }: { project: ProjectType }) => {
   return (
     <div
       ref={projectRef}
-      className={`mockup-window ml-9 mb-2 h-[500px] w-fit overflow-hidden bg-accent shadow-md ph:mb-10 ph:mt-6 ph:h-[585px] sm:my-16 sm:w-[320px] tb:my-24 tb:ml-16 ${windowWidth >= 600 && windowWidth < 768 && "w-[275px]"}`}
+      className={`mockup-window justify-self-center mx-6 overflow-hidden mb-4 vmd:mb-10 bg-accent shadow-md ph:h-[565px] ph:w-[290px]`}
     >
       <div
         className={`card w-[200%] ${
@@ -38,7 +38,7 @@ const Project = ({ project }: { project: ProjectType }) => {
             >
               <span className="font-bold">Opis:</span> {description}
             </p>
-            <div>
+            <div className={`${windowHeight<=320 && 'opacity-0'}`}>
               <p
                 className={`${description.length > 150 && "leading-5 ph:leading-normal"} mb-2`}
               >
@@ -72,7 +72,7 @@ const Project = ({ project }: { project: ProjectType }) => {
             </div>
           </div>
         </div>
-        <div className="relative w-full">
+        <div className="relative h-full w-full">
           <video src={mobileVideo} autoPlay loop muted></video>
           <button
             className="cursor-custom-pointer badge badge-accent absolute bottom-6 left-1/2 -translate-x-1/2 capitalize"

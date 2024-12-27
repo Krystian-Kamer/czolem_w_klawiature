@@ -13,6 +13,7 @@ export type ContextValue = {
   isBgDark: boolean;
   windowHeight: number;
   windowWidth: number;
+  sectionHeight: (pathname: string) => string;
 };
 
 export type SectionType = {

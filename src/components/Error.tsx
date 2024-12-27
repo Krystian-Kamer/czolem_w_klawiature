@@ -6,21 +6,7 @@ import { AppContext } from "../App";
 import { useContext } from "react";
 const Error = () => {
   const [color, setColor] = useState("bg-info");
-  const { windowHeight } = useContext<ContextValue>(AppContext);
-
-  const sectionHeight = () => {
-    if (windowHeight <= 360) {
-      return "h-[200vh]";
-    } else if (windowHeight <= 480) {
-      return "h-[130vh]";
-    } else if (windowHeight <= 600) {
-      return "h-[113vh] vsm:h-screen md:h-[190vh] lg:h-[180vh]";
-    } else if (windowHeight <= 800) {
-      return "h-[113vh] vsm:h-screen md:h-[150vh] lg:h-[140vh]";
-    } else {
-      return "h-[113vh] vsm:h-screen";
-    }
-  };
+  const { sectionHeight, windowHeight } = useContext<ContextValue>(AppContext);
 
   const changeColor = () => {
     switch (color) {
@@ -61,14 +47,14 @@ const Error = () => {
         <Section
           id="blog-1"
           bgColor="bg-neutral"
-          height={sectionHeight()}
+          height={sectionHeight('/error')}
           isLastChild={true}
         >
-          <div className="mx-8 flex h-[70vh] flex-col selection:bg-secondary selection:text-accent ph:h-[80vh] md:mt-12 lg:mt-20">
+          <div className=" flex flex-col selection:bg-secondary selection:text-accent mx-6 mb-44 md:mt-14">
             <div className="prose">
               <SectionTitle title="Ups...!" />
             </div>
-            <div className="flex h-[100vh] flex-col items-center justify-center gap-y-4 lg:gap-y-10">
+            <div className={`flex flex-col ${windowHeight <=360 ? 'mt-0' : 'mt-16'} items-center justify-center gap-y-4 lg:gap-y-10`}>
               <img
                 src={potatoImg}
                 className={`${color} cursor-custom-pointer h-full max-h-80 select-none rounded-full border-2 border-t-8 border-primary object-cover ph:max-h-96 sm:max-h-[430px] lg:h-[450px]`}

@@ -7,9 +7,6 @@ export { default as WindowProjectDescription } from "./WindowProjectDescription"
 export { default as WindowProjectVideo } from "./WindowProjectVideo";
 export { default as WindowProjectTechnologies } from "./WindowProjectTechnologies";
 export { default as WindowProjectThoughts } from "./WindowProjectThoughts";
-
-
-
 export { default as WindowNotebookContent } from "./WindowNotebookContent";
 export { default as WindowToDoContent } from "./WindowToDoContent";
 export { default as WindowTrashContent } from "./WindowTrashContent";

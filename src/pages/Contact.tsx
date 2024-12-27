@@ -3,30 +3,17 @@ import { ContextValue } from "../types";
 import { AppContext } from "../App";
 import { useContext } from "react";
 const Contact = () => {
-  const { windowHeight } = useContext<ContextValue>(AppContext);
+  const { sectionHeight} = useContext<ContextValue>(AppContext);
 
-  const sectionHeight = () => {
-    if (windowHeight <= 360) {
-      return "h-[200vh]";
-    } else if (windowHeight <= 480) {
-      return "h-[130vh]";
-    } else if (windowHeight <= 600) {
-      return "h-[113vh] vsm:h-screen md:h-[190vh] lg:h-[180vh]";
-    } else if (windowHeight <= 800) {
-      return "h-[113vh] vsm:h-screen md:h-[150vh] lg:h-[140vh]";
-    } else {
-      return "h-[113vh] vsm:h-screen";
-    }
-  };
   return (
     <>
       <Section
         id="contact"
         bgColor="bg-neutral"
-        height={sectionHeight()}
+        height={sectionHeight('/kontakt')}
         isLastChild={true}
       >
-        <div className="mx-3 flex flex-col selection:bg-secondary selection:text-accent vsm:mx-8 vmd:mt-14 lg:mt-20">
+        <div className="mx-6 mb-40 flex flex-col selection:bg-secondary selection:text-accent md:mt-14">
           <div className="prose">
             <SectionTitle title="Kontakt" />
           </div>

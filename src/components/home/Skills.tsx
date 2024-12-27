@@ -31,7 +31,7 @@ const Skills = () => {
             return (
               <button
                 key={id}
-                className={`cursor-custom-pointer z-50  flex-auto rounded-xl border-[1px] border-neutral px-2 ph:px-3 py-1 font-semibold tracking-wider text-neutral ph:border-[2px] text-sm vsm:text-base ${checked && "bg-neutral text-primary"}`}
+                className={`cursor-custom-pointer  flex-auto rounded-xl border-[1px] border-neutral px-2 ph:px-3 py-1 font-semibold tracking-wider text-neutral ph:border-[2px] text-sm vsm:text-base ${checked && "bg-neutral text-primary"}`}
                 onClick={() => changeSkill(id)}
               >
                 {name}

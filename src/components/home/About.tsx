@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 
 const About = () => {
-  const { isHeroInView, isSectionTwoInView, windowHeight, windowWidth } =
+  const { isHeroInView, isSectionTwoInView, windowHeight } =
     useContext<ContextValue>(AppContext);
   const [isPinOnPage, setIsPinOnPage] = useState(true);
 
@@ -79,12 +79,12 @@ const About = () => {
           </p>
         </div>
         <div
-          className={` ${(windowWidth > windowHeight && windowHeight <= 600) || (windowWidth >= 400 && windowHeight <= 680) || (windowWidth === 320 && windowHeight === 480) ? "hidden" : "absolute md:hidden"} -bottom-10 -left-9 h-1/5 w-1/2 rotate-45 bg-accent vsm:h-2/5 vmd:w-2/5`}
+          className={` ${windowHeight <= 600 ? "hidden" : "absolute md:hidden"} -bottom-10 -left-9 h-1/5 w-1/2 rotate-45 bg-accent vsm:h-2/5 vmd:w-2/5`}
         ></div>
         <img
           src={ownerImg}
           alt="owner image"
-          className={` ${(windowWidth > windowHeight && windowHeight <= 600) || (windowWidth >= 400 && windowHeight <= 680) || (windowWidth === 320 && windowHeight === 480) ? "hidden" : "absolute md:hidden"} bottom-0 left-0 w-[55%] max-w-60 vmd:w-2/5 sm:max-w-72`}
+          className={` ${windowHeight <= 600 ? "hidden" : "absolute md:hidden"} bottom-0 left-0 w-[55%] max-w-60 vmd:w-2/5 sm:max-w-72`}
         />
         <div
           className={`${!isPinOnPage && "drop-img"} relative hidden h-fit rounded-sm border-8 border-b-[12px] border-white bg-accent drop-shadow-[25px_25px_10px_rgba(0,0,0,0.3)] md:mt-28 md:flex md:w-1/3 lg:w-[28%] ${

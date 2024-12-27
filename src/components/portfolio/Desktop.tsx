@@ -4,12 +4,15 @@ import { DndContext, DragEndEvent } from "@dnd-kit/core";
 import { SortableContext } from "@dnd-kit/sortable";
 import { BsWindows } from "react-icons/bs";
 import { useFilesStore } from "../../store/filesSlice";
-
+import { ContextValue } from "../../types";
+import { AppContext } from "../../App";
+import { useContext } from "react";
 const Desktop = () => {
-  const files = useFilesStore((state) => state.files); 
+  const files = useFilesStore((state) => state.files);
   const reorderFiles = useFilesStore((state) => state.reorderFiles);
   const [isWindowOpen, setIsWindowOpen] = useState(false);
   const [windowContent, setWindowContent] = useState<string>("");
+  const { windowHeight, windowWidth } = useContext<ContextValue>(AppContext);
 
   const handleDragEnd = (event: DragEndEvent) => {
     const { active, over } = event;
@@ -19,7 +22,9 @@ const Desktop = () => {
   };
 
   return (
-    <div className="relative hidden h-[70vh] grid-flow-col grid-cols-7 grid-rows-6 gap-4 selection:bg-accent selection:text-secondary md:mx-8 md:grid lg:mx-0 lg:grid-cols-10">
+    <div
+      className={`relative hidden ${windowWidth > windowHeight && windowHeight <= 360 ? "h-[170vh]" : windowWidth > windowHeight && windowHeight <= 800 ?  "h-[110vh]" : "h-[70vh]"} grid-flow-col sm:grid-cols-6 md:grid-cols-7 grid-rows-6 gap-4 selection:bg-accent selection:text-secondary sm:mx-8 sm:grid lg:mx-0 lg:grid-cols-10`}
+    >
       <DndContext onDragEnd={handleDragEnd} autoScroll={false}>
         <SortableContext items={files}>
           {files.map((file) => {

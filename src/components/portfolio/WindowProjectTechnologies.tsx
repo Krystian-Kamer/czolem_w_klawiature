@@ -26,7 +26,7 @@ const WindowProjectTechnologies = ({
       />
       <div
         role="tabpanel"
-        className="tab-content min-h-[450px] border-base-200 bg-base-100 p-10 text-2xl"
+        className="tab-content min-h-[450px] border-base-200 bg-base-100 p-10 md:text-xl lg:text-2xl"
       >
         <div className="flex flex-wrap gap-4">
           {technologies.map((tech) => {
