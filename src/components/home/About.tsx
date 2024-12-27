@@ -26,12 +26,14 @@ const About = () => {
 
   return (
     <>
-      <div className="md:mx-8 md:mt-36 md:flex md:flex-row md:justify-around md:gap-6 lg:mt-48">
+      <div
+        className={`md:mx-8 ${windowHeight <= 600 && "lg:mx-20"} md:mt-36 md:flex md:flex-row md:justify-around md:gap-6 lg:mt-48`}
+      >
         <div
           className={`prose ${
             !isHeroInView
               ? "translate-y-2 duration-1000 ph:translate-y-4 sm:translate-y-10 md:translate-y-14 tb:translate-y-16 lg:translate-y-20"
-              : "-translate-y-2 delay-[500ms] duration-1000 ph:-translate-y-4 sm:-translate-y-10 md:-translate-y-14 tb:-translate-y-16 lg:-translate-y-20"
+              : "-translate-y-2 delay-[500ms] duration-1000 ph:-translate-y-4 sm:-translate-y-8 md:-translate-y-14 tb:-translate-y-16 lg:-translate-y-20"
           } relative px-8 ${!isPinOnPage && "translate-x-1/2 delay-[1500ms] duration-[1000ms]"} selection:bg-accent selection:text-secondary md:w-1/2 md:px-0`}
         >
           <SectionTitle title={"Czołem!"} />
@@ -54,7 +56,7 @@ const About = () => {
               />
             </div>
           </h3>
-          <p className="text-lg text-primary ph:text-xl leading-relaxed ph:leading-relaxed sm:text-2xl md:pt-6 sm:leading-loose">
+          <p className="text-lg leading-relaxed text-primary ph:text-xl ph:leading-relaxed vmd:leading-loose sm:text-2xl sm:leading-loose md:pt-6">
             Nie lubię nudy. Jeśli jesteś na tej stronie to oznacza, że chcesz
             nauczyć się czegoś nowego i wartościowego. Ta stronka to połączenie
             mojego
@@ -67,7 +69,7 @@ const About = () => {
             </Link>
             z humorystycznym
             <Link
-              className="cursor-custom-pointer ml-1 bg-accent tracking-wider text-primary hover:bg-accent/70 no-underline"
+              className="cursor-custom-pointer ml-1 bg-accent tracking-wider text-primary no-underline hover:bg-accent/70"
               to="/blog"
             >
               {" "}
@@ -76,11 +78,13 @@ const About = () => {
             , na który będę wrzucał co każdy poniedziałek nowe posty.
           </p>
         </div>
-        <div className={`absolute ${windowWidth > windowHeight && windowHeight <= 600 && 'hidden'} -bottom-10 -left-9 h-2/5 w-1/2 rotate-45 bg-accent sm:w-2/5 md:hidden`}></div>
+        <div
+          className={` ${(windowWidth > windowHeight && windowHeight <= 600) || (windowWidth >= 400 && windowHeight <= 680) || (windowWidth === 320 && windowHeight === 480) ? "hidden" : "absolute md:hidden"} -bottom-10 -left-9 h-1/5 w-1/2 rotate-45 bg-accent vsm:h-2/5 vmd:w-2/5`}
+        ></div>
         <img
           src={ownerImg}
           alt="owner image"
-          className={`absolute ${windowWidth > windowHeight && windowHeight <= 600 && 'hidden'} bottom-0 left-0 w-[55%] sm:w-2/5 md:hidden`}
+          className={` ${(windowWidth > windowHeight && windowHeight <= 600) || (windowWidth >= 400 && windowHeight <= 680) || (windowWidth === 320 && windowHeight === 480) ? "hidden" : "absolute md:hidden"} bottom-0 left-0 w-[55%] max-w-60 vmd:w-2/5 sm:max-w-72`}
         />
         <div
           className={`${!isPinOnPage && "drop-img"} relative hidden h-fit rounded-sm border-8 border-b-[12px] border-white bg-accent drop-shadow-[25px_25px_10px_rgba(0,0,0,0.3)] md:mt-28 md:flex md:w-1/3 lg:w-[28%] ${

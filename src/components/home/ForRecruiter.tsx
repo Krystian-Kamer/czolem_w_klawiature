@@ -10,7 +10,8 @@ import { SectionTitle } from "../index";
 import VanillaTilt from "vanilla-tilt";
 
 const ForRecruiter = () => {
-  const { sectionFourRef, windowWidth } = useContext<ContextValue>(AppContext);
+  const { sectionFourRef, windowWidth, windowHeight } =
+    useContext<ContextValue>(AppContext);
   const [isLightOn, setIsLightOn] = useState(false);
   const [isDownloadCvModalOpen, setIsDownloadCvModalOpen] = useState(false);
 
@@ -33,12 +34,12 @@ const ForRecruiter = () => {
         </div>
 
         <div
-          className="desk relative flex h-[60vh] w-full md:h-full md:w-full md:py-1 lg:w-2/5"
+          className={`desk relative flex ${windowWidth > windowHeight && windowHeight <= 360 ? "h-[160vh]" : windowWidth <= 240 && windowHeight <= 320 ? "h-[100vh]" : "h-[60vh] md:h-full"} ${windowWidth > 500 && windowHeight <= 720 ? "ph:w-4/5" : "w-full md:w-full lg:w-2/5"} max-w-[500px] justify-center self-center md:py-1`}
           data-tilt
           data-tilt-max
           data-tilt-full-page-listening
         >
-          <div className="relative flex flex-col justify-end overflow-hidden rounded-lg bg-secondary drop-shadow-[20px_20px_10px_rgba(0,0,0,0.6)] ph:mt-4 md:mt-0 lg:rounded-3xl">
+          <div className="relative flex flex-col justify-end overflow-hidden rounded-lg bg-secondary drop-shadow-[20px_20px_10px_rgba(0,0,0,0.6)] ph:mt-4 vmd:w-4/5 sm:w-[70%] md:mt-0 md:w-full lg:rounded-3xl">
             <div
               className={`absolute top-[82px] h-[120%] w-full ${isLightOn ? "bg-orange-400 bg-gradient-to-b from-accent via-transparent" : "bg-secondary"} md:top-24 lg:top-24`}
               style={{
@@ -81,16 +82,16 @@ const ForRecruiter = () => {
             )}
 
             <div className="relative">
-              <div className="absolute left-10 top-[70px] z-20 skew-x-[60deg] skew-y-[349deg] text-center ph:left-12 ph:top-[86px] tb:top-24 lg:top-28 xl:left-24 xl:top-36">
+              <div className="absolute left-[15%] top-[45%] z-20 -translate-y-1/2 skew-x-[60deg] skew-y-[349deg] text-center">
                 <div
-                  className={`z-20 h-6 w-16 border-l-2 border-primary bg-base-100 ${isLightOn ? "brightness-70 hover:scale-105 hover:duration-700" : "brightness-[20%]"} lg:w-24} tb:h-8 tb:w-20 lg:h-12`}
+                  className={`z-20 h-3 w-8 border-l-2 border-primary bg-base-100 vsm:h-6 vsm:w-16 ${isLightOn ? "brightness-70 hover:scale-105 hover:duration-700" : "brightness-[20%]"} lg:w-24} tb:h-8 tb:w-20 lg:h-12`}
                 >
                   <img
                     src={cvImg}
                     alt="my cv image"
                     className={`${
                       isLightOn ? "cursor-custom-pointer" : "custom-cursor"
-                    } z-20 h-6 w-16 tb:h-8 tb:w-20 lg:h-12 lg:w-24`}
+                    } z-20 h-3 w-8 vsm:h-6 vsm:w-16 tb:h-8 tb:w-20 lg:h-12 lg:w-24`}
                     onClick={() => setIsDownloadCvModalOpen(true)}
                   />
                 </div>

@@ -15,12 +15,12 @@ const EmploymentHistory = () => {
   return (
     <div
       ref={employmentHistoryRef}
-      className="mx-8 flex flex-col md:mt-2 lg:mt-20"
+      className="mx-8 flex flex-col md:mt-10 lg:mt-20"
     >
       <div className="prose">
         <SectionTitle title="Zawodowo" />
       </div>
-      <ul className="timeline timeline-vertical timeline-snap-icon -top-2 bottom-3 max-md:timeline-compact selection:bg-accent selection:text-secondary ph:bottom-0 md:top-0 tb:top-6 lg:-top-10">
+      <ul className="timeline timeline-vertical timeline-snap-icon -top-2 bottom-3 max-md:timeline-compact selection:bg-accent selection:text-secondary ph:bottom-0 md:top-0 tb:top-6 lg:top-10">
         <li>
           <div className="timeline-middle">
             <svg
@@ -46,12 +46,12 @@ const EmploymentHistory = () => {
             <time className="font-mono text-sm italic md:text-base tb:text-lg">
               2016
             </time>
-            <div className="text-lg font-black md:text-lg tb:text-xl lg:text-2xl">
+            <div className="text-lg font-black md:text-lg tb:text-2xl">
               Pracownik biurowy
               <div className="h-1 w-1/4 rounded-sm bg-accent md:h-2 md:justify-self-end"></div>
             </div>
-            <p className="text-sm md:text-base md:leading-relaxed tb:text-xl lg:text-xl lg:leading-loose">
-              <span className={`hidden ${windowWidth > 415 &&'inline'}`}>
+            <p className="text-sm vmd:text-xl vmd:leading-relaxed md:leading-normal md:text-base tb:text-xl tb:leading-relaxed">
+              <span className={`${windowWidth > 415 ? "inline" : "hidden"}`}>
                 Pracowałem w Urzędzie Pracy w Łodzi, na różnych stanowiskach.{" "}
               </span>
               Współpracowałem z przedsiębiorcami, rozliczałem dotacje,
@@ -87,12 +87,12 @@ const EmploymentHistory = () => {
             <time className="font-mono text-sm italic md:text-base tb:text-lg">
               2020
             </time>
-            <div className="text-lg font-black md:text-lg tb:text-xl lg:text-2xl">
+            <div className="text-lg font-black md:text-lg tb:text-2xl">
               Sekretarz Sądowy
               <div className="h-1 w-1/4 rounded-sm bg-accent md:h-2"></div>
             </div>
-            <p className="text-sm md:text-base md:leading-relaxed tb:text-xl lg:text-xl lg:leading-loose">
-              <span className={`hidden ${windowWidth > 415 &&'inline'}`}>
+            <p className="text-sm vmd:text-xl vmd:leading-relaxed md:leading-normal md:text-base tb:text-xl tb:leading-relaxed">
+              <span className={`${windowWidth > 415 ? "inline" : "hidden"}`}>
                 Jestem protokolantem, wykonuję polecenia Sędziego oraz
                 kierownictwa.{" "}
               </span>
@@ -129,14 +129,14 @@ const EmploymentHistory = () => {
             <time className="font-mono text-sm italic md:text-base tb:text-lg">
               2022
             </time>
-            <div className="z-20 text-lg font-black md:text-lg tb:text-xl lg:text-2xl">
+            <div className="text-lg font-black md:text-lg tb:text-2xl">
               Nauka programowania
               <div className="h-1 w-1/4 rounded-sm bg-accent md:h-2 md:justify-self-end"></div>
             </div>
-            <p className="text-sm md:text-base md:leading-relaxed tb:text-xl lg:text-xl lg:leading-loose">
+            <p className="text-sm vmd:text-xl vmd:leading-relaxed md:leading-normal md:text-base tb:text-xl tb:leading-relaxed">
               Ekscytujący czas. Nowe technologie, kursy, projekty. Dużo
               wyrzeczeń, ale warto.
-              <span className={`hidden ${windowWidth > 415 &&'inline'}`}>
+              <span className={`${windowWidth > 415 ? "inline" : "hidden"}`}>
                 {" "}
                 Jeśli widzisz tego bloga to znaczy, że jestem w trakcie
                 spełniania mojego marzenia o pozostaniu programistą.
@@ -163,7 +163,7 @@ const EmploymentHistory = () => {
             </svg>
           </div>
           <div
-            className={`group/item timeline-end relative md:mb-4 ${isEmploymentHistoryInView ? "md:translate-x-0 md:opacity-100 md:delay-[1500ms] md:duration-1000" : "md:translate-x-1/3 md:opacity-0"}`}
+            className={`group/item timeline-end relative mb-3 md:mb-6 ${isEmploymentHistoryInView ? "md:translate-x-0 md:opacity-100 md:delay-[1500ms] md:duration-1000" : "md:translate-x-1/3 md:opacity-0"}`}
           >
             <div className="absolute -left-44 top-1/2 hidden -translate-y-1/2 opacity-0 group-hover/item:flex group-hover/item:animate-fadeIn">
               <MdLaptopMac className="text-7xl" />
@@ -172,13 +172,13 @@ const EmploymentHistory = () => {
             <time className="font-mono text-sm italic md:text-base tb:text-lg">
               2025(życzeniowo)
             </time>
-            <div className="text-lg font-black md:text-lg tb:text-xl lg:text-2xl">
+            <div className="text-lg font-black md:text-lg tb:text-2xl">
               Junior Frontend Developer
               <div className="h-1 w-1/4 rounded-sm bg-accent md:h-2"></div>
             </div>
-            <p className="text-sm md:text-base md:leading-relaxed tb:text-xl lg:text-xl lg:leading-loose">
+            <p className="text-sm vmd:text-xl vmd:leading-relaxed md:leading-normal md:text-base tb:text-xl tb:leading-relaxed">
               Pierwsza pełnoprawna praca w sektorze IT.
-              <span className={`${windowWidth > 415 ? 'inline' : 'hidden'}`}>
+              <span className={`${windowWidth > 415 ? "inline" : "hidden"}`}>
                 {" "}
                 Tutaj kiedyś pojawi się oszałamiająca ścieżka kariery
                 programisty. Moja podróż od Juniora do Seniora.

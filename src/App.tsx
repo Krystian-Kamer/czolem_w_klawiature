@@ -41,7 +41,6 @@ function App() {
   const { ref: heroRef, inView: isHeroInView } = useInView();
   const { ref: sectionTwoRef, inView: isSectionTwoInView } = useInView();
   const { ref: sectionFourRef, inView: isSectionFourInView } = useInView();
-
   const isBgDark: boolean =
     isHeroInView || isSectionTwoInView || isSectionFourInView;
 

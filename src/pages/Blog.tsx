@@ -2,14 +2,11 @@ import { useState } from "react";
 import { Section, SectionTitle } from "../components/index";
 import { PostPreview, PostCategories } from "../components/blog/index";
 import { postsData } from "../posts-data";
-import { PostType, ContextValue } from "../types";
-import { AppContext } from "../App";
-import { useContext } from "react";
+import { PostType } from "../types";
 import { Typewriter } from "react-simple-typewriter";
 
 const Blog = () => {
   const [posts, setPosts] = useState<PostType[]>(postsData);
-  const { windowHeight } = useContext<ContextValue>(AppContext);
 
   return (
     <>
@@ -20,7 +17,7 @@ const Blog = () => {
         isLastChild={true}
       >
         <div
-          className={`relative lg:mx-32 ${windowHeight <= 320 && "mx-1"} mx-6 flex flex-col md:mt-14 lg:mt-20`}
+          className={`relative lg:mx-32 mx-1 vsm:mx-6 flex flex-col md:mt-14 lg:mt-20`}
         >
           <div className="prose z-10">
             <SectionTitle title="Blog osobisty" />

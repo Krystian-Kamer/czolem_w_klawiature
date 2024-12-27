@@ -275,7 +275,7 @@ const PhoneContent = () => {
                         Krystian Kamer
                       </div>
                       <div className="chat-bubble text-lg">
-                        W razie co mój numer telefonu to
+                        Dla przypomnienia mój numer telefonu to
                         <a
                           className="cursor-custom-pointer text-blue-700"
                           href="tel:666660128"
@@ -302,7 +302,7 @@ const PhoneContent = () => {
         </div>
       </div>
       <div
-        className={`absolute hidden rounded-lg font-protest tracking-widest opacity-0 md:-bottom-40 tb:-bottom-56 ${isInvitationAccepted ? "flex-col opacity-100 md:flex md:w-full" : "md:hidden"} px-8 py-2 selection:bg-secondary`}
+        className={`absolute hidden rounded-lg font-protest tracking-widest opacity-0 bottom-0 translate-y-[115%]  ${isInvitationAccepted ? "flex-col opacity-100 md:flex md:w-full" : "md:hidden"} px-8 py-2 selection:bg-secondary`}
       >
         <div
           className="mb-2 h-[1px] animate-fadeIn bg-accent/40 opacity-0"

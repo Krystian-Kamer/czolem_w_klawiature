@@ -24,14 +24,14 @@ const Skills = () => {
       <div className="prose" >
         <SectionTitle title="Skille" />
       </div>
-      <div className="md:hidden">
+      <div className="vmd:hidden">
         <div className="flex flex-wrap gap-1 ph:gap-2">
           {totalSkills.map((skill) => {
             const { name, id, checked } = skill;
             return (
               <button
                 key={id}
-                className={`cursor-custom-pointer  flex-auto rounded-xl border-[1px] border-neutral px-2 py-1 text-lg font-semibold tracking-wider text-neutral ph:border-[2px] sm:text-base ${checked && "bg-neutral text-primary"}`}
+                className={`cursor-custom-pointer z-50  flex-auto rounded-xl border-[1px] border-neutral px-2 ph:px-3 py-1 font-semibold tracking-wider text-neutral ph:border-[2px] text-sm vsm:text-base ${checked && "bg-neutral text-primary"}`}
                 onClick={() => changeSkill(id)}
               >
                 {name}
@@ -40,7 +40,7 @@ const Skills = () => {
           })}
         </div>
       </div>
-      <div className="mt-4 md:hidden">
+      <div className="mt-4 vmd:hidden">
         {totalSkills.map((skill) => {
           const { checked, text, id } = skill;
           return (
@@ -54,13 +54,13 @@ const Skills = () => {
         })}
       </div>
 
-      <div className="z-20 hidden gap-y-[2px] text-neutral selection:bg-secondary-content selection:text-primary md:flex md:h-[69vh] lg:h-fit md:flex-col lg:w-[42%]">
+      <div className="z-20 hidden gap-y-[2px] text-neutral selection:bg-secondary-content selection:text-primary vmd:flex vmd:min-h-[69vh] lg:h-fit vmd:flex-col lg:w-[42%]">
         {totalSkills.map((skill, index) => {
           const { name, id, checked, text } = skill;
           return (
             <div
               key={id}
-              className={`cursor-custom-pointer collapse collapse-arrow h-fit rounded-none bg-secondary md:bg-opacity-90 ${
+              className={`cursor-custom-pointer bg-opacity-80 collapse collapse-arrow h-fit rounded-none bg-secondary md:bg-opacity-90 ${
                 index === 0 ? "rounded-t-xl" : "rounded-none"
               } ${index === skills.length - 1 ? "rounded-b-xl" : "rounded-none"}`}
             >
@@ -71,12 +71,12 @@ const Skills = () => {
                 onChange={() => changeSkill(id)}
               />
               <div
-                className={`collapse-title text-xl tracking-widest ${checked && "text-accent"}`}
+                className={`collapse-title text-lg md:text-xl tracking-widest ${checked && "text-accent"}`}
               >
                 {name}
               </div>
               <div className="collapse-content">
-                <p className="leading-relaxed tracking-wide min-[800px]:text-xl">
+                <p className="leading-relaxed tracking-wide sm:text-lg tb:text-xl">
                   {text}
                 </p>
               </div>
@@ -85,9 +85,9 @@ const Skills = () => {
         })}
       </div>
 
-      <div className="absolute bottom-0 right-16 hidden items-end md:left-1/3 md:flex lg:left-1/2 lg:w-1/2">
+      <div className="absolute bottom-0 right-16 hidden items-end vmd:left-1/3 vmd:flex lg:left-1/2 lg:w-1/2">
         <div className="relative">
-          <div className="absolute left-1/2 animate-levitate select-none rounded-full bg-ball-shape p-8 text-primary shadow-[0px_0px_50px_10px_rgba(255,211,105,0.5)] md:-top-10 lg:-top-20">
+          <div className="absolute left-1/2 animate-levitate select-none rounded-full bg-ball-shape vmd:p-4 md:p-8 text-primary shadow-[0px_0px_50px_10px_rgba(255,211,105,0.5)] vmd:-top-10 lg:-top-20">
             {totalSkills.map((skill) => {
               const { checked, icon, id } = skill;
               return <div key={id}>{checked && icon}</div>;
@@ -96,7 +96,7 @@ const Skills = () => {
           <img
             src={handImg}
             alt="hand image"
-            className={`-z-50 -mb-[600px] md:w-[400px] min-[800px]:w-[550px] ${isSectionTwoInView ? "mb-0 duration-[2000ms] ease-out" : "mb-[-600px]"}`}
+            className={`-z-50 -mb-[600px] vmd:w-[400px] min-[800px]:w-[550px] ${isSectionTwoInView ? "mb-0 duration-[2000ms] ease-out" : "mb-[-600px]"}`}
           />
         </div>
       </div>
