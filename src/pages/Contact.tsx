@@ -1,19 +1,15 @@
 import { Section, SectionTitle } from "../components/index";
-import { ContextValue } from "../types";
-import { AppContext } from "../App";
-import { useContext } from "react";
-const Contact = () => {
-  const { sectionHeight} = useContext<ContextValue>(AppContext);
 
+const Contact = () => {
   return (
     <>
       <Section
         id="contact"
         bgColor="bg-neutral"
-        height={sectionHeight('/kontakt')}
+        height='h-fit md:h-screen'
         isLastChild={true}
       >
-        <div className="mx-6 mb-40 flex flex-col selection:bg-secondary selection:text-accent md:mt-14">
+        <div className="flex flex-col selection:bg-secondary selection:text-accent">
           <div className="prose">
             <SectionTitle title="Kontakt" />
           </div>

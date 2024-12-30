@@ -4,19 +4,13 @@ import { PiScalesFill } from "react-icons/pi";
 import { LiaGlassesSolid } from "react-icons/lia";
 import { MdLaptopMac } from "react-icons/md";
 import { useInView } from "react-intersection-observer";
-import {  ContextValue } from "../../types";
-import { AppContext } from "../../App";
-import { useContext } from "react";
+
 const EmploymentHistory = () => {
   const { ref: employmentHistoryRef, inView: isEmploymentHistoryInView } =
     useInView();
-  const { windowWidth } = useContext<ContextValue>(AppContext);
 
   return (
-    <div
-      ref={employmentHistoryRef}
-      className="mx-8 flex flex-col md:mt-10 lg:mt-20"
-    >
+    <div ref={employmentHistoryRef} className="flex flex-col">
       <div className="prose">
         <SectionTitle title="Zawodowo" />
       </div>
@@ -50,10 +44,8 @@ const EmploymentHistory = () => {
               Pracownik biurowy
               <div className="h-1 w-1/4 rounded-sm bg-accent md:h-2 md:justify-self-end"></div>
             </div>
-            <p className="text-sm vmd:text-xl vmd:leading-relaxed md:leading-normal md:text-base tb:text-xl tb:leading-relaxed">
-              <span className={`${windowWidth > 415 ? "inline" : "hidden"}`}>
-                Pracowałem w Urzędzie Pracy w Łodzi, na różnych stanowiskach.{" "}
-              </span>
+            <p className="vmd:text-xl vmd:leading-relaxed md:text-base md:leading-normal tb:text-xl tb:leading-relaxed">
+              Pracowałem w Urzędzie Pracy w Łodzi, na różnych stanowiskach.
               Współpracowałem z przedsiębiorcami, rozliczałem dotacje,
               obsługiwałem kancelarię oraz archiwum.
             </p>
@@ -91,13 +83,11 @@ const EmploymentHistory = () => {
               Sekretarz Sądowy
               <div className="h-1 w-1/4 rounded-sm bg-accent md:h-2"></div>
             </div>
-            <p className="text-sm vmd:text-xl vmd:leading-relaxed md:leading-normal md:text-base tb:text-xl tb:leading-relaxed">
-              <span className={`${windowWidth > 415 ? "inline" : "hidden"}`}>
-                Jestem protokolantem, wykonuję polecenia Sędziego oraz
-                kierownictwa.{" "}
-              </span>
-              Wyniosłem stąd aktywne słuchanie i wyłapywanie tego co
-              najważniejsze. Dodatkowo nauczyło mnie to pracy pod presją czasu.
+            <p className="vmd:text-xl vmd:leading-relaxed md:text-base md:leading-normal tb:text-xl tb:leading-relaxed">
+              Jestem protokolantem, wykonuję polecenia Sędziego oraz
+              kierownictwa. Wyniosłem stąd aktywne słuchanie i wyłapywanie tego
+              co najważniejsze. Dodatkowo nauczyło mnie to pracy pod presją
+              czasu.
             </p>
           </div>
           <hr className="bg-primary" />
@@ -133,14 +123,11 @@ const EmploymentHistory = () => {
               Nauka programowania
               <div className="h-1 w-1/4 rounded-sm bg-accent md:h-2 md:justify-self-end"></div>
             </div>
-            <p className="text-sm vmd:text-xl vmd:leading-relaxed md:leading-normal md:text-base tb:text-xl tb:leading-relaxed">
+            <p className="vmd:text-xl vmd:leading-relaxed md:text-base md:leading-normal tb:text-xl tb:leading-relaxed">
               Ekscytujący czas. Nowe technologie, kursy, projekty. Dużo
-              wyrzeczeń, ale warto.
-              <span className={`${windowWidth > 415 ? "inline" : "hidden"}`}>
-                {" "}
-                Jeśli widzisz tego bloga to znaczy, że jestem w trakcie
-                spełniania mojego marzenia o pozostaniu programistą.
-              </span>
+              wyrzeczeń, ale warto. Jeśli widzisz tego bloga to znaczy, że
+              jestem w trakcie spełniania mojego marzenia o pozostaniu
+              programistą.
             </p>
           </div>
           <hr className="bg-primary" />
@@ -176,13 +163,10 @@ const EmploymentHistory = () => {
               Junior Frontend Developer
               <div className="h-1 w-1/4 rounded-sm bg-accent md:h-2"></div>
             </div>
-            <p className="text-sm vmd:text-xl vmd:leading-relaxed md:leading-normal md:text-base tb:text-xl tb:leading-relaxed">
-              Pierwsza pełnoprawna praca w sektorze IT.
-              <span className={`${windowWidth > 415 ? "inline" : "hidden"}`}>
-                {" "}
-                Tutaj kiedyś pojawi się oszałamiająca ścieżka kariery
-                programisty. Moja podróż od Juniora do Seniora.
-              </span>
+            <p className="vmd:text-xl vmd:leading-relaxed md:text-base md:leading-normal tb:text-xl tb:leading-relaxed">
+              Pierwsza pełnoprawna praca w sektorze IT. Tutaj kiedyś pojawi się
+              oszałamiająca ścieżka kariery programisty. Moja podróż od Juniora
+              do Seniora.
             </p>
           </div>
           <hr />

@@ -1,12 +1,10 @@
 import { Navigation, Hero, Section, SectionTitle } from "./index";
 import potatoImg from "./../assets/potato.png";
 import { useState } from "react";
-import { ContextValue } from "../types";
-import { AppContext } from "../App";
-import { useContext } from "react";
+
 const Error = () => {
   const [color, setColor] = useState("bg-info");
-  const { sectionHeight, windowHeight } = useContext<ContextValue>(AppContext);
+
 
   const changeColor = () => {
     switch (color) {
@@ -47,14 +45,14 @@ const Error = () => {
         <Section
           id="blog-1"
           bgColor="bg-neutral"
-          height={sectionHeight('/error')}
+          height='h-fit md:h-screen'
           isLastChild={true}
         >
-          <div className=" flex flex-col selection:bg-secondary selection:text-accent mx-6 mb-44 md:mt-14">
+          <div className=" flex flex-col selection:bg-secondary selection:text-accent">
             <div className="prose">
               <SectionTitle title="Ups...!" />
             </div>
-            <div className={`flex flex-col ${windowHeight <=360 ? 'mt-0' : 'mt-16'} items-center justify-center gap-y-4 lg:gap-y-10`}>
+            <div className='flex flex-col  items-center justify-center gap-y-4 lg:gap-y-10'>
               <img
                 src={potatoImg}
                 className={`${color} cursor-custom-pointer h-full max-h-80 select-none rounded-full border-2 border-t-8 border-primary object-cover ph:max-h-96 sm:max-h-[430px] lg:h-[450px]`}

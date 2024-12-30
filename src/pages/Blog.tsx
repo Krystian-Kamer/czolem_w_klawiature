@@ -17,7 +17,7 @@ const Blog = () => {
         isLastChild={true}
       >
         <div
-          className={`relative lg:mx-32 mx-1 vsm:mx-6 flex flex-col md:mt-14 lg:mt-20`}
+          className='flex flex-col'
         >
           <div className="prose z-10">
             <SectionTitle title="Blog osobisty" />

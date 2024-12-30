@@ -4,22 +4,20 @@ import Slider from "react-slick";
 import { projects } from "../data";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { ContextValue } from "../types";
-import { AppContext } from "../App";
-import { useContext } from "react";
+
 const Portfolio = () => {
-  const { windowWidth, sectionHeight } = useContext<ContextValue>(AppContext);
-  const slidesToShow = windowWidth >= 600 ? 2 : 1;
+
+  const slidesToShow = window.innerWidth >= 600 ? 2 : 1;
 
   return (
     <Section
       id="blog-1"
       bgColor="bg-neutral"
-      height={sectionHeight('/portfolio')}
+      height="h-fit md:h-screen"
       isLastChild={true}
     >
       <div>
-        <div className="flex flex-col mb-28 vmd:mb-0 md:mt-14 lg:mx-10 lg:mt-20">
+        <div className="flex flex-col">
           <div className="prose mx-6">
             <SectionTitle title="Portfolio" />
           </div>

@@ -10,18 +10,18 @@ import { SectionTitle } from "../index";
 import VanillaTilt from "vanilla-tilt";
 
 const ForRecruiter = () => {
-  const { sectionFourRef, windowWidth, windowHeight } =
+  const { sectionFourRef } =
     useContext<ContextValue>(AppContext);
   const [isLightOn, setIsLightOn] = useState(false);
   const [isDownloadCvModalOpen, setIsDownloadCvModalOpen] = useState(false);
 
-  if (windowWidth >= 1024) {
+  if (window.innerWidth >= 1024) {
     VanillaTilt.init(document.querySelector(".desk") as HTMLElement);
   }
 
   return (
-    <div ref={sectionFourRef} className="mx-8 flex flex-col md:mt-14 lg:mt-20">
-      <div className="prose z-50">
+    <div ref={sectionFourRef} className="flex flex-col">
+      <div className="prose">
         <SectionTitle title="Dla rekrutera" />
       </div>
       <div className="relative flex flex-col md:h-[596px] md:flex-row md:justify-center tb:mt-20 lg:mt-6">
@@ -34,7 +34,7 @@ const ForRecruiter = () => {
         </div>
 
         <div
-          className={`desk relative flex ${windowWidth > windowHeight && windowHeight <= 360 ? "h-[160vh]" : windowWidth <= 240 && windowHeight <= 320 ? "h-[100vh]" : "h-[60vh] md:h-full"} ${windowWidth > 500 && windowHeight <= 720 ? "ph:w-4/5" : "w-full md:w-full lg:w-2/5"} max-w-[500px] justify-center self-center md:py-1`}
+          className='desk relative flex max-w-[500px] justify-center self-center md:py-1'
           data-tilt
           data-tilt-max
           data-tilt-full-page-listening

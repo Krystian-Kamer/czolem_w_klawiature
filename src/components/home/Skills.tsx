@@ -20,7 +20,7 @@ const Skills = () => {
   };
 
   return (
-    <div ref={sectionTwoRef} className="mx-8 flex flex-col md:mt-14 lg:mt-20">
+    <div ref={sectionTwoRef} className="flex flex-col">
       <div className="prose" >
         <SectionTitle title="Skille" />
       </div>

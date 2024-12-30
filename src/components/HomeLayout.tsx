@@ -2,8 +2,9 @@ import { Hero, Navigation } from "./index";
 import { Outlet } from "react-router-dom";
 
 const HomeLayout = () => {
+
   return (
-    <div className='no-scrollbar snap-y snap-mandatory overflow-y-scroll'>
+    <div className='home md:no-scrollbar md:snap-y md:snap-mandatory md:overflow-y-scroll'>
         <Navigation />
       <div className="snap-start">
         <Hero />

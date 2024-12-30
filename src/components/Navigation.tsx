@@ -16,7 +16,7 @@ const Navigation = () => {
   const { isBgDark } = useContext<ContextValue>(AppContext);
  
     useEffect(() => {
-      const scrollableDiv = document.querySelector(".no-scrollbar");
+      const scrollableDiv = document.querySelector(".home");
       scrollableDiv?.scrollTo({
         top: pathname === "/" ? 0 : 250,
         behavior: "smooth",

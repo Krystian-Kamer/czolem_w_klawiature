@@ -6,11 +6,13 @@ import { ContextValue } from "../../types";
 import { AppContext } from "../../App";
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
+import { useInView } from "react-intersection-observer";
 
 const About = () => {
-  const { isHeroInView, isSectionTwoInView, windowHeight } =
+  const { isHeroInView } =
     useContext<ContextValue>(AppContext);
   const [isPinOnPage, setIsPinOnPage] = useState(true);
+  const { ref: sectionOne, inView: isSectionOneInView } = useInView();
 
   const dropImage = () => {
     setIsPinOnPage(false);
@@ -22,22 +24,23 @@ const About = () => {
       setIsPinOnPage(true);
     }, 500);
     return () => clearTimeout(turnPinToTrue);
-  }, [isSectionTwoInView]);
+  }, [isSectionOneInView]);
 
   return (
     <>
-      <div
-        className={`md:mx-8 ${windowHeight <= 600 && "lg:mx-20"} md:mt-36 md:flex md:flex-row md:justify-around md:gap-6 lg:mt-48`}
+      <div ref={sectionOne}
+        className='md:flex md:flex-row md:justify-around md:gap-6'
       >
         <div
-          className={`prose ${
+          className={`prose min-h-[400px] ${
             !isHeroInView
               ? "translate-y-2 duration-1000 ph:translate-y-4 sm:translate-y-10 md:translate-y-14 tb:translate-y-16 lg:translate-y-20"
               : "-translate-y-2 delay-[500ms] duration-1000 ph:-translate-y-4 sm:-translate-y-8 md:-translate-y-14 tb:-translate-y-16 lg:-translate-y-20"
-          } relative px-8 ${!isPinOnPage && "translate-x-1/2 delay-[1500ms] duration-[1000ms]"} selection:bg-accent selection:text-secondary md:w-1/2 md:px-0`}
+          } ${!isPinOnPage && "translate-x-1/2 delay-[1500ms] duration-[1000ms]"} selection:bg-accent selection:text-secondary md:w-1/2 md:px-0`}
         >
           <SectionTitle title={"Czołem!"} />
-          <h2 className="mt-0 text-xl sm:text-2xl md:text-3xl">
+          
+          <h2 className="text-xl sm:text-2xl md:text-3xl">
             Z tej strony Krystian Kamer.
           </h2>
           <h3 className="text-xl text-primary sm:text-2xl">
@@ -78,14 +81,17 @@ const About = () => {
             , na który będę wrzucał co każdy poniedziałek nowe posty.
           </p>
         </div>
+
+        <div className="h-60 w-full relative md:hidden">
         <div
-          className={` ${windowHeight <= 600 ? "hidden" : "absolute md:hidden"} -bottom-10 -left-9 h-1/5 w-1/2 rotate-45 bg-accent vsm:h-2/5 vmd:w-2/5`}
+          className='bottom-0 absolute -left-5 rotate-45 bg-accent vsm:h-40 vsm:w-48 h-32 w-40'
         ></div>
         <img
           src={ownerImg}
           alt="owner image"
-          className={` ${windowHeight <= 600 ? "hidden" : "absolute md:hidden"} bottom-0 left-0 w-[55%] max-w-60 vmd:w-2/5 sm:max-w-72`}
+          className='-bottom-20 absolute -left-5 w-[55%] min-w-40 max-w-60 vmd:w-2/5 sm:max-w-72'
         />
+        </div>
         <div
           className={`${!isPinOnPage && "drop-img"} relative hidden h-fit rounded-sm border-8 border-b-[12px] border-white bg-accent drop-shadow-[25px_25px_10px_rgba(0,0,0,0.3)] md:mt-28 md:flex md:w-1/3 lg:w-[28%] ${
             !isHeroInView

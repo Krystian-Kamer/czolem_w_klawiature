@@ -11,9 +11,6 @@ export type ContextValue = {
   isSectionTwoInView: boolean;
   isSectionFourInView: boolean;
   isBgDark: boolean;
-  windowHeight: number;
-  windowWidth: number;
-  sectionHeight: (pathname: string) => string;
 };
 
 export type SectionType = {

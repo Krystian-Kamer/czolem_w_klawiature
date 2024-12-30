@@ -1,36 +1,34 @@
 import { Section } from "../index";
 import { About, ForRecruiter, EmploymentHistory, Skills } from "./index";
-import { SectionType, ContextValue } from "../../types";
-import { AppContext } from "../../App";
-import { useContext } from "react";
+import { SectionType } from "../../types";
+
 
 const Landing = () => {
-  const { sectionHeight } = useContext<ContextValue>(AppContext);
 
   const sections: SectionType[] = [
     {
       id: "landing-1",
       children: <About />,
       bgColor: "bg-neutral",
-      height: `${sectionHeight('/')}`,
+      height: "h-fit md:h-screen",
     },
     {
       id: "landing-2",
       children: <Skills />,
       bgColor: "bg-primary",
-      height: `${sectionHeight('/')}`,
+      height: "h-fit md:h-screen",
     },
     {
       id: "landing-3",
       children: <EmploymentHistory />,
       bgColor: "bg-neutral",
-      height: `${sectionHeight('/')}`,
+      height: "h-fit md:h-screen",
     },
     {
       id: "landing-4",
       children: <ForRecruiter />,
       bgColor: "bg-primary",
-      height: `${sectionHeight('/')}`,
+      height: "h-fit md:h-screen",
       isLastChild: true,
     },
   ];
