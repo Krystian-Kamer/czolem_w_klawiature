@@ -19,7 +19,7 @@ const Hero = () => {
         <img
           src={heroImg}
           alt="Hero image"
-          className={`md:z-50 sm:w-3/4 md:w-3/4 lg:w-1/2 ${pathname === "/" && "opacity-100 sm:-translate-x-16 lg:translate-x-0"} ${
+          className={`sm:w-3/4 md:w-3/4 lg:w-1/2 ${pathname === "/" && "opacity-100 sm:-translate-x-16 lg:translate-x-0"} ${
             isHeroInView
               ? "opacity-100 duration-1000 sm:-translate-x-16 lg:translate-x-0"
               : "-translate-x-[200px] opacity-0"

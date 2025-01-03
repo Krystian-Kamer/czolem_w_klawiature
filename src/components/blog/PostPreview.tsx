@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 import { AppContext } from "../../App";
 import { useContext } from "react";
 const PostPreview = ({ post }: { post: PostType }) => {
-  const { windowHeight, windowWidth } = useContext<ContextValue>(AppContext);
+  const { windowHeight } = useContext<ContextValue>(AppContext);
   const { id, title, imageSmall, imageBig, text, date, category } = post;
   const { ref: postPreview, inView: isPostPreviewInView } = useInView();
 const navigate = useNavigate()
@@ -44,7 +44,7 @@ const navigate = useNavigate()
           {text}
         </p>
         <div
-          className={`flex items-center justify-between ${windowWidth <= 240 && "flex-col"}`}
+          className={`flex items-center justify-between`}
         >
           <p
             className={`select-none font-semibold italic tracking-widest text-secondary/30 md:text-lg lg:text-xl`}
