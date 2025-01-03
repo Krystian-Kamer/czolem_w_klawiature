@@ -28,22 +28,19 @@ const About = () => {
 
   return (
     <>
-      <div ref={sectionOne}
-        className='md:flex md:flex-row md:justify-around md:gap-6'
+      <div
+        ref={sectionOne}
+        className="md:flex top-1/2  md:flex-row md:justify-around md:gap-6"
       >
         <div
-          className={`prose min-h-[400px] ${
-            !isHeroInView
-              ? "translate-y-2 duration-1000 ph:translate-y-4 sm:translate-y-10 md:translate-y-14 tb:translate-y-16 lg:translate-y-20"
-              : "-translate-y-2 delay-[500ms] duration-1000 ph:-translate-y-4 sm:-translate-y-8 md:-translate-y-14 tb:-translate-y-16 lg:-translate-y-20"
-          } ${!isPinOnPage && "translate-x-1/2 delay-[1500ms] duration-[1000ms]"} selection:bg-accent selection:text-secondary md:w-1/2 md:px-0`}
+          className={`prose min-h-[400px] ${!isPinOnPage && "translate-x-1/2 delay-[1500ms] duration-[1000ms]"} selection:bg-accent selection:text-secondary md:w-1/2 md:px-0`}
         >
           <SectionTitle title={"Czołem!"} />
-          
-          <h2 className="text-xl sm:text-2xl md:text-3xl">
+
+          <h2 className="text-xl sm:text-xl md:text-2xl">
             Z tej strony Krystian Kamer.
           </h2>
-          <h3 className="text-xl text-primary sm:text-2xl">
+          <h3 className="text-xl text-primary sm:text-xl md:text-2xl">
             <div className="w-fit rounded-md border-accent">
               Jestem{" "}
               <Typewriter
@@ -59,7 +56,7 @@ const About = () => {
               />
             </div>
           </h3>
-          <p className="text-lg leading-relaxed text-primary ph:text-xl ph:leading-relaxed vmd:leading-loose sm:text-2xl sm:leading-loose md:pt-6">
+          <p className="text-lg leading-relaxed text-primary sm:text-xl md:text-2xl md:leading-relaxed lg:leading-loose sm:leading-loose md:pt-6">
             Nie lubię nudy. Jeśli jesteś na tej stronie to oznacza, że chcesz
             nauczyć się czegoś nowego i wartościowego. Ta stronka to połączenie
             mojego
@@ -82,21 +79,19 @@ const About = () => {
           </p>
         </div>
 
-        <div className="h-60 w-full relative md:hidden">
-        <div
-          className='bottom-0 absolute -left-5 rotate-45 bg-accent vsm:h-40 vsm:w-48 h-32 w-40'
-        ></div>
-        <img
-          src={ownerImg}
-          alt="owner image"
-          className='-bottom-20 absolute -left-5 w-[55%] min-w-40 max-w-60 vmd:w-2/5 sm:max-w-72'
-        />
+        <div className="relative h-60 w-full sm:h-[450px] md:hidden">
+          <div className="absolute -left-5 bottom-0 h-32 w-40 rotate-45 bg-accent"></div>
+          <img
+            src={ownerImg}
+            alt="owner image"
+            className="absolute -bottom-20 -left-5 w-[55%] min-w-40 max-w-60 sm:max-w-72"
+          />
         </div>
         <div
           className={`${!isPinOnPage && "drop-img"} relative hidden h-fit rounded-sm border-8 border-b-[12px] border-white bg-accent drop-shadow-[25px_25px_10px_rgba(0,0,0,0.3)] md:mt-28 md:flex md:w-1/3 lg:w-[28%] ${
             !isHeroInView
-              ? "translate-y-0 rotate-12 delay-300 duration-[1500ms]"
-              : "-translate-y-40 rotate-6 delay-[800ms] duration-[1500ms]"
+              ? "translate-y-[20%] rotate-12 delay-300 duration-[1500ms]"
+              : "-translate-y-[20%] rotate-6 delay-[800ms] duration-[1500ms]"
           }`}
         >
           <img

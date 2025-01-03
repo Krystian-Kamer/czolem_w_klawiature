@@ -311,14 +311,14 @@ const PhoneContent = () => {
           }}
         ></div>
         <h3
-          className="mb-2 animate-fadeIn text-xl uppercase text-accent opacity-0 tb:self-start tb:text-2xl lg:mb-4 lg:text-3xl"
+          className="mb-2 animate-fadeIn text-xl uppercase text-accent opacity-0 lg:mb-4 lg:text-3xl"
           style={{
             animationDelay: `10s`,
           }}
         >
           Zadaj mi pytanie:
         </h3>
-        <div className="grid gap-y-2 md:grid-cols-2 tb:gap-y-3 tb:text-xl lg:text-2xl">
+        <div className="grid gap-y-2 md:grid-cols-2 lg:text-2xl">
           {recruitmentMessages.map((message) => {
             const { question, id, isAsked } = message;
             return (

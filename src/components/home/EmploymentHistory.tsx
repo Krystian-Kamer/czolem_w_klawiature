@@ -14,7 +14,7 @@ const EmploymentHistory = () => {
       <div className="prose">
         <SectionTitle title="Zawodowo" />
       </div>
-      <ul className="timeline timeline-vertical timeline-snap-icon -top-2 bottom-3 max-md:timeline-compact selection:bg-accent selection:text-secondary ph:bottom-0 md:top-0 tb:top-6 lg:top-10">
+      <ul className="timeline timeline-vertical timeline-snap-icon -top-2 bottom-3 max-md:timeline-compact selection:bg-accent selection:text-secondary">
         <li>
           <div className="timeline-middle">
             <svg
@@ -37,14 +37,14 @@ const EmploymentHistory = () => {
               <GiCoffeeCup className="text-7xl" />
               <div className="absolute top-1 -z-10 h-11 w-10 -rotate-12 bg-accent"></div>
             </div>
-            <time className="font-mono text-sm italic md:text-base tb:text-lg">
+            <time className="font-mono text-sm italic sm:text-base md:text-lg">
               2016
             </time>
-            <div className="text-lg font-black md:text-lg tb:text-2xl">
+            <div className="text-lg font-black md:text-lg lg:text-2xl">
               Pracownik biurowy
               <div className="h-1 w-1/4 rounded-sm bg-accent md:h-2 md:justify-self-end"></div>
             </div>
-            <p className="vmd:text-xl vmd:leading-relaxed md:text-base md:leading-normal tb:text-xl tb:leading-relaxed">
+            <p className="md:text-lg md:leading-loose lg:text-2xl lg:leading-relaxed">
               Pracowałem w Urzędzie Pracy w Łodzi, na różnych stanowiskach.
               Współpracowałem z przedsiębiorcami, rozliczałem dotacje,
               obsługiwałem kancelarię oraz archiwum.
@@ -76,14 +76,14 @@ const EmploymentHistory = () => {
               <PiScalesFill className="text-7xl" />
               <div className="absolute right-0 top-1 -z-10 h-11 w-10 rotate-12 bg-accent"></div>
             </div>
-            <time className="font-mono text-sm italic md:text-base tb:text-lg">
+            <time className="font-mono text-sm italic sm:text-base md:text-lg">
               2020
             </time>
-            <div className="text-lg font-black md:text-lg tb:text-2xl">
+            <div className="text-lg font-black md:text-lg lg:text-2xl">
               Sekretarz Sądowy
               <div className="h-1 w-1/4 rounded-sm bg-accent md:h-2"></div>
             </div>
-            <p className="vmd:text-xl vmd:leading-relaxed md:text-base md:leading-normal tb:text-xl tb:leading-relaxed">
+            <p className="md:text-lg md:leading-loose lg:text-2xl lg:leading-relaxed">
               Jestem protokolantem, wykonuję polecenia Sędziego oraz
               kierownictwa. Wyniosłem stąd aktywne słuchanie i wyłapywanie tego
               co najważniejsze. Dodatkowo nauczyło mnie to pracy pod presją
@@ -116,14 +116,14 @@ const EmploymentHistory = () => {
               <LiaGlassesSolid className="text-7xl" />
               <div className="absolute top-1 -z-10 h-11 w-10 -rotate-12 bg-accent"></div>
             </div>
-            <time className="font-mono text-sm italic md:text-base tb:text-lg">
+            <time className="font-mono text-sm italic sm:text-base md:text-lg">
               2022
             </time>
-            <div className="text-lg font-black md:text-lg tb:text-2xl">
+            <div className="text-lg font-black md:text-lg lg:text-2xl">
               Nauka programowania
               <div className="h-1 w-1/4 rounded-sm bg-accent md:h-2 md:justify-self-end"></div>
             </div>
-            <p className="vmd:text-xl vmd:leading-relaxed md:text-base md:leading-normal tb:text-xl tb:leading-relaxed">
+            <p className="md:text-lg md:leading-loose lg:text-2xl lg:leading-relaxed">
               Ekscytujący czas. Nowe technologie, kursy, projekty. Dużo
               wyrzeczeń, ale warto. Jeśli widzisz tego bloga to znaczy, że
               jestem w trakcie spełniania mojego marzenia o pozostaniu
@@ -156,14 +156,14 @@ const EmploymentHistory = () => {
               <MdLaptopMac className="text-7xl" />
               <div className="absolute right-0 top-1 -z-10 h-11 w-10 rotate-12 bg-accent"></div>
             </div>
-            <time className="font-mono text-sm italic md:text-base tb:text-lg">
+            <time className="font-mono text-sm italic sm:text-base md:text-lg">
               2025(życzeniowo)
             </time>
-            <div className="text-lg font-black md:text-lg tb:text-2xl">
+            <div className="text-lg font-black md:text-lg lg:text-2xl">
               Junior Frontend Developer
               <div className="h-1 w-1/4 rounded-sm bg-accent md:h-2"></div>
             </div>
-            <p className="vmd:text-xl vmd:leading-relaxed md:text-base md:leading-normal tb:text-xl tb:leading-relaxed">
+            <p className="md:text-lg md:leading-loose lg:text-2xl lg:leading-relaxed">
               Pierwsza pełnoprawna praca w sektorze IT. Tutaj kiedyś pojawi się
               oszałamiająca ścieżka kariery programisty. Moja podróż od Juniora
               do Seniora.

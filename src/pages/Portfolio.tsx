@@ -4,21 +4,28 @@ import Slider from "react-slick";
 import { projects } from "../data";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useContext } from "react";
+import { ContextValue } from "../types";
+import { AppContext } from "../App";
 
 const Portfolio = () => {
-
   const slidesToShow = window.innerWidth >= 600 ? 2 : 1;
+  const { windowHeight } = useContext<ContextValue>(AppContext);
 
   return (
     <Section
       id="blog-1"
       bgColor="bg-neutral"
-      height="h-fit md:h-screen"
+      height={`${
+        windowHeight < 1174
+          ? "h-fit md:pb-[300px] lg:pb-[250px]"
+          : "md:h-screen"
+      }`}
       isLastChild={true}
     >
       <div>
-        <div className="flex flex-col">
-          <div className="prose mx-6">
+        <div className="relative flex flex-col">
+          <div className="prose">
             <SectionTitle title="Portfolio" />
           </div>
           <div className="slider-container sm:hidden">
@@ -37,6 +44,7 @@ const Portfolio = () => {
               })}
             </Slider>
           </div>
+
           <Desktop />
         </div>
       </div>

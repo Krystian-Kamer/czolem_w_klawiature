@@ -29,7 +29,7 @@ const Window = ({ windowContent, setIsWindowOpen }: WindowProps) => {
   };
 
   return (
-    <div className="mockup-browser absolute right-0 top-0 h-fit w-full lg:w-[75%] border-2 border-secondary/60 bg-accent">
+    <div className="mockup-browser z-10 absolute right-0 top-0 h-fit w-full lg:w-[75%] border-2 border-secondary/60 bg-accent">
       <div className="mockup-browser-toolbar flex w-40 justify-between">
         <p className="capitalize italic tracking-wider text-secondary/60">
           {windowContent}

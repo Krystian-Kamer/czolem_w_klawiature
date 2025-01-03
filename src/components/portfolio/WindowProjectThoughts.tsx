@@ -18,10 +18,10 @@ const WindowProjectThoughts = ({
         name="my_tabs_2"
         role="tab"
         className={`tab ${
-          tabsState[4] ? "rounded-box bg-base-100" : "my-1"
+          tabsState[3] ? "rounded-box bg-base-100" : "my-1"
         } text-base italic tracking-wider text-secondary`}
         aria-label="Przemyślenia"
-        checked={tabsState[4]}
+        checked={tabsState[3]}
         onChange={() => setTabsState([false, false, false, true])}
       />
       <div

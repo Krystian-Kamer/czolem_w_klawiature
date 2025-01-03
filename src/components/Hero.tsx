@@ -9,7 +9,7 @@ const Hero = () => {
   const { pathname } = useLocation();
   return (
     <div className="border-b-[1px] bg-primary">
-      <div className="relative mx-auto flex max-w-7xl flex-col items-center sm:flex-row md:justify-between">
+      <div className="relative mx-auto  flex max-w-7xl flex-col items-center sm:flex-row  md:justify-between">
         <div
           ref={heroRef}
           className="absolute bottom-10 left-0 z-20 mb-1 max-w-7xl p-2 text-sm font-semibold italic tracking-wider text-base-100 sm:bottom-0 sm:left-auto sm:right-0 sm:top-auto"
@@ -19,7 +19,7 @@ const Hero = () => {
         <img
           src={heroImg}
           alt="Hero image"
-          className={`z-10 sm:w-3/4 md:w-3/4 lg:w-1/2 ${pathname === "/" && "opacity-100 sm:-translate-x-16 lg:translate-x-0"} ${
+          className={`md:z-50 sm:w-3/4 md:w-3/4 lg:w-1/2 ${pathname === "/" && "opacity-100 sm:-translate-x-16 lg:translate-x-0"} ${
             isHeroInView
               ? "opacity-100 duration-1000 sm:-translate-x-16 lg:translate-x-0"
               : "-translate-x-[200px] opacity-0"

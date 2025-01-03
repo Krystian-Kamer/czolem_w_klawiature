@@ -35,7 +35,7 @@ const Footer = () => {
               <a
                 key={id}
                 href={href}
-                className="cursor-custom-pointer rounded-full p-1 text-2xl duration-300 hover:scale-105 hover:bg-primary hover:text-accent active:hover:scale-125 ph:text-3xl ph:hover:scale-110 md:text-4xl"
+                className="cursor-custom-pointer rounded-full p-1 text-2xl duration-300 hover:scale-105 hover:bg-primary hover:text-accent active:hover:scale-125 md:text-4xl"
                 target={href.startsWith("mailto:") ? "_self" : "_blank"}
                 rel={
                   href.startsWith("mailto:") ? undefined : "noopener noreferrer"
@@ -47,7 +47,7 @@ const Footer = () => {
           })}
         </div>
         <p
-          className='z-10 self-center text-center font-protest text-xs leading-3 md:-translate-x-8 md:text-sm tb:-translate-x-20 tb:text-lg tb:leading-none'
+          className='z-10 self-center text-center font-protest text-xs leading-3 md:-translate-x-10 md:text-sm'
         >
           Polityka Prywatności © {new Date().getFullYear()} Krystian Kamer. All
           right reserved.

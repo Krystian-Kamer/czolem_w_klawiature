@@ -5,12 +5,6 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      screens: {
-        vsm: "321px",
-        ph: "390px",
-        vmd: "541px",
-        tb: "850px",
-      },
       fontFamily: {
         protest: ['"Protest Strike", sans-serif'],
       },

@@ -1,10 +1,11 @@
 import { Navigation, Hero, Section, SectionTitle } from "./index";
 import potatoImg from "./../assets/potato.png";
-import { useState } from "react";
-
+import { useState, useContext } from "react";
+import { ContextValue } from "../types";
+import { AppContext } from "../App";
 const Error = () => {
   const [color, setColor] = useState("bg-info");
-
+  const { windowHeight } = useContext<ContextValue>(AppContext);
 
   const changeColor = () => {
     switch (color) {
@@ -45,21 +46,25 @@ const Error = () => {
         <Section
           id="blog-1"
           bgColor="bg-neutral"
-          height='h-fit md:h-screen'
+          height={`${
+            windowHeight < 1174
+              ? "h-fit md:pb-[300px] lg:pb-[250px]"
+              : "md:h-screen"
+          }`}
           isLastChild={true}
         >
-          <div className=" flex flex-col selection:bg-secondary selection:text-accent">
+          <div className="flex flex-col selection:bg-secondary selection:text-accent">
             <div className="prose">
               <SectionTitle title="Ups...!" />
             </div>
-            <div className='flex flex-col  items-center justify-center gap-y-4 lg:gap-y-10'>
+            <div className="flex flex-col items-center justify-center gap-y-4 lg:gap-y-10">
               <img
                 src={potatoImg}
-                className={`${color} cursor-custom-pointer h-full max-h-80 select-none rounded-full border-2 border-t-8 border-primary object-cover ph:max-h-96 sm:max-h-[430px] lg:h-[450px]`}
+                className={`${color} cursor-custom-pointer h-full max-h-80 select-none rounded-full border-2 border-t-8 border-primary object-cover sm:max-h-[430px] lg:h-[450px]`}
                 alt="person with gold potato"
                 onClick={changeColor}
               />
-              <h2 className="text-center font-protest tracking-widest vmd:text-xl md:w-2/3 tb:text-2xl lg:w-1/2 lg:text-2xl">
+              <h2 className="text-center font-protest tracking-widest md:w-2/3 lg:w-1/2 lg:text-2xl">
                 Niełatwo jest dotrzeć do tej strony, ale Tobie się udało,
                 proszę, oto Twój medal!
               </h2>

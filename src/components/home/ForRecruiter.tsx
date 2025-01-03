@@ -24,9 +24,9 @@ const ForRecruiter = () => {
       <div className="prose">
         <SectionTitle title="Dla rekrutera" />
       </div>
-      <div className="relative flex flex-col md:h-[596px] md:flex-row md:justify-center tb:mt-20 lg:mt-6">
+      <div className="relative flex flex-col md:h-[596px] md:flex-row md:justify-center lg:mt-6">
         <div className="flex flex-col md:mr-10 md:w-1/2">
-          <p className="-mt-4 mb-3 rounded-lg text-lg tracking-wider text-neutral selection:bg-neutral selection:text-secondary md:hidden">
+          <p className="mb-5 rounded-lg text-lg tracking-wider text-neutral selection:bg-neutral selection:text-secondary md:hidden">
             Serdecznie zapraszam do zapoznania się z moim CV, które znajduje się
             na biurku. Najpierw jednak trzeba zapalić światło.
           </p>
@@ -34,12 +34,12 @@ const ForRecruiter = () => {
         </div>
 
         <div
-          className='desk relative flex max-w-[500px] justify-center self-center md:py-1'
+          className="desk md:max-w-2/3 relative mb-20 flex h-[450px] max-w-[400px] justify-center self-center md:mb-0 md:h-full md:py-1"
           data-tilt
           data-tilt-max
           data-tilt-full-page-listening
         >
-          <div className="relative flex flex-col justify-end overflow-hidden rounded-lg bg-secondary drop-shadow-[20px_20px_10px_rgba(0,0,0,0.6)] ph:mt-4 vmd:w-4/5 sm:w-[70%] md:mt-0 md:w-full lg:rounded-3xl">
+          <div className="relative flex flex-col justify-end overflow-hidden rounded-lg bg-secondary shadow-[10px_20px_10px_rgba(0,0,0,0.6)] sm:w-[70%] md:w-full md:rounded-3xl">
             <div
               className={`absolute top-[82px] h-[120%] w-full ${isLightOn ? "bg-orange-400 bg-gradient-to-b from-accent via-transparent" : "bg-secondary"} md:top-24 lg:top-24`}
               style={{
@@ -56,7 +56,7 @@ const ForRecruiter = () => {
               }}
             />
             {isDownloadCvModalOpen && isLightOn && (
-              <div className="glass absolute left-1/2 top-[40%] w-5/6 -translate-x-1/2 -translate-y-1/2 rounded-2xl px-4 py-2 text-center font-protest text-sm text-primary selection:bg-accent selection:text-secondary ph:w-4/6 ph:text-base md:top-1/2 lg:top-[40%] lg:w-1/2 lg:text-lg">
+              <div className="glass absolute left-1/2 top-[35%] w-5/6 max-w-60 -translate-x-1/2 -translate-y-1/2 rounded-2xl px-4 py-2 text-center font-protest text-sm text-primary selection:bg-accent selection:text-secondary md:top-1/2 lg:top-[40%] lg:w-1/2 lg:text-lg">
                 <p className="tracking-wider">czy chcesz teraz ściągnać CV ?</p>
                 <div className="mt-2 flex justify-around">
                   <a
@@ -84,14 +84,14 @@ const ForRecruiter = () => {
             <div className="relative">
               <div className="absolute left-[15%] top-[45%] z-20 -translate-y-1/2 skew-x-[60deg] skew-y-[349deg] text-center">
                 <div
-                  className={`z-20 h-3 w-8 border-l-2 border-primary bg-base-100 vsm:h-6 vsm:w-16 ${isLightOn ? "brightness-70 hover:scale-105 hover:duration-700" : "brightness-[20%]"} lg:w-24} tb:h-8 tb:w-20 lg:h-12`}
+                  className={`z-20 h-6 w-12 border-l-2 border-primary bg-base-100 ${isLightOn ? "brightness-70 hover:scale-105 hover:duration-700" : "brightness-[20%]"} lg:h-10 lg:w-20`}
                 >
                   <img
                     src={cvImg}
                     alt="my cv image"
                     className={`${
                       isLightOn ? "cursor-custom-pointer" : "custom-cursor"
-                    } z-20 h-3 w-8 vsm:h-6 vsm:w-16 tb:h-8 tb:w-20 lg:h-12 lg:w-24`}
+                    } z-20 h-6 w-12 lg:h-10 lg:w-20`}
                     onClick={() => setIsDownloadCvModalOpen(true)}
                   />
                 </div>

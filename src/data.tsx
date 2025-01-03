@@ -24,7 +24,7 @@ export const skills: Skill[] = [
     name: "JavaScript",
     id: "JavaScript",
     icon: (
-      <SiJavascript className="p-2 vmd:h-20 vmd:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
+      <SiJavascript className="sm:h-20 sm:w-20 p-2 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: true,
     text: "Idealny świat powstał w 7 dni a biorąc pod uwagę work-life balance, w 6. JavaScript, mimo, że powstał (jeśli wierzyć plotkom) w 10 dni, już taki nie jest. Jest to niebezpieczne miejsce najeżone pułapkami. I choć stringi kojarzyły mi się tylko z jednym, to i te tu, polubiłem.",
@@ -33,7 +33,7 @@ export const skills: Skill[] = [
     name: "HTML",
     id: "HTML",
     icon: (
-      <SiHtml5 className="p-2 vmd:h-20 vmd:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
+      <SiHtml5 className="sm:h-20 sm:w-20 p-2 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
     text: "Kiedy zaczynasz to nie wiesz ile nie wiesz. Na etapie HTML-a myślisz, że wiele wiesz, a wiesz niewiele. Potem idąc dalej, wiesz już, że niewiele wiesz, ale wiesz czego masz się dowiedzieć. Idąc jeszcze dalej coraz więcej wiesz i coraz więcej nie wiesz.",
@@ -42,7 +42,7 @@ export const skills: Skill[] = [
     name: "CSS",
     id: "CSS",
     icon: (
-      <SiCss3 className="p-2 vmd:h-20 vmd:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
+      <SiCss3 className="sm:h-20 sm:w-20 p-2 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
     text: "Stary dobry CSS. Podstawa do dalszego rozwoju. Ostylowaliśmy razem niejeden projekt, ale nasze drogi trochę się rozeszły. On wolał zostać na przedmieściach i karmić kaczki przy jeziorze a ja wolałem wyruszyć w świat z przetartym plecakiem. Czasem na siebie wpadniemy, pomachamy sobie z oddali i pójdziemy dalej, każdy w swoją stronę.",
@@ -51,7 +51,7 @@ export const skills: Skill[] = [
     name: "React",
     id: "React",
     icon: (
-      <SiReact className="p-1 vmd:h-20 vmd:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-2" />
+      <SiReact className="sm:h-20 sm:w-20 p-1 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-2" />
     ),
     checked: false,
     text: "Z Reacta korzystam codziennie. Miłość do klocków Lego została mi do dziś, tylko, że zamiast Lego mam komponenty, a zamiast dziecięcej niewinności rachunki do opłacenia i żeby kot miał co jeść. Uważam, że biblioteka ta znacznie przyspiesza wytwarzanie kodu.",
@@ -60,7 +60,7 @@ export const skills: Skill[] = [
     name: "React Router",
     id: "React Router",
     icon: (
-      <SiReactrouter className="p-2 vmd:h-20 vmd:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
+      <SiReactrouter className="sm:h-20 sm:w-20 p-2 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
     text: "React bez React Routera jest jak Hanka bez kartonów. Daleko nie pojedziesz.",
@@ -69,7 +69,7 @@ export const skills: Skill[] = [
     name: "TypeScript",
     id: "TypeScript",
     icon: (
-      <SiTypescript className="p-2 vmd:h-20 vmd:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
+      <SiTypescript className="sm:h-20 sm:w-20 p-2 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
     text: "Kiedyś w nielicznych ofertach o pracę potrzebny, dziś jest to must-have. TS pomaga dostrzec problemy w czasie rzeczywistym, co jest jego najlepszą zaletą. Chociaż jest z nim jak ze związkiem. Czasem mnie wnerwia, bo nie wiem o co mu chodzi, ale jakoś się dogadujemy. Ja robię to czego on chce a on przestaje narzekać. Synergia zachowana.",
@@ -78,7 +78,7 @@ export const skills: Skill[] = [
     name: "Redux Toolkit",
     id: "Redux Toolkit",
     icon: (
-      <SiRedux className="p-2 vmd:h-20 vmd:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
+      <SiRedux className="sm:h-20 sm:w-20 p-2 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
     text: "Jeśli wiele komponentów będzie korzystało z jakiejś logiki a są porozrzucane po całym projekcie to już wiesz, w które drzwiczki zapukać.",
@@ -87,7 +87,7 @@ export const skills: Skill[] = [
     name: "Tailwind",
     id: "Tailwind",
     icon: (
-      <SiTailwindcss className="p-2 vmd:h-20 vmd:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
+      <SiTailwindcss className="sm:h-20 sm:w-20 p-2 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
     text: "Uwielbiam, bo nie trzeba przeskakiwać w projekcie między plikiem .css a plikiem .jsx/.tsx, wszystko jest w jednym miejscu. Do tego można zapomnieć o wymyślaniu nazw klas, a tym bardziej o metodologi BEM. Dokumentacja też na plus.",
@@ -96,7 +96,7 @@ export const skills: Skill[] = [
     name: "React Query",
     id: "React Query",
     icon: (
-      <SiReactquery className="p-2 vmd:h-20 vmd:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
+      <SiReactquery className="sm:h-20 sm:w-20 p-2 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
     text: "Przyspiesza działanie strony i zapewnia prostą obsługę ściągniętych danych. Przez to, że zapamiętuje ściągnięte dane nie ma konieczności ponownego ich fetchowania. Przydatne też, gdy chcemy zrobić infinite scroll, jak w Instagramie czy Facebooku.",
@@ -105,7 +105,7 @@ export const skills: Skill[] = [
     name: "Pozostałe",
     id: "Others",
     icon: (
-      <SiChessdotcom className="p-2 vmd:h-20 vmd:w-20 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
+      <SiChessdotcom className="sm:h-20 sm:w-20 p-2 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
     text: "Gita uczyłem się z kursu na Youtube Hello Romana oraz z darmowego kursu na Udemy Samuraja. Liznąłem jeszcze bootstrapa, scss, styled components, BEM, firebase, daisyUI (z którego korzystam w tym projekcie), react toastify, dnd kit.",
