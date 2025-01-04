@@ -1,15 +1,11 @@
 import { Section, SectionTitle } from "../components/index";
 import { Desktop, Project } from "../components/portfolio/index";
-import Slider from "react-slick";
 import { projects } from "../data";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { useContext } from "react";
 import { ContextValue } from "../types";
 import { AppContext } from "../App";
 
 const Portfolio = () => {
-  const slidesToShow = window.innerWidth >= 600 ? 2 : 1;
   const { windowHeight } = useContext<ContextValue>(AppContext);
 
   return (
@@ -28,23 +24,11 @@ const Portfolio = () => {
           <div className="prose">
             <SectionTitle title="Portfolio" />
           </div>
-          <div className="slider-container sm:hidden">
-            <Slider
-              {...{
-                dots: true,
-                infinite: true,
-                speed: 500,
-                slidesToShow: slidesToShow,
-                slidesToScroll: 1,
-                initialSlide: 1,
-              }}
-            >
-              {projects.map((project) => {
-                return <Project key={project.id} project={project} />;
-              })}
-            </Slider>
+          <div className="sm:hidden mb-20">
+            {projects.map((project) => {
+              return <Project key={project.id} project={project} />;
+            })}
           </div>
-
           <Desktop />
         </div>
       </div>

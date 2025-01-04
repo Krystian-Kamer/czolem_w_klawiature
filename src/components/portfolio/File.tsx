@@ -45,7 +45,7 @@ const File = ({ file, setIsWindowOpen, setWindowContent }: FileProps) => {
   };
 
   return (
-    <div className="group relative h-fit" ref={setNodeRef} style={style}>
+    <div className="group relative bg-neutral h-fit" ref={setNodeRef} style={style}>
       <div className="dropdown dropdown-right">
         <div
           tabIndex={0}
@@ -55,7 +55,7 @@ const File = ({ file, setIsWindowOpen, setWindowContent }: FileProps) => {
           } active:scale-90`}
           onClick={() => setIsDropdownOpen(true)}
         >
-          <div className={`pointer-events-none mt-4 text-6xl`}>{icon}</div>
+          <div className='pointer-events-none mt-4 text-6xl'>{icon}</div>
           <input
             ref={inputRef}
             type="text"

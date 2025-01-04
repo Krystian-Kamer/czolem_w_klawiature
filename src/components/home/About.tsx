@@ -79,12 +79,12 @@ const About = () => {
           </p>
         </div>
 
-        <div className="relative h-60 w-full sm:h-[450px] md:hidden">
-          <div className="absolute -left-5 bottom-0 h-32 w-40 rotate-45 bg-accent"></div>
+        <div className="relative h-52 w-full sm:h-[450px] md:hidden">
+          <div className="absolute -left-5 bottom-0 h-40 w-48 rotate-45 bg-accent"></div>
           <img
             src={ownerImg}
             alt="owner image"
-            className="absolute -bottom-20 -left-5 w-[55%] min-w-40 max-w-60 sm:max-w-72"
+            className="absolute -bottom-20 -left-5 w-[55%] min-w-52 max-w-64 sm:max-w-72"
           />
         </div>
         <div

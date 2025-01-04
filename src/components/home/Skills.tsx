@@ -24,7 +24,7 @@ const Skills = () => {
       <div className="prose" >
         <SectionTitle title="Skille" />
       </div>
-        <div className="flex sm:hidden flex-wrap gap-1">
+        <div className="flex sm:hidden z-40 flex-wrap gap-1">
           {totalSkills.map((skill) => {
             const { name, id, checked } = skill;
             return (
@@ -52,7 +52,7 @@ const Skills = () => {
         })}
       </div>
 
-      <div className="z-20 hidden sm:flex sm:flex-col gap-y-[2px] text-neutral selection:bg-secondary-content selection:text-primary max-w-[600px] self-center lg:self-auto lg:h-fit lg:w-[42%]">
+      <div className="z-20  hidden sm:flex sm:flex-col gap-y-[2px] text-neutral selection:bg-secondary-content selection:text-primary max-w-[600px] self-center lg:self-auto lg:h-fit lg:w-[42%]">
         {totalSkills.map((skill, index) => {
           const { name, id, checked, text } = skill;
           return (

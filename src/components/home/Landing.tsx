@@ -44,7 +44,7 @@ const Landing = () => {
       bgColor: "bg-primary",
       height: `${
         windowHeight < 1174
-          ? "h-fit md:pb-[300px] lg:pb-[350px]"
+          ? "h-fit md:pb-[390px]"
           : "md:h-screen"
       }`,
       isLastChild: true,

@@ -28,13 +28,13 @@ const PostCategories = ({ setPosts }: PostProps) => {
     );
     return setPosts(filteredPosts);
   };
-
+  console.log("first");
   return (
     <>
-      <p className="mb-2 tracking-wide font-protest text-primary selection:bg-secondary selection:text-accent md:mb-2 md:text-2xl lg:mb-3 lg:text-2xl">
+      <p className="mb-2 font-protest tracking-wide text-primary selection:bg-secondary selection:text-accent md:mb-2 md:text-2xl lg:mb-3 lg:text-2xl">
         Wybierz kategorię:
       </p>
-      <div className="mb-20 self-center rounded-lg border-8 border-dotted border-primary bg-base-100/70 px-2 pb-8 pt-2 md:px-4 md:pt-6  lg:px-8 lg:pt-2">
+      <div className="mb-20 self-center rounded-lg border-8 border-dotted border-primary bg-base-100/70 px-2 pb-8 pt-2 md:px-4 md:pt-6 lg:px-8 lg:pt-2">
         <div className="relative mb-4 text-center font-protest text-2xl uppercase tracking-wider md:mb-8 md:text-3xl lg:mt-6 lg:text-4xl">
           <p className="absolute left-[50.3%] top-1 w-full -translate-x-1/2 text-primary selection:bg-accent selection:text-primary/95 md:top-2">
             #{activeCategory}

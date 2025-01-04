@@ -14,7 +14,7 @@ const EmploymentHistory = () => {
       <div className="prose">
         <SectionTitle title="Zawodowo" />
       </div>
-      <ul className="timeline timeline-vertical timeline-snap-icon -top-2 bottom-3 max-md:timeline-compact selection:bg-accent selection:text-secondary">
+      <ul className="timeline timeline-vertical timeline-snap-icon -top-4 max-md:timeline-compact selection:bg-accent selection:text-secondary">
         <li>
           <div className="timeline-middle">
             <svg
@@ -44,7 +44,7 @@ const EmploymentHistory = () => {
               Pracownik biurowy
               <div className="h-1 w-1/4 rounded-sm bg-accent md:h-2 md:justify-self-end"></div>
             </div>
-            <p className="md:text-lg md:leading-loose lg:text-2xl lg:leading-relaxed">
+            <p className="md:text-lg md:leading-loose lg:text-xl lg:leading-relaxed">
               Pracowałem w Urzędzie Pracy w Łodzi, na różnych stanowiskach.
               Współpracowałem z przedsiębiorcami, rozliczałem dotacje,
               obsługiwałem kancelarię oraz archiwum.
@@ -83,7 +83,7 @@ const EmploymentHistory = () => {
               Sekretarz Sądowy
               <div className="h-1 w-1/4 rounded-sm bg-accent md:h-2"></div>
             </div>
-            <p className="md:text-lg md:leading-loose lg:text-2xl lg:leading-relaxed">
+            <p className="md:text-lg md:leading-loose lg:text-xl lg:leading-relaxed">
               Jestem protokolantem, wykonuję polecenia Sędziego oraz
               kierownictwa. Wyniosłem stąd aktywne słuchanie i wyłapywanie tego
               co najważniejsze. Dodatkowo nauczyło mnie to pracy pod presją
@@ -123,7 +123,7 @@ const EmploymentHistory = () => {
               Nauka programowania
               <div className="h-1 w-1/4 rounded-sm bg-accent md:h-2 md:justify-self-end"></div>
             </div>
-            <p className="md:text-lg md:leading-loose lg:text-2xl lg:leading-relaxed">
+            <p className="md:text-lg md:leading-loose lg:text-xl lg:leading-relaxed">
               Ekscytujący czas. Nowe technologie, kursy, projekty. Dużo
               wyrzeczeń, ale warto. Jeśli widzisz tego bloga to znaczy, że
               jestem w trakcie spełniania mojego marzenia o pozostaniu
@@ -150,7 +150,7 @@ const EmploymentHistory = () => {
             </svg>
           </div>
           <div
-            className={`group/item timeline-end relative mb-3 md:mb-6 ${isEmploymentHistoryInView ? "md:translate-x-0 md:opacity-100 md:delay-[1500ms] md:duration-1000" : "md:translate-x-1/3 md:opacity-0"}`}
+            className={`group/item timeline-end relative mb-3 md:mb-6 lg:mb-28 ${isEmploymentHistoryInView ? "md:translate-x-0 md:opacity-100 md:delay-[1500ms] md:duration-1000" : "md:translate-x-1/3 md:opacity-0"}`}
           >
             <div className="absolute -left-44 top-1/2 hidden -translate-y-1/2 opacity-0 group-hover/item:flex group-hover/item:animate-fadeIn">
               <MdLaptopMac className="text-7xl" />
@@ -163,7 +163,7 @@ const EmploymentHistory = () => {
               Junior Frontend Developer
               <div className="h-1 w-1/4 rounded-sm bg-accent md:h-2"></div>
             </div>
-            <p className="md:text-lg md:leading-loose lg:text-2xl lg:leading-relaxed">
+            <p className="md:text-lg md:leading-loose lg:text-xl lg:leading-relaxed">
               Pierwsza pełnoprawna praca w sektorze IT. Tutaj kiedyś pojawi się
               oszałamiająca ścieżka kariery programisty. Moja podróż od Juniora
               do Seniora.

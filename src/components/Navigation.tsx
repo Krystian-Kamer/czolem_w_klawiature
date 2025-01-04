@@ -42,11 +42,11 @@ const Navigation = () => {
   }, [lastScrollY]);
 
   return (
-    <nav className="fixed z-30 w-full pb-2">
+    <nav className="fixed z-50 w-full md:pb-2">
       <div
         className={`mx-auto ${
           isScrolledDown === null
-            ? pathname.includes('blog') && !isBgDark
+            ? pathname.includes("blog") && !isBgDark
               ? "lg:bg-neutral"
               : "lg:bg-transparent"
             : !isScrolledDown && isBgDark

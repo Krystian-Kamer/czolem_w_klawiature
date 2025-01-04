@@ -8,7 +8,7 @@ const Post1 = () => {
       <PostSubtitle subtitle="Dokąd zmierzam?" />
       <PostText text="Niestety nie pracuję jeszcze komercyjnie w IT, ale z programowaniem mam do czynienia od ponad 2 lat. Staram się codziennie coś zakodować. Konsekwentnie dążę do zdobycia pierwszej pracy w charakterze Junior Frontend Developera. " />
       <PostSubtitle subtitle="Czemu rozpocząłem prowadzenie bloga?" />
-      <PostText text="To bardzo ciekawe pytanie. W internecie jest bardzo dużo blogów programistycznych, gdzie tęgie głowy codziennie dzielą się wiedzą z różnych dziedzin IT. Ja też tak chcę. Uznałem, że chcę tłumaczyć przeróżne zagadnienia po swojemu (z przymróżeniem oka)." />
+      <PostText text="To bardzo ciekawe pytanie. W internecie jest bardzo dużo blogów programistycznych, gdzie tęgie głowy codziennie dzielą się wiedzą z różnych dziedzin IT. Ja też tak chcę. Uznałem, że chcę tłumaczyć przeróżne zagadnienia po swojemu (z przymrużeniem oka)." />
       <PostText text=" Moje motywy działania:" />
       <div className="overflow-x-auto">
         <table className="table">

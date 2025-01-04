@@ -15,12 +15,12 @@ const Project = ({ project }: { project: ProjectType }) => {
   return (
     <div
       ref={projectRef}
-      className='mockup-window justify-self-center mx-6 overflow-hidden mb-4 bg-accent shadow-md'
+      className='mockup-window justify-self-center overflow-hidden mb-10 bg-accent shadow-md max-w-[330px]'
     >
       <div
-        className={`card w-[200%] ${
+        className={`card w-[200%]  ${
           isVideoVisible ? "-translate-x-1/2" : "translate-x-0"
-        } h-full flex-row overflow-hidden rounded-none bg-white/95 duration-1000`}
+        } h-fit flex-row overflow-hidden rounded-none bg-white/95 duration-1000`}
       >
         <div className="w-full">
           <figure className="h-2/5">

@@ -24,7 +24,7 @@ const ForRecruiter = () => {
       <div className="prose">
         <SectionTitle title="Dla rekrutera" />
       </div>
-      <div className="relative flex flex-col md:h-[596px] md:flex-row md:justify-center lg:mt-6">
+      <div className="relative flex flex-col md:h-[596px] md:flex-row md:justify-center">
         <div className="flex flex-col md:mr-10 md:w-1/2">
           <p className="mb-5 rounded-lg text-lg tracking-wider text-neutral selection:bg-neutral selection:text-secondary md:hidden">
             Serdecznie zapraszam do zapoznania się z moim CV, które znajduje się

@@ -40,7 +40,7 @@ const Desktop = () => {
           />
         )}
       </DndContext>
-      <div className="absolute left-1/2 top-[50%] h-72 w-72 -translate-x-1/2 -translate-y-1/2">
+      <div className="absolute left-[53%] top-[50%] sm:h-60 sm:w-60 md:h-72 md:w-72 -translate-x-1/2 -translate-y-1/2">
         <BsWindows className="h-full w-full text-secondary drop-shadow-lg duration-1000 hover:text-primary" />
       </div>
     </div>

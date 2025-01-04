@@ -147,7 +147,7 @@ export const recruitment: Recruitment[] = [
   },
   {
     id: 5,
-    question: "Dlaczego interesuje Cię nasza firma?",
+    question: "Dlaczego chcesz u nas pracować?",
     answer:
       "Jeżeli ktoś dotarł aż do tej strony, wyklikał co mógł wyklikać, a przy tym dobrze się bawił, to znaczy, że nie stawia na ilość a na jakość. A to tak jak ja! Szukam firmy, gdzie będę mógł się realizować. Mam nadzieję, że dobrze trafiłem.",
     isAsked: false,
@@ -155,9 +155,17 @@ export const recruitment: Recruitment[] = [
   },
   {
     id: 6,
-    question: "Jake są twoje mocne strony?",
+    question: "Co Cię wyróżnia jako pracownika?",
     answer:
       "Uważam, że jest to zdolność do dogadania się z każdym. Ponadto, w sytuacji stresowej nie tracę pozytywnego myślenia. Potrafię słuchać ze zrozumieniem i wyciągać wnioski.",
+    isAsked: false,
+    order: null,
+  },
+  {
+    id: 7,
+    question: "Gdzie widzisz się za 5 lat?",
+    answer:
+      "Moim celem na 2025 rok jest zostanie pełnoprawnym junior frontend developerem. Do 5 lat wprzód mam nadzieję zostać już seniorem.",
     isAsked: false,
     order: null,
   },

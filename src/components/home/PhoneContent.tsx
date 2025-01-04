@@ -42,7 +42,7 @@ const PhoneContent = () => {
   return (
     <>
       <div
-        className={`mockup-phone hidden self-center border-neutral/50 drop-shadow-[20px_20px_10px_rgba(0,0,0,0.6)] md:block ${isSectionFourInView ? "translate-x-0 opacity-100 duration-1000" : "-translate-x-[200px] opacity-0"} `}
+        className={`mockup-phone hidden border-neutral/50 drop-shadow-[20px_20px_10px_rgba(0,0,0,0.6)] md:block ${isSectionFourInView ? "translate-x-0 opacity-100 duration-1000" : "-translate-x-[200px] opacity-0"} `}
       >
         <div className="camera"></div>
         <div className="display">
@@ -95,6 +95,7 @@ const PhoneContent = () => {
                 </p>
               )}
             </div>
+
             {isInvitationAccepted && (
               <>
                 <div
@@ -311,20 +312,20 @@ const PhoneContent = () => {
           }}
         ></div>
         <h3
-          className="mb-2 animate-fadeIn text-xl uppercase text-accent opacity-0 lg:mb-4 lg:text-3xl"
+          className="mb-2 animate-fadeIn text-xl uppercase text-accent opacity-0 lg:mb-4 md:text-2xl lg:text-3xl"
           style={{
             animationDelay: `10s`,
           }}
         >
           Zadaj mi pytanie:
         </h3>
-        <div className="grid gap-y-2 md:grid-cols-2 lg:text-2xl">
+        <div className="grid gap-y-2 md:grid-cols-2 md:text-lg lg:text-2xl">
           {recruitmentMessages.map((message) => {
             const { question, id, isAsked } = message;
             return (
               <button
                 key={id}
-                className={`cursor-custom-pointer pointer-events-none animate-fadeInPointerNone text-neutral opacity-0 duration-300 ${isAsked ? "cursor-custom pointer-events-none line-through" : "hover:text-neutral/70"} ${
+                className={`cursor-custom-pointer pointer-events-none animate-fadeInPointerNone text-neutral opacity-0 lg:py-1 duration-300 ${isAsked ? "cursor-custom pointer-events-none line-through" : "hover:text-neutral/70"} ${
                   (id - 1) % 2 === 0
                     ? "md:justify-self-start"
                     : "md:justify-self-end"
