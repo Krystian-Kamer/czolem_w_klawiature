@@ -35,7 +35,7 @@ const About = () => {
         <div
           className={`prose min-h-[400px] ${!isPinOnPage && "translate-x-1/2 delay-[1500ms] duration-[1000ms]"} selection:bg-accent selection:text-secondary md:w-1/2 md:px-0`}
         >
-          <SectionTitle title={"Czołem!"} />
+          <SectionTitle bgColor="bg-neutral" title={"Czołem!"} />
 
           <h2 className="text-xl sm:text-xl md:text-2xl">
             Z tej strony Krystian Kamer.

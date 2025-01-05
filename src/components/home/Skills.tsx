@@ -20,9 +20,9 @@ const Skills = () => {
   };
 
   return (
-    <div ref={sectionTwoRef} className="flex min-h-[400px]  flex-col ">
+    <div ref={sectionTwoRef} className="flex min-h-[400px]  flex-col">
       <div className="prose" >
-        <SectionTitle title="Skille" />
+        <SectionTitle bgColor="bg-primary" title="Skille" />
       </div>
         <div className="flex sm:hidden z-40 flex-wrap gap-1">
           {totalSkills.map((skill) => {
@@ -94,7 +94,7 @@ const Skills = () => {
           <img
             src={handImg}
             alt="hand image"
-            className={`-z-50 -mb-[600px] min-[800px]:w-[550px] ${isSectionTwoInView ? "mb-0 duration-[2000ms] ease-out" : "mb-[-600px] duration-[2000ms]"}`}
+            className={`-z-50 select-none -mb-[600px] min-[800px]:w-[550px] ${isSectionTwoInView ? "mb-0 duration-[2000ms] ease-out" : "mb-[-600px] duration-[2000ms]"}`}
           />
         </div>
       </div>

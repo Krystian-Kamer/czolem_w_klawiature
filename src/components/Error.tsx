@@ -55,7 +55,7 @@ const Error = () => {
         >
           <div className="flex flex-col selection:bg-secondary selection:text-accent">
             <div className="prose">
-              <SectionTitle title="Ups...!" />
+              <SectionTitle bgColor="bg-neutral" title="Ups...!" />
             </div>
             <div className="flex flex-col items-center justify-center gap-y-4 lg:gap-y-10">
               <img

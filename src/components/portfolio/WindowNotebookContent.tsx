@@ -12,10 +12,12 @@ const WindowNotebookContent = () => {
   return (
     <div className="flex min-h-[500px] items-center justify-center">
       <textarea
-        className="min-h-[500px] w-full resize-none bg-base-100 font-semibold text-2xl p-20 tracking-widest selection:bg-base-200 selection:text-primary text-secondary/75 focus:outline-none"
+        className="min-h-[500px] w-full resize-none bg-base-100 p-20 text-2xl font-semibold tracking-widest text-secondary/75 selection:bg-base-200 selection:text-primary focus:outline-none"
         value={notes}
         onChange={(e) => setNotes(e.target.value)}
-        placeholder="Miejsce na Twoje notatki..."
+        placeholder="Miejsce na Twoje notatki...
+
+        ...Ps. Jeśli chcesz to możesz przeciągać pliki najeżdżając na prawy górny kwadrat."
       />
     </div>
   );

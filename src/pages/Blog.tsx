@@ -20,7 +20,7 @@ const Blog = () => {
           className='flex flex-col'
         >
           <div className="prose z-10">
-            <SectionTitle title="Blog osobisty" />
+            <SectionTitle bgColor="bg-neutral" title="Blog osobisty" />
           </div>
           <div className="z-10 w-full font-protest text-base leading-loose tracking-wide text-primary/95 selection:bg-accent selection:text-secondary sm:leading-loose md:w-11/12 md:text-2xl md:leading-loose md:tracking-wider lg:w-full lg:leading-relaxed lg:tracking-wider">
             <h3 className="mb-5 md:mb-8 lg:mb-10">

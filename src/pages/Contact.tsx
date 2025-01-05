@@ -18,7 +18,7 @@ const Contact = () => {
       >
         <div className="mb-40 flex flex-col selection:bg-secondary selection:text-accent">
           <div className="prose">
-            <SectionTitle title="Kontakt" />
+            <SectionTitle bgColor="bg-neutral" title="Kontakt" />
           </div>
           <form
             className="prose flex h-fit w-full max-w-[400px] flex-col justify-around self-center border-[6px] border-dashed border-primary bg-accent px-4 py-2 sm:mt-8 md:mt-16 md:w-3/5 md:max-w-none md:border-8 md:px-6 lg:w-1/2 lg:p-8"

@@ -12,7 +12,7 @@ const EmploymentHistory = () => {
   return (
     <div ref={employmentHistoryRef} className="flex flex-col">
       <div className="prose">
-        <SectionTitle title="Zawodowo" />
+        <SectionTitle bgColor="bg-neutral" title="Zawodowo" />
       </div>
       <ul className="timeline timeline-vertical timeline-snap-icon -top-4 max-md:timeline-compact selection:bg-accent selection:text-secondary">
         <li>

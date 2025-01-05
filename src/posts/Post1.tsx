@@ -4,7 +4,7 @@ const Post1 = () => {
   return (
     <div>
       <PostSubtitle subtitle="No idź tam do kolegów i koleżanek, przywitaj się..." />
-      <PostText text="Jeśli jesteś jedną z tych osób co to nie zjedli warzywek ani ziemniaków (czyli olali totalnie stronę główną) a zajęli się mięskiem to dobrze trafiłeś. Nazywam się Krystian Kamer. Obecnie pracuję jako Sekretarz Sądowy zwany potocznie Protokolantem. Wcześniej pracowałem w Urzędzie Pracy. Wiodę od 8 lat życie skromnego pracownika biurowego. Nadszedł jednak czas na zmiany." />
+      <PostText text="Jeśli jesteś jedną z tych osób co to nie zjedli warzywek ani ziemniaków (czyli olali totalnie stronę główną) a zajęli się mięskiem to dobrze trafiłeś. Nazywam się Krystian Kamer. Obecnie pracuję jako Sekretarz Sądowy zwany wśród mugoli Protokolantem. Wcześniej pracowałem w Urzędzie Pracy. Wiodę od 8 lat życie skromnego pracownika biurowego. Nadszedł jednak czas na zmiany." />
       <PostSubtitle subtitle="Dokąd zmierzam?" />
       <PostText text="Niestety nie pracuję jeszcze komercyjnie w IT, ale z programowaniem mam do czynienia od ponad 2 lat. Staram się codziennie coś zakodować. Konsekwentnie dążę do zdobycia pierwszej pracy w charakterze Junior Frontend Developera. " />
       <PostSubtitle subtitle="Czemu rozpocząłem prowadzenie bloga?" />
@@ -49,7 +49,7 @@ const Post1 = () => {
       <PostText text="Chyba każdy programista tak ma, że dużo rozmyśla nad problemem. A jeśli problem jest duży to i rozmyślanie większe. Może pojawić się frustracja. Niejeden chętnie wstałby i wywalił swojego iMaca przez okno z 10 piętra, inny piłą maszynową przeciąłby na pół router w domu, jeszcze inny walnąłby czołem w klawiaturę." />
       <PostText text='Jako że "Wywal iMaca przez okno z 10 piętra" oraz "Piłą maszynową przetnij router na pół" są za długie i nie zapadną w pamięć, postawiłem na "Czołem w klawiaturę". Simple as that.' />
       <PostSubtitle subtitle="Co dalej? " />
-      <PostText text="Jeżeli chciałbyś ze mną wymienić się przemyśleniami, to zapraszam do kontaktu. Masz pomysł na nowy post? Też chętnie przeczytam. Niebawem kolejny artykuł!" />
+      <PostText text="Jeżeli chciałbyś się ze mną przemyśleniami, to zapraszam do kontaktu. Masz pomysł na nowy post? Też chętnie przeczytam. Niebawem kolejny artykuł!" />
     </div>
   );
 };

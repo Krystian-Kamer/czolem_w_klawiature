@@ -22,9 +22,9 @@ const Portfolio = () => {
       <div>
         <div className="relative flex flex-col">
           <div className="prose">
-            <SectionTitle title="Portfolio" />
+            <SectionTitle bgColor="bg-neutral" title="Portfolio" />
           </div>
-          <div className="sm:hidden mb-20">
+          <div className="mb-20 sm:hidden">
             {projects.map((project) => {
               return <Project key={project.id} project={project} />;
             })}

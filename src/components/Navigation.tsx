@@ -1,6 +1,6 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 import { NavLink, useLocation } from "react-router-dom";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import { ContextValue, NavLinkType } from "../types";
 import { AppContext } from "../App";
 
@@ -13,9 +13,8 @@ const navLinks: NavLinkType[] = [
 
 const Navigation = () => {
   const { pathname } = useLocation();
-  const { isBgDark } = useContext<ContextValue>(AppContext);
-  const [isScrolledDown, setIsScrolledDown] = useState<boolean | null>(null);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const { isBgDark, windowHeight } = useContext<ContextValue>(AppContext);
+
 
   useEffect(() => {
     const scrollableDiv = document.querySelector(".home");
@@ -25,38 +24,12 @@ const Navigation = () => {
     });
   }, [pathname]);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      if (currentScrollY > lastScrollY) {
-        setIsScrolledDown(true);
-      } else if (currentScrollY < lastScrollY) {
-        setIsScrolledDown(false);
-      }
-      setLastScrollY(currentScrollY);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [lastScrollY]);
-
   return (
-    <nav className="fixed z-50 w-full md:pb-2">
-      <div
-        className={`mx-auto ${
-          isScrolledDown === null
-            ? pathname.includes("blog") && !isBgDark
-              ? "lg:bg-neutral"
-              : "lg:bg-transparent"
-            : !isScrolledDown && isBgDark
-              ? "lg:translate-y-0 lg:bg-primary"
-              : !isScrolledDown
-                ? "lg:translate-y-0 lg:bg-neutral"
-                : "lg:-translate-y-full"
-        } flex w-full max-w-7xl justify-end p-2`}
-      >
-        <div className="lg:hidden">
+    <nav
+      className={`fixed ${pathname.includes("/blog") && !isBgDark && windowHeight >= 1174 && "bg-gradient-to-r from-transparent from-50% via-neutral to-neutral pb-4"} z-50 w-full md:pb-2`}
+    >
+      <div className="mx-auto flex w-full max-w-7xl justify-end p-2">
+        <div className={`${windowHeight < 1174 ? "flex" : "lg:hidden"}`}>
           <div className="drawer drawer-end">
             <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
@@ -73,7 +46,7 @@ const Navigation = () => {
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <ul className="menu h-full w-1/2 bg-accent p-6 pt-10 text-lg font-bold text-base-content">
+              <ul className="menu h-full w-1/2 bg-accent p-6 pt-10 text-lg font-bold text-base-content md:w-1/3">
                 {navLinks.map((navLink) => {
                   const { id, to } = navLink;
                   return (
@@ -97,7 +70,7 @@ const Navigation = () => {
           </div>
         </div>
 
-        <div className="hidden lg:flex">
+        <div className={`${windowHeight < 1174 ? "hidden" : "hidden lg:flex"}`}>
           {navLinks.map((navLink) => {
             const { id, to } = navLink;
             return (

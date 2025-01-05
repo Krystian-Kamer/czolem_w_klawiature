@@ -14,7 +14,7 @@ const Landing = () => {
       bgColor: "bg-neutral",
       height: `${
         windowHeight < 1174
-          ? "h-fit md:pb-[300px] lg:pb-[350px]"
+          ? "h-fit md:pb-[300px] lg:pb-[400px]"
           : "md:h-screen"
       }`,
     },
@@ -44,7 +44,7 @@ const Landing = () => {
       bgColor: "bg-primary",
       height: `${
         windowHeight < 1174
-          ? "h-fit md:pb-[390px]"
+          ? "h-fit md:pb-[390px] lg:pb-[470px]"
           : "md:h-screen"
       }`,
       isLastChild: true,
