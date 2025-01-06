@@ -12,7 +12,7 @@ const PostPreview = ({ post }: { post: PostType }) => {
   return (
     <div
       ref={postPreview}
-      className={`relative mb-16 mt-0 flex h-fit flex-col justify-center overflow-hidden shadow-md md:shadow-none md:drop-shadow-md duration-500 sm:drop-shadow-md md:mb-28 md:h-96 md:flex-row lg:drop-shadow-lg ${isPostPreviewInView ? "translate-x-0" : "translate-x-1/2"}`}
+      className={`relative mb-16 mt-0 flex h-fit flex-col justify-center overflow-hidden shadow-md sm:shadow-none md:drop-shadow-md justify-self-center duration-500 sm:drop-shadow-md sm:max-w-full md:mb-28 md:h-96 md:flex-row lg:drop-shadow-lg max-w-[543px] ${isPostPreviewInView ? "translate-x-0" : "translate-x-1/2"}`}
     >
       <img
         src={imageSmall}
