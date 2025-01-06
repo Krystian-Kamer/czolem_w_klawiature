@@ -43,7 +43,7 @@ const PostWrapper = () => {
               {title}
             </p>
           </div>
-          <p className="text-lg leading-relaxed text-secondary md:mt-4 lg:mb-10 lg:text-center lg:text-2xl">
+          <p className="text-lg leading-relaxed text-secondary md:mt-4 lg:mb-10 text-center lg:text-2xl">
             {text}
           </p>
           <hr  className="mt-8"/>
