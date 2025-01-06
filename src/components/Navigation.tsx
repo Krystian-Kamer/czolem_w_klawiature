@@ -15,18 +15,34 @@ const Navigation = () => {
   const { pathname } = useLocation();
   const { isBgDark, windowHeight } = useContext<ContextValue>(AppContext);
 
-
   useEffect(() => {
-    const scrollableDiv = document.querySelector(".home");
-    scrollableDiv?.scrollTo({
-      top: pathname === "/" ? 0 : 250,
-      behavior: "smooth",
-    });
+    if (windowHeight < 1174) {
+      if (pathname === "/") {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      } else {
+        const heroHeight = (document.querySelector(".hero") as HTMLElement)
+          .offsetHeight;
+        window.scrollTo({
+          top: heroHeight,
+          behavior: "smooth",
+        });
+        console.log(heroHeight);
+      }
+    } else {
+      const scrollableDiv = document.querySelector(".home");
+      scrollableDiv?.scrollTo({
+        top: pathname === "/" ? 0 : 250,
+        behavior: "smooth",
+      });
+    }
   }, [pathname]);
 
   return (
     <nav
-      className={`fixed ${pathname.includes("/blog") && !isBgDark && windowHeight >= 1174 && "bg-gradient-to-r from-transparent from-50% via-neutral to-neutral pb-4"} z-50 w-full md:pb-2`}
+      className={`fixed ${pathname.includes("/blog") && !isBgDark && windowHeight >= 1174 && "bg-gradient-to-r from-transparent from-50% via-neutral to-neutral"} z-50 w-full md:pb-2`}
     >
       <div className="mx-auto flex w-full max-w-7xl justify-end p-2">
         <div className={`${windowHeight < 1174 ? "flex" : "lg:hidden"}`}>

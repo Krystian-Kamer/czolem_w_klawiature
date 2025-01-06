@@ -28,7 +28,7 @@ const PostCategories = ({ setPosts }: PostProps) => {
     );
     return setPosts(filteredPosts);
   };
-  console.log("first");
+
   return (
     <>
       <p className="mb-2 font-protest tracking-wide text-primary selection:bg-secondary selection:text-accent md:mb-2 md:text-2xl lg:mb-3 lg:text-2xl">

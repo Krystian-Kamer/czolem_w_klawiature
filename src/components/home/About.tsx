@@ -33,7 +33,7 @@ const About = () => {
         className="md:flex top-1/2  md:flex-row md:justify-around md:gap-6"
       >
         <div
-          className={`prose min-h-[400px] ${!isPinOnPage && "translate-x-1/2 delay-[1500ms] duration-[1000ms]"} selection:bg-accent selection:text-secondary md:w-1/2 md:px-0`}
+          className={`prose ${isHeroInView ? '-translate-y-4 md:translate-y-0 duration-1000 delay-700': 'translate-y-0 sm:translate-y-7 md:translate-y-20 lg:translate-y-40 duration-1000'} min-h-[400px] ${!isPinOnPage && "translate-x-1/2 delay-[1500ms] duration-[1000ms]"} selection:bg-accent selection:text-secondary md:w-1/2 md:px-0`}
         >
           <SectionTitle bgColor="bg-neutral" title={"Czołem!"} />
 
@@ -64,7 +64,6 @@ const About = () => {
               className="cursor-custom-pointer mx-1 bg-accent tracking-wider text-primary no-underline hover:bg-accent/70"
               to="/portfolio"
             >
-              {" "}
               portfolio
             </Link>
             z humorystycznym
@@ -72,7 +71,6 @@ const About = () => {
               className="cursor-custom-pointer ml-1 bg-accent tracking-wider text-primary no-underline hover:bg-accent/70"
               to="/blog"
             >
-              {" "}
               blogiem
             </Link>
             , na który będę wrzucał co każdy poniedziałek nowe posty.

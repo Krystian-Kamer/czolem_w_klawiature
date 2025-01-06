@@ -23,8 +23,8 @@ const Blog = () => {
             <SectionTitle bgColor="bg-neutral" title="Blog osobisty" />
           </div>
           <div className="z-10 w-full font-protest text-base leading-loose tracking-wide text-primary/95 selection:bg-accent selection:text-secondary sm:leading-loose md:w-11/12 md:text-2xl md:leading-loose md:tracking-wider lg:w-full lg:leading-relaxed lg:tracking-wider">
-            <h3 className="mb-5 md:mb-8 lg:mb-10">
-              <span className="border-b-4 border-accent bg-accent/30">
+            <h3 className="md:mb-8 lg:mb-10">
+              <span className=" border-accent bg-accent/30">
                 "Czołem w klawiaturę"
               </span>{" "}
               powstało w celach edukacyjnych i humorystycznych. Na spokojnie

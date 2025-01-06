@@ -192,7 +192,7 @@ export const projects: ProjectType[] = [
     name: "vid-x",
     img: "/portfolio-assets/vid-x.png",
     description:
-      "Wyszukiwarka filmów i seriali. Możliwość wyszukania filmu po nazwie, kategorii, z sortowaniem, możliwość dodania filmu do swojej biblioteki, z wykorzystaniem  localStorage. ",
+      "Wyszukiwarka filmów i seriali. Możliwość wyszukania filmu po nazwie, kategorii, sortowanie, dodawanie filmów do swojej biblioteki, z wykorzystaniem  localStorage. ",
     technology: "HTML, CSS, JavaScript",
     github: "https://github.com/Krystian-Kamer/vid-x",
     live: "https://vid-x.vercel.app/",
