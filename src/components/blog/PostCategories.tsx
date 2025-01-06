@@ -31,7 +31,7 @@ const PostCategories = ({ setPosts }: PostProps) => {
 
   return (
     <>
-      <p className="mb-2 font-protest tracking-wide text-primary selection:bg-secondary selection:text-accent md:mb-2 md:text-2xl lg:mb-3 lg:text-2xl">
+      <p className="mb-2 font-protest tracking-wide text-primary selection:bg-secondary selection:text-accent mt-5 md:mb-2 md:text-2xl lg:mb-3 lg:text-2xl">
         Wybierz kategorię:
       </p>
       <div className="mb-20 self-center border-8 border-dotted border-primary bg-base-100/70 px-2 pb-8 pt-2 md:px-4 md:pt-6 lg:px-8 lg:pt-2">
