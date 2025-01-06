@@ -29,7 +29,6 @@ const Navigation = () => {
           top: heroHeight,
           behavior: "smooth",
         });
-        console.log(heroHeight);
       }
     } else {
       const scrollableDiv = document.querySelector(".home");
