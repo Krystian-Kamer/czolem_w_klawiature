@@ -1,16 +1,16 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import heroImg from "../../assets/hero-img.png";
 import ownerImg from "../../assets/owner-image.png";
 import avatarImg from "../../assets/avatar.png";
 import { FaRegHandshake, FaRegThumbsUp, FaRegThumbsDown } from "react-icons/fa";
 import { recruitment } from "../../data";
-import { ContextValue } from "../../types";
-import { AppContext } from "../../App";
+import { useInView } from "react-intersection-observer";
+
 const PhoneContent = () => {
   const [isInvitationAccepted, setIsInvitationAccepted] = useState(false);
   const [recruitmentMessages, setRecruitmentMessages] = useState(recruitment);
   const [order, setOrder] = useState<number>(1);
-  const { isSectionFourInView } = useContext<ContextValue>(AppContext);
+  const { ref: phone, inView: isPhoneInView } = useInView();
 
   const acceptInvitation = (delay: number) => {
     setTimeout(() => setIsInvitationAccepted(true), delay);
@@ -42,7 +42,8 @@ const PhoneContent = () => {
   return (
     <>
       <div
-        className={`mockup-phone hidden border-neutral/50 drop-shadow-[20px_20px_10px_rgba(0,0,0,0.6)] md:block ${isSectionFourInView ? "translate-x-0 opacity-100 duration-1000" : "-translate-x-[200px] opacity-0"} `}
+        ref={phone}
+        className={`mockup-phone hidden border-neutral/50 drop-shadow-[20px_20px_10px_rgba(0,0,0,0.6)] md:block ${isPhoneInView ? "translate-x-0 opacity-100 duration-1000" : "-translate-x-[200px] opacity-0"} `}
       >
         <div className="camera"></div>
         <div className="display">
@@ -303,7 +304,7 @@ const PhoneContent = () => {
         </div>
       </div>
       <div
-        className={`absolute hidden rounded-lg font-protest tracking-widest opacity-0 bottom-0 translate-y-[115%]  ${isInvitationAccepted ? "flex-col opacity-100 md:flex md:w-full" : "md:hidden"} px-8 py-2 selection:bg-secondary`}
+        className={`absolute bottom-0 hidden translate-y-[115%] rounded-lg font-protest tracking-widest opacity-0 ${isInvitationAccepted ? "flex-col opacity-100 md:flex md:w-full" : "md:hidden"} px-8 py-2 selection:bg-secondary`}
       >
         <div
           className="mb-2 h-[1px] animate-fadeIn bg-accent/40 opacity-0"
@@ -312,7 +313,7 @@ const PhoneContent = () => {
           }}
         ></div>
         <h3
-          className="mb-2 animate-fadeIn text-xl uppercase text-accent opacity-0 lg:mb-4 md:text-2xl lg:text-3xl"
+          className="mb-2 animate-fadeIn text-xl uppercase text-accent opacity-0 md:text-2xl lg:mb-4 lg:text-3xl"
           style={{
             animationDelay: `10s`,
           }}
@@ -325,7 +326,7 @@ const PhoneContent = () => {
             return (
               <button
                 key={id}
-                className={`cursor-custom-pointer pointer-events-none animate-fadeInPointerNone text-neutral opacity-0 lg:py-1 duration-300 ${isAsked ? "cursor-custom pointer-events-none line-through" : "hover:text-neutral/70"} ${
+                className={`cursor-custom-pointer pointer-events-none animate-fadeInPointerNone text-neutral opacity-0 duration-300 lg:py-1 ${isAsked ? "cursor-custom pointer-events-none line-through" : "hover:text-neutral/70"} ${
                   (id - 1) % 2 === 0
                     ? "md:justify-self-start"
                     : "md:justify-self-end"

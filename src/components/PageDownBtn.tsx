@@ -16,7 +16,7 @@ const PageDownBtn = ({ bgColor }: { bgColor: string }) => {
 
   return (
     <button
-      className={`cursor-custom-pointer ${windowHeight <1174 ? 'opacity-0' : 'opacity-100'} btn-circle glass absolute hidden drop-shadow-[5px_10px_5px_rgba(0,0,0,0.2)] md:flex hover:lg:animate-bounceSlow ${bgColor === "bg-neutral" ? "bg-primary hover:bg-secondary" : "bg-neutral hover:bg-base-200"} bottom-6 left-1/2 flex h-16 w-16 -translate-x-1/2 items-center justify-center sm:bottom-20 sm:left-1/2 sm:-translate-x-1/2 md:bottom-20 md:h-20 md:w-20 lg:bottom-40 lg:left-[50%] lg:h-28 lg:w-28 lg:-translate-x-1/2`}
+      className={`cursor-custom-pointer ${windowHeight <1174 ? 'hidden' : 'opacity-100 flex md:flex'} btn-circle glass absolute drop-shadow-[5px_10px_5px_rgba(0,0,0,0.2)]  hover:lg:animate-bounceSlow ${bgColor === "bg-neutral" ? "bg-primary hover:bg-secondary" : "bg-neutral hover:bg-base-200"} bottom-6 left-1/2  h-16 w-16 -translate-x-1/2 items-center justify-center sm:bottom-20 sm:left-1/2 sm:-translate-x-1/2 md:bottom-20 md:h-20 md:w-20 lg:bottom-40 lg:left-[50%] lg:h-28 lg:w-28 lg:-translate-x-1/2`}
       onClick={scrollDown}
     >
       <RiArrowDownLine

@@ -4,6 +4,7 @@ import { ContextValue } from "../types";
 import { AppContext } from "../App";
 const Contact = () => {
   const { windowHeight } = useContext<ContextValue>(AppContext);
+
   return (
     <>
       <Section
@@ -43,6 +44,7 @@ const Contact = () => {
                 className="grow"
                 placeholder="Imię"
                 name="name"
+                required
               />
             </label>
 
@@ -68,6 +70,7 @@ const Contact = () => {
               className="textarea mt-1 min-h-[30vh] w-full resize-none rounded-none bg-neutral font-protest text-sm tracking-wider md:text-lg lg:text-xl"
               placeholder="O czym chciałbyś pogadać?"
               name="message"
+              required
             ></textarea>
             <input type="hidden" name="_captcha" value="false" />
             <input

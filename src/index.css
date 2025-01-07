@@ -88,6 +88,6 @@
   .animated-waves {
     display: flex;
     width: 300%;
-    animation: moveWaves 30s linear infinite;
+    animation: moveWaves 25s linear infinite;
   }
 }

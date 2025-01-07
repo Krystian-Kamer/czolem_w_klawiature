@@ -26,7 +26,7 @@ const Hero = () => {
           }`}
         />
         <div
-          className={`flex w-full items-center justify-center bg-accent duration-1000 selection:bg-transparent selection:text-primary/90 sm:absolute sm:right-4 sm:top-28 sm:w-[40%] sm:rounded-md sm:py-2 md:top-36 md:w-2/5 md:py-4 lg:mx-20 xl:mx-20 xl:px-10 ${isHeroInView ? "sm:translate-y-0 sm:opacity-100" : "sm:opacity-20 sm:-translate-y-[300px]"}`}
+          className={`flex w-full items-center justify-center bg-accent duration-1000 selection:text-primary sm:absolute sm:right-4 sm:top-28 sm:w-[40%] sm:rounded-md sm:py-2 md:top-36 md:w-2/5 md:py-4 lg:mx-20 xl:mx-20 xl:px-10 ${isHeroInView ? "sm:translate-y-0 sm:opacity-100" : "sm:opacity-20 sm:-translate-y-[300px]"}`}
         >
           <div className="prose">
             <h1 className="my-1 font-protest text-2xl uppercase sm:text-3xl lg:text-3xl xl:text-4xl">
