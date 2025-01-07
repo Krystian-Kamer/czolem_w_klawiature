@@ -44,7 +44,7 @@ const Error = () => {
           <Hero />
         </div>
         <Section
-          id="blog-1"
+          id="error"
           bgColor="bg-neutral"
           height={`${
             windowHeight < 1174
@@ -53,7 +53,7 @@ const Error = () => {
           }`}
           isLastChild={true}
         >
-          <div className="flex flex-col selection:bg-secondary selection:text-accent">
+          <div className="flex flex-col selection:bg-accent selection:text-secondary">
             <div className="prose">
               <SectionTitle bgColor="bg-neutral" title="Ups...!" />
             </div>

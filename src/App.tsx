@@ -1,7 +1,7 @@
 import { HomeLayout, Error } from "./components/index";
 import { Landing } from "./components/home/index";
 import { PostWrapper } from "./components/blog/index";
-import { Portfolio, Blog, Contact } from "./pages";
+import { Portfolio, Blog, Contact, ThankYou } from "./pages";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { createContext, useState, useEffect } from "react";
 import { ContextValue } from "./types";
@@ -32,6 +32,7 @@ const router = createBrowserRouter([
         element: <PostWrapper />,
       },
       { path: "/kontakt", element: <Contact /> },
+      { path: "/dzieki", element: <ThankYou /> },
     ],
   },
 ]);
@@ -39,9 +40,7 @@ const router = createBrowserRouter([
 function App() {
   const [windowHeight, setWindowHeight] = useState(window.innerHeight);
   const sectionOptions =
-    windowHeight < 1174
-      ? { rootMargin: "0px 0px -90% 0px", threshold: 0 }
-      : {};
+    windowHeight < 1174 ? { rootMargin: "0px 0px -90% 0px", threshold: 0 } : {};
   const { ref: heroRef, inView: isHeroInView } = useInView();
   const { ref: sectionTwoRef, inView: isSectionTwoInView } =
     useInView(sectionOptions);

@@ -49,7 +49,7 @@ const Post1 = () => {
       <PostText text="Chyba każdy programista tak ma, że dużo rozmyśla nad problemem. A jeśli problem jest duży to i rozmyślanie większe. Może pojawić się frustracja. Niejeden chętnie wstałby i wywalił swojego iMaca przez okno z 10 piętra, inny piłą maszynową przeciąłby na pół router w domu, jeszcze inny walnąłby czołem w klawiaturę." />
       <PostText text='Jako że "Wywal iMaca przez okno z 10 piętra" oraz "Piłą maszynową przetnij router na pół" są za długie i nie zapadną w pamięć, postawiłem na "Czołem w klawiaturę". Simple as that.' />
       <PostSubtitle subtitle="Co dalej? " />
-      <PostText text="Jeżeli chciałbyś się ze mną przemyśleniami, to zapraszam do kontaktu. Masz pomysł na nowy post? Też chętnie przeczytam. Niebawem kolejny artykuł!" />
+      <PostText text="Jeżeli chciałbyś się ze mną podzielić przemyśleniami, to zapraszam do kontaktu. Masz pomysł na nowy post? Też chętnie przeczytam. Niebawem kolejny artykuł!" />
     </div>
   );
 };

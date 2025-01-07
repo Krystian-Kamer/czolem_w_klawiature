@@ -90,7 +90,7 @@ export const skills: Skill[] = [
       <SiTailwindcss className="sm:h-20 sm:w-20 p-2 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
-    text: "Uwielbiam, bo nie trzeba przeskakiwać w projekcie między plikiem .css a plikiem .jsx/.tsx, wszystko jest w jednym miejscu. Do tego można zapomnieć o wymyślaniu nazw klas, a tym bardziej o metodologi BEM. Dokumentacja też na plus.",
+    text: "Uwielbiam, bo nie trzeba przeskakiwać w projekcie między plikiem .css a plikiem .jsx/.tsx, wszystko jest w jednym miejscu. Do tego można zapomnieć o wymyślaniu nazw klas, a tym bardziej o metodologii BEM. Dokumentacja też na plus.",
   },
   {
     name: "React Query",

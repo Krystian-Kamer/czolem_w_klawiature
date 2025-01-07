@@ -26,7 +26,7 @@ const Footer = () => {
   return (
     <footer className="absolute text-primary bottom-0 z-20 w-full selection:bg-secondary selection:text-accent">
       <div
-        className='mx-auto relative max-w-7xl flex-col items-baseline justify-center gap-y-2'
+        className='mx-auto relative max-w-7xl flex flex-col items-baseline justify-center gap-y-2'
       >
         <div className="flex w-full items-center justify-center gap-x-6">
           {footerLinks.map((link) => {
@@ -47,7 +47,7 @@ const Footer = () => {
           })}
         </div>
         <p
-          className='z-10 self-center text-center font-protest text-xs leading-3 md:-translate-x-10 md:text-sm'
+          className='z-10 self-center text-center font-protest text-xs leading-3 md:-translate-x-10 md:text-sm lg:translate-x-0'
         >
           Polityka Prywatności © {new Date().getFullYear()} Krystian Kamer. All
           right reserved.
