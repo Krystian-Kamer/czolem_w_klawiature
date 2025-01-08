@@ -18,14 +18,14 @@ const PostPreview = ({ post }: { post: PostType }) => {
         src={imageSmall}
         loading="lazy"
         alt="post image"
-        className="rounded-t-lg object-cover opacity-95 sm:prose sm:w-5/6 sm:self-center md:hidden md:w-2/6 md:rounded-l-badge md:rounded-tr-none"
+        className="rounded-t-lg select-none object-cover opacity-95 sm:prose sm:w-5/6 sm:self-center md:hidden md:w-2/6 md:rounded-l-badge md:rounded-tr-none"
       />
       <img
         src={imageBig}
         loading="lazy"
         alt="post image"
         onClick={() => navigate(`/blog/${id}`)}
-        className="cursor-custom-pointer hidden rounded-t-lg object-cover opacity-95 duration-300 hover:opacity-85 md:flex md:w-2/5 md:rounded-l-badge md:rounded-tr-none lg:w-2/6"
+        className="cursor-custom-pointer select-none hidden rounded-t-lg object-cover opacity-95 duration-300 hover:opacity-85 md:flex md:w-2/5 md:rounded-l-badge md:rounded-tr-none lg:w-2/6"
       />
       <div className="prose flex h-full flex-col self-center rounded-b-lg bg-white/80 px-4 py-3 sm:w-5/6 md:w-3/5 md:rounded-r-badge md:rounded-bl-none md:p-8 lg:w-3/6">
         <div className="prose">

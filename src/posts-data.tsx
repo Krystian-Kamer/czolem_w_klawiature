@@ -9,7 +9,7 @@ export const postsData: PostType[] = [
     imageSmall: "/post-assets/post-1-small.jpg",
     imageBig: "/post-assets/post-1-big.jpeg",
     text: "Jest to pierwszy post prezentujący moją osobę. Kim jestem, dokąd zmierzam i dlaczego rozpocząłem prowadzenie bloga? Zapraszam.",
-    date: "21.11.24",
+    date: "07.01.25",
     category: "rozkminy",
   },
 ].reverse() as PostType[];

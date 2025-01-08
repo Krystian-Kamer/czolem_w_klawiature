@@ -4,7 +4,7 @@ const Post1 = () => {
   return (
     <div>
       <PostSubtitle subtitle="No idź tam do kolegów i koleżanek, przywitaj się..." />
-      <PostText text="Jeśli jesteś jedną z tych osób co to nie zjedli warzywek ani ziemniaków (czyli olali totalnie stronę główną) a zajęli się mięskiem to dobrze trafiłeś. Nazywam się Krystian Kamer. Obecnie pracuję jako Sekretarz Sądowy zwany wśród mugoli Protokolantem. Wcześniej pracowałem w Urzędzie Pracy. Wiodę od 8 lat życie skromnego pracownika biurowego. Nadszedł jednak czas na zmiany." />
+      <PostText text="Jeśli jesteś jedną z tych osób co to nie zjedli warzywek ani ziemniaków (czyli olali totalnie stronę główną) a zajęli się mięskiem to dobrze trafiłeś. Nazywam się Krystian Kamer. Obecnie pracuję jako Sekretarz Sądowy zwany wśród śmiertelników Protokolantem. Wcześniej pracowałem w Urzędzie Pracy. Wiodę od 8 lat życie skromnego pracownika biurowego. Nadszedł jednak czas na zmiany." />
       <PostSubtitle subtitle="Dokąd zmierzam?" />
       <PostText text="Niestety nie pracuję jeszcze komercyjnie w IT, ale z programowaniem mam do czynienia od ponad 2 lat. Staram się codziennie coś zakodować. Konsekwentnie dążę do zdobycia pierwszej pracy w charakterze Junior Frontend Developera. " />
       <PostSubtitle subtitle="Czemu rozpocząłem prowadzenie bloga?" />
@@ -15,23 +15,23 @@ const Post1 = () => {
           <tbody>
             <tr className="my-1 text-lg leading-relaxed md:my-2 lg:mb-4 lg:mt-5 lg:text-2xl">
               <th>1</th>
-              <td>Nauczanie innych to dobry sposób na utrwalenie wiedzy.</td>
+              <td>Nauczanie innych to dobry sposób na utrwalanie wiedzy</td>
             </tr>
             <tr className="my-1 text-lg leading-relaxed md:my-2 lg:mb-4 lg:mt-5 lg:text-2xl">
               <th>2</th>
-              <td>Pomagam innym w nauce a pomaganie jest dobre.</td>
+              <td>Pomagam innym w nauce a pomaganie jest dobre</td>
             </tr>
             <tr className="my-1 text-lg leading-relaxed md:my-2 lg:mb-4 lg:mt-5 lg:text-2xl">
               <th>3</th>
-              <td>Zwiększam swoją rozpoznawalność w sieci.</td>
+              <td>Zwiększam swoją rozpoznawalność w sieci</td>
             </tr>
             <tr className="my-1 text-lg leading-relaxed md:my-2 lg:mb-4 lg:mt-5 lg:text-2xl">
               <th>4</th>
-              <td>Zwiększam (oby) swoje szanse na zatrudnienie.</td>
+              <td>Zwiększam (oby) swoje szanse na zatrudnienie</td>
             </tr>
             <tr className="my-1 text-lg leading-relaxed md:my-2 lg:mb-4 lg:mt-5 lg:text-2xl">
               <th>5</th>
-              <td>Świetnie się przy tym bawię.</td>
+              <td>Świetnie się przy tym bawię</td>
             </tr>
           </tbody>
         </table>
@@ -39,11 +39,11 @@ const Post1 = () => {
       <PostSubtitle subtitle="Co znajdziesz na tym blogu?" />
       <PostText text="Będzie to głównie tematyka z zakresu Frontendu oraz moje przemyślenia odnośnie różnych zagadnień okołoprogramistycznych." />
       <PostSubtitle subtitle="Co wyróżnia ten blog pośród setek innych?" />
-      <PostText text='Każdy post będzie zawierać humorystyczne wstawki, które umilą choć trochę dzień. Wyznaję zasadę I. Krasickiego - "bawiąc uczyć, uczyć bawiąc".' />
+      <PostText text='Każdy post będzie zawierać humorystyczne wstawki, które rozweselą choć trochę dzień. Wyznaję zasadę I. Krasickiego - "bawiąc uczyć, uczyć bawiąc".' />
       <PostSubtitle subtitle="Jak często będą pojawiać się nowe treści?" />
       <PostText text="Strona główna nie gryzie, ale jak już to czytasz to odpowiem. Posta możesz sie spodziewać w każdy poniedziałek z rana." />
       <PostSubtitle subtitle="Dla kogo te przyjemności?" />
-      <PostText text="Jako, że sam jestem na początku kariery, blog skierowany jest dla osób początkujących, mających podstawową wiedzę z zakresu programowania a ściślej mówiąc frontendu, programistów bardziej zaawansowanych co by to poprzypominać sobie basic-owe tematy oraz do wszystkich innych, którzy są nim zainteresowani.  " />
+      <PostText text="Jako, że sam jestem na początku kariery, blog skierowany jest dla osób początkujących, mających podstawową wiedzę z zakresu programowania a ściślej mówiąc frontendu oraz programistów bardziej zaawansowanych co by to poprzypominać sobie basic-owe tematy oraz do wszystkich innych, którzy są nim zainteresowani.  " />
       <PostText text="Od razu uprzedzam, że nie jestem alfą, betą ani gammą, więc jeśli  zauważysz jakiś błąd to koniecznie do mnie napisz!" />
       <PostSubtitle subtitle='Dlaczego nazwa "Czołem w klawiaturę"? ' />
       <PostText text="Chyba każdy programista tak ma, że dużo rozmyśla nad problemem. A jeśli problem jest duży to i rozmyślanie większe. Może pojawić się frustracja. Niejeden chętnie wstałby i wywalił swojego iMaca przez okno z 10 piętra, inny piłą maszynową przeciąłby na pół router w domu, jeszcze inny walnąłby czołem w klawiaturę." />

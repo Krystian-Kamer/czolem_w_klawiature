@@ -95,7 +95,7 @@ const About = () => {
           <img
             src={pinImg}
             alt="pin image"
-            className={`absolute -left-6 z-10 rounded-l-full drop-shadow-[3px_10px_3px_rgba(0,0,0,0.6)] md:w-16 lg:w-20 ${!isHeroInView && "cursor-custom-pointer duration-300 hover:scale-110"} ${!isPinOnPage && "remove-pin"} `}
+            className={`absolute select-none -left-6 z-10 rounded-l-full drop-shadow-[3px_10px_3px_rgba(0,0,0,0.6)] md:w-16 lg:w-20 ${!isHeroInView && "cursor-custom-pointer duration-300 hover:scale-110"} ${!isPinOnPage && "remove-pin"} `}
             onClick={!isHeroInView ? dropImage : undefined}
           />
           <div
