@@ -48,7 +48,7 @@ const PostPreview = ({ post }: { post: PostType }) => {
         </p>
         <div className={`flex items-center justify-between`}>
           <p
-            className={`select-none font-semibold italic tracking-widest text-secondary/30 md:text-lg lg:text-xl`}
+            className={`selection:bg-secondary/10 font-semibold italic tracking-widest text-secondary/30 md:text-lg lg:text-xl`}
           >
             {date} r.
           </p>
