@@ -23,7 +23,7 @@ const Waves = ({
 
   return (
     <div
-      className={`animated-waves select-none pointer-events-none absolute ${lastChild ? "bottom-[calc(5vh)] 2xl:-bottom-3" : "bottom-0"} z-20 overflow-hidden`}
+      className={`animated-waves select-none pointer-events-none absolute ${lastChild ? "bottom-[calc(5vh)] 2xl:-bottom-3" : "-bottom-1"} z-20 overflow-hidden`}
     >
       <img src={imgSrc} alt="waves" />
     </div>
