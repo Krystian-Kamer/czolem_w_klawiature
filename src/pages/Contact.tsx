@@ -80,7 +80,6 @@ const Contact = () => {
             />
             <input
               type="hidden"
-              name="_next"
               value="https://czolem-w-klawiature.vercel.app/dzieki"
             />
             <div className="flex flex-col items-center justify-between gap-x-1 sm:mt-3 sm:flex-row md:mt-4">
