@@ -5,7 +5,7 @@ import { ContextValue, NavLinkType } from "../types";
 import { AppContext } from "../App";
 
 const navLinks: NavLinkType[] = [
-  { id: "Home", to: "/" },
+  { id: "Główna", to: "/" },
   { id: "Blog", to: "/blog" },
   { id: "Portfolio", to: "/portfolio" },
   { id: "Kontakt", to: "/kontakt" },

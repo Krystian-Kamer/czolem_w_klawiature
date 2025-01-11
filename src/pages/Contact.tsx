@@ -78,6 +78,11 @@ const Contact = () => {
               name="_autoresponse"
               value="Dzięki za zostawienie wiadomości, na pewno się z nią zapoznam."
             />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://czolem-w-klawiature.vercel.app/dzieki"
+            />
             <div className="flex flex-col items-center justify-between gap-x-1 sm:mt-3 sm:flex-row md:mt-4">
               <p className="my-2 font-protest text-base tracking-wider text-primary md:mb-4 md:text-lg lg:text-2xl">
                 Uzupełnij wszystkie pola!
