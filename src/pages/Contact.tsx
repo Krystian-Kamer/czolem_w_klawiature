@@ -113,14 +113,12 @@ const Contact = () => {
                 className="cursor-custom-pointer mb-2 w-full rounded-sm border-4 border-primary bg-primary py-1 font-protest text-sm uppercase tracking-widest text-accent duration-300 hover:bg-accent hover:text-primary sm:w-fit text-center  md:text-base sm:px-8 md:px-9 lg:px-10 lg:py-2 lg:text-xl"
               >
                 {isSubmitting ? (
-                  <div className="flex relative justify-self-center items-center pointer-events-none">
+                  <div className="flex relative justify-self-center items-center pointer-events-none text-center">
                     <span className="loading absolute -left-[45%] md:-left-[40%] lg:-left-[35%] loading-spinner"></span>
                     <span>Wysyłam</span>
                   </div>
                 ) : (
-                  <div className="flex justify-self-center items-center pointer-events-none">
                     <span>Prześlij</span>
-                  </div>
                 )}
               </button>
             </div>
