@@ -1,9 +1,34 @@
 import { Section, SectionTitle } from "../components/index";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { ContextValue } from "../types";
 import { AppContext } from "../App";
+import { useNavigate } from "react-router-dom";
+
 const Contact = () => {
   const { windowHeight } = useContext<ContextValue>(AppContext);
+  const navigate = useNavigate();
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+
+  const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    setIsSubmitting(true);
+    const form = e.target as HTMLFormElement;
+
+    fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+    })
+      .then(() => {
+        navigate(`/dzieki`);
+      })
+      .catch((err) => {
+        console.error("Error submitting the form:", err);
+      })
+      .finally(() => {
+        setIsSubmitting(false);
+      });
+  };
 
   return (
     <>
@@ -26,6 +51,7 @@ const Contact = () => {
             target="_blank"
             action="https://formsubmit.co/6ee327a787b46a2edd4ee628298c9ecf"
             method="POST"
+            onSubmit={handleFormSubmit}
           >
             <h1 className="mt-2 text-lg uppercase text-primary md:mt-4 md:text-xl lg:text-2xl">
               Pogadajmy
@@ -78,20 +104,24 @@ const Contact = () => {
               name="_autoresponse"
               value="Dzięki za zostawienie wiadomości, na pewno się z nią zapoznam."
             />
-            <input
-              type="hidden"
-              name="_next"
-              value="https://czolem-w-klawiature.vercel.app/dzieki"
-            />
             <div className="flex flex-col items-center justify-between gap-x-1 sm:mt-3 sm:flex-row md:mt-4">
               <p className="my-2 font-protest text-base tracking-wider text-primary md:mb-4 md:text-lg lg:text-2xl">
                 Uzupełnij wszystkie pola!
               </p>
               <button
                 type="submit"
-                className="cursor-custom-pointer mb-2 w-full rounded-sm border-4 border-primary bg-primary py-1 font-protest text-sm uppercase tracking-widest text-accent duration-300 hover:bg-accent hover:text-primary sm:w-fit sm:px-6 md:px-8 md:text-base lg:px-10 lg:py-2 lg:text-xl"
+                className="cursor-custom-pointer mb-2 w-full rounded-sm border-4 border-primary bg-primary py-1 font-protest text-sm uppercase tracking-widest text-accent duration-300 hover:bg-accent hover:text-primary sm:w-fit text-center  md:text-base sm:px-8 md:px-9 lg:px-10 lg:py-2 lg:text-xl"
               >
-                Prześlij
+                {isSubmitting ? (
+                  <div className="flex relative justify-self-center items-center pointer-events-none">
+                    <span className="loading absolute -left-[45%] md:-left-[40%] lg:-left-[35%] loading-spinner"></span>
+                    <span>Wysyłam</span>
+                  </div>
+                ) : (
+                  <div className="flex justify-self-center items-center pointer-events-none">
+                    <span>Prześlij</span>
+                  </div>
+                )}
               </button>
             </div>
           </form>

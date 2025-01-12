@@ -36,7 +36,7 @@ export const skills: Skill[] = [
       <SiHtml5 className="sm:h-20 sm:w-20 p-2 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
-    text: "Kiedy zaczynasz to nie wiesz ile nie wiesz. Na etapie HTML-a myślisz, że wiele wiesz, a wiesz niewiele. Potem idąc dalej, wiesz już, że niewiele wiesz, ale wiesz czego masz się dowiedzieć. Idąc jeszcze dalej coraz więcej wiesz i coraz więcej nie wiesz.",
+    text: "Kiedy zaczynasz to nie wiesz ile nie wiesz. Na etapie HTML-a myślisz, że wiele wiesz, a wiesz niewiele. Potem idąc dalej, wiesz już, że niewiele wiesz, ale wiesz czego masz się dowiedzieć. Ta podróż to Never Ending Story.",
   },
   {
     name: "CSS",
@@ -54,7 +54,7 @@ export const skills: Skill[] = [
       <SiReact className="sm:h-20 sm:w-20 p-1 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-2" />
     ),
     checked: false,
-    text: "Z Reacta korzystam codziennie. Miłość do klocków Lego została mi do dziś, tylko, że zamiast Lego mam komponenty, a zamiast dziecięcej niewinności rachunki do opłacenia i żeby kot miał co jeść. Uważam, że biblioteka ta znacznie przyspiesza wytwarzanie kodu.",
+    text: "Z Reacta korzystam codziennie. Miłość do klocków Lego została mi do dziś, tylko, że zamiast Lego mam komponenty, a zamiast dziecięcej niewinności rachunki do opłacenia i dbanie o to by moja kotka miała co jeść. Uważam, że biblioteka ta znacznie przyspiesza wytwarzanie kodu.",
   },
   {
     name: "React Router",
@@ -63,7 +63,7 @@ export const skills: Skill[] = [
       <SiReactrouter className="sm:h-20 sm:w-20 p-2 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
-    text: "React bez React Routera jest jak Hanka bez kartonów. Daleko nie pojedziesz.",
+    text: "React bez React Routera jest jak Hanka bez kartonów. Niby jest, ale taki jakiś niekompletny.",
   },
   {
     name: "TypeScript",
@@ -90,7 +90,7 @@ export const skills: Skill[] = [
       <SiTailwindcss className="sm:h-20 sm:w-20 p-2 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
-    text: "Uwielbiam, bo nie trzeba przeskakiwać w projekcie między plikiem .css a plikiem .jsx/.tsx, wszystko jest w jednym miejscu. Do tego można zapomnieć o wymyślaniu nazw klas, a tym bardziej o metodologii BEM. Dokumentacja też na plus.",
+    text: "Uwielbiam, bo nie trzeba przeskakiwać w projekcie między plikiem .css a .jsx/.tsx, wszystko jest w jednym miejscu. Do tego można zapomnieć o wymyślaniu nazw klas, a tym bardziej o metodologii BEM. Dokumentacja też na plus.",
   },
   {
     name: "React Query",
@@ -99,7 +99,7 @@ export const skills: Skill[] = [
       <SiReactquery className="sm:h-20 sm:w-20 p-2 lg:h-28 lg:w-28 xl:h-36 xl:w-36 xl:p-4" />
     ),
     checked: false,
-    text: "Przyspiesza działanie strony i zapewnia prostą obsługę ściągniętych danych. Przez to, że zapamiętuje ściągnięte dane nie ma konieczności ponownego ich fetchowania. Przydatne też, gdy chcemy zrobić infinite scroll, jak w Instagramie czy Facebooku.",
+    text: "Przyspiesza działanie strony i zapewnia prostą obsługę ściągniętych danych. Przez to, że zapamiętuje ściągnięte dane nie ma konieczności ponownego ich fetchowania.",
   },
   {
     name: "Pozostałe",

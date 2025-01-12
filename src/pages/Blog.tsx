@@ -16,17 +16,16 @@ const Blog = () => {
         height="h-fit"
         isLastChild={true}
       >
-        <div
-          className='flex flex-col'
-        >
+        <div className="flex flex-col">
           <div className="prose z-10">
             <SectionTitle bgColor="bg-neutral" title="Blog osobisty" />
           </div>
-          <div className="z-10 w-full font-protest text-base leading-loose tracking-wide text-primary/95 selection:bg-accent selection:text-secondary sm:leading-loose md:w-11/12 md:text-2xl md:leading-loose md:tracking-wider lg:w-full lg:leading-relaxed lg:tracking-wider">
+          <div className="relative group z-10 w-full font-protest text-base leading-loose tracking-wide text-primary/95 selection:bg-accent selection:text-secondary sm:leading-loose md:w-11/12 md:text-2xl md:leading-loose md:tracking-wider lg:w-full lg:leading-relaxed lg:tracking-wider">
             <h3 className="md:mb-8 lg:mb-10">
-              <span className=" border-accent bg-accent/30">
-                "Czołem w klawiaturę"
-              </span>{" "}
+              <div className="relative inline">
+                <span>"Czołem w klawiaturę"</span>
+                <div className="absolute left-0 top-5 md:top-7 inline h-1 md:h-2 w-1/5 bg-accent duration-700 group-hover:w-[37%]"></div>
+              </div>{" "}
               powstało w celach edukacyjnych i humorystycznych. Na spokojnie
               sprawdzam dane zagadnienie i wyciągam wnioski. Wyznaję zasadę, że
               im prościej tym lepiej.
@@ -41,7 +40,7 @@ const Blog = () => {
                   words={[
                     "Obecnie nie ma postu w tej kategorii, ale szare komórki już pracują, by się pojawił, cierpliwości...",
                   ]}
-              />	
+                />
               </div>
             ) : (
               posts.map((post) => <PostPreview key={post.id} post={post} />)

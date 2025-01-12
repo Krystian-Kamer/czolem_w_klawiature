@@ -84,9 +84,9 @@ const EmploymentHistory = () => {
               <div className="h-1 w-1/4 rounded-sm bg-accent md:h-2"></div>
             </div>
             <p className="md:text-lg md:leading-loose lg:text-xl lg:leading-relaxed">
-              Jestem protokolantem, wykonuję polecenia Sędziego oraz
-              kierownictwa. Wyniosłem stąd aktywne słuchanie i wyłapywanie tego
-              co najważniejsze. Dodatkowo nauczyło mnie to pracy pod presją
+              Obecnie (jeszcze) jestem Protokolantem, do tego wykonuję
+              zarządzenia Sędziego. Wyniosłem stąd umiejętność aktywnego
+              słuchania, wyłapywania tego co najważniejsze, pracy pod presją
               czasu.
             </p>
           </div>

@@ -48,19 +48,20 @@ const ThankYou = () => {
       }`}
       isLastChild={true}
     >
-      <div className="flex flex-col selection:bg-accent selection:text-secondary">
+      <div className="mb-40 flex flex-col selection:bg-accent selection:text-secondary">
         <div className="prose">
           <SectionTitle bgColor="bg-neutral" title="Dziękuję" />
         </div>
         <div className="flex flex-col items-center justify-center gap-y-4 lg:gap-y-10">
           <img
             src={cupcakesImg}
-            className={`${color} cursor-custom-pointer h-full max-h-80 pt-4 select-none rounded-full border-2 border-t-8 border-primary object-cover sm:max-h-[430px] lg:h-[450px]`}
+            className={`${color} cursor-custom-pointer h-full max-h-80 select-none rounded-full border-2 border-t-8 border-primary object-cover pt-4 sm:max-h-[430px] lg:h-[450px]`}
             alt="person with gold potato"
             onClick={changeColor}
           />
           <h2 className="text-center font-protest tracking-widest md:w-2/3 lg:w-1/2 lg:text-2xl">
-            Dzięki wielkie za przesłanie wiadomości. To wiele dla mnie znaczy!
+            <p>Dzięki wielkie za przesłanie wiadomości.</p>
+            <p>To wiele dla mnie znaczy!</p>
           </h2>
         </div>
       </div>

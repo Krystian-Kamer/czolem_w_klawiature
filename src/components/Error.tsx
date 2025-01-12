@@ -38,7 +38,13 @@ const Error = () => {
 
   return (
     <>
-      <div className="no-scrollbar snap-y snap-mandatory overflow-y-scroll">
+    <div
+      className={`home ${
+        windowHeight < 1174
+          ? ""
+          : "md:no-scrollbar md:snap-y md:snap-mandatory md:overflow-y-scroll"
+      }`}
+    >
         <Navigation />
         <div className="snap-start">
           <Hero />
@@ -53,7 +59,7 @@ const Error = () => {
           }`}
           isLastChild={true}
         >
-          <div className="flex flex-col selection:bg-accent selection:text-secondary">
+          <div className="mb-40 flex flex-col selection:bg-accent selection:text-secondary">
             <div className="prose">
               <SectionTitle bgColor="bg-neutral" title="Ups...!" />
             </div>

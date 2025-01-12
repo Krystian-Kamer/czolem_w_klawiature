@@ -12,20 +12,21 @@ const PostPreview = ({ post }: { post: PostType }) => {
   return (
     <div
       ref={postPreview}
-      className={`relative mb-16 mt-0 flex h-fit flex-col justify-center overflow-hidden shadow-md sm:shadow-none md:drop-shadow-md justify-self-center duration-500 sm:drop-shadow-md sm:max-w-full md:mb-28 md:h-96 md:flex-row lg:drop-shadow-lg max-w-[543px] ${isPostPreviewInView ? "translate-x-0" : "translate-x-1/2"}`}
+      className={`relative mb-16 mt-0 flex h-fit max-w-[543px] flex-col justify-center justify-self-center overflow-hidden shadow-md duration-500 sm:max-w-full sm:shadow-none sm:drop-shadow-md md:mb-28 md:h-96 md:flex-row md:drop-shadow-md lg:drop-shadow-lg ${isPostPreviewInView ? "translate-x-0" : "translate-x-1/2"}`}
     >
       <img
         src={imageSmall}
         loading="lazy"
         alt="post image"
-        className="rounded-t-lg select-none object-cover opacity-95 sm:prose sm:w-5/6 sm:self-center md:hidden md:w-2/6 md:rounded-l-badge md:rounded-tr-none"
+        onClick={() => navigate(`/blog/${id}`)}
+        className="select-none rounded-t-lg object-cover opacity-95 sm:prose sm:w-5/6 sm:self-center md:hidden md:w-2/6 md:rounded-l-badge md:rounded-tr-none"
       />
       <img
         src={imageBig}
         loading="lazy"
         alt="post image"
         onClick={() => navigate(`/blog/${id}`)}
-        className="cursor-custom-pointer select-none hidden rounded-t-lg object-cover opacity-95 duration-300 hover:opacity-85 md:flex md:w-2/5 md:rounded-l-badge md:rounded-tr-none lg:w-2/6"
+        className="cursor-custom-pointer hidden select-none rounded-t-lg object-cover opacity-95 duration-300 hover:opacity-85 md:flex md:w-2/5 md:rounded-l-badge md:rounded-tr-none lg:w-2/6"
       />
       <div className="prose flex h-full flex-col self-center rounded-b-lg bg-white/80 px-4 py-3 sm:w-5/6 md:w-3/5 md:rounded-r-badge md:rounded-bl-none md:p-8 lg:w-3/6">
         <div className="prose">
@@ -48,13 +49,14 @@ const PostPreview = ({ post }: { post: PostType }) => {
         </p>
         <div className={`flex items-center justify-between`}>
           <p
-            className={`selection:bg-secondary/10 font-semibold italic tracking-widest text-secondary/30 md:text-lg lg:text-xl`}
+            className={`font-semibold italic tracking-widest text-secondary/30 selection:bg-secondary/10 md:text-lg lg:text-xl`}
           >
             {date} r.
           </p>
           <Link
             to={`/blog/${id}`}
             className={`cursor-custom-pointer ${windowHeight <= 320 && "text-sm"} w-fit select-none rounded-md bg-primary px-4 py-1 font-protest text-lg uppercase text-neutral no-underline duration-200 hover:bg-primary/90 hover:text-white sm:text-xl md:px-8 md:py-2 md:text-2xl`}
+            onClick={() => navigate(`/blog/${id}`)}
           >
             Czytaj...
           </Link>
