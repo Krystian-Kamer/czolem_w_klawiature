@@ -6,7 +6,7 @@
   <li>At the bottom of the page there is a special section for recruiters</li>
   <li>In the portfolio tab you will find projects I have completed.</li>
   <li>In the blog tab you will find articles.</li>
-  <li>In the contact tab you will how to reach me.</li>
+  <li>In the contact tab you can reach me.</li>
 </ul>
 <h4>If You have any questions You can simply write to me. </h4>
 

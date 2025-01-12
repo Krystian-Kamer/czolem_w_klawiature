@@ -15,8 +15,8 @@ const PostCategories = ({ setPosts }: PostProps) => {
     "książka",
     "typescript",
     "rozkminy",
-    "react",
     "narzędzia",
+    "react",
   ];
 
   const filterPosts = (category: string) => {

@@ -41,7 +41,7 @@ const Post1 = () => {
       <PostSubtitle subtitle="Co wyróżnia ten blog pośród setek innych?" />
       <PostText text='Każdy post będzie zawierać humorystyczne wstawki, które rozweselą choć trochę dzień. Wyznaję zasadę I. Krasickiego - "bawiąc uczyć, uczyć bawiąc".' />
       <PostSubtitle subtitle="Jak często będą pojawiać się nowe treści?" />
-      <PostText text="Strona główna nie gryzie, ale jak już to czytasz to odpowiem. Posta możesz sie spodziewać w każdy poniedziałek z rana." />
+      <PostText text="Strona główna nie gryzie, ale jak już to czytasz to odpowiem. Posta możesz sie spodziewać w każdy poniedziałek z rana a jeśli wena najdzie to nawet częściej." />
       <PostSubtitle subtitle="Dla kogo te przyjemności?" />
       <PostText text="Jako, że sam jestem na początku kariery, blog skierowany jest dla osób początkujących, mających podstawową wiedzę z zakresu programowania a ściślej mówiąc frontendu oraz programistów bardziej zaawansowanych co by to poprzypominać sobie basic-owe tematy oraz do wszystkich innych, którzy są nim zainteresowani.  " />
       <PostText text="Od razu uprzedzam, że nie jestem alfą, betą ani gammą, więc jeśli  zauważysz jakiś błąd to koniecznie do mnie napisz!" />
