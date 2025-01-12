@@ -46,7 +46,7 @@ const Post1 = () => {
       <PostText text="Jako, że sam jestem na początku kariery, blog skierowany jest dla osób początkujących, mających podstawową wiedzę z zakresu programowania a ściślej mówiąc frontendu oraz programistów bardziej zaawansowanych co by to poprzypominać sobie basic-owe tematy oraz do wszystkich innych, którzy są nim zainteresowani.  " />
       <PostText text="Od razu uprzedzam, że nie jestem alfą, betą ani gammą, więc jeśli  zauważysz jakiś błąd to koniecznie do mnie napisz!" />
       <PostSubtitle subtitle='Dlaczego nazwa "Czołem w klawiaturę"? ' />
-      <PostText text="Chyba każdy programista tak ma, że dużo rozmyśla nad problemem. A jeśli problem jest duży to i rozmyślanie większe. Może pojawić się frustracja. Niejeden chętnie wstałby i wywalił swojego iMaca przez okno z 10 piętra, inny piłą maszynową przeciąłby na pół router w domu, jeszcze inny walnąłby czołem w klawiaturę." />
+      <PostText text="Chyba każdy programista tak ma, że dużo rozmyśla nad problemem. A jeśli problem jest duży, to i rozmyślanie większe. Może pojawić się frustracja. Niejeden chętnie wstałby i wywalił swojego iMaca przez okno z 10 piętra, inny piłą maszynową przeciąłby na pół router w domu, jeszcze inny walnąłby czołem w klawiaturę." />
       <PostText text='Jako że "Wywal iMaca przez okno z 10 piętra" oraz "Piłą maszynową przetnij router na pół" są za długie i nie zapadną w pamięć, postawiłem na "Czołem w klawiaturę". Simple as that.' />
       <PostSubtitle subtitle="Co dalej? " />
       <PostText text="Jeżeli chciałbyś się ze mną podzielić przemyśleniami, to zapraszam do kontaktu. Masz pomysł na nowy post? Też chętnie przeczytam. Niebawem kolejny artykuł!" />
