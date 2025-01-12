@@ -10,4 +10,4 @@
 </ul>
 <h4>If You have any questions You can simply write to me. </h4>
 
-<h3> Live:<a href="https://czolem-w-klawiature.vercel.app/" target="blank" height="40" width="40">⌨️ Blog "Czołem w klawiaturę"</a></h3>
+<h3> Live:<a href="https://www.czolemwklawiature.com" target="blank" height="40" width="40">⌨️ Blog "Czołem w klawiaturę"</a></h3>
