@@ -34,7 +34,7 @@ const Landing = () => {
       bgColor: "bg-neutral",
       height: `${
         windowHeight < 1174
-          ? "h-fit md:pb-[200px] lg:pb-[350px]"
+          ? "h-fit sm md:pb-[200px] lg:pb-[350px]"
           : "md:h-screen"
       }`,
     },

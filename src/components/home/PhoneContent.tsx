@@ -278,20 +278,13 @@ const PhoneContent = () => {
                       </div>
                       <div className="chat-bubble text-lg">
                         Dla przypomnienia mój numer telefonu to
+                        <span className="font-semibold"> 666-660-128 </span>a email
                         <a
-                          className="cursor-custom-pointer text-blue-700"
-                          href="tel:666660128"
-                        >
-                          {" "}
-                          666-660-128{" "}
-                        </a>
-                        a email
-                        <a
-                          className="cursor-custom-pointer text-blue-700"
+                          className="cursor-custom-pointer text-blue-700 tracking-tight"
                           href="mailto:texen24@gmail.com"
                         >
                           {" "}
-                          texen24@gmail.com
+                          krystian.kamer@gmail.com
                         </a>
                         .
                       </div>

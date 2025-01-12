@@ -141,7 +141,7 @@ export const recruitment: Recruitment[] = [
     id: 4,
     question: "Jakie masz oczekiwania finansowe?",
     answer:
-      "W początkowej fazie kariery ważniejsze jest dla mnie zdobycie doświadczenia aniżeli zarobki, jednak są one również ważne. I chociaż nie jestem mediatorem to jestem gotów do negocjacji w tym temacie.",
+      "W początkowej fazie kariery ważniejsze jest dla mnie zdobycie doświadczenia aniżeli zarobki, jednak są one również ważne. Jestem gotów do negocjacji w tym temacie.",
     isAsked: false,
     order: null,
   },
@@ -157,7 +157,7 @@ export const recruitment: Recruitment[] = [
     id: 6,
     question: "Co Cię wyróżnia jako pracownika?",
     answer:
-      "Uważam, że jest to zdolność do dogadania się z każdym. Ponadto, w sytuacji stresowej nie tracę pozytywnego myślenia. Potrafię słuchać ze zrozumieniem i wyciągać wnioski.",
+      "Uważam, że jest to zdolność do dogadania się z każdym. Ponadto, w sytuacji stresowej nie tracę pozytywnego myślenia. Potrafię słuchać ze zrozumieniem i wyciągam wnioski.",
     isAsked: false,
     order: null,
   },
