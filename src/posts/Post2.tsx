@@ -66,7 +66,7 @@ const Post2 = () => {
       <PostSubtitle subtitle="Typ string" />
       <PostText text="Jak widzisz jest to tekst, który znajduje się pomiędzy cudzysłowem, apostrofami bądź grawisami - wybór dowolny." />
       <PostText text="Ale żeby nie być gołosłownym masz tu te 3 sposoby:" />
-      <div className="mockup-code bg-primary text-neutral">
+      <div className="mockup-code mb-4 bg-primary text-neutral">
         <pre>
           <code>
             console<span className="text-info">.log</span>(
