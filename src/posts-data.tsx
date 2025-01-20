@@ -1,4 +1,4 @@
-import { Post1, Post2 } from "./posts/index";
+import { Post1, Post2,Post3 } from "./posts/index";
 import { PostType } from "./types";
 
 export const postsData: PostType[] = [
@@ -20,6 +20,16 @@ export const postsData: PostType[] = [
     imageBig: "/post-assets/post-2-big.jpg",
     text: "Omawiam typy proste i te złożone, w prosty a nie złożony sposób oraz tłumaczę co to jest referencja.",
     date: "16.01.25",
+    category: "javascript",
+  },
+  {
+    id: "js-owy-zycia-krag",
+    title: "Frontendowy życia krąg",
+    post: <Post3 />,
+    imageSmall: "/post-assets/post-3-small.jpeg",
+    imageBig: "/post-assets/post-3-big.jpeg",
+    text: "Przyglądam się bliżej mechanizmowi Event Loop w JavaScript.",
+    date: "20.01.25",
     category: "javascript",
   },
 ].reverse() as PostType[];

@@ -8,9 +8,14 @@ const PostWrapper = () => {
   const postComponent = chosenPost!.post;
   const { title, imageSmall, imageBig, text, date, category } = chosenPost!;
 
-    return (
-    <Section id="post-wrapper" bgColor="bg-neutral" height="h-fit" isLastChild={true}>
-      <div className="mb-40 mt-20 flex flex-col justify-self-center overflow-hidden rounded-lg shadow-[0px_0px_3px_rgba(0,0,0,0.2)] max-w-full sm:max-w-[95%] md:max-w-full md:mx-14 md:mb-96 md:mt-32 lg:mx-20 lg:mt-32 lg:overflow-visible lg:rounded-none lg:shadow-none">
+  return (
+    <Section
+      id="post-wrapper"
+      bgColor="bg-neutral"
+      height="h-fit"
+      isLastChild={true}
+    >
+      <div className="mb-40 mt-20 flex max-w-full flex-col justify-self-center overflow-hidden rounded-lg shadow-[0px_0px_3px_rgba(0,0,0,0.2)] sm:max-w-[95%] md:mx-14 md:mb-96 md:mt-32 md:max-w-full lg:mx-20 lg:mt-32 lg:overflow-visible lg:rounded-none lg:shadow-none">
         <div className="relative self-center overflow-hidden lg:mb-16 lg:w-2/3 lg:rotate-6 lg:p-10">
           <div className="absolute left-0 top-12 z-40 hidden h-10 w-32 -rotate-[45deg] justify-center rounded-sm bg-base-100 shadow-[0px_0px_3px_rgba(0,0,0,0.2)] lg:flex">
             <div className="h-full w-2/5 self-center bg-orange-800/25 shadow-[0px_0px_2px_rgba(0,0,0,0.3)]"></div>

@@ -20,15 +20,15 @@ const Blog = () => {
           <div className="prose z-10">
             <SectionTitle bgColor="bg-neutral" title="Blog osobisty" />
           </div>
-          <div className="relative group z-10 w-full font-protest text-base leading-loose tracking-wide text-primary/95 selection:bg-accent selection:text-secondary sm:leading-loose md:w-11/12 md:text-2xl md:leading-loose md:tracking-wider lg:w-full lg:leading-relaxed lg:tracking-wider">
+          <div className="group relative z-10 w-full font-protest text-base leading-loose tracking-wide text-primary/95 selection:bg-accent selection:text-secondary sm:leading-loose md:w-11/12 md:text-2xl md:leading-loose md:tracking-wider lg:w-full lg:leading-relaxed lg:tracking-wider">
             <h3 className="md:mb-8 lg:mb-10">
               <div className="relative inline">
                 <span>"Czołem w klawiaturę"</span>
-                <div className="absolute left-0 top-5 md:top-7 inline h-1 md:h-2 w-1/5 bg-accent duration-700 group-hover:w-[37%]"></div>
+                <div className="absolute left-0 top-5 inline h-1 w-1/5 bg-accent duration-700 group-hover:w-[37%] md:top-7 md:h-2"></div>
               </div>{" "}
-              powstało w celach edukacyjnych i humorystycznych. Na spokojnie
-              sprawdzam dane zagadnienie i wyciągam wnioski. Wyznaję zasadę, że
-              im prościej tym lepiej.
+              to nie kolejny zwykły blog o programowaniu. Motyw przewodni — z
+              humorem o IT. Udowadniam, że nauka programowania może bawić równie
+              mocno, co debugowanie po deployu.
             </h3>
           </div>
           <PostCategories setPosts={setPosts} />
