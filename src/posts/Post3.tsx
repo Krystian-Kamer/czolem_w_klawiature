@@ -135,8 +135,8 @@ const Post3 = () => {
       <PostText text="Wiedz jednak, że on tam jest. Jak cichy stalker albo jak klaun Pennywise w studzience, zawsze patrzy." />
       <img
         src={pennyImg}
-        className="my-8 max-w-[500px] justify-self-center shadow-md"
-        alt="event loop image"
+        className="my-8 w-full max-w-[500px] justify-self-center shadow-md"
+        alt="clown Pennywise image"
       />
       <PostText text="Global Execution Context nie blokuje wykonywania kodu asynchronicznego, dlatego mogłeś o nim nie słyszeć, jest po prostu niewidocznym tłem." />
       <PostSubtitle subtitle="Jedno ale..." />
