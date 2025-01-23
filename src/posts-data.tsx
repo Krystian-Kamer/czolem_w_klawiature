@@ -41,6 +41,6 @@ export const postsData: PostType[] = [
     imageBig: "/post-assets/post-4-big.jpeg",
     text: "Moja analiza dostępnych ścieżek do zdobycia pracy jako programista i przemyślenia o studiach.",
     date: "23.01.25",
-    category: "rozkminy",
+    category: "nauka",
   },
 ].reverse() as PostType[];
