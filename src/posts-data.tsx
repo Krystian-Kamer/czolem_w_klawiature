@@ -1,4 +1,4 @@
-import { Post1, Post2,Post3 } from "./posts/index";
+import { Post1, Post2, Post3, Post4 } from "./posts/index";
 import { PostType } from "./types";
 
 export const postsData: PostType[] = [
@@ -31,5 +31,16 @@ export const postsData: PostType[] = [
     text: "Przyglądam się bliżej mechanizmowi Event Loop w JavaScript.",
     date: "20.01.25",
     category: "javascript",
+  },
+  {
+    id: "czy-studia-z-informatyki-daja-plus-10-do-wisdom-na-start-oraz-dostepne-sciezki-nauki",
+    title:
+      "Czy studia z informatyki dają +10 do wisdom na start oraz dostępne ścieżki nauki",
+    post: <Post4 />,
+    imageSmall: "/post-assets/post-4-small.jpeg",
+    imageBig: "/post-assets/post-4-big.jpeg",
+    text: "Moja analiza dostępnych ścieżek do zdobycia pracy jako programista i przemyślenia o studiach.",
+    date: "23.01.25",
+    category: "rozkminy",
   },
 ].reverse() as PostType[];

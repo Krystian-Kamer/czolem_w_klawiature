@@ -405,11 +405,11 @@ const Post3 = () => {
         </table>
       </div>
       <PostSubtitle subtitle="Czego się dziś nauczyliśmy" />
-      <PostText text="Po pierwsze, ChatGPT to nie wyrocznia." />
-      <PostText text="Po drugie, mogłem iść na psychiatrę albo psychologa, ale za bardzo lubię babrać się w kodzie." />
-      <PostText text="Po trzecie, klown z IT patrzy, mimo, że go nie widać." />
-      <PostText text="Po czwarte, wiesz już jak działa Event Loop i silnik JavaScript. " />
-      <PostText text="Po piąte, pani Helenka da Ci zniżkę 5% na kolejne zakupy, jeśli polajkujesz jakikolwiek mój post na LinkedIn albo napiszesz do mnie prywatnie." />
+      <PostText text="1. ChatGPT to nie wyrocznia." />
+      <PostText text="2. Mogłem iść na psychiatrę albo psychologa, ale za bardzo lubię babrać się w kodzie." />
+      <PostText text="3. Klown z IT patrzy, mimo, że go nie widać." />
+      <PostText text="4. Wiesz już jak działa Event Loop i silnik JavaScript. " />
+      <PostText text="Pani Helenka da Ci zniżkę 5% na kolejne zakupy, jeśli polajkujesz jakikolwiek mój post na LinkedIn albo napiszesz do mnie prywatnie." />
     </div>
   );
 };

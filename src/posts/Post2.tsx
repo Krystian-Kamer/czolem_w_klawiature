@@ -390,11 +390,11 @@ const Post2 = () => {
       <PostText text="Analogicznie, gdybym usunął pierwszy element z tablicy physics, to usunąłby się w obu tych tablicach." />
       <PostText text="Jimmy już wie, że dzieje się tak dlatego, że tak naprawdę działamy na określonym miejscu w pamięci, niezależnie od tego czy działamy na oryginalnej tablicy czy też tablicy powstałej z oryginalnej tablicy." />
       <PostSubtitle subtitle="Czego się dziś nauczyliśmy" />
-      <PostText text="Po pierwsze, wiesz już czym są typy proste i złożone, wiesz też co to jest referencja i jak działa." />
-      <PostText text="Po drugie, wiesz że Jimmy w folderze z fizyką nie ma rzeczy związanych z przedmiotem szkolnym." />
-      <PostText text="Po trzecie, wiesz że podwójny znak == jest moim red flagiem, gdy patrzę na czyjś kod." />
-      <PostText text="Po czwarte, tworząc posty, nigdy nie mam intencji urażenia kogoś, więc jeżeli poczułeś się dotknięty w jakiś sposób, to wiedz, że nie chciałem." />
-      <PostText text="Po ostatnie, jeśli spodobał Ci się ten artykuł, to napisz do mnie prywatnie bądź zostaw komentarz pod postem na LinkedIn. Będzie mi bardzo miło." />
+      <PostText text="1. Wiesz już czym są typy proste i złożone, wiesz też co to jest referencja i jak działa." />
+      <PostText text="2. Wiesz że Jimmy w folderze z fizyką nie ma rzeczy związanych z przedmiotem szkolnym." />
+      <PostText text="3. Wiesz że podwójny znak == jest moim red flagiem, gdy patrzę na czyjś kod." />
+      <PostText text="4. Tworząc posty, nigdy nie mam intencji urażenia kogoś, więc jeżeli poczułeś się dotknięty w jakiś sposób, to wiedz, że nie chciałem." />
+      <PostText text="Jeśli spodobał Ci się ten artykuł, to napisz do mnie prywatnie bądź zostaw komentarz pod postem na LinkedIn. Będzie mi bardzo miło." />
     </div>
   );
 };
