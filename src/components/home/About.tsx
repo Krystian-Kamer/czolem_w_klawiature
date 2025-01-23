@@ -30,10 +30,10 @@ const About = () => {
     <>
       <div
         ref={sectionOne}
-        className="md:flex top-1/2  md:flex-row md:justify-around md:gap-6"
+        className="top-1/2 md:flex md:flex-row md:justify-around md:gap-6"
       >
         <div
-          className={`prose ${isHeroInView ? '-translate-y-4 md:translate-y-0 duration-1000 delay-700': 'translate-y-1 sm:translate-y-7 md:translate-y-20 lg:translate-y-40 duration-1000'} min-h-[400px] ${!isPinOnPage && "translate-x-1/2 delay-[1500ms] duration-[1000ms]"} selection:bg-accent selection:text-secondary md:w-1/2 md:px-0`}
+          className={`prose ${isHeroInView ? "-translate-y-4 delay-700 duration-1000 md:translate-y-0" : "translate-y-1 duration-1000 sm:translate-y-7 md:translate-y-20 lg:translate-y-40"} min-h-[400px] ${!isPinOnPage && "translate-x-1/2 delay-[1500ms] duration-[1000ms]"} selection:bg-accent selection:text-secondary md:w-1/2 md:px-0`}
         >
           <SectionTitle bgColor="bg-neutral" title={"Czołem!"} />
 
@@ -56,7 +56,7 @@ const About = () => {
               />
             </div>
           </h3>
-          <p className="text-lg leading-relaxed text-primary sm:text-xl md:text-2xl md:leading-relaxed lg:leading-loose sm:leading-loose md:pt-6">
+          <p className="text-lg leading-relaxed text-primary sm:text-xl sm:leading-loose md:pt-6 md:text-2xl md:leading-relaxed lg:leading-loose">
             Nie lubię nudy. Jeśli jesteś na tej stronie to oznacza, że chcesz
             nauczyć się czegoś nowego i wartościowego. Ta stronka to połączenie
             mojego
@@ -95,14 +95,15 @@ const About = () => {
           <img
             src={pinImg}
             alt="pin image"
-            className={`absolute select-none -left-6 z-10 rounded-l-full drop-shadow-[3px_10px_3px_rgba(0,0,0,0.6)] md:w-16 lg:w-20 ${!isHeroInView && "cursor-custom-pointer duration-300 hover:scale-110"} ${!isPinOnPage && "remove-pin"} `}
+            loading="lazy"
+            className={`absolute -left-6 z-10 select-none rounded-l-full drop-shadow-[3px_10px_3px_rgba(0,0,0,0.6)] md:w-16 lg:w-20 ${!isHeroInView && "cursor-custom-pointer duration-300 hover:scale-110"} ${!isPinOnPage && "remove-pin"} `}
             onClick={!isHeroInView ? dropImage : undefined}
           />
           <div
             className="tooltip tooltip-primary"
             data-tip="tak, tak, ten tutaj to niestety ja"
           >
-            <img src={ownerImg} alt="owner image" />
+            <img src={ownerImg} loading="lazy" alt="owner image" />
           </div>
         </div>
       </div>

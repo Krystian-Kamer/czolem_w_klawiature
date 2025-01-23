@@ -37,7 +37,7 @@ const Post4 = () => {
       <PostTextBold text="Minusy" />
       <PostText text="Jak trafisz na gówniany bootcamp to tak jakbyś ze łzami w oczach palił w śmietniku własne pieniądze (lub pieniądze starych)." />
       <PostText text="No właśnie, dobry bootcamp czasem potrafi i 10-15 kafla kosztować." />
-      <PostText text="Bootcamp od firmy, która rymuje się ze słowem Kodzilla (wink wink) oferuję kurs na Full stacka warty od 12599 zł do 15699 zł (ten droższy z gwarancją pracy)." />
+      <PostText text="Bootcamp od firmy, która rymuje się ze słowem Kodzilla (wink wink) oferuje kurs na Full stacka warty od 12599 zł do 15699 zł (ten droższy z gwarancją pracy)." />
       <PostText text='Co prawda na czas "promocji" ceny te są przekreślone i masz podane od 6299,50 zł do 7849,50 zł, ale oryginalna cena wynosi jak wyżej, także nią się posłużyłem.' />
       <PostText text="Jak jesteś leniwą kluską i nie masz motywacji do ukończenia kursu mimo wydania pieniędzy to kiepsko to widzę." />
       <PostText text="Słyszałem o bootcampach, które były bardzo trudne i Ci co dobrze im szło byli zadowoleni, a Ci którym słabo... no cóż, o nich się już nie mówi." />

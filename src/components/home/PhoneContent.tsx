@@ -8,6 +8,7 @@ import { useInView } from "react-intersection-observer";
 
 const PhoneContent = () => {
   const [isInvitationAccepted, setIsInvitationAccepted] = useState(false);
+  const [isDenialClicked, setIsDenialClicked] = useState(false);
   const [recruitmentMessages, setRecruitmentMessages] = useState(recruitment);
   const [order, setOrder] = useState<number>(1);
   const { ref: phone, inView: isPhoneInView } = useInView();
@@ -54,6 +55,7 @@ const PhoneContent = () => {
               <img
                 src={ownerImg}
                 alt="owner image"
+                loading="lazy"
                 className="h-50 glass w-44 rounded-full border-2 border-primary object-cover"
               />
               {!isInvitationAccepted && (
@@ -70,18 +72,21 @@ const PhoneContent = () => {
                       <input
                         type="checkbox"
                         className="cursor-custom-pointer"
-                        onChange={() => acceptInvitation(850)}
+                        onChange={() => acceptInvitation(1150)}
                       />
                       <FaRegHandshake className="glass swap-on pointer-events-none rounded-3xl p-2 text-6xl" />
                       <FaRegThumbsUp className="glass swap-off pointer-events-none rounded-3xl p-2 text-6xl" />
                     </label>
                     <div
-                      className="tooltip tooltip-bottom tooltip-secondary"
+                      className={`${isDenialClicked && "tooltip tooltip-bottom tooltip-open tooltip-secondary"}`}
                       data-tip="Nie tym razem"
                     >
                       <button
-                        className="cursor-custom-pointer duration-1000 hover:rotate-180"
-                        onClick={() => acceptInvitation(600)}
+                        className={`cursor-custom-pointer duration-1000 ${isDenialClicked && "rotate-180"}`}
+                        onClick={() => {
+                          setIsDenialClicked(true);
+                          acceptInvitation(1900);
+                        }}
                       >
                         <FaRegThumbsDown className="glass pointer-events-none scale-x-[-1] rounded-3xl p-2 text-6xl" />
                       </button>
@@ -109,6 +114,7 @@ const PhoneContent = () => {
                     <div className="w-10 rounded-full">
                       <img
                         alt="owner image"
+                        loading="lazy"
                         className="translate-x-1/2 translate-y-2 scale-[500%] bg-accent"
                         src={heroImg}
                       />
@@ -134,6 +140,7 @@ const PhoneContent = () => {
                     <div className="w-10 rounded-full">
                       <img
                         alt="avatar image"
+                        loading="lazy"
                         className="scale-150"
                         src={avatarImg}
                       />
@@ -153,6 +160,7 @@ const PhoneContent = () => {
                     <div className="w-10 rounded-full">
                       <img
                         alt="owner image"
+                        loading="lazy"
                         className="translate-x-1/2 translate-y-2 scale-[500%] bg-accent"
                         src={heroImg}
                       />
@@ -180,6 +188,7 @@ const PhoneContent = () => {
                           <div className="w-10 rounded-full">
                             <img
                               alt="avatar image"
+                              loading="lazy"
                               className="scale-150"
                               src={avatarImg}
                             />
@@ -201,6 +210,7 @@ const PhoneContent = () => {
                           <div className="w-10 rounded-full">
                             <img
                               alt="owner image"
+                              loading="lazy"
                               className="translate-x-1/2 translate-y-2 scale-[500%] bg-accent"
                               src={heroImg}
                             />
@@ -226,6 +236,7 @@ const PhoneContent = () => {
                         <div className="w-10 rounded-full">
                           <img
                             alt="avatar image"
+                            loading="lazy"
                             className="scale-150"
                             src={avatarImg}
                           />
@@ -246,6 +257,7 @@ const PhoneContent = () => {
                         <div className="w-10 rounded-full">
                           <img
                             alt="owner image"
+                            loading="lazy"
                             className="translate-x-1/2 translate-y-2 scale-[500%] bg-accent"
                             src={heroImg}
                           />
@@ -268,6 +280,7 @@ const PhoneContent = () => {
                         <div className="w-10 rounded-full">
                           <img
                             alt="owner image"
+                            loading="lazy"
                             className="translate-x-1/2 translate-y-2 scale-[500%] bg-accent"
                             src={heroImg}
                           />
@@ -278,9 +291,10 @@ const PhoneContent = () => {
                       </div>
                       <div className="chat-bubble text-lg">
                         Dla przypomnienia mój numer telefonu to
-                        <span className="font-semibold"> 666-660-128 </span>a email
+                        <span className="font-semibold"> 666-660-128 </span>a
+                        email
                         <a
-                          className="cursor-custom-pointer text-blue-700 tracking-tight"
+                          className="cursor-custom-pointer tracking-tight text-blue-700"
                           href="mailto:texen24@gmail.com"
                         >
                           {" "}
