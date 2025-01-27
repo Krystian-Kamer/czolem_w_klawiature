@@ -44,7 +44,7 @@ export const postsData: PostType[] = [
     category: "nauka",
   },
   {
-    id: "dlaczego-programowanie-zniszczyło-moj-zwiazek",
+    id: "dlaczego-programowanie-zniszczylo-moj-zwiazek",
     title:
       "Dlaczego programowanie zniszczyło mój związek",
     post: <Post5 />,
