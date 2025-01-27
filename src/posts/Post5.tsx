@@ -113,7 +113,7 @@ const Post5 = () => {
       </div>
       <PostText text="Widzisz, nasza miłość była niepodważalna. Nawet jakaś durna metoda slice nas nie poróżniła." />
       <PostText text="Inne metody (oprócz map i slice), które nie mogą nas zranić to:" />
-      <PostTextBold text="filter, reduce, flat, find, findIndex, includes, indexOf, lastIndexOf, some, every, concat, slice, toSorted, toReversed, join, toString" />
+      <PostTextBold text="filter, reduce, flat, find, findIndex, includes, indexOf, lastIndexOf, some, every, concat, toSorted, toReversed, join, toString" />
       <PostText text="Byliśmy praktycznie niezniszczalni." />
       <PostText text="Dobrze jednak, że trzymam maczetę w domu, na wypadek gdyby ktoś spróbował nas skrzywdzić." />
       <PostText text="Zauważyłem ostatnio, że na naszym idealnym jak dotąd związku pojawiają się jakieś niepokojące rysy. Moja ukochana coś długo ostatnio siedzi na telefonie, czy to normalne? Kim jest ten Chris?" />
