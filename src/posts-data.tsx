@@ -1,4 +1,4 @@
-import { Post1, Post2, Post3, Post4 } from "./posts/index";
+import { Post1, Post2, Post3, Post4, Post5 } from "./posts/index";
 import { PostType } from "./types";
 
 export const postsData: PostType[] = [
@@ -42,5 +42,16 @@ export const postsData: PostType[] = [
     text: "Moja analiza dostępnych ścieżek do zdobycia pracy jako programista i przemyślenia o studiach.",
     date: "23.01.25",
     category: "nauka",
+  },
+  {
+    id: "dlaczego-programowanie-zniszczyło-moj-zwiazek",
+    title:
+      "Dlaczego programowanie zniszczyło mój związek",
+    post: <Post5 />,
+    imageSmall: "/post-assets/post-5-small.jpeg",
+    imageBig: "/post-assets/post-5-big.jpeg",
+    text: "Będzie to smutna historia o pięknej miłości zniszczonej przez kod i o mutacjach tablic w JavaScript, ale to tak przy okazji.",
+    date: "27.01.25",
+    category: "javascript",
   },
 ].reverse() as PostType[];
