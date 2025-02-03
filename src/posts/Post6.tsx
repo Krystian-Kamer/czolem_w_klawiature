@@ -178,7 +178,7 @@ const Post6 = () => {
       <PostText text="Tej funkcji z uwagi na treść console.log'a wewnątrz lepiej jest nie wywoływać😏." />
       <p className="mb-4 text-lg leading-relaxed text-primary md:my-2 lg:mb-4 lg:mt-5 lg:text-2xl">
         Deklaracja funkcji podlega{" "}
-        <span className="font-bold">hoistingowi</span>, ale o tym później
+        <span className="font-bold">hoistingowi</span>, ale o tym później.
       </p>
       <PostSubtitle subtitle="#2 Wyrażenie funkcyjne (function expression)" />
       <PostText text="Jest to anonimowa funkcja przypisana do zmiennej." />
@@ -235,7 +235,7 @@ const Post6 = () => {
       <p className="mb-4 text-lg leading-relaxed text-primary md:my-2 lg:mb-4 lg:mt-5 lg:text-2xl">
         Z ważnych informacji, funkcja strzałkowa inaczej trochę traktuje{" "}
         <span className="font-bold">this</span>, ale o tym kiedy indziej, na
-        razie fack <span className="font-bold">this</span> shit.
+        razie f*ck <span className="font-bold">this</span> shit.
       </p>
       <PostText text="This w funkcji strzałkowej w typowym przykładzie wskazuje na obiekt globalny - window." />
       <PostText text="Jeśli obudzą się we mnie sadomasochistyczne skłonności, to pojawi się artykuł o this." />
