@@ -57,7 +57,7 @@ export const postsData: PostType[] = [
   {
     id: "funkcje-i-ich-funkcje-oraz-parametry-i-argumenty",
     title:
-      "Funkcje i ich funkcje oraz parametry i argumenty.",
+      "Funkcje i ich funkcje oraz parametry i argumenty",
     post: <Post6 />,
     imageSmall: "/post-assets/post-6-small.jpg",
     imageBig: "/post-assets/post-6-big.jpg",
