@@ -1,5 +1,5 @@
 import { Navigation, Hero, Section, SectionTitle } from "./index";
-import potatoImg from "./../assets/potato.png";
+import potatoImg from "./../assets/potato.webp";
 import { useState, useContext } from "react";
 import { ContextValue } from "../types";
 import { AppContext } from "../App";

@@ -1,4 +1,4 @@
-import { Post1, Post2, Post3, Post4, Post5 } from "./posts/index";
+import { Post1, Post2, Post3, Post4, Post5, Post6 } from "./posts/index";
 import { PostType } from "./types";
 
 export const postsData: PostType[] = [
@@ -52,6 +52,17 @@ export const postsData: PostType[] = [
     imageBig: "/post-assets/post-5-big.jpeg",
     text: "Będzie to smutna historia o pięknej miłości zniszczonej przez kod i o mutacjach tablic w JavaScript, ale to tak przy okazji.",
     date: "27.01.25",
+    category: "javascript",
+  },
+  {
+    id: "funkcje-i-ich-funkcje-oraz-parametry-i-argumenty",
+    title:
+      "Funkcje i ich funkcje oraz parametry i argumenty.",
+    post: <Post6 />,
+    imageSmall: "/post-assets/post-6-small.jpg",
+    imageBig: "/post-assets/post-6-big.jpg",
+    text: "Tycie kompendium o funkcjach, argumentach i parametrach na przykładach z życia wziętych.",
+    date: "03.02.25",
     category: "javascript",
   },
 ].reverse() as PostType[];

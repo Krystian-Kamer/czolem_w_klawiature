@@ -1,9 +1,9 @@
 import { useContext, useState } from "react";
 import { ContextValue } from "../../types";
 import { AppContext } from "../../App";
-import lampImg from "../../assets/lamp.png";
-import deskImg from "../../assets/desk.png";
-import cvImg from "../../assets/CV.jpg";
+import lampImg from "../../assets/lamp.webp";
+import deskImg from "../../assets/desk.webp";
+import cvImg from "../../assets/CV.webp";
 import pdfCvFile from "../../assets/Krystian Kamer CV.pdf";
 import { PhoneContent } from "./index";
 import { SectionTitle } from "../index";

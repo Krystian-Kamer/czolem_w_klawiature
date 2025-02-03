@@ -1,5 +1,5 @@
 import { Section, SectionTitle } from "./../components/index";
-import cupcakesImg from "./../assets/cupcakes.png";
+import cupcakesImg from "./../assets/cupcakes.webp";
 import { useState, useContext } from "react";
 import { ContextValue } from "../types";
 import { AppContext } from "../App";

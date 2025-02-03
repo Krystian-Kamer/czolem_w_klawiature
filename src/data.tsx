@@ -181,7 +181,7 @@ export const projects: ProjectType[] = [
     technology:
       "React, TypeScript, React Router, Redux Toolkit, React Query, Tailwind, React Toastify, Firebase",
     github: "https://github.com/Krystian-Kamer/picklerick",
-    live: "https://picklerick-1sbq.vercel.app/",
+    live: "https://picklerickapp.vercel.app/",
     mobileVideo: "/portfolio-assets/rick phone.mp4",
     desktopVideo: "/portfolio-assets/rick desktop.mp4",
     thoughts:

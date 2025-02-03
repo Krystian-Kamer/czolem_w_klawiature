@@ -3,3 +3,4 @@ export { default as Post2 } from "./Post2";
 export { default as Post3 } from "./Post3";
 export { default as Post4 } from "./Post4";
 export { default as Post5 } from "./Post5";
+export { default as Post6 } from "./Post6";

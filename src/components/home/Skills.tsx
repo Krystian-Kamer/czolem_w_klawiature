@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { ContextValue, Skill } from "../../types";
 import { AppContext } from "../../App";
 import {SectionTitle} from "./../index";
-import handImg from "../../assets/hand.png";
+import handImg from "../../assets/hand.webp";
 import { skills } from "../../data";
 
 const Skills = () => {

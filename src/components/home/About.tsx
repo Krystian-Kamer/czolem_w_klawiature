@@ -1,5 +1,5 @@
-import ownerImg from "../../assets/owner-image.png";
-import pinImg from "../../assets/pin.png";
+import ownerImg from "../../assets/owner-image.webp";
+import pinImg from "../../assets/pin.webp";
 import { SectionTitle } from "../index";
 import { useContext, useEffect, useState } from "react";
 import { ContextValue } from "../../types";
@@ -42,16 +42,15 @@ const About = () => {
           </h2>
           <h3 className="text-xl text-primary sm:text-xl md:text-2xl">
             <div className="w-fit rounded-md border-accent">
-              Jestem{" "}
+              Jestem
               <Typewriter
                 loop={2}
-                cursor
                 delaySpeed={700}
                 words={[
-                  "Frontend Developerem.",
-                  "kreatywny.",
-                  "nastawiony na rozwój.",
-                  "otwarty na nieznane!",
+                  " Frontend Developerem.",
+                  " kreatywny.",
+                  " nastawiony na rozwój.",
+                  " otwarty na nieznane!",
                 ]}
               />
             </div>

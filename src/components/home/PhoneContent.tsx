@@ -1,7 +1,7 @@
 import { useState } from "react";
-import heroImg from "../../assets/hero-img.png";
-import ownerImg from "../../assets/owner-image.png";
-import avatarImg from "../../assets/avatar.png";
+import ownerImg from "../../assets/owner-image.webp";
+import avatarImg from "../../assets/avatar.webp";
+import myAvatarImg from "../../assets/myAvatar.jpg";
 import { FaRegHandshake, FaRegThumbsUp, FaRegThumbsDown } from "react-icons/fa";
 import { recruitment } from "../../data";
 import { useInView } from "react-intersection-observer";
@@ -112,12 +112,7 @@ const PhoneContent = () => {
                 >
                   <div className="avatar chat-image">
                     <div className="w-10 rounded-full">
-                      <img
-                        alt="owner image"
-                        loading="lazy"
-                        className="translate-x-1/2 translate-y-2 scale-[500%] bg-accent"
-                        src={heroImg}
-                      />
+                      <img alt="owner image" loading="lazy" src={myAvatarImg} />
                     </div>
                   </div>
                   <div className="chat-header mt-3 text-primary">
@@ -158,12 +153,7 @@ const PhoneContent = () => {
                 >
                   <div className="avatar chat-image">
                     <div className="w-10 rounded-full">
-                      <img
-                        alt="owner image"
-                        loading="lazy"
-                        className="translate-x-1/2 translate-y-2 scale-[500%] bg-accent"
-                        src={heroImg}
-                      />
+                      <img alt="owner image" loading="lazy" src={myAvatarImg} />
                     </div>
                   </div>
                   <div className="chat-header text-primary">Krystian Kamer</div>
@@ -211,8 +201,7 @@ const PhoneContent = () => {
                             <img
                               alt="owner image"
                               loading="lazy"
-                              className="translate-x-1/2 translate-y-2 scale-[500%] bg-accent"
-                              src={heroImg}
+                              src={myAvatarImg}
                             />
                           </div>
                         </div>
@@ -258,8 +247,7 @@ const PhoneContent = () => {
                           <img
                             alt="owner image"
                             loading="lazy"
-                            className="translate-x-1/2 translate-y-2 scale-[500%] bg-accent"
-                            src={heroImg}
+                            src={myAvatarImg}
                           />
                         </div>
                       </div>
@@ -281,8 +269,7 @@ const PhoneContent = () => {
                           <img
                             alt="owner image"
                             loading="lazy"
-                            className="translate-x-1/2 translate-y-2 scale-[500%] bg-accent"
-                            src={heroImg}
+                            src={myAvatarImg}
                           />
                         </div>
                       </div>

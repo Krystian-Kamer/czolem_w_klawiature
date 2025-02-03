@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import footerImg from "../assets/footer-img.png";
+import footerImg from "../assets/footer-img.webp";
 import { RiGithubFill, RiLinkedinFill, RiMailFill } from "react-icons/ri";
 
 const Footer = () => {
