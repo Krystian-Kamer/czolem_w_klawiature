@@ -175,7 +175,7 @@ export const projects: ProjectType[] = [
   {
     id: 1,
     name: "pickle rick",
-    img: "/portfolio-assets/pickle_rick.png",
+    img: "/portfolio-assets/pickle_rick.webp",
     description:
       "Aplikacja do przeglądania postaci, lokacji i odcinków z uniwersum Rick&Morty, postacie wyszukiwane po kryteriach, możliwość założenia konta i zalogowania. ",
     technology:
@@ -190,7 +190,7 @@ export const projects: ProjectType[] = [
   {
     id: 2,
     name: "vid-x",
-    img: "/portfolio-assets/vid-x.png",
+    img: "/portfolio-assets/vid-x.webp",
     description:
       "Wyszukiwarka filmów i seriali. Możliwość wyszukania filmu po nazwie, kategorii, sortowanie, dodawanie filmów do swojej biblioteki, z wykorzystaniem  localStorage. ",
     technology: "HTML, CSS, JavaScript",
@@ -198,12 +198,13 @@ export const projects: ProjectType[] = [
     live: "https://vid-x.vercel.app/",
     mobileVideo: "/portfolio-assets/vid-x phone.mp4",
     desktopVideo: "/portfolio-assets/vid-x desktop.mp4",
-    thoughts: "Mój pierwszy samodzielny projekt. Gdy go ukończyłem, byłem z jego wyglądu bardzo zadowolony. Dodałem bardzo dużo funkcjonalności i wszystko działało! Rzecz w tym, że praktycznie wszystko jest zależne od czegoś, większość kodu znajduje się w jednym pliku. Patrząc z perspektywy utrzymania tego, byłaby to katorga. Projekt nauczył mnie tego, że im mniej wzajemnych zależności tym lepiej oraz że podział na mniejsze klocki, jak to jest w Reakcie, naprawdę robi robotę.",
+    thoughts:
+      "Mój pierwszy samodzielny projekt. Gdy go ukończyłem, byłem z jego wyglądu bardzo zadowolony. Dodałem bardzo dużo funkcjonalności i wszystko działało! Rzecz w tym, że praktycznie wszystko jest zależne od czegoś, większość kodu znajduje się w jednym pliku. Patrząc z perspektywy utrzymania tego, byłaby to katorga. Projekt nauczył mnie tego, że im mniej wzajemnych zależności tym lepiej oraz że podział na mniejsze klocki, jak to jest w Reakcie, naprawdę robi robotę.",
   },
   {
     id: 3,
     name: "pentago",
-    img: "/portfolio-assets/pentago.png",
+    img: "/portfolio-assets/pentago.webp",
     description:
       "Jest to odwzorowanie gry Pentago, którą mam w domu (do grania z osobą towarzyszącą). Przypomina bardziej skomplikowane kółko i krzyżyk.",
     technology: "React, CSS",
@@ -211,12 +212,13 @@ export const projects: ProjectType[] = [
     live: "https://pentago-eta.vercel.app/",
     mobileVideo: "/portfolio-assets/pentago phone.mp4",
     desktopVideo: "/portfolio-assets/pentago desktop.mp4",
-    thoughts: "Bardzo lubię gry planszowe. Zawsze myślałem, że jakąś stworzę (może jeszcze będzie okazja). Odkąd zacząłem uczyć się JavaScript-u chciałem odwzorować grę Pentago i udało mi się. To co był zmienił to zarządzaniem stanem, bo w Projekcie używam Reactowego Contextu a mógłbym użyć czegoś co bardziej odpowiada. Większą uważność przykułbym też do strony wizualnej. Niemniej jestem zadowolony, że spełniłem swoje marzenie o odwzorowaniu mechaniki gry.",
+    thoughts:
+      "Bardzo lubię gry planszowe. Zawsze myślałem, że jakąś stworzę (może jeszcze będzie okazja). Odkąd zacząłem uczyć się JavaScript-u chciałem odwzorować grę Pentago i udało mi się. To co był zmienił to zarządzaniem stanem, bo w Projekcie używam Reactowego Contextu a mógłbym użyć czegoś co bardziej odpowiada. Większą uważność przykułbym też do strony wizualnej. Niemniej jestem zadowolony, że spełniłem swoje marzenie o odwzorowaniu mechaniki gry.",
   },
   {
     id: 4,
     name: "rachunki",
-    img: "/portfolio-assets/charges.png",
+    img: "/portfolio-assets/charges.webp",
     description:
       "Stworzyłem tę aplikację do zarządzania swoimi stałymi miesięcznymi wydatkami. Również korzysta z localStorage.",
     technology: "React, Tailwind",
@@ -224,7 +226,8 @@ export const projects: ProjectType[] = [
     live: "https://charges.vercel.app/",
     mobileVideo: "/portfolio-assets/rachunki phone.mp4",
     desktopVideo: "/portfolio-assets/rachunki desktop.mp4",
-    thoughts: "Pierwszy projekt, który miał mi posłużyć na dłużej i tak było... przez jakiś czas, do czasu aż nie przerzuciłem się na kalendarz, w którym wszystko obecnie zapisuję. Pomyślałem, że skoro to będzie prosty projekt to wystarczy posłużyć się przekazywaniem propsów w dół. Zrobiła się z tego wielka Podróż do Wnętrza Ziemi. Nie polecam. Projekt nauczył mnie tego, by wpierw pomyśleć o architekturze, to znaczy o tym co tak na prawdę chcę osiągnąć.",
+    thoughts:
+      "Pierwszy projekt, który miał mi posłużyć na dłużej i tak było... przez jakiś czas, do czasu aż nie przerzuciłem się na kalendarz, w którym wszystko obecnie zapisuję. Pomyślałem, że skoro to będzie prosty projekt to wystarczy posłużyć się przekazywaniem propsów w dół. Zrobiła się z tego wielka Podróż do Wnętrza Ziemi. Nie polecam. Projekt nauczył mnie tego, by wpierw pomyśleć o architekturze, to znaczy o tym co tak na prawdę chcę osiągnąć.",
   },
 ];
 

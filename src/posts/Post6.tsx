@@ -149,6 +149,7 @@ const Post6 = () => {
       <PostText text="Boli, ale spokojnie, funkcja nie boli, funkcja rozumie, funkcja nigdy Cię nie zrani, chyba że kogoś wnerwiłeś, a zaprogramował on Terminatora." />
       <img
         src={terminatorImg}
+        alt="terminator image"
         className="my-8 w-full max-w-[500px] justify-self-center shadow-md"
       />
       <PostText text="Teraz to się nie dziwię. Hasta la vista, baby!" />

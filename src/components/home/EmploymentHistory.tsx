@@ -33,7 +33,7 @@ const EmploymentHistory = () => {
           <div
             className={`${isEmploymentHistoryInView ? "md:translate-x-0 md:opacity-100 md:duration-1000" : "md:-translate-x-1/3 md:opacity-0"} group/item timeline-start relative delay-300 md:text-end`}
           >
-            <div className="absolute -right-44 top-1/2 hidden -translate-y-1/2 opacity-0 group-hover/item:flex group-hover/item:animate-fadeIn">
+            <div className="absolute -right-44 top-1/2 hidden -translate-y-1/3 opacity-0 group-hover/item:flex group-hover/item:animate-fadeIn">
               <GiCoffeeCup className="text-7xl" />
               <div className="absolute top-1 -z-10 h-11 w-10 -rotate-12 bg-accent"></div>
             </div>
@@ -72,7 +72,7 @@ const EmploymentHistory = () => {
           <div
             className={`group/item timeline-end relative ${isEmploymentHistoryInView ? "md:translate-x-0 md:opacity-100 md:delay-500 md:duration-1000" : "md:translate-x-1/3 md:opacity-0"}`}
           >
-            <div className="absolute -left-44 top-1/2 hidden -translate-y-1/2 opacity-0 group-hover/item:flex group-hover/item:animate-fadeIn">
+            <div className="absolute -left-44 top-1/2 hidden -translate-y-1/3 opacity-0 group-hover/item:flex group-hover/item:animate-fadeIn">
               <PiScalesFill className="text-7xl" />
               <div className="absolute right-0 top-1 -z-10 h-11 w-10 rotate-12 bg-accent"></div>
             </div>
@@ -110,7 +110,7 @@ const EmploymentHistory = () => {
           <div
             className={`group/item timeline-start relative md:text-end ${isEmploymentHistoryInView ? "md:translate-x-0 md:opacity-100 md:delay-[1000ms] md:duration-1000" : "md:-translate-x-1/3 md:opacity-0"}`}
           >
-            <div className="absolute -right-44 top-1/2 hidden -translate-y-1/2 opacity-0 group-hover/item:flex group-hover/item:animate-fadeIn">
+            <div className="absolute -right-44 top-1/2 hidden -translate-y-1/3 opacity-0 group-hover/item:flex group-hover/item:animate-fadeIn">
               <LiaGlassesSolid className="text-7xl" />
               <div className="absolute top-1 -z-10 h-11 w-10 -rotate-12 bg-accent"></div>
             </div>
@@ -150,7 +150,7 @@ const EmploymentHistory = () => {
           <div
             className={`group/item timeline-end relative mb-3 md:mb-6 lg:mb-28 ${isEmploymentHistoryInView ? "md:translate-x-0 md:opacity-100 md:delay-[1500ms] md:duration-1000" : "md:translate-x-1/3 md:opacity-0"}`}
           >
-            <div className="absolute -left-44 top-1/2 hidden -translate-y-1/2 opacity-0 group-hover/item:flex group-hover/item:animate-fadeIn">
+            <div className="absolute -left-44 top-1/2 hidden -translate-y-1/3 opacity-0 group-hover/item:flex group-hover/item:animate-fadeIn">
               <MdLaptopMac className="text-7xl" />
               <div className="absolute right-0 top-1 -z-10 h-11 w-10 rotate-12 bg-accent"></div>
             </div>

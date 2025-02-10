@@ -1,4 +1,4 @@
-import { Post1, Post2, Post3, Post4, Post5, Post6 } from "./posts/index";
+import { Post1, Post2, Post3, Post4, Post5, Post6, Post7 } from "./posts/index";
 import { PostType } from "./types";
 
 export const postsData: PostType[] = [
@@ -63,6 +63,17 @@ export const postsData: PostType[] = [
     imageBig: "/post-assets/post-6-big.jpg",
     text: "Tycie kompendium o funkcjach, argumentach i parametrach na przykładach z życia wziętych.",
     date: "03.02.25",
+    category: "javascript",
+  },
+  {
+    id: "rest-in-peace-oraz-operator-rozpierniczenia",
+    title:
+      "Rest in peace oraz operator rozpierniczenia",
+    post: <Post7 />,
+    imageSmall: "/post-assets/post-7-small.jpeg",
+    imageBig: "/post-assets/post-7-big.jpeg",
+    text: "Cóż to ten operator rest i spread. Gdzie tego można użyć? Zobaczmy!",
+    date: "10.02.25",
     category: "javascript",
   },
 ].reverse() as PostType[];

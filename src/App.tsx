@@ -6,6 +6,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { createContext, useState, useEffect } from "react";
 import { ContextValue } from "./types";
 import { useInView } from "react-intersection-observer";
+import { Analytics } from "@vercel/analytics/react";
 
 export const AppContext = createContext<ContextValue>({
   heroRef: () => {},
@@ -42,8 +43,7 @@ function App() {
   const sectionOptions =
     windowHeight < 1174 ? { rootMargin: "0px 0px -90% 0px", threshold: 0 } : {};
   const { ref: heroRef, inView: isHeroInView } = useInView();
-  const { ref: sectionTwoRef, inView: isSectionTwoInView } =
-    useInView(sectionOptions);
+  const { ref: sectionTwoRef, inView: isSectionTwoInView } = useInView(sectionOptions);
   const { ref: sectionFourRef, inView: isSectionFourInView } =
     useInView(sectionOptions);
   const isBgDark: boolean =
@@ -73,6 +73,7 @@ function App() {
       }}
     >
       <RouterProvider router={router} />
+      <Analytics />
     </AppContext.Provider>
   );
 }
