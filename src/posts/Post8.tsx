@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { PostSubtitle, PostText, PostTextBold } from "../components/blog/index";
 import womanImg from "/post-assets/post-8-img1.jpg";
 import nerdImg from "/post-assets/post-8-img2.jpg";
