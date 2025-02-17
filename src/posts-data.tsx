@@ -1,4 +1,4 @@
-import { Post1, Post2, Post3, Post4, Post5, Post6, Post7 } from "./posts/index";
+import { Post1, Post2, Post3, Post4, Post5, Post6, Post7, Post8 } from "./posts/index";
 import { PostType } from "./types";
 
 export const postsData: PostType[] = [
@@ -75,5 +75,16 @@ export const postsData: PostType[] = [
     text: "Cóż to ten operator rest i spread. Gdzie tego można użyć? Zobaczmy!",
     date: "10.02.25",
     category: "javascript",
+  },
+  {
+    id: "rezencja-ksiazki-kariera-programisty",
+    title:
+      "Recenzja książki Kariera Programisty",
+    post: <Post8 />,
+    imageSmall: "/post-assets/post-8-small.jpeg",
+    imageBig: "/post-assets/post-8-big.jpeg",
+    text: "Co wyniosłem z książki Johna Sonmeza o tytule Kariera Programisty. Szczera recenzja.",
+    date: "17.02.25",
+    category: "książka",
   },
 ].reverse() as PostType[];
