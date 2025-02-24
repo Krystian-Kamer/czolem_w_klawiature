@@ -9,8 +9,7 @@ import { Typewriter } from "react-simple-typewriter";
 import { useInView } from "react-intersection-observer";
 
 const About = () => {
-  const { isHeroInView } =
-    useContext<ContextValue>(AppContext);
+  const { isHeroInView } = useContext<ContextValue>(AppContext);
   const [isPinOnPage, setIsPinOnPage] = useState(true);
   const { ref: sectionOne, inView: isSectionOneInView } = useInView();
 
@@ -33,10 +32,9 @@ const About = () => {
         className="top-1/2 md:flex md:flex-row md:justify-around md:gap-6"
       >
         <div
-          className={`prose ${isHeroInView ? "-translate-y-4 delay-700 duration-1000 md:translate-y-0" : "translate-y-1 duration-1000 sm:translate-y-7 md:translate-y-20 lg:translate-y-40"} min-h-[400px] ${!isPinOnPage && "translate-x-1/2 delay-[1500ms] duration-[1000ms]"} selection:bg-accent selection:text-secondary md:w-1/2 md:px-0`}
+          className={`prose ${isHeroInView ? "-translate-y-4 delay-700 duration-1000 md:translate-y-0" : "translate-y-1 duration-1000 sm:translate-y-7 md:translate-y-20 lg:translate-y-40"} min-h-[400px] ${!isPinOnPage ? "translate-x-1/2 delay-[1500ms] duration-[1000ms]" : ""} selection:bg-accent selection:text-secondary md:w-1/2 md:px-0`}
         >
           <SectionTitle bgColor="bg-neutral" title={"Czołem!"} />
-
           <h2 className="text-xl sm:text-xl md:text-2xl">
             Z tej strony Krystian Kamer.
           </h2>
@@ -85,7 +83,7 @@ const About = () => {
           />
         </div>
         <div
-          className={`${!isPinOnPage && "drop-img"} relative hidden h-fit rounded-sm border-8 border-b-[12px] border-white bg-accent drop-shadow-[25px_25px_10px_rgba(0,0,0,0.3)] md:mt-28 md:flex md:w-1/3 lg:w-[28%] ${
+          className={`${!isPinOnPage ? "drop-img" : ""} relative hidden h-fit rounded-sm border-8 border-b-[12px] border-white bg-accent drop-shadow-[25px_25px_10px_rgba(0,0,0,0.3)] md:mt-28 md:flex md:w-1/3 lg:w-[28%] ${
             !isHeroInView
               ? "translate-y-[20%] rotate-12 delay-300 duration-[1500ms]"
               : "-translate-y-[20%] rotate-6 delay-[800ms] duration-[1500ms]"
@@ -95,7 +93,7 @@ const About = () => {
             src={pinImg}
             alt="pin image"
             loading="lazy"
-            className={`absolute -left-6 z-10 select-none rounded-l-full drop-shadow-[3px_10px_3px_rgba(0,0,0,0.6)] md:w-16 lg:w-20 ${!isHeroInView && "cursor-custom-pointer duration-300 hover:scale-110"} ${!isPinOnPage && "remove-pin"} `}
+            className={`absolute -left-6 z-10 select-none rounded-l-full drop-shadow-[3px_10px_3px_rgba(0,0,0,0.6)] md:w-16 lg:w-20 ${!isHeroInView ? "cursor-custom-pointer duration-300 hover:scale-110" : ""} ${!isPinOnPage ? "remove-pin" : ""} `}
             onClick={!isHeroInView ? dropImage : undefined}
           />
           <div

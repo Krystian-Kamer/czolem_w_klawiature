@@ -94,7 +94,6 @@ const Post8 = () => {
         className="my-8 w-full max-w-[500px] justify-self-center shadow-md"
       />
       <PostText text="Jest też fajna rada, że nie musisz od razu aplikować na programistę. Możesz najpierw dostać się do firmy, a dopiero potem przeskoczyć na dream job." />
-
       <PostSubtitle subtitle="Część III. Co musisz wiedzieć o tworzeniu oprogramowania?" />
       <PostText text="Ta część to raczej taki przekrój możliwych ścieżek programistycznych. Też bardziej dla początkujących moim zdaniem. " />
       <PostText text="No bo jak już jestem nakierowany na frontend, to po co mam czytać o karierze w branży gier video czy o testowaniu. Ten rozdział zatem, gdy już masz określony cel możesz czytać bardziej pobieżnie." />

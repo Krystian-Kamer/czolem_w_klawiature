@@ -1,4 +1,4 @@
-import { Post1, Post2, Post3, Post4, Post5, Post6, Post7, Post8 } from "./posts/index";
+import { Post1, Post2, Post3, Post4, Post5, Post6, Post7, Post8, Post9 } from "./posts/index";
 import { PostType } from "./types";
 
 export const postsData: PostType[] = [
@@ -86,5 +86,16 @@ export const postsData: PostType[] = [
     text: "Co wyniosłem z książki Johna Sonmeza o tytule Kariera Programisty. Szczera recenzja.",
     date: "17.02.25",
     category: "książka",
+  },
+  {
+    id: "sila-masa-pie-cie-nie-redukcja",
+    title:
+      "Siła, masa, pie...cie? Nie! Redukcja !!!",
+    post: <Post9 />,
+    imageSmall: "/post-assets/post-9-small.jpg",
+    imageBig: "/post-assets/post-9-big.jpg",
+    text: "Zrzućmy razem zbędne kilogramy używając metody reduce(). Robimy formę na lato i na lata.",
+    date: "24.02.25",
+    category: "javascript",
   },
 ].reverse() as PostType[];
