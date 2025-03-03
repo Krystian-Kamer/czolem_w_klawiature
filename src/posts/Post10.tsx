@@ -63,7 +63,7 @@ const Post10 = () => {
         >
           Poście 11{" "}
         </Link>
-        muszę jednak ciutkę zwolnić, jak wejdziesz to się dowiesz czemu😢.
+        muszę jednak ciutkę zwolnić z postami na blogu, jak wejdziesz to się dowiesz czemu😢. Dalej jednak zobaczysz mnie na LinkedIn.
       </p>
       <PostSubtitle subtitle="Im dalej w las tym więcej pomysłów" />
       <PostText text="Jako, że dowiedziałem się, że kochany niebieski portal, gdzie chwalimy się umiejętnościami Jutra przycina mi zasięgi, postanowiłem wymyślić nową strategię." />
