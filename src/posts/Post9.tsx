@@ -463,7 +463,6 @@ const Post9 = () => {
       <PostText text="Najpierw nadpisujemy pojedyncze wartości, a na końcu zwracamy nasz cały obiekt, który przetrwa do następnej iteracji." />
       <PostText text="Pomogliśmy Krzyśkowi ogarnąć ten syf, żeby on nie musiał a dodatkowo sami nauczyliśmy się nowych rzeczy." />
       <PostText text="Chłopina już wie ile przyjął tłuszczu, białka, węglowodanów i kilokalorii." />
-      <PostText text="W sumie dziwne, że nie podał ile co ma cukru..., ale no, nasz klient, nasz pan." />
       <PostSubtitle subtitle="Tablica przyrostu bicka" />
       <p className="mb-4 text-lg leading-relaxed text-primary md:my-2 lg:mb-4 lg:mt-5 lg:text-2xl">
         Jest jedna rzecz, której Krzysiek się boi, nie są to męskie łzy, nie

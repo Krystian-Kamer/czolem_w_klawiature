@@ -55,7 +55,7 @@ const About = () => {
           </h3>
           <p className="text-lg leading-relaxed text-primary sm:text-xl sm:leading-loose md:pt-6 md:text-2xl md:leading-relaxed lg:leading-loose">
             Nie lubię nudy. Jeśli jesteś na tej stronie to oznacza, że chcesz
-            nauczyć się czegoś nowego i wartościowego. Ta stronka to połączenie
+            nauczyć się czegoś nowego i wartościowego. Ta strona to połączenie
             mojego
             <Link
               className="cursor-custom-pointer mx-1 bg-accent tracking-wider text-primary no-underline hover:bg-accent/70"
@@ -70,7 +70,8 @@ const About = () => {
             >
               blogiem
             </Link>
-            , na który będę wrzucał co każdy poniedziałek nowe posty.
+            , na który będę wrzucał dwa razy w miesiącu nowe
+            posty.
           </p>
         </div>
 

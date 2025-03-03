@@ -7,3 +7,5 @@ export { default as Post6 } from "./Post6";
 export { default as Post7 } from "./Post7";
 export { default as Post8 } from "./Post8";
 export { default as Post9 } from "./Post9";
+export { default as Post10 } from "./Post10";
+export { default as Post11 } from "./Post11";

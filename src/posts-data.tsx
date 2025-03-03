@@ -1,4 +1,16 @@
-import { Post1, Post2, Post3, Post4, Post5, Post6, Post7, Post8, Post9 } from "./posts/index";
+import {
+  Post1,
+  Post2,
+  Post3,
+  Post4,
+  Post5,
+  Post6,
+  Post7,
+  Post8,
+  Post9,
+  Post10,
+  Post11,
+} from "./posts/index";
 import { PostType } from "./types";
 
 export const postsData: PostType[] = [
@@ -45,8 +57,7 @@ export const postsData: PostType[] = [
   },
   {
     id: "dlaczego-programowanie-zniszczylo-moj-zwiazek",
-    title:
-      "Dlaczego programowanie zniszczyło mój związek",
+    title: "Dlaczego programowanie zniszczyło mój związek",
     post: <Post5 />,
     imageSmall: "/post-assets/post-5-small.jpeg",
     imageBig: "/post-assets/post-5-big.jpeg",
@@ -56,8 +67,7 @@ export const postsData: PostType[] = [
   },
   {
     id: "funkcje-i-ich-funkcje-oraz-parametry-i-argumenty",
-    title:
-      "Funkcje i ich funkcje oraz parametry i argumenty",
+    title: "Funkcje i ich funkcje oraz parametry i argumenty",
     post: <Post6 />,
     imageSmall: "/post-assets/post-6-small.jpg",
     imageBig: "/post-assets/post-6-big.jpg",
@@ -67,8 +77,7 @@ export const postsData: PostType[] = [
   },
   {
     id: "rest-in-peace-oraz-operator-rozpierniczenia",
-    title:
-      "Rest in peace oraz operator rozpierniczenia",
+    title: "Rest in peace oraz operator rozpierniczenia",
     post: <Post7 />,
     imageSmall: "/post-assets/post-7-small.jpeg",
     imageBig: "/post-assets/post-7-big.jpeg",
@@ -78,8 +87,7 @@ export const postsData: PostType[] = [
   },
   {
     id: "rezencja-ksiazki-kariera-programisty",
-    title:
-      "Recenzja książki Kariera Programisty",
+    title: "Recenzja książki Kariera Programisty",
     post: <Post8 />,
     imageSmall: "/post-assets/post-8-small.jpeg",
     imageBig: "/post-assets/post-8-big.jpeg",
@@ -89,13 +97,32 @@ export const postsData: PostType[] = [
   },
   {
     id: "sila-masa-pie-cie-nie-redukcja",
-    title:
-      "Siła, masa, pie...cie? Nie! Redukcja !!!",
+    title: "Siła, masa, pie...cie? Nie! Redukcja !!!",
     post: <Post9 />,
     imageSmall: "/post-assets/post-9-small.jpg",
     imageBig: "/post-assets/post-9-big.jpg",
     text: "Zrzućmy razem zbędne kilogramy używając metody reduce(). Robimy formę na lato i na lata.",
     date: "24.02.25",
     category: "javascript",
+  },
+  {
+    id: "czy-meta-jest-daleko-i-co-u-mnie",
+    title: "To już 10 post! Co się wydarzyło od kiedy zacząłem blogować i czy meta jest daleko?",
+    post: <Post10 />,
+    imageSmall: "/post-assets/post-10-small.jpg",
+    imageBig: "/post-assets/post-10-big.jpg",
+    text: "Trochę moich przemyśleń o tym co się wydarzyło od czasu pierwszego posta i pytania o przyszłość.",
+    date: "03.03.25",
+    category: "rozkminy",
+  },
+  {
+    id: "rozrusznik-nie-wytrzymuje-zwalniam-tempo-niestety",
+    title: "Rozrusznik nie wytrzymuje. Zwalniam tempo, niestety.",
+    post: <Post11 />,
+    imageSmall: "/post-assets/post-11-small.jpg",
+    imageBig: "/post-assets/post-11-big.jpg",
+    text: "Tak, ten smutny kot idealnie przedstawia moją zszarganą duszę. Od teraz posty będą pojawiać się w dwa razy w miesiącu...",
+    date: "03.03.25",
+    category: "rozkminy",
   },
 ].reverse() as PostType[];
