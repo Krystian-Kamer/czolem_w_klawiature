@@ -10,6 +10,7 @@ import {
   Post9,
   Post10,
   Post11,
+  Post12,
 } from "./posts/index";
 import { PostType } from "./types";
 
@@ -124,5 +125,15 @@ export const postsData: PostType[] = [
     text: "Tak, ten smutny kot idealnie przedstawia moją zszarganą duszę. Od teraz posty będą pojawiać się w dwa razy w miesiącu...",
     date: "03.03.25",
     category: "rozkminy",
+  },
+  {
+    id: "kiedy-plaskie-jest-lepsze-od-nieplaskiego",
+    title: "Kiedy płaskie jest lepsze od niepłaskiego?",
+    post: <Post12 />,
+    imageSmall: "/post-assets/post-12-small.jpg",
+    imageBig: "/post-assets/post-12-big.jpg",
+    text: "Odpowiadam na przewrotne pytanie kiedy płaskie jest lepsze od niepłaskiego (a na programistyczne jak działa metoda flat).",
+    date: "31.03.25",
+    category: "javascript",
   },
 ].reverse() as PostType[];

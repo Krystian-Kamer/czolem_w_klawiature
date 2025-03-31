@@ -70,8 +70,7 @@ const About = () => {
             >
               blogiem
             </Link>
-            , na który będę wrzucał dwa razy w miesiącu nowe
-            posty.
+            , na który wrzucam co jakiś czas nowe posty, także obserwuj.
           </p>
         </div>
 
