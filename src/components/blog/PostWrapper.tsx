@@ -9,19 +9,23 @@ const PostWrapper = () => {
   const postComponent = chosenPost!.post;
   const { title, imageSmall, imageBig, text, date, category } = chosenPost!;
 
-  const articleUrl = `https://www.czolemwklawiature.com/blog/${postId}`;
-  const ogImageUrl = `https://www.czolemwklawiature.com${imageBig}`;
-
   return (
     <>
       <Helmet>
         <title>{title} | Czołem w klawiaturę</title>
         <meta name="description" content={text} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={articleUrl} />
+        <meta
+          property="og:url"
+          content={`https://www.czolemwklawiature.com/blog/${postId}`}
+        />
         <meta property="og:title" content={`${title} | Czołem w klawiaturę`} />
         <meta property="og:description" content={text} />
-        <meta property="og:image" content={ogImageUrl} />
+        <meta
+          property="og:image"
+          content={`https://www.czolemwklawiature.com${imageBig}`}
+        />
+        <meta property="article:author" content="Krystian Kamer" />
 
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -30,20 +34,21 @@ const PostWrapper = () => {
           content={`Obrazek do artykułu: ${title}`}
         />
         <meta name="author" content="Krystian Kamer" />
-        <meta
-          property="article:published_time"
-          content={new Date(date).toISOString()}
-        />
         <meta property="article:section" content={category} />
-        <meta property="article:tag" content={category} />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content={articleUrl} />
+        <meta
+          property="twitter:url"
+          content={`https://www.czolemwklawiature.com/blog/${postId}`}
+        />
         <meta
           property="twitter:title"
           content={`${title} | Czołem w klawiaturę`}
         />
         <meta property="twitter:description" content={text} />
-        <meta property="twitter:image" content={ogImageUrl} />
+        <meta
+          property="twitter:image"
+          content={`https://www.czolemwklawiature.com${imageBig}`}
+        />
       </Helmet>
 
       <Section
