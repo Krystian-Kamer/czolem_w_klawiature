@@ -23,7 +23,7 @@ const PostWrapper = () => {
         <meta property="og:description" content={text} />
         <meta
           property="og:image"
-          content={`https://www.czolemwklawiature.com${imageBig}`}
+          content={`https://www.czolemwklawiature.com/post-assets/og-image.jpg`}
         />
         <meta property="article:author" content="Krystian Kamer" />
 
@@ -47,7 +47,7 @@ const PostWrapper = () => {
         <meta property="twitter:description" content={text} />
         <meta
           property="twitter:image"
-          content={`https://www.czolemwklawiature.com${imageBig}`}
+          content={`https://www.czolemwklawiature.com/post-assets/og-image.jpg`}
         />
       </Helmet>
 
