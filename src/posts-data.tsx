@@ -11,6 +11,7 @@ import {
   Post10,
   Post11,
   Post12,
+  Post13,
 } from "./posts/index";
 import { PostType } from "./types";
 
@@ -135,5 +136,15 @@ export const postsData: PostType[] = [
     text: "Odpowiadam na przewrotne pytanie kiedy płaskie jest lepsze od niepłaskiego (a na programistyczne jak działa metoda flat).",
     date: "31.03.25",
     category: "javascript",
+  },
+  {
+    id: "interface-vs-type-alias-w-typescript",
+    title: "Interface vs Type Alias. Kto wygra ten pojedynek?",
+    post: <Post13 />,
+    imageSmall: "/post-assets/post-13-small.jpg",
+    imageBig: "/post-assets/post-13-big.jpg",
+    text: "Odwieczna walka co użyć w projekcie, co będzie lepsze, jakie są różnice między tymi zawodnikami? Sprawdźmy!",
+    date: "07.04.25",
+    category: "typescript",
   },
 ].reverse() as PostType[];
