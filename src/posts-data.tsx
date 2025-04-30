@@ -12,6 +12,7 @@ import {
   Post11,
   Post12,
   Post13,
+  Post14,
 } from "./posts/index";
 import { PostType } from "./types";
 
@@ -109,7 +110,8 @@ export const postsData: PostType[] = [
   },
   {
     id: "czy-meta-jest-daleko-i-co-u-mnie",
-    title: "To już 10 post! Co się wydarzyło od kiedy zacząłem blogować i czy meta jest daleko?",
+    title:
+      "To już 10 post! Co się wydarzyło od kiedy zacząłem blogować i czy meta jest daleko?",
     post: <Post10 />,
     imageSmall: "/post-assets/post-10-small.jpg",
     imageBig: "/post-assets/post-10-big.jpg",
@@ -146,5 +148,15 @@ export const postsData: PostType[] = [
     text: "Odwieczna walka co użyć w projekcie, co będzie lepsze, jakie są różnice między tymi zawodnikami? Sprawdźmy!",
     date: "07.04.25",
     category: "typescript",
+  },
+  {
+    id: "w-koncu-code-review-mama-bedzie-dumna",
+    title: "W końcu code review. Mama będzie dumna.",
+    post: <Post14 />,
+    imageSmall: "/post-assets/post-14-small.jpg",
+    imageBig: "/post-assets/post-14-big.jpg",
+    text: "Opowiadam o swoim pierwszym code review, które miało miejsce jakiś czas temu. Co z tego wyniosłem? I ile wziął psychoterapeuta? Dodatkowo, co tam u mnie.",
+    date: "30.04.25",
+    category: "rozkminy",
   },
 ].reverse() as PostType[];
