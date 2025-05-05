@@ -12,3 +12,4 @@ export { default as Post11 } from "./Post11";
 export { default as Post12 } from "./Post12";
 export { default as Post13 } from "./Post13";
 export { default as Post14 } from "./Post14";
+export { default as Post15 } from "./Post15";

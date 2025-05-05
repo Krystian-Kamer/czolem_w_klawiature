@@ -13,6 +13,7 @@ import {
   Post12,
   Post13,
   Post14,
+  Post15,
 } from "./posts/index";
 import { PostType } from "./types";
 
@@ -158,5 +159,15 @@ export const postsData: PostType[] = [
     text: "Opowiadam o swoim pierwszym code review, które miało miejsce jakiś czas temu. Co z tego wyniosłem? I ile wziął psychoterapeuta? Dodatkowo, co tam u mnie.",
     date: "30.04.25",
     category: "rozkminy",
+  },
+  {
+    id: "enumy-u-bram",
+    title: "Enumy u bram.",
+    post: <Post15 />,
+    imageSmall: "/post-assets/post-15-small.jpg",
+    imageBig: "/post-assets/post-15-big.jpg",
+    text: "Powtarzam, to nie są ćwiczenia! Enumy - wróg czy przyjaciel? Uzbrój się ze mną w ciepliwość i wyruszmy w nieznane, przeczesując jeszcze nieokryte zakamarki TypeScript. ",
+    date: "05.05.25",
+    category: "typescript",
   },
 ].reverse() as PostType[];
