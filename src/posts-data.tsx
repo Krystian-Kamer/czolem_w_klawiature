@@ -14,6 +14,7 @@ import {
   Post13,
   Post14,
   Post15,
+  Post16,
 } from "./posts/index";
 import { PostType } from "./types";
 
@@ -169,5 +170,15 @@ export const postsData: PostType[] = [
     text: "Powtarzam, to nie są ćwiczenia! Enumy - wróg czy przyjaciel? Uzbrój się ze mną w ciepliwość i wyruszmy w nieznane, przeczesując jeszcze nieokryte zakamarki TypeScript. ",
     date: "05.05.25",
     category: "typescript",
+  },
+  {
+    id: "no-to-closure",
+    title: "Słynne closure, czyli jak działa domknięcie.",
+    post: <Post16 />,
+    imageSmall: "/post-assets/post-16-small.jpg",
+    imageBig: "/post-assets/post-16-big.jpg",
+    text: "Zamykamy bagażnik z niespodzianką i wsiadamy w mafijną brykę. Mamy robotę do zrobienia, amigo. Szpadel też się przyda.",
+    date: "02.07.25",
+    category: "javascript",
   },
 ].reverse() as PostType[];
